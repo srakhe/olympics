@@ -1,0 +1,2432 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Olympedia – Countries</title>
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="/6iKSfqyjD+U9tX724zczTf//WPLna6utH02eRVby5DzPeHKlSrz9ljFy2zGY4LzkOdW0J5yrq6rlWtyeGgyfg==" />
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+<meta content='EN' http-equiv='content-language'>
+<meta content='width=device-width, initial-scale=1' name='viewport'>
+<link rel="stylesheet" media="all" href="/assets/bootstrap.min-460a43de22fd9534d595e5aea2715cb154560291c9c6401b526e31c86a5ce32d.css" />
+<link rel="stylesheet" media="all" href="/assets/bootstrap-sortable-363d232309d54b549fa85446295ef2b5d290e3f8a49f1a646247340be3705ef9.css" />
+<link rel="stylesheet" media="all" href="/assets/jquery-ui-1.11.4.min-359ba1b9eb679ad05fb4c8fda710ee4c0239354f1ba635200b6065638295d646.css" />
+<link rel="stylesheet" media="screen" href="/assets/lightbox-e29689e123fc27505d2b9d919f43ffcb6fade539cb4670f21c35aa07848105e7.css" />
+<link rel="stylesheet" media="all" href="/assets/application-dabe0afec76f540b074f0f63c688a540786e3cc47508864701ac4bfcd2198724.css" data-turbolinks-track="true" />
+<link rel="stylesheet" media="screen" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.4.3/css/ol.css" />
+<script src="/assets/application-e1a1e4d6a20243befcce18acb216d9b0e6082405323ce1f5dfbf47c401111aa1.js" data-turbolinks-track="true"></script>
+<script src="/assets/jquery-1.11.2.min-cc83565074b3fa7f2283f7f4d56b90ad171ede87008448ed5d2e91c50575bed1.js"></script>
+<script src="/assets/jquery-ui-1.11.4.min-1f37fd37d8db0404488ac8f6505560e48d1364ef1c81e384ac695e143049ab0f.js"></script>
+<script src="/assets/bootstrap.min-81d6fe3a991358b79b083d075ca476712c9f11c5c890047486176bde863c499e.js"></script>
+<script src="/assets/moment-ded3cbd5de5ae075c44be4149abb630c658e8789f17ccfb162e6bb7664e8bec9.js"></script>
+<script src="/assets/bootstrap-sortable-cd614fbc8d2030bc050ce63652169ed36d970209a94062fa218c631f2c04dc9f.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.4.3/build/ol.js"></script>
+
+</head>
+
+<body>
+<div class='navbar navbar-default navbar-fixed-top' role='navigation'>
+<div class='navbar-header'>
+<div class='button navbar-toggle' data-target='.navbar-ex1-collapse' data-toggle='collapse' type='button'>
+<span class='sr-only'>Toggle navigation</span>
+<span class='icon-bar'>
+<span class='icon-bar'>
+<span class='icon-bar'></span>
+</span>
+</span>
+</div>
+<a class='navbar-brand' href='/'>Olympedia</a>
+</div>
+<div class='collapse navbar-collapse navbar-ex1-collapse'>
+<ul class='nav navbar-nav'>
+<li class='dropdown'>
+<a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+Athletes
+<b class='caret'></b>
+</a>
+<ul class='dropdown-menu'>
+<li><a href="/athletes/advanced_search">Advanced search</a></li>
+<li><a href="/horses">Horse search</a></li>
+<li><a href="/family_relations">Related Olympians</a></li>
+<li><a href="/counts">Counts</a></li>
+<li><a href="/athletes/doubles">Doubles</a></li>
+<li><a href="/athletes/lists">Lists</a></li>
+<li class='divider'></li>
+<li><a href="/athletes">Athletes</a></li>
+</ul>
+</li>
+
+<li class='dropdown'>
+<a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+Countries
+<b class='caret'></b>
+</a>
+<ul class='dropdown-menu'>
+<li><a href="/countries/head_to_head">Head-to-head</a></li>
+<li><a href="/countries/best_results">Best results</a></li>
+<li><a href="/countries/comparison">Results comparison</a></li>
+<li class='divider'></li>
+<li><a href="/countries">Countries</a></li>
+</ul>
+</li>
+
+<li class='dropdown'>
+<a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+Games
+<b class='caret'></b>
+</a>
+<ul class='dropdown-menu'>
+<li><a href="/editions">Games</a></li>
+<li><a href="/editions/medals">Medals</a></li>
+<li><a href="/editions/results">Results</a></li>
+<li><a href="/ceremonies">Opening ceremony</a></li>
+<li><a href="/venues/menu">Venues</a></li>
+</ul>
+</li>
+
+<li class='dropdown'>
+<a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+Sports
+<b class='caret'></b>
+</a>
+<ul class='dropdown-menu'>
+<li><a href="/sports">Disciplines &amp; Sports</a></li>
+<li><a href="/event_names">Events</a></li>
+</ul>
+</li>
+
+<li class='dropdown'>
+<a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+IOC
+<b class='caret'></b>
+</a>
+<ul class='dropdown-menu'>
+<li><a href="/organizations">Organizations</a></li>
+<li><a href="/definitions">Definitions</a></li>
+<li><a href="/meetings">Meetings</a></li>
+<li><a href="/ioc/host_cities">Host city selection</a></li>
+</ul>
+</li>
+
+<li class='dropdown'>
+<a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+Statistics
+<b class='caret'></b>
+</a>
+<ul class='dropdown-menu'>
+<li></li>
+<li><a href="/statistics/medal/country">Medals by country</a></li>
+<li><a href="/statistics/medal/athlete">Medals by athlete</a></li>
+<li><a href="/statistics/medal_table">Medal tables</a></li>
+<li><a href="/statistics/participation">Participations</a></li>
+<li><a href="/statistics/age">Age records</a></li>
+<li><a href="/lists">Lists</a></li>
+<li><a href="/today">Today</a></li>
+<li></li>
+<li class='divider'></li>
+<li><a href="/statistics">Statistics</a></li>
+</ul>
+</li>
+
+
+
+
+<li><a href="/feedbacks/new">Feedback</a></li>
+<form class="navbar-form navbar-left" role="search" action="/athletes/quick_search" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="NYF8GEKSTkqJXQ4hx+6wA8xWmC5bF4dU1hA2KEcuBn5ayS511edCc1o8Cp5nd6hwTNy/0CUIt9WHlYIH41snfA==" />
+<div class='form-group'>
+<input type="text" name="query" id="query" class="form-control" placeholder="Athlete search" />
+</div>
+<input type="submit" name="commit" value="Go" class="btn btn-default" data-disable-with="Go" />
+</form>
+
+
+</ul>
+</div>
+</div>
+<div class='container'>
+<ol class='breadcrumb'>
+<li>
+<a href='/'>Home</a>
+</li>
+<li class="active"><a href="/countries">Countries</a></li>
+</ol>
+<h1>Countries</h1>
+<ul>
+<li><a href="/countries/head_to_head">Head-to-head for team sports</a></li>
+<li><a href="/countries/best_results">Best results per country</a></li>
+<li><a href="/countries/comparison">Results comparison</a></li>
+</ul>
+<h2>Modern countries</h2>
+<table class='table table-striped sortable'>
+<thead>
+<tr>
+<th>Abbreviation</th>
+<th data-defaultsort='asc'>Country</th>
+<th data-disablesort='true'>Competed in Modern Olympics?</th>
+</tr>
+<tbody>
+<tr>
+<td><a href="/countries/AFG"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/AFG.png" />AFG</a></td>
+<td><a href="/countries/AFG">Afghanistan</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/ALB"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ALB.png" />ALB</a></td>
+<td><a href="/countries/ALB">Albania</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/ALG"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ALG.png" />ALG</a></td>
+<td><a href="/countries/ALG">Algeria</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/ASA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ASA.png" />ASA</a></td>
+<td><a href="/countries/ASA">American Samoa</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/AND"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/AND.png" />AND</a></td>
+<td><a href="/countries/AND">Andorra</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/ANG"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ANG.png" />ANG</a></td>
+<td><a href="/countries/ANG">Angola</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/AGU"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/AGU.png" />AGU</a></td>
+<td><a href="/countries/AGU">Anguilla</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/ANT"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ANT.png" />ANT</a></td>
+<td><a href="/countries/ANT">Antigua and Barbuda</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/ARG"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ARG.png" />ARG</a></td>
+<td><a href="/countries/ARG">Argentina</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/ARM"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ARM.png" />ARM</a></td>
+<td><a href="/countries/ARM">Armenia</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/ARU"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ARU.png" />ARU</a></td>
+<td><a href="/countries/ARU">Aruba</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/ANZ"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ANZ.png" />ANZ</a></td>
+<td><a href="/countries/ANZ">Australasia</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/AUS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/AUS.png" />AUS</a></td>
+<td><a href="/countries/AUS">Australia</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/AUT"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/AUT.png" />AUT</a></td>
+<td><a href="/countries/AUT">Austria</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/AZE"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/AZE.png" />AZE</a></td>
+<td><a href="/countries/AZE">Azerbaijan</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/BRN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/BRN.png" />BRN</a></td>
+<td><a href="/countries/BRN">Bahrain</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/BAN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/BAN.png" />BAN</a></td>
+<td><a href="/countries/BAN">Bangladesh</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/BAR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/BAR.png" />BAR</a></td>
+<td><a href="/countries/BAR">Barbados</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/BLR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/BLR.png" />BLR</a></td>
+<td><a href="/countries/BLR">Belarus</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/BEL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/BEL.png" />BEL</a></td>
+<td><a href="/countries/BEL">Belgium</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/BIZ"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/BIZ.png" />BIZ</a></td>
+<td><a href="/countries/BIZ">Belize</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/BEN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/BEN.png" />BEN</a></td>
+<td><a href="/countries/BEN">Benin</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/BER"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/BER.png" />BER</a></td>
+<td><a href="/countries/BER">Bermuda</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/BHU"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/BHU.png" />BHU</a></td>
+<td><a href="/countries/BHU">Bhutan</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/BOH"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/BOH.png" />BOH</a></td>
+<td><a href="/countries/BOH">Bohemia</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/BOL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/BOL.png" />BOL</a></td>
+<td><a href="/countries/BOL">Bolivia</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/BIH"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/BIH.png" />BIH</a></td>
+<td><a href="/countries/BIH">Bosnia and Herzegovina</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/BOT"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/BOT.png" />BOT</a></td>
+<td><a href="/countries/BOT">Botswana</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/BRA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/BRA.png" />BRA</a></td>
+<td><a href="/countries/BRA">Brazil</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/IVB"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/IVB.png" />IVB</a></td>
+<td><a href="/countries/IVB">British Virgin Islands</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/BRU"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/BRU.png" />BRU</a></td>
+<td><a href="/countries/BRU">Brunei Darussalam</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/BUL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/BUL.png" />BUL</a></td>
+<td><a href="/countries/BUL">Bulgaria</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/BUR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/BUR.png" />BUR</a></td>
+<td><a href="/countries/BUR">Burkina Faso</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/BDI"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/BDI.png" />BDI</a></td>
+<td><a href="/countries/BDI">Burundi</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/CAM"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/CAM.png" />CAM</a></td>
+<td><a href="/countries/CAM">Cambodia</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/CMR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/CMR.png" />CMR</a></td>
+<td><a href="/countries/CMR">Cameroon</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/CAN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/CAN.png" />CAN</a></td>
+<td><a href="/countries/CAN">Canada</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/CPV"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/CPV.png" />CPV</a></td>
+<td><a href="/countries/CPV">Cape Verde</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/CAY"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/CAY.png" />CAY</a></td>
+<td><a href="/countries/CAY">Cayman Islands</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/CAF"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/CAF.png" />CAF</a></td>
+<td><a href="/countries/CAF">Central African Republic</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/CEA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/CEA.png" />CEA</a></td>
+<td><a href="/countries/CEA">Central America</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/CHA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/CHA.png" />CHA</a></td>
+<td><a href="/countries/CHA">Chad</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/CHI"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/CHI.png" />CHI</a></td>
+<td><a href="/countries/CHI">Chile</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/TPE"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/TPE.png" />TPE</a></td>
+<td><a href="/countries/TPE">Chinese Taipei</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/XMI"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/XMI.png" />XMI</a></td>
+<td><a href="/countries/XMI">Christmas Island</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/CKI"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/CKI.png" />CKI</a></td>
+<td><a href="/countries/CKI">Cocos Islands</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/COL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/COL.png" />COL</a></td>
+<td><a href="/countries/COL">Colombia</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/COM"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/COM.png" />COM</a></td>
+<td><a href="/countries/COM">Comoros</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/CGO"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/CGO.png" />CGO</a></td>
+<td><a href="/countries/CGO">Congo</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/COK"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/COK.png" />COK</a></td>
+<td><a href="/countries/COK">Cook Islands</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/CRC"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/CRC.png" />CRC</a></td>
+<td><a href="/countries/CRC">Costa Rica</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/CIV"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/CIV.png" />CIV</a></td>
+<td><a href="/countries/CIV">Côte d&#39;Ivoire</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/CRT"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/CRT.png" />CRT</a></td>
+<td><a href="/countries/CRT">Crete</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/CRO"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/CRO.png" />CRO</a></td>
+<td><a href="/countries/CRO">Croatia</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/CUB"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/CUB.png" />CUB</a></td>
+<td><a href="/countries/CUB">Cuba</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/CUR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/CUR.png" />CUR</a></td>
+<td><a href="/countries/CUR">Curaçao</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/CYP"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/CYP.png" />CYP</a></td>
+<td><a href="/countries/CYP">Cyprus</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/CZE"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/CZE.png" />CZE</a></td>
+<td><a href="/countries/CZE">Czech Republic</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/TCH"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/TCH.png" />TCH</a></td>
+<td><a href="/countries/TCH">Czechoslovakia</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/PRK"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/PRK.png" />PRK</a></td>
+<td><a href="/countries/PRK">Democratic People&#39;s Republic of Korea</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/COD"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/COD.png" />COD</a></td>
+<td><a href="/countries/COD">Democratic Republic of the Congo</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/DEN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/DEN.png" />DEN</a></td>
+<td><a href="/countries/DEN">Denmark</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/DJI"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/DJI.png" />DJI</a></td>
+<td><a href="/countries/DJI">Djibouti</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/DMA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/DMA.png" />DMA</a></td>
+<td><a href="/countries/DMA">Dominica</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/DOM"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/DOM.png" />DOM</a></td>
+<td><a href="/countries/DOM">Dominican Republic</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/GDR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/GDR.png" />GDR</a></td>
+<td><a href="/countries/GDR">East Germany</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/ECU"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ECU.png" />ECU</a></td>
+<td><a href="/countries/ECU">Ecuador</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/EGY"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/EGY.png" />EGY</a></td>
+<td><a href="/countries/EGY">Egypt</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/ESA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ESA.png" />ESA</a></td>
+<td><a href="/countries/ESA">El Salvador</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/GEQ"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/GEQ.png" />GEQ</a></td>
+<td><a href="/countries/GEQ">Equatorial Guinea</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/ERI"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ERI.png" />ERI</a></td>
+<td><a href="/countries/ERI">Eritrea</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/EST"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/EST.png" />EST</a></td>
+<td><a href="/countries/EST">Estonia</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/SWZ"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SWZ.png" />SWZ</a></td>
+<td><a href="/countries/SWZ">Eswatini</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/ETH"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ETH.png" />ETH</a></td>
+<td><a href="/countries/ETH">Ethiopia</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/FLI"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/FLI.png" />FLI</a></td>
+<td><a href="/countries/FLI">Falkland Islands</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/FAR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/FAR.png" />FAR</a></td>
+<td><a href="/countries/FAR">Faroe Islands</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/FSM"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/FSM.png" />FSM</a></td>
+<td><a href="/countries/FSM">Federated States of Micronesia</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/FIJ"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/FIJ.png" />FIJ</a></td>
+<td><a href="/countries/FIJ">Fiji</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/FIN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/FIN.png" />FIN</a></td>
+<td><a href="/countries/FIN">Finland</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/FRA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/FRA.png" />FRA</a></td>
+<td><a href="/countries/FRA">France</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/FGU"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/FGU.png" />FGU</a></td>
+<td><a href="/countries/FGU">French Guiana</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/FPN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/FPN.png" />FPN</a></td>
+<td><a href="/countries/FPN">French Polynesia</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/GAB"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/GAB.png" />GAB</a></td>
+<td><a href="/countries/GAB">Gabon</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/GEO"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/GEO.png" />GEO</a></td>
+<td><a href="/countries/GEO">Georgia</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/GER"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/GER.png" />GER</a></td>
+<td><a href="/countries/GER">Germany</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/GHA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/GHA.png" />GHA</a></td>
+<td><a href="/countries/GHA">Ghana</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/GIB"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/GIB.png" />GIB</a></td>
+<td><a href="/countries/GIB">Gibraltar</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/GBR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/GBR.png" />GBR</a></td>
+<td><a href="/countries/GBR">Great Britain</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/GRE"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/GRE.png" />GRE</a></td>
+<td><a href="/countries/GRE">Greece</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/GRL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/GRL.png" />GRL</a></td>
+<td><a href="/countries/GRL">Greenland</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/GRN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/GRN.png" />GRN</a></td>
+<td><a href="/countries/GRN">Grenada</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/GDP"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/GDP.png" />GDP</a></td>
+<td><a href="/countries/GDP">Guadeloupe</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/GUM"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/GUM.png" />GUM</a></td>
+<td><a href="/countries/GUM">Guam</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/GUA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/GUA.png" />GUA</a></td>
+<td><a href="/countries/GUA">Guatemala</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/GUE"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/GUE.png" />GUE</a></td>
+<td><a href="/countries/GUE">Guernsey</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/GUI"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/GUI.png" />GUI</a></td>
+<td><a href="/countries/GUI">Guinea</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/GBS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/GBS.png" />GBS</a></td>
+<td><a href="/countries/GBS">Guinea Bissau</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/GUY"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/GUY.png" />GUY</a></td>
+<td><a href="/countries/GUY">Guyana</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/HAI"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/HAI.png" />HAI</a></td>
+<td><a href="/countries/HAI">Haiti</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/HON"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/HON.png" />HON</a></td>
+<td><a href="/countries/HON">Honduras</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/HKG"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/HKG.png" />HKG</a></td>
+<td><a href="/countries/HKG">Hong Kong, China</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/HUN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/HUN.png" />HUN</a></td>
+<td><a href="/countries/HUN">Hungary</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/ISL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ISL.png" />ISL</a></td>
+<td><a href="/countries/ISL">Iceland</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/IND"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/IND.png" />IND</a></td>
+<td><a href="/countries/IND">India</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/IOA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/IOA.png" />IOA</a></td>
+<td><a href="/countries/IOA">Individual Olympic Athletes</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/INA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/INA.png" />INA</a></td>
+<td><a href="/countries/INA">Indonesia</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/IFR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/IFR.png" />IFR</a></td>
+<td><a href="/countries/IFR">International Federation Representative</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/IRQ"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/IRQ.png" />IRQ</a></td>
+<td><a href="/countries/IRQ">Iraq</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/IRL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/IRL.png" />IRL</a></td>
+<td><a href="/countries/IRL">Ireland</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/IRI"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/IRI.png" />IRI</a></td>
+<td><a href="/countries/IRI">Islamic Republic of Iran</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/IOM"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/IOM.png" />IOM</a></td>
+<td><a href="/countries/IOM">Isle of Man</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/ISR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ISR.png" />ISR</a></td>
+<td><a href="/countries/ISR">Israel</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/ITA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ITA.png" />ITA</a></td>
+<td><a href="/countries/ITA">Italy</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/JAM"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/JAM.png" />JAM</a></td>
+<td><a href="/countries/JAM">Jamaica</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/JPN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/JPN.png" />JPN</a></td>
+<td><a href="/countries/JPN">Japan</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/JER"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/JER.png" />JER</a></td>
+<td><a href="/countries/JER">Jersey</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/JOR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/JOR.png" />JOR</a></td>
+<td><a href="/countries/JOR">Jordan</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/KAZ"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KAZ.png" />KAZ</a></td>
+<td><a href="/countries/KAZ">Kazakhstan</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/KEN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KEN.png" />KEN</a></td>
+<td><a href="/countries/KEN">Kenya</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/KSA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KSA.png" />KSA</a></td>
+<td><a href="/countries/KSA">Kingdom of Saudi Arabia</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/KIR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KIR.png" />KIR</a></td>
+<td><a href="/countries/KIR">Kiribati</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/COR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/COR.png" />COR</a></td>
+<td><a href="/countries/COR">Korea Team</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/KOS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KOS.png" />KOS</a></td>
+<td><a href="/countries/KOS">Kosovo</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/KUW"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KUW.png" />KUW</a></td>
+<td><a href="/countries/KUW">Kuwait</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/KGZ"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KGZ.png" />KGZ</a></td>
+<td><a href="/countries/KGZ">Kyrgyzstan</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/LAO"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/LAO.png" />LAO</a></td>
+<td><a href="/countries/LAO">Lao People&#39;s Democratic Republic</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/LAT"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/LAT.png" />LAT</a></td>
+<td><a href="/countries/LAT">Latvia</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/LBN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/LBN.png" />LBN</a></td>
+<td><a href="/countries/LBN">Lebanon</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/LES"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/LES.png" />LES</a></td>
+<td><a href="/countries/LES">Lesotho</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/LBR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/LBR.png" />LBR</a></td>
+<td><a href="/countries/LBR">Liberia</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/LBA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/LBA.png" />LBA</a></td>
+<td><a href="/countries/LBA">Libya</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/LIE"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/LIE.png" />LIE</a></td>
+<td><a href="/countries/LIE">Liechtenstein</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/LTU"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/LTU.png" />LTU</a></td>
+<td><a href="/countries/LTU">Lithuania</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/LUX"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/LUX.png" />LUX</a></td>
+<td><a href="/countries/LUX">Luxembourg</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/MAC"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MAC.png" />MAC</a></td>
+<td><a href="/countries/MAC">Macau</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/MAD"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MAD.png" />MAD</a></td>
+<td><a href="/countries/MAD">Madagascar</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/MAW"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MAW.png" />MAW</a></td>
+<td><a href="/countries/MAW">Malawi</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/MAL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MAL.png" />MAL</a></td>
+<td><a href="/countries/MAL">Malaya</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/MAS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MAS.png" />MAS</a></td>
+<td><a href="/countries/MAS">Malaysia</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/MDV"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MDV.png" />MDV</a></td>
+<td><a href="/countries/MDV">Maldives</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/MLI"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MLI.png" />MLI</a></td>
+<td><a href="/countries/MLI">Mali</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/MLT"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MLT.png" />MLT</a></td>
+<td><a href="/countries/MLT">Malta</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/MHL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MHL.png" />MHL</a></td>
+<td><a href="/countries/MHL">Marshall Islands</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/MQE"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MQE.png" />MQE</a></td>
+<td><a href="/countries/MQE">Martinique</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/MTN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MTN.png" />MTN</a></td>
+<td><a href="/countries/MTN">Mauritania</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/MRI"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MRI.png" />MRI</a></td>
+<td><a href="/countries/MRI">Mauritius</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/MYT"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MYT.png" />MYT</a></td>
+<td><a href="/countries/MYT">Mayotte</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/MEX"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MEX.png" />MEX</a></td>
+<td><a href="/countries/MEX">Mexico</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/MWI"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MWI.png" />MWI</a></td>
+<td><a href="/countries/MWI">Midway Islands</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/MIX"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MIX.png" />MIX</a></td>
+<td><a href="/countries/MIX">Mixed team</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/MON"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MON.png" />MON</a></td>
+<td><a href="/countries/MON">Monaco</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/MGL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MGL.png" />MGL</a></td>
+<td><a href="/countries/MGL">Mongolia</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/MNE"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MNE.png" />MNE</a></td>
+<td><a href="/countries/MNE">Montenegro</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/MTS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MTS.png" />MTS</a></td>
+<td><a href="/countries/MTS">Montserrat</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/MAR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MAR.png" />MAR</a></td>
+<td><a href="/countries/MAR">Morocco</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/MOZ"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MOZ.png" />MOZ</a></td>
+<td><a href="/countries/MOZ">Mozambique</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/MYA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MYA.png" />MYA</a></td>
+<td><a href="/countries/MYA">Myanmar</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/NAM"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/NAM.png" />NAM</a></td>
+<td><a href="/countries/NAM">Namibia</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/NRU"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/NRU.png" />NRU</a></td>
+<td><a href="/countries/NRU">Nauru</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/NEP"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/NEP.png" />NEP</a></td>
+<td><a href="/countries/NEP">Nepal</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/NED"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/NED.png" />NED</a></td>
+<td><a href="/countries/NED">Netherlands</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/AHO"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/AHO.png" />AHO</a></td>
+<td><a href="/countries/AHO">Netherlands Antilles</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/NCD"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/NCD.png" />NCD</a></td>
+<td><a href="/countries/NCD">New Caledonia</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/NZL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/NZL.png" />NZL</a></td>
+<td><a href="/countries/NZL">New Zealand</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/NFL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/NFL.png" />NFL</a></td>
+<td><a href="/countries/NFL">Newfoundland</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/NCA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/NCA.png" />NCA</a></td>
+<td><a href="/countries/NCA">Nicaragua</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/NIG"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/NIG.png" />NIG</a></td>
+<td><a href="/countries/NIG">Niger</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/NGR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/NGR.png" />NGR</a></td>
+<td><a href="/countries/NGR">Nigeria</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/NIU"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/NIU.png" />NIU</a></td>
+<td><a href="/countries/NIU">Niue</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/NFI"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/NFI.png" />NFI</a></td>
+<td><a href="/countries/NFI">Norfolk Island</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/NBO"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/NBO.png" />NBO</a></td>
+<td><a href="/countries/NBO">North Borneo</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/MKD"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MKD.png" />MKD</a></td>
+<td><a href="/countries/MKD">North Macedonia</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/YAR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/YAR.png" />YAR</a></td>
+<td><a href="/countries/YAR">North Yemen</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/NMI"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/NMI.png" />NMI</a></td>
+<td><a href="/countries/NMI">Northern Mariana Islands</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/NOR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/NOR.png" />NOR</a></td>
+<td><a href="/countries/NOR">Norway</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/OMA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/OMA.png" />OMA</a></td>
+<td><a href="/countries/OMA">Oman</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/PAK"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/PAK.png" />PAK</a></td>
+<td><a href="/countries/PAK">Pakistan</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/PLW"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/PLW.png" />PLW</a></td>
+<td><a href="/countries/PLW">Palau</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/PLE"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/PLE.png" />PLE</a></td>
+<td><a href="/countries/PLE">Palestine</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/PAN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/PAN.png" />PAN</a></td>
+<td><a href="/countries/PAN">Panama</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/PNG"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/PNG.png" />PNG</a></td>
+<td><a href="/countries/PNG">Papua New Guinea</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/PAR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/PAR.png" />PAR</a></td>
+<td><a href="/countries/PAR">Paraguay</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/CHN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/CHN.png" />CHN</a></td>
+<td><a href="/countries/CHN">People&#39;s Republic of China</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/PER"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/PER.png" />PER</a></td>
+<td><a href="/countries/PER">Peru</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/PHI"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/PHI.png" />PHI</a></td>
+<td><a href="/countries/PHI">Philippines</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/POL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/POL.png" />POL</a></td>
+<td><a href="/countries/POL">Poland</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/POR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/POR.png" />POR</a></td>
+<td><a href="/countries/POR">Portugal</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/PUR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/PUR.png" />PUR</a></td>
+<td><a href="/countries/PUR">Puerto Rico</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/QAT"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/QAT.png" />QAT</a></td>
+<td><a href="/countries/QAT">Qatar</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/EOR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/EOR.png" />EOR</a></td>
+<td><a href="/countries/EOR">Refugee Olympic Team</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/KOR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KOR.png" />KOR</a></td>
+<td><a href="/countries/KOR">Republic of Korea</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/MDA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MDA.png" />MDA</a></td>
+<td><a href="/countries/MDA">Republic of Moldova</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/RNN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/RNN.png" />RNN</a></td>
+<td><a href="/countries/RNN">Réunion</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/RHO"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/RHO.png" />RHO</a></td>
+<td><a href="/countries/RHO">Rhodesia</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/ROU"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ROU.png" />ROU</a></td>
+<td><a href="/countries/ROU">Romania</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/RUS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/RUS.png" />RUS</a></td>
+<td><a href="/countries/RUS">Russian Federation</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/ROC"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ROC.png" />ROC</a></td>
+<td><a href="/countries/ROC">Russian Olympic Committee</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/RWA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/RWA.png" />RWA</a></td>
+<td><a href="/countries/RWA">Rwanda</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/SAA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SAA.png" />SAA</a></td>
+<td><a href="/countries/SAA">Saar</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/SKN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SKN.png" />SKN</a></td>
+<td><a href="/countries/SKN">Saint Kitts and Nevis</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/LCA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/LCA.png" />LCA</a></td>
+<td><a href="/countries/LCA">Saint Lucia</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/VIN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/VIN.png" />VIN</a></td>
+<td><a href="/countries/VIN">Saint Vincent and the Grenadines</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/BRT"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/BRT.png" />BRT</a></td>
+<td><a href="/countries/BRT">Saint-Barthélemy</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/MRT"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MRT.png" />MRT</a></td>
+<td><a href="/countries/MRT">Saint-Martin</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/SAM"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SAM.png" />SAM</a></td>
+<td><a href="/countries/SAM">Samoa</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/SMR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SMR.png" />SMR</a></td>
+<td><a href="/countries/SMR">San Marino</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/STP"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/STP.png" />STP</a></td>
+<td><a href="/countries/STP">São Tomé and Príncipe</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/SEN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SEN.png" />SEN</a></td>
+<td><a href="/countries/SEN">Senegal</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/SRB"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SRB.png" />SRB</a></td>
+<td><a href="/countries/SRB">Serbia</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/SCG"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SCG.png" />SCG</a></td>
+<td><a href="/countries/SCG">Serbia and Montenegro</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/SEY"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SEY.png" />SEY</a></td>
+<td><a href="/countries/SEY">Seychelles</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/SLE"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SLE.png" />SLE</a></td>
+<td><a href="/countries/SLE">Sierra Leone</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/SGP"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SGP.png" />SGP</a></td>
+<td><a href="/countries/SGP">Singapore</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/SMT"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SMT.png" />SMT</a></td>
+<td><a href="/countries/SMT">Sint Maarten</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/SVK"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SVK.png" />SVK</a></td>
+<td><a href="/countries/SVK">Slovakia</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/SLO"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SLO.png" />SLO</a></td>
+<td><a href="/countries/SLO">Slovenia</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/SOL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SOL.png" />SOL</a></td>
+<td><a href="/countries/SOL">Solomon Islands</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/SOM"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SOM.png" />SOM</a></td>
+<td><a href="/countries/SOM">Somalia</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/RSA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/RSA.png" />RSA</a></td>
+<td><a href="/countries/RSA">South Africa</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/SSD"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SSD.png" />SSD</a></td>
+<td><a href="/countries/SSD">South Sudan</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/VNM"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/VNM.png" />VNM</a></td>
+<td><a href="/countries/VNM">South Vietnam</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/YMD"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/YMD.png" />YMD</a></td>
+<td><a href="/countries/YMD">South Yemen</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/URS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/URS.png" />URS</a></td>
+<td><a href="/countries/URS">Soviet Union</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/ESP"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ESP.png" />ESP</a></td>
+<td><a href="/countries/ESP">Spain</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/SRI"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SRI.png" />SRI</a></td>
+<td><a href="/countries/SRI">Sri Lanka</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/HEL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/HEL.png" />HEL</a></td>
+<td><a href="/countries/HEL">St. Helena</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/SPM"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SPM.png" />SPM</a></td>
+<td><a href="/countries/SPM">St. Pierre and Miquelon</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/SUD"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SUD.png" />SUD</a></td>
+<td><a href="/countries/SUD">Sudan</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/SUR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SUR.png" />SUR</a></td>
+<td><a href="/countries/SUR">Suriname</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/SVB"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SVB.png" />SVB</a></td>
+<td><a href="/countries/SVB">Svalbard</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/SWE"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SWE.png" />SWE</a></td>
+<td><a href="/countries/SWE">Sweden</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/SUI"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SUI.png" />SUI</a></td>
+<td><a href="/countries/SUI">Switzerland</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/SYR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SYR.png" />SYR</a></td>
+<td><a href="/countries/SYR">Syrian Arab Republic</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/TJK"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/TJK.png" />TJK</a></td>
+<td><a href="/countries/TJK">Tajikistan</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/THA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/THA.png" />THA</a></td>
+<td><a href="/countries/THA">Thailand</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/BAH"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/BAH.png" />BAH</a></td>
+<td><a href="/countries/BAH">The Bahamas</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/GAM"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/GAM.png" />GAM</a></td>
+<td><a href="/countries/GAM">The Gambia</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/TLS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/TLS.png" />TLS</a></td>
+<td><a href="/countries/TLS">Timor-Leste</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/TOG"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/TOG.png" />TOG</a></td>
+<td><a href="/countries/TOG">Togo</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/TKL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/TKL.png" />TKL</a></td>
+<td><a href="/countries/TKL">Tokelau</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/TGA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/TGA.png" />TGA</a></td>
+<td><a href="/countries/TGA">Tonga</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/TTO"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/TTO.png" />TTO</a></td>
+<td><a href="/countries/TTO">Trinidad and Tobago</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/TUN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/TUN.png" />TUN</a></td>
+<td><a href="/countries/TUN">Tunisia</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/TUR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/TUR.png" />TUR</a></td>
+<td><a href="/countries/TUR">Turkey</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/TKM"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/TKM.png" />TKM</a></td>
+<td><a href="/countries/TKM">Turkmenistan</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/TKS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/TKS.png" />TKS</a></td>
+<td><a href="/countries/TKS">Turks and Caicos Islands</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/TUV"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/TUV.png" />TUV</a></td>
+<td><a href="/countries/TUV">Tuvalu</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/UGA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/UGA.png" />UGA</a></td>
+<td><a href="/countries/UGA">Uganda</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/UKR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/UKR.png" />UKR</a></td>
+<td><a href="/countries/UKR">Ukraine</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/EUN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/EUN.png" />EUN</a></td>
+<td><a href="/countries/EUN">Unified Team</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/UAE"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/UAE.png" />UAE</a></td>
+<td><a href="/countries/UAE">United Arab Emirates</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/UAR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/UAR.png" />UAR</a></td>
+<td><a href="/countries/UAR">United Arab Republic</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/TAN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/TAN.png" />TAN</a></td>
+<td><a href="/countries/TAN">United Republic of Tanzania</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/USA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/USA.png" />USA</a></td>
+<td><a href="/countries/USA">United States</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/ISV"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ISV.png" />ISV</a></td>
+<td><a href="/countries/ISV">United States Virgin Islands</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/UNK"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/UNK.png" />UNK</a></td>
+<td><a href="/countries/UNK">Unknown</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/URU"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/URU.png" />URU</a></td>
+<td><a href="/countries/URU">Uruguay</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/UZB"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/UZB.png" />UZB</a></td>
+<td><a href="/countries/UZB">Uzbekistan</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/VAN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/VAN.png" />VAN</a></td>
+<td><a href="/countries/VAN">Vanuatu</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/VAT"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/VAT.png" />VAT</a></td>
+<td><a href="/countries/VAT">Vatican City</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/VEN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/VEN.png" />VEN</a></td>
+<td><a href="/countries/VEN">Venezuela</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/VIE"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/VIE.png" />VIE</a></td>
+<td><a href="/countries/VIE">Vietnam</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/WAF"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/WAF.png" />WAF</a></td>
+<td><a href="/countries/WAF">Wallis and Futuna</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/FRG"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/FRG.png" />FRG</a></td>
+<td><a href="/countries/FRG">West Germany</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/WIF"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/WIF.png" />WIF</a></td>
+<td><a href="/countries/WIF">West Indies Federation</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/YEM"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/YEM.png" />YEM</a></td>
+<td><a href="/countries/YEM">Yemen</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/YUG"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/YUG.png" />YUG</a></td>
+<td><a href="/countries/YUG">Yugoslavia</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/ZAM"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ZAM.png" />ZAM</a></td>
+<td><a href="/countries/ZAM">Zambia</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/ZIM"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ZIM.png" />ZIM</a></td>
+<td><a href="/countries/ZIM">Zimbabwe</a></td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+</tbody>
+</thead>
+</table>
+<h2>Ancient countries</h2>
+<table class='table table-striped sortable'>
+<thead>
+<tr>
+<th>Abbreviation</th>
+<th data-defaultsort='asc'>Country</th>
+<th data-disablesort='true'>Competed in Modern Olympics?</th>
+</tr>
+<tbody>
+<tr>
+<td><a href="/countries/AAI"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/AAI.png" />AAI</a></td>
+<td><a href="/countries/AAI">Adai</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/ADA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ADA.png" />ADA</a></td>
+<td><a href="/countries/ADA">Adana</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/ADR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ADR.png" />ADR</a></td>
+<td><a href="/countries/ADR">Adramyttion</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/AGR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/AGR.png" />AGR</a></td>
+<td><a href="/countries/AGR">Aigeira</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/AIG"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/AIG.png" />AIG</a></td>
+<td><a href="/countries/AIG">Aigion</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/AIT"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/AIT.png" />AIT</a></td>
+<td><a href="/countries/AIT">Aitolia</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/AIZ"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/AIZ.png" />AIZ</a></td>
+<td><a href="/countries/AIZ">Aizanoi</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/AKA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/AKA.png" />AKA</a></td>
+<td><a href="/countries/AKA">Akarnan</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/AKR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/AKR.png" />AKR</a></td>
+<td><a href="/countries/AKR">Akragas</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/ALX"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ALX.png" />ALX</a></td>
+<td><a href="/countries/ALX">Alexandria</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/AMB"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/AMB.png" />AMB</a></td>
+<td><a href="/countries/AMB">Ambrakia</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/APP"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/APP.png" />APP</a></td>
+<td><a href="/countries/APP">Amphipolis</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/AMP"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/AMP.png" />AMP</a></td>
+<td><a href="/countries/AMP">Amphissa</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/ANS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ANS.png" />ANS</a></td>
+<td><a href="/countries/ANS">Andros</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/ANM"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ANM.png" />ANM</a></td>
+<td><a href="/countries/ANM">Anemurium</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/ATD"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ATD.png" />ATD</a></td>
+<td><a href="/countries/ATD">Anthedon</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/ATK"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ATK.png" />ATK</a></td>
+<td><a href="/countries/ATK">Antikyra</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/ATO"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ATO.png" />ATO</a></td>
+<td><a href="/countries/ATO">Antiochia on the Orontes</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/ATS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ATS.png" />ATS</a></td>
+<td><a href="/countries/ATS">Antissa</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/APM"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/APM.png" />APM</a></td>
+<td><a href="/countries/APM">Apamea-Myrleia</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/APH"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/APH.png" />APH</a></td>
+<td><a href="/countries/APH">Aphrodisias</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/APL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/APL.png" />APL</a></td>
+<td><a href="/countries/APL">Apollonia</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/AGS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/AGS.png" />AGS</a></td>
+<td><a href="/countries/AGS">Argos</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/AMN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/AMN.png" />AMN</a></td>
+<td><a href="/countries/AMN">Armenia</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/APD"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/APD.png" />APD</a></td>
+<td><a href="/countries/APD">Aspendos</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/ASO"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ASO.png" />ASO</a></td>
+<td><a href="/countries/ASO">Assos</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/ATP"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ATP.png" />ATP</a></td>
+<td><a href="/countries/ATP">Astypalaia</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/ATH"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ATH.png" />ATH</a></td>
+<td><a href="/countries/ATH">Athens</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/ATI"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ATI.png" />ATI</a></td>
+<td><a href="/countries/ATI">Atiolia</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/ATT"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ATT.png" />ATT</a></td>
+<td><a href="/countries/ATT">Attaleia</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/ATR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ATR.png" />ATR</a></td>
+<td><a href="/countries/ATR">Augusta Traiana</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/BRG"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/BRG.png" />BRG</a></td>
+<td><a href="/countries/BRG">Bargylia</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/BRK"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/BRK.png" />BRK</a></td>
+<td><a href="/countries/BRK">Barke</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/BTN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/BTN.png" />BTN</a></td>
+<td><a href="/countries/BTN">Bithynia (Nikaia)</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/BTP"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/BTP.png" />BTP</a></td>
+<td><a href="/countries/BTP">Bithynia (Prousa)</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/DLD"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/DLD.png" />DLD</a></td>
+<td><a href="/countries/DLD">Daldis</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/DEL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/DEL.png" />DEL</a></td>
+<td><a href="/countries/DEL">Delos</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/DLP"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/DLP.png" />DLP</a></td>
+<td><a href="/countries/DLP">Delphi</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/DIP"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/DIP.png" />DIP</a></td>
+<td><a href="/countries/DIP">Dipaia</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/DYM"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/DYM.png" />DYM</a></td>
+<td><a href="/countries/DYM">Dymai</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/DYS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/DYS.png" />DYS</a></td>
+<td><a href="/countries/DYS">Dyspontion</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/ELA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ELA.png" />ELA</a></td>
+<td><a href="/countries/ELA">Elateia</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/ELI"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ELI.png" />ELI</a></td>
+<td><a href="/countries/ELI">Elis</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/EPE"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/EPE.png" />EPE</a></td>
+<td><a href="/countries/EPE">Epeiros</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/EPH"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/EPH.png" />EPH</a></td>
+<td><a href="/countries/EPH">Ephesus</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/EDM"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/EDM.png" />EDM</a></td>
+<td><a href="/countries/EDM">Epidamnos</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/EDR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/EDR.png" />EDR</a></td>
+<td><a href="/countries/EDR">Epidauros</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/ERY"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ERY.png" />ERY</a></td>
+<td><a href="/countries/ERY">Erythrai</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/GEL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/GEL.png" />GEL</a></td>
+<td><a href="/countries/GEL">Gela</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/GOR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/GOR.png" />GOR</a></td>
+<td><a href="/countries/GOR">Gortyn</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/HAL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/HAL.png" />HAL</a></td>
+<td><a href="/countries/HAL">Halicarnassus</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/HER"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/HER.png" />HER</a></td>
+<td><a href="/countries/HER">Heraia</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/HMN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/HMN.png" />HMN</a></td>
+<td><a href="/countries/HMN">Hermione</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/HMP"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/HMP.png" />HMP</a></td>
+<td><a href="/countries/HMP">Hermopolis</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/HRP"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/HRP.png" />HRP</a></td>
+<td><a href="/countries/HRP">Hierapolis</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/HIM"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/HIM.png" />HIM</a></td>
+<td><a href="/countries/HIM">Himera</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/HYB"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/HYB.png" />HYB</a></td>
+<td><a href="/countries/HYB">Hyblaia</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/HYP"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/HYP.png" />HYP</a></td>
+<td><a href="/countries/HYP">Hypaipa</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/IAS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/IAS.png" />IAS</a></td>
+<td><a href="/countries/IAS">Iasos</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/KMN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KMN.png" />KMN</a></td>
+<td><a href="/countries/KMN">Kamarina</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/KMR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KMR.png" />KMR</a></td>
+<td><a href="/countries/KMR">Kamiros</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/KPD"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KPD.png" />KPD</a></td>
+<td><a href="/countries/KPD">Kappadokia</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/KAR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KAR.png" />KAR</a></td>
+<td><a href="/countries/KAR">Karian</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/KRS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KRS.png" />KRS</a></td>
+<td><a href="/countries/KRS">Karystos</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/KEL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KEL.png" />KEL</a></td>
+<td><a href="/countries/KEL">Kelonai</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/KER"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KER.png" />KER</a></td>
+<td><a href="/countries/KER">Keramos</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/KHA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KHA.png" />KHA</a></td>
+<td><a href="/countries/KHA">Khalkis</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/KHI"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KHI.png" />KHI</a></td>
+<td><a href="/countries/KHI">Khios</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/KZM"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KZM.png" />KZM</a></td>
+<td><a href="/countries/KZM">Klazomenai</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/KLT"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KLT.png" />KLT</a></td>
+<td><a href="/countries/KLT">Kleitor</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/KLN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KLN.png" />KLN</a></td>
+<td><a href="/countries/KLN">Kleonai</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/KOL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KOL.png" />KOL</a></td>
+<td><a href="/countries/KOL">Kolophon</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/KTH"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KTH.png" />KTH</a></td>
+<td><a href="/countries/KTH">Korinth</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/KKY"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KKY.png" />KKY</a></td>
+<td><a href="/countries/KKY">Korkyra</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/SKS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SKS.png" />SKS</a></td>
+<td><a href="/countries/SKS">Kos</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/KRN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KRN.png" />KRN</a></td>
+<td><a href="/countries/KRN">Krannon</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/KRT"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KRT.png" />KRT</a></td>
+<td><a href="/countries/KRT">Kroton</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/KYD"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KYD.png" />KYD</a></td>
+<td><a href="/countries/KYD">Kydonia</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/KYM"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KYM.png" />KYM</a></td>
+<td><a href="/countries/KYM">Kyme</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/KPS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KPS.png" />KPS</a></td>
+<td><a href="/countries/KPS">Kyparissia</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/KYP"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KYP.png" />KYP</a></td>
+<td><a href="/countries/KYP">Kypro</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/KYR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KYR.png" />KYR</a></td>
+<td><a href="/countries/KYR">Kyrene</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/KYZ"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KYZ.png" />KYZ</a></td>
+<td><a href="/countries/KYZ">Kyzikos</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/LAK"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/LAK.png" />LAK</a></td>
+<td><a href="/countries/LAK">Lakonia (Akrion)</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/LDL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/LDL.png" />LDL</a></td>
+<td><a href="/countries/LDL">Laodikeia on the Lykos</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/LAR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/LAR.png" />LAR</a></td>
+<td><a href="/countries/LAR">Larisa</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/LEP"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/LEP.png" />LEP</a></td>
+<td><a href="/countries/LEP">Lepreon</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/LIN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/LIN.png" />LIN</a></td>
+<td><a href="/countries/LIN">Lindos</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/MAK"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MAK.png" />MAK</a></td>
+<td><a href="/countries/MAK">Macedonia</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/MNM"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MNM.png" />MNM</a></td>
+<td><a href="/countries/MNM">Magnesia on the Maiandros</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/MAI"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MAI.png" />MAI</a></td>
+<td><a href="/countries/MAI">Mainalos</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/MAN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MAN.png" />MAN</a></td>
+<td><a href="/countries/MAN">Manteneia</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/MRN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MRN.png" />MRN</a></td>
+<td><a href="/countries/MRN">Maroneia</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/MGP"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MGP.png" />MGP</a></td>
+<td><a href="/countries/MGP">Megalopolis</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/MEG"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MEG.png" />MEG</a></td>
+<td><a href="/countries/MEG">Megara</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/MEL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MEL.png" />MEL</a></td>
+<td><a href="/countries/MEL">Melos</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/MES"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MES.png" />MES</a></td>
+<td><a href="/countries/MES">Messene</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/MTH"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MTH.png" />MTH</a></td>
+<td><a href="/countries/MTH">Methydria</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/MIL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MIL.png" />MIL</a></td>
+<td><a href="/countries/MIL">Miletus</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/MYL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MYL.png" />MYL</a></td>
+<td><a href="/countries/MYL">Mylasa</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/MYR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MYR.png" />MYR</a></td>
+<td><a href="/countries/MYR">Myra</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/MTL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MTL.png" />MTL</a></td>
+<td><a href="/countries/MTL">Mytilene</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/NKT"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/NKT.png" />NKT</a></td>
+<td><a href="/countries/NKT">Naukratis</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/NAX"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/NAX.png" />NAX</a></td>
+<td><a href="/countries/NAX">Naxos</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/NEA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/NEA.png" />NEA</a></td>
+<td><a href="/countries/NEA">Neapolis</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/NYS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/NYS.png" />NYS</a></td>
+<td><a href="/countries/NYS">Nysa</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/OIN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/OIN.png" />OIN</a></td>
+<td><a href="/countries/OIN">Oinoanda</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/OPS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/OPS.png" />OPS</a></td>
+<td><a href="/countries/OPS">Opous</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/ORS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ORS.png" />ORS</a></td>
+<td><a href="/countries/ORS">Orestheia</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/ORK"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ORK.png" />ORK</a></td>
+<td><a href="/countries/ORK">Orkhomenos</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/OXY"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/OXY.png" />OXY</a></td>
+<td><a href="/countries/OXY">Oxyrhynchos</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/PRH"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/PRH.png" />PRH</a></td>
+<td><a href="/countries/PRH">Parrhasia</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/PAT"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/PAT.png" />PAT</a></td>
+<td><a href="/countries/PAT">Patrai</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/PEL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/PEL.png" />PEL</a></td>
+<td><a href="/countries/PEL">Pellene</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/PEP"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/PEP.png" />PEP</a></td>
+<td><a href="/countries/PEP">Peparethos</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/PGM"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/PGM.png" />PGM</a></td>
+<td><a href="/countries/PGM">Pergamon</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/PES"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/PES.png" />PES</a></td>
+<td><a href="/countries/PES">Pessinous</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/PET"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/PET.png" />PET</a></td>
+<td><a href="/countries/PET">Petra</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/PHA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/PHA.png" />PHA</a></td>
+<td><a href="/countries/PHA">Pharsalos</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/PGL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/PGL.png" />PGL</a></td>
+<td><a href="/countries/PGL">Phigaleia</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/PLD"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/PLD.png" />PLD</a></td>
+<td><a href="/countries/PLD">Philadelphia</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/PHP"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/PHP.png" />PHP</a></td>
+<td><a href="/countries/PHP">Philippoi</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/PHN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/PHN.png" />PHN</a></td>
+<td><a href="/countries/PHN">Phoenicia</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/PSA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/PSA.png" />PSA</a></td>
+<td><a href="/countries/PSA">Pisa</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/POS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/POS.png" />POS</a></td>
+<td><a href="/countries/POS">Poseidonia</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/RHD"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/RHD.png" />RHD</a></td>
+<td><a href="/countries/RHD">Rhodes</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/ROM"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ROM.png" />ROM</a></td>
+<td><a href="/countries/ROM">Roma</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/SAL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SAL.png" />SAL</a></td>
+<td><a href="/countries/SAL">Salamis</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/SMS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SMS.png" />SMS</a></td>
+<td><a href="/countries/SMS">Samos</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/SAR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SAR.png" />SAR</a></td>
+<td><a href="/countries/SAR">Sardis</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/SLT"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SLT.png" />SLT</a></td>
+<td><a href="/countries/SLT">Seleukeia on the Tigris</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/SID"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SID.png" />SID</a></td>
+<td><a href="/countries/SID">Sidon</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/SIK"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SIK.png" />SIK</a></td>
+<td><a href="/countries/SIK">Sikyon</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/SIN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SIN.png" />SIN</a></td>
+<td><a href="/countries/SIN">Sinope</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/SIR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SIR.png" />SIR</a></td>
+<td><a href="/countries/SIR">Siracusa</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/SKO"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SKO.png" />SKO</a></td>
+<td><a href="/countries/SKO">Skotoussa</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/SMY"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SMY.png" />SMY</a></td>
+<td><a href="/countries/SMY">Smyrna</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/SPA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SPA.png" />SPA</a></td>
+<td><a href="/countries/SPA">Sparta</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/STR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/STR.png" />STR</a></td>
+<td><a href="/countries/STR">Stratonikeia</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/STY"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/STY.png" />STY</a></td>
+<td><a href="/countries/STY">Stymphalia</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/SYB"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SYB.png" />SYB</a></td>
+<td><a href="/countries/SYB">Sybaris</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/SRA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SRA.png" />SRA</a></td>
+<td><a href="/countries/SRA">Syria (Antocheia)</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/TNG"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/TNG.png" />TNG</a></td>
+<td><a href="/countries/TNG">Tanagra</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/TAR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/TAR.png" />TAR</a></td>
+<td><a href="/countries/TAR">Taranto</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/TRS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/TRS.png" />TRS</a></td>
+<td><a href="/countries/TRS">Tarsos</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/TMN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/TMN.png" />TMN</a></td>
+<td><a href="/countries/TMN">Tauromenion</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/TEG"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/TEG.png" />TEG</a></td>
+<td><a href="/countries/TEG">Tegea</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/TEL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/TEL.png" />TEL</a></td>
+<td><a href="/countries/TEL">Telmessos</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/TND"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/TND.png" />TND</a></td>
+<td><a href="/countries/TND">Tenedos</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/TNS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/TNS.png" />TNS</a></td>
+<td><a href="/countries/TNS">Tenos</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/TER"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/TER.png" />TER</a></td>
+<td><a href="/countries/TER">Terina</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/THS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/THS.png" />THS</a></td>
+<td><a href="/countries/THS">Thasos</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/THB"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/THB.png" />THB</a></td>
+<td><a href="/countries/THB">Thebes</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/TPH"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/TPH.png" />TPH</a></td>
+<td><a href="/countries/TPH">Thelphoussa</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/THP"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/THP.png" />THP</a></td>
+<td><a href="/countries/THP">Thespiai</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/THL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/THL.png" />THL</a></td>
+<td><a href="/countries/THL">Thessaly</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/THR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/THR.png" />THR</a></td>
+<td><a href="/countries/THR">Thourioi</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/THY"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/THY.png" />THY</a></td>
+<td><a href="/countries/THY">Thyateira</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/TIR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/TIR.png" />TIR</a></td>
+<td><a href="/countries/TIR">Tiryns</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/TLO"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/TLO.png" />TLO</a></td>
+<td><a href="/countries/TLO">Tlos</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/TRA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/TRA.png" />TRA</a></td>
+<td><a href="/countries/TRA">Tralles</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/TRT"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/TRT.png" />TRT</a></td>
+<td><a href="/countries/TRT">Tritaia</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/TRZ"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/TRZ.png" />TRZ</a></td>
+<td><a href="/countries/TRZ">Troizen</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/TRO"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/TRO.png" />TRO</a></td>
+<td><a href="/countries/TRO">Troy</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/TYA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/TYA.png" />TYA</a></td>
+<td><a href="/countries/TYA">Tyana</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/ARK"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ARK.png" />ARK</a></td>
+<td><a href="/countries/ARK">Unknown city in Arkadia</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/ASI"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ASI.png" />ASI</a></td>
+<td><a href="/countries/ASI">Unknown city in Asia</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/BOE"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/BOE.png" />BOE</a></td>
+<td><a href="/countries/BOE">Unknown city in Boeotia</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/KRE"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KRE.png" />KRE</a></td>
+<td><a href="/countries/KRE">Unknown city in Crete</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/EGP"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/EGP.png" />EGP</a></td>
+<td><a href="/countries/EGP">Unknown city in Egypt</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/LOK"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/LOK.png" />LOK</a></td>
+<td><a href="/countries/LOK">Unknown city in Lokria</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/XAN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/XAN.png" />XAN</a></td>
+<td><a href="/countries/XAN">Xanthos</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td><a href="/countries/ZAK"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ZAK.png" />ZAK</a></td>
+<td><a href="/countries/ZAK">Zakynthos</a></td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+</tbody>
+</thead>
+</table>
+
+</div>
+</body>
+<footer class='footer'>
+<br>
+<div class='panel panel-info'>
+<div class='panel-heading'>
+<h3 class='panel-title'>
+<span class='glyphicon glyphicon-info-sign'></span>
+Did you know?
+</h3>
+</div>
+<div class='panel-body'>
+<p>After the Dutch government voted not to support the 1928 Olympics due to events being held on Sundays, the organizing committee launched a successful “crowdfunding” campaign.</p>
+
+
+</div>
+</div>
+<div class='container'>
+<p>
+<a href="/users/sign_in">Login</a>
+|
+<a href="/statistics/olympedia">Statistics</a>
+|
+<a href="/static/about">About</a>
+|
+<a href="/static/faq">FAQ</a>
+|
+<a href="/feedbacks/new">Feedback</a>
+</p>
+<p>
+&copy; <a href="/static/about">OlyMADMen</a> 2006 — 2022
+</p>
+</div>
+</footer>
+
+<script src="/assets/lightbox.min-40fdcc195c5982250c8901f2c160e15342941a311faf6372c04117c0d9c44bc7.js"></script>
+<script>
+  $('.footnote').tooltip();
+</script>
+</html>

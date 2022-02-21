@@ -1,2 +1,10 @@
-# basic-py-template
-This is my basic template for project repos.
+# Olympics Project
+
+## About:
+- This is an application developed to perform the following:
+  - Scrape Data
+  - Perform Analysis
+  - Provide Predictions
+
+## Menu: 
+- [Scrapers](docs/scrapers.md)
