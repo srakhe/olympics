@@ -1,5 +1,5 @@
 from scripts.scrapers.utils import ScrapingUtils
-from country_codes_scraper import CountryCodesScraper
+from country_codes import CountryCodes
 
 
 class OlympicScraper:
@@ -8,7 +8,7 @@ class OlympicScraper:
         scr_utils = ScrapingUtils(url=url)
         self.can_crawl = scr_utils.check_crawl_allowed()
         self.crawl_delay = scr_utils.get_crawl_delay()
-        self.cc_scraper = CountryCodesScraper(data_path="data", url="https://www.olympedia.org/countries")
+        self.cc_scraper = CountryCodes(data_path="data", url="https://www.olympedia.org/countries")
 
     def scrape(self):
         if self.can_crawl:

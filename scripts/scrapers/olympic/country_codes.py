@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import pandas as pd
 
 
-class CountryCodesScraper:
+class CountryCodes:
 
     def __init__(self, data_path, url):
         self.url = url
