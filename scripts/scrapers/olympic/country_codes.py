@@ -1,23 +1,19 @@
-import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 
 
 class CountryCodes:
 
-    def __init__(self, data_path, url):
+    def __init__(self, data_path, url, scrape_utils):
         self.url = url
         self.data_path = data_path
-
-    def fetch_url(self):
-        html = requests.get(self.url)
-        with open(f"{self.data_path}/countries.html", "w+") as htmlFile:
-            htmlFile.write(html.text)
+        self.scrape_utils = scrape_utils
 
     def get_data(self):
-        with open(f"{self.data_path}/countries.html", "r+") as htmlFile:
-            html = htmlFile.read()
-        bs_parser = BeautifulSoup(html, "html.parser")
+        html_data = self.scrape_utils.get_webpage_data(path=self.data_path, name="countries.html")
+        if not html_data:
+            return
+        bs_parser = BeautifulSoup(html_data, "html.parser")
         countries_table = bs_parser.find("table").find("tbody")
         is_code = True
         country_codes = []
@@ -41,7 +37,8 @@ class CountryCodes:
 
     def run_scrape(self):
         print("Running country codes data scraper.")
-        self.fetch_url()
-        codes, names = self.get_data()
-        self.create_csv(codes, names)
+        webpage_scraped = self.scrape_utils.fetch_webpage(page_url=self.url, path=self.data_path, name="countries.html")
+        if webpage_scraped:
+            codes, names = self.get_data()
+            self.create_csv(codes, names)
         print("Completed country codes data scraper.")
