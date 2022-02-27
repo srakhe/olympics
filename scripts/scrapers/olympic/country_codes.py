@@ -1,5 +1,4 @@
 from bs4 import BeautifulSoup
-import pandas as pd
 
 
 class CountryCodes:
@@ -9,7 +8,7 @@ class CountryCodes:
         self.data_path = data_path
         self.scrape_utils = scrape_utils
 
-    def get_data(self):
+    def scraper(self):
         html_data = self.scrape_utils.get_webpage_data(path=self.data_path, name="countries.html")
         if not html_data:
             return
@@ -30,15 +29,11 @@ class CountryCodes:
                         is_code = True
         return country_codes, country_names
 
-    def create_csv(self, country_codes, country_names):
-        data = {"country_code": country_codes, "country_name": country_names}
-        df = pd.DataFrame(data=data, index=None)
-        df.to_csv(f"{self.data_path}/countries.csv")
-
     def run_scrape(self):
         print("Running country codes data scraper.")
         webpage_scraped = self.scrape_utils.fetch_webpage(page_url=self.url, path=self.data_path, name="countries.html")
         if webpage_scraped:
-            codes, names = self.get_data()
-            self.create_csv(codes, names)
+            codes, names = self.scraper()
+            data = {"country_code": codes, "country_name": names}
+            self.scrape_utils.create_csv(data=data, path=self.data_path, name="countries.csv")
         print("Completed country codes data scraper.")

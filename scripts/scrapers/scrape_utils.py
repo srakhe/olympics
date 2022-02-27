@@ -1,6 +1,7 @@
 import time
 from urllib import robotparser
 import requests
+import pandas as pd
 
 
 class ScrapingUtils:
@@ -20,7 +21,7 @@ class ScrapingUtils:
 
     def fetch_webpage(self, page_url, path, name):
         delay = self.get_crawl_delay()
-        print(f"Waiting for time: {delay} before doing a fetch.")
+        print(f"Waiting for time: {delay} seconds before doing a fetch.")
         time.sleep(float(delay))
         try:
             html_data = requests.get(page_url)
@@ -43,3 +44,8 @@ class ScrapingUtils:
         else:
             print("Saved webpage data fetch successful.")
             return html_data
+
+    def create_csv(self, data, path, name):
+        df = pd.DataFrame(data=data, index=None)
+        df.to_csv(f"{path}/{name}")
+        print("Data saved in csv.")
