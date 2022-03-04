@@ -1,0 +1,130 @@
+,sport_code,sport_disc,sport_name,sport_games,continued
+0,IH3,3-on-3 Ice Hockey,Ice Hockey,Winter,no
+1,BK3,3x3 Basketball,Basketball,Summer,yes
+2,GAC,Acrobatic Gymnastics,Gymnastics,Summer,no
+3,AER,Aeronautics,Air Sports,Summer,yes
+4,ALP,Alpine Skiing,Skiing,Winter,yes
+5,APN,Alpinism,Mountaineering and Climbing,Summer,yes
+6,AFB,American Football,American Football,Summer,no
+7,AAR,Ancient Art Competitions,Ancient Sports,Summer,no
+8,AAT,Ancient Athletics,Ancient Sports,Summer,no
+9,ACB,Ancient Combative Sports,Ancient Sports,Summer,no
+10,AEQ,Ancient Equestrianism,Ancient Sports,Summer,no
+11,ARC,Archery,Archery,Summer,yes
+12,ART,Art Competitions,Art Competitions,Summer,yes
+13,GAR,Artistic Gymnastics,Gymnastics,Summer,yes
+14,SWA,Artistic Swimming,Aquatics,Summer,yes
+15,ATH,Athletics,Athletics,Summer,yes
+16,ARF,Australian Rules Football,Australian Rules Football,Summer,no
+17,AUT,Automobile Racing,Automobile Sports,Summer,no
+18,BDM,Badminton,Badminton,Summer,yes
+19,BLN,Ballooning,Air Sports,Summer,no
+20,BDY,Bandy,Bandy,Winter,no
+21,BSB,Baseball,Baseball/Softball,Summer,yes
+22,BKB,Basketball,Basketball,Summer,yes
+23,PEL,Basque pelota,Basque pelota,Summer,yes
+24,BHA,Beach Handball,Handball,Summer,no
+25,VBV,Beach Volleyball,Volleyball,Summer,yes
+26,BTH,Biathlon,Biathlon,Winter,yes
+27,BPO,Bicycle Polo,Cycling,Summer,no
+28,BOB,Bobsleigh,Bobsleigh,Winter,yes
+29,BLS,Boules,Boules,Summer,no
+30,BWL,Bowling,Bowling,Summer,no
+31,BOX,Boxing,Boxing,Summer,yes
+32,BRK,Breaking,Dance,Summer,no
+33,CNN,Canne De Combat,Savate,Summer,no
+34,CMA,Canoe Marathon,Canoeing,Summer,yes
+35,CSL,Canoe Slalom,Canoeing,Summer,yes
+36,CSP,Canoe Sprint,Canoeing,Summer,yes
+37,CRI,Cricket,Cricket,Summer,yes
+38,CRO,Croquet,Croquet,Summer,yes
+39,CCS,Cross Country Skiing,Skiing,Winter,yes
+40,CUR,Curling,Curling,Winter,yes
+41,BMF,Cycling BMX Freestyle,Cycling,Summer,yes
+42,BMX,Cycling BMX Racing,Cycling,Summer,yes
+43,MTB,Cycling Mountain Bike,Cycling,Summer,yes
+44,CRD,Cycling Road,Cycling,Summer,yes
+45,CTR,Cycling Track,Cycling,Summer,yes
+46,DIV,Diving,Aquatics,Summer,yes
+47,DSR,Dogsled Racing,Dogsled Racing,Winter,no
+48,EDR,Equestrian Dressage,Equestrian,Summer,yes
+49,EDV,Equestrian Driving,Equestrian,Summer,yes
+50,EVE,Equestrian Eventing,Equestrian,Summer,yes
+51,EJP,Equestrian Jumping,Equestrian,Summer,yes
+52,EVA,Equestrian Vaulting,Equestrian,Summer,yes
+53,FEN,Fencing,Fencing,Summer,yes
+54,FSK,Figure Skating,Skating,Winter,yes
+55,FFG,Firefighting,Firefighting,Summer,no
+56,FSH,Fishing,Fishing,Summer,no
+57,FBL,Football,Football,Summer,yes
+58,FRS,Freestyle Skiing,Skiing,Winter,yes
+59,FTS,Futsal,Football,Summer,no
+60,GFB,Gaelic Football,Gaelic Sports,Summer,no
+61,GLD,Gliding,Air Sports,Summer,no
+62,GLM,Glíma,Glíma,Summer,no
+63,GLF,Golf,Golf,Summer,yes
+64,GTS,Gotland Sports,Gotland Sports,Summer,no
+65,HBL,Handball,Handball,Summer,yes
+66,HOC,Hockey,Hockey,Summer,yes
+67,HK5,Hockey 5s,Hockey,Summer,no
+68,HUR,Hurling,Gaelic Sports,Summer,no
+69,IHO,Ice Hockey,Ice Hockey,Winter,yes
+70,ISS,Ice Stock Sport,Ice Stock Sport,Winter,no
+71,JDP,Jeu De Paume,Jeu de Paume,Summer,yes
+72,JUD,Judo,Judo,Summer,yes
+73,KTS,Kaatsen,Kaatsen,Summer,no
+74,KTE,Karate,Karate,Summer,yes
+75,KEN,Kendo,Kendo,Summer,no
+76,KFB,Korfball,Korfball,Summer,no
+77,KYU,Kyudo,Kyudo,Summer,no
+78,LAX,Lacrosse,Lacrosse,Summer,yes
+79,LUG,Luge,Luge,Winter,yes
+80,OWS,Marathon Swimming,Aquatics,Summer,yes
+81,MSP,Military Ski Patrol,Skiing,Winter,yes
+82,MIX,Mixed Sports,Mixed Sports,Winter,no
+83,MPN,Modern Pentathlon,Modern Pentathlon,Summer,yes
+84,MBO,Motorboating,Motorboating,Summer,yes
+85,MCS,Motorcycle Sports,Motorcycle Sports,Summer,no
+86,NCB,Nordic Combined,Skiing,Winter,yes
+87,PSP,Pesäpallo,Pesäpallo,Summer,no
+88,POL,Polo,Polo,Summer,yes
+89,RAQ,Racquets,Racquets,Summer,yes
+90,GRY,Rhythmic Gymnastics,Gymnastics,Summer,yes
+91,RHK,Roller Hockey,Roller Sports,Summer,no
+92,ROL,Roller Skating,Roller Sports,Summer,no
+93,ROQ,Roque,Roque,Summer,yes
+94,ROW,Rowing,Rowing,Summer,yes
+95,RGB,Rugby,Rugby,Summer,yes
+96,RUG,Rugby Sevens,Rugby,Summer,yes
+97,SAL,Sailing,Sailing,Summer,yes
+98,SAV,Savate,Savate,Summer,no
+99,SHO,Shooting,Shooting,Summer,yes
+100,STK,Short Track Speed Skating,Skating,Winter,yes
+101,SKB,Skateboarding,Roller Sports,Summer,yes
+102,SKN,Skeleton,Bobsleigh,Winter,yes
+103,SJP,Ski Jumping,Skiing,Winter,yes
+104,SMT,Ski Mountaineering,Ski Mountaineering,Winter,no
+105,SJR,Skijoring,Skiing,Winter,no
+106,SBD,Snowboarding,Skiing,Winter,yes
+107,SOF,Softball,Baseball/Softball,Summer,yes
+108,SSK,Speed Skating,Skating,Winter,yes
+109,SPS,Speed Skiing,Skiing,Winter,no
+110,CLB,Sport Climbing,Sport Climbing,Summer,yes
+111,SQU,Squash,Squash,Summer,no
+112,SUM,Sumo,Sumo,Summer,no
+113,SRF,Surfing,Surfing,Summer,yes
+114,SWM,Swimming,Aquatics,Summer,yes
+115,TTE,Table Tennis,Table Tennis,Summer,yes
+116,TKW,Taekwondo,Taekwondo,Summer,yes
+117,TEN,Tennis,Tennis,Summer,yes
+118,GTR,Trampolining,Gymnastics,Summer,yes
+119,TRI,Triathlon,Triathlon,Summer,yes
+120,TOW,Tug-Of-War,Tug-Of-War,Summer,yes
+121,UNK,Unknown Sport,Ancient Sports,Summer,no
+122,VVO,Volleyball,Volleyball,Summer,yes
+123,WPO,Water Polo,Aquatics,Summer,yes
+124,WSK,Waterskiing,Waterskiing and Wakeboarding,Summer,no
+125,WLF,Weightlifting,Weightlifting,Summer,yes
+126,WPE,Winter Pentathlon,Winter Pentathlon,Winter,no
+127,WRE,Wrestling,Wrestling,Summer,yes
+128,WUS,Wushu,Wushu,Summer,no
