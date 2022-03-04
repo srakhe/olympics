@@ -29,9 +29,12 @@ class CountryCodes:
                         is_code = True
         return country_codes, country_names
 
-    def run_scrape(self):
+    def run_scrape(self, do_fetch):
         print("Running country codes data scraper.")
-        webpage_scraped = self.scrape_utils.fetch_webpage(page_url=self.url, path=self.data_path, name="countries.html")
+        webpage_scraped = True
+        if do_fetch:
+            webpage_scraped = self.scrape_utils.fetch_webpage(page_url=self.url, path=self.data_path,
+                                                              name="countries.html")
         if webpage_scraped:
             codes, names = self.scraper()
             data = {"country_code": codes, "country_name": names}
