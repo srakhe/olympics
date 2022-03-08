@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Olympedia – Badminton</title>
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="Nw/6GhX4VdMuiqM46+tp6ES6m58AAYh/ods96GS6Fs4FjVxVkZr+4LNlm7AsN/laRTft6gKobfjbFzOgd48Vaw==" />
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+<meta content='EN' http-equiv='content-language'>
+<meta content='width=device-width, initial-scale=1' name='viewport'>
+<link rel="stylesheet" media="all" href="/assets/bootstrap.min-460a43de22fd9534d595e5aea2715cb154560291c9c6401b526e31c86a5ce32d.css" />
+<link rel="stylesheet" media="all" href="/assets/bootstrap-sortable-363d232309d54b549fa85446295ef2b5d290e3f8a49f1a646247340be3705ef9.css" />
+<link rel="stylesheet" media="all" href="/assets/jquery-ui-1.11.4.min-359ba1b9eb679ad05fb4c8fda710ee4c0239354f1ba635200b6065638295d646.css" />
+<link rel="stylesheet" media="screen" href="/assets/lightbox-e29689e123fc27505d2b9d919f43ffcb6fade539cb4670f21c35aa07848105e7.css" />
+<link rel="stylesheet" media="all" href="/assets/application-dabe0afec76f540b074f0f63c688a540786e3cc47508864701ac4bfcd2198724.css" data-turbolinks-track="true" />
+<link rel="stylesheet" media="screen" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.4.3/css/ol.css" />
+<script src="/assets/application-e1a1e4d6a20243befcce18acb216d9b0e6082405323ce1f5dfbf47c401111aa1.js" data-turbolinks-track="true"></script>
+<script src="/assets/jquery-1.11.2.min-cc83565074b3fa7f2283f7f4d56b90ad171ede87008448ed5d2e91c50575bed1.js"></script>
+<script src="/assets/jquery-ui-1.11.4.min-1f37fd37d8db0404488ac8f6505560e48d1364ef1c81e384ac695e143049ab0f.js"></script>
+<script src="/assets/bootstrap.min-81d6fe3a991358b79b083d075ca476712c9f11c5c890047486176bde863c499e.js"></script>
+<script src="/assets/moment-ded3cbd5de5ae075c44be4149abb630c658e8789f17ccfb162e6bb7664e8bec9.js"></script>
+<script src="/assets/bootstrap-sortable-cd614fbc8d2030bc050ce63652169ed36d970209a94062fa218c631f2c04dc9f.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.4.3/build/ol.js"></script>
+
+</head>
+
+<body>
+<div class='navbar navbar-default navbar-fixed-top' role='navigation'>
+<div class='navbar-header'>
+<div class='button navbar-toggle' data-target='.navbar-ex1-collapse' data-toggle='collapse' type='button'>
+<span class='sr-only'>Toggle navigation</span>
+<span class='icon-bar'>
+<span class='icon-bar'>
+<span class='icon-bar'></span>
+</span>
+</span>
+</div>
+<a class='navbar-brand' href='/'>Olympedia</a>
+</div>
+<div class='collapse navbar-collapse navbar-ex1-collapse'>
+<ul class='nav navbar-nav'>
+<li class='dropdown'>
+<a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+Athletes
+<b class='caret'></b>
+</a>
+<ul class='dropdown-menu'>
+<li><a href="/athletes/advanced_search">Advanced search</a></li>
+<li><a href="/horses">Horse search</a></li>
+<li><a href="/family_relations">Related Olympians</a></li>
+<li><a href="/counts">Counts</a></li>
+<li><a href="/athletes/doubles">Doubles</a></li>
+<li><a href="/athletes/lists">Lists</a></li>
+<li class='divider'></li>
+<li><a href="/athletes">Athletes</a></li>
+</ul>
+</li>
+
+<li class='dropdown'>
+<a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+Countries
+<b class='caret'></b>
+</a>
+<ul class='dropdown-menu'>
+<li><a href="/countries/head_to_head">Head-to-head</a></li>
+<li><a href="/countries/best_results">Best results</a></li>
+<li><a href="/countries/comparison">Results comparison</a></li>
+<li class='divider'></li>
+<li><a href="/countries">Countries</a></li>
+</ul>
+</li>
+
+<li class='dropdown'>
+<a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+Games
+<b class='caret'></b>
+</a>
+<ul class='dropdown-menu'>
+<li><a href="/editions">Games</a></li>
+<li><a href="/editions/medals">Medals</a></li>
+<li><a href="/editions/results">Results</a></li>
+<li><a href="/ceremonies">Opening ceremony</a></li>
+<li><a href="/venues/menu">Venues</a></li>
+</ul>
+</li>
+
+<li class='dropdown'>
+<a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+Sports
+<b class='caret'></b>
+</a>
+<ul class='dropdown-menu'>
+<li><a href="/sports">Disciplines &amp; Sports</a></li>
+<li><a href="/event_names">Events</a></li>
+</ul>
+</li>
+
+<li class='dropdown'>
+<a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+IOC
+<b class='caret'></b>
+</a>
+<ul class='dropdown-menu'>
+<li><a href="/organizations">Organizations</a></li>
+<li><a href="/definitions">Definitions</a></li>
+<li><a href="/meetings">Meetings</a></li>
+<li><a href="/ioc/host_cities">Host city selection</a></li>
+</ul>
+</li>
+
+<li class='dropdown'>
+<a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+Statistics
+<b class='caret'></b>
+</a>
+<ul class='dropdown-menu'>
+<li></li>
+<li><a href="/statistics/medal/country">Medals by country</a></li>
+<li><a href="/statistics/medal/athlete">Medals by athlete</a></li>
+<li><a href="/statistics/medal_table">Medal tables</a></li>
+<li><a href="/statistics/participation">Participations</a></li>
+<li><a href="/statistics/age">Age records</a></li>
+<li><a href="/lists">Lists</a></li>
+<li><a href="/today">Today</a></li>
+<li></li>
+<li class='divider'></li>
+<li><a href="/statistics">Statistics</a></li>
+</ul>
+</li>
+
+
+
+
+<li><a href="/feedbacks/new">Feedback</a></li>
+<form class="navbar-form navbar-left" role="search" action="/athletes/quick_search" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="RzGxgfWzdIbafUgUKs6IlWGtqrbCy8i8PYcD9QP5FAgbaP6yJ7saNcy3Q81CCa/urAcrQvGh3cnipFvyVqAZzA==" />
+<div class='form-group'>
+<input type="text" name="query" id="query" class="form-control" placeholder="Athlete search" />
+</div>
+<input type="submit" name="commit" value="Go" class="btn btn-default" data-disable-with="Go" />
+</form>
+
+
+</ul>
+</div>
+</div>
+<div class='container'>
+<ol class='breadcrumb'>
+<li>
+<a href='/'>Home</a>
+</li>
+<li><a href="/sports">Disciplines &amp; Sports</a></li><li class="active">Badminton</li>
+</ol>
+<h1>Badminton</h1>
+<h2>Facts</h2>
+<table class='biodata'>
+<tr>
+<th>Discipline of</th>
+<td><a href="/sport_groups/BD">Badminton</a></td>
+</tr>
+<tr>
+<th>Participants</th>
+<td><a href="/counts/sport/BDM">935</a></td>
+</tr>
+<tr>
+<th>NOCs</th>
+<td>75</td>
+</tr>
+<tr>
+<th>Competitions held</th>
+<td>
+39
+(<a href="/venues/sports/BDM">Venues</a>)
+</td>
+</tr>
+<tr>
+<th>Distinct events</th>
+<td>9</td>
+</tr>
+<tr>
+<th>IF</th>
+<td><a href="/organizations/39">Badminton World Federation </a></td>
+</tr>
+</table>
+<h2>
+Description
+
+</h2>
+<div class='description'>
+<p>Badminton was invented in India. It was adopted by English soldiers there in the 19th century, who brought the game to Great Britain and eventually to many other countries. The game was originally called “Poona”. The new sport took hold in England when it was exhibited there in 1873 at a party given by the Duke of Beaufort at his country estate, “Badminton”, in Gloucestershire.</p>
+
+<p>Badminton was contested as a demonstration sport at the 1972 Olympic Games in München. It made its début as a full medal sport in 1992 at Barcelona. After 1972 it did not appear at the Olympics until its appearance at Barcelona on the medal program. This was then an unusual mode of entry into the Olympics, as sports were usually added after several demonstration appearances.</p>
+
+<p>At the Olympics men and women compete in singles and doubles and there is a mixed doubles event. Badminton is governed by the International Badminton Federation (IBF), which was formed on 5 July 1934 in London with nine members – Canada, Denmark, England, France, Ireland, Italy, Netherlands, New Zealand, Scotland, and Wales. The organization was renamed to Badminton World Federation (BWF) on 24 September 2006 and has 194 members as of 2020.</p>
+
+<p>Badminton has been dominated by China, Indonesia, and Korea, which have won 79 of 106 available medals through 2016, and 31 of 34 gold medals. <a href="/athletes/89244">Gao Ling</a> (CHN) is the only badminton player to have won four medals, with six players having won three. Ten players have won two gold medals, including Gao Ling.</p>
+
+</div>
+
+<h2>All-time medal table</h2>
+<h3>Olympic Games</h3>
+<table class='table table-striped'>
+<thead>
+<tr>
+<th colspan='2'>NOC</th>
+<th>Gold</th>
+<th>Silver</th>
+<th>Bronze</th>
+<th>Total</th>
+</tr>
+</thead>
+<tr>
+<td><a href="/countries/CHN">People&#39;s Republic of China</a></td>
+<td><a href="/countries/CHN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/CHN.png" /> CHN</a></td>
+<td>20</td>
+<td>12</td>
+<td>15</td>
+<td>47</td>
+</tr>
+<tr>
+<td><a href="/countries/INA">Indonesia</a></td>
+<td><a href="/countries/INA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/INA.png" /> INA</a></td>
+<td>8</td>
+<td>6</td>
+<td>7</td>
+<td>21</td>
+</tr>
+<tr>
+<td><a href="/countries/KOR">Republic of Korea</a></td>
+<td><a href="/countries/KOR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KOR.png" /> KOR</a></td>
+<td>6</td>
+<td>7</td>
+<td>7</td>
+<td>20</td>
+</tr>
+<tr>
+<td><a href="/countries/DEN">Denmark</a></td>
+<td><a href="/countries/DEN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/DEN.png" /> DEN</a></td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>9</td>
+</tr>
+<tr>
+<td><a href="/countries/JPN">Japan</a></td>
+<td><a href="/countries/JPN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/JPN.png" /> JPN</a></td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="/countries/TPE">Chinese Taipei</a></td>
+<td><a href="/countries/TPE"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/TPE.png" /> TPE</a></td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/ESP">Spain</a></td>
+<td><a href="/countries/ESP"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ESP.png" /> ESP</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/MAS">Malaysia</a></td>
+<td><a href="/countries/MAS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MAS.png" /> MAS</a></td>
+<td>0</td>
+<td>6</td>
+<td>3</td>
+<td>9</td>
+</tr>
+<tr>
+<td><a href="/countries/GBR">Great Britain</a></td>
+<td><a href="/countries/GBR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/GBR.png" /> GBR</a></td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="/countries/IND">India</a></td>
+<td><a href="/countries/IND"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/IND.png" /> IND</a></td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="/countries/NED">Netherlands</a></td>
+<td><a href="/countries/NED"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/NED.png" /> NED</a></td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/RUS">Russian Federation</a></td>
+<td><a href="/countries/RUS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/RUS.png" /> RUS</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+</table>
+
+<h3>Youth Olympic Games</h3>
+<table class='table table-striped'>
+<thead>
+<tr>
+<th colspan='2'>NOC</th>
+<th>Gold</th>
+<th>Silver</th>
+<th>Bronze</th>
+<th>Total</th>
+</tr>
+</thead>
+<tr>
+<td><a href="/countries/CHN">People&#39;s Republic of China</a></td>
+<td><a href="/countries/CHN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/CHN.png" /> CHN</a></td>
+<td>3</td>
+<td>3</td>
+<td>0</td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="/countries/MIX">Mixed team</a></td>
+<td><a href="/countries/MIX"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MIX.png" /> MIX</a></td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="/countries/THA">Thailand</a></td>
+<td><a href="/countries/THA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/THA.png" /> THA</a></td>
+<td>2</td>
+<td>0</td>
+<td>2</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="/countries/MAS">Malaysia</a></td>
+<td><a href="/countries/MAS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MAS.png" /> MAS</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/IND">India</a></td>
+<td><a href="/countries/IND"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/IND.png" /> IND</a></td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/JPN">Japan</a></td>
+<td><a href="/countries/JPN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/JPN.png" /> JPN</a></td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/INA">Indonesia</a></td>
+<td><a href="/countries/INA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/INA.png" /> INA</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/KOR">Republic of Korea</a></td>
+<td><a href="/countries/KOR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KOR.png" /> KOR</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/VIE">Vietnam</a></td>
+<td><a href="/countries/VIE"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/VIE.png" /> VIE</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+</table>
+
+<h2>Most successful competitors</h2>
+<h3>Olympic Games</h3>
+<table class='table table-striped'>
+<thead>
+<tr>
+<th>Athlete</th>
+<th>Nat</th>
+<th>Gold</th>
+<th>Silver</th>
+<th>Bronze</th>
+<th>Total</th>
+</tr>
+</thead>
+<tr class='top'>
+<td><a href="/athletes/89244">Gao Ling</a></td>
+<td><a href="/countries/CHN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/CHN.png" /> CHN</a></td>
+<td>2</td>
+<td>1</td>
+<td>1</td>
+<td>4</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/105879">Fu Haifeng</a></td>
+<td><a href="/countries/CHN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/CHN.png" /> CHN</a></td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/916">Kim Dong-Mun</a></td>
+<td><a href="/countries/KOR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KOR.png" /> KOR</a></td>
+<td>2</td>
+<td>0</td>
+<td>1</td>
+<td>3</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/121936">Zhang Nan</a></td>
+<td><a href="/countries/CHN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/CHN.png" /> CHN</a></td>
+<td>2</td>
+<td>0</td>
+<td>1</td>
+<td>3</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/121939">Zhao Yunlei</a></td>
+<td><a href="/countries/CHN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/CHN.png" /> CHN</a></td>
+<td>2</td>
+<td>0</td>
+<td>1</td>
+<td>3</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/782">Ge Fei</a></td>
+<td><a href="/countries/CHN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/CHN.png" /> CHN</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/784">Gu Jun</a></td>
+<td><a href="/countries/CHN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/CHN.png" /> CHN</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/82700">Zhang Jun</a></td>
+<td><a href="/countries/CHN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/CHN.png" /> CHN</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/105835">Lin Dan</a></td>
+<td><a href="/countries/CHN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/CHN.png" /> CHN</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/105905">Zhang Ning</a></td>
+<td><a href="/countries/CHN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/CHN.png" /> CHN</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+</table>
+
+<h3>Youth Olympic Games</h3>
+<table class='table table-striped'>
+<thead>
+<tr>
+<th>Athlete</th>
+<th>Nat</th>
+<th>Gold</th>
+<th>Silver</th>
+<th>Bronze</th>
+<th>Total</th>
+</tr>
+</thead>
+<tr class='top'>
+<td><a href="/athletes/2503208">Lakshya Sen</a></td>
+<td><a href="/countries/IND"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/IND.png" /> IND</a></td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/2101443">He Bingjiao</a></td>
+<td><a href="/countries/CHN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/CHN.png" /> CHN</a></td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/131825">Sapsiree Taerattanachai</a></td>
+<td><a href="/countries/THA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/THA.png" /> THA</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/1304103">Pisit Poodchalat</a></td>
+<td><a href="/countries/THA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/THA.png" /> THA</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/2101856">Ng Tsz Yau</a></td>
+<td><a href="/countries/HKG"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/HKG.png" /> HKG</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/2103168">Shi Yuqi</a></td>
+<td><a href="/countries/CHN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/CHN.png" /> CHN</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/2103906">Cheam June Wei</a></td>
+<td><a href="/countries/MAS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MAS.png" /> MAS</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/2502682">Vath Vannthoun</a></td>
+<td><a href="/countries/CAM"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/CAM.png" /> CAM</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/2502690">Brian Yang</a></td>
+<td><a href="/countries/CAN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/CAN.png" /> CAN</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/2502744">Li Shifeng</a></td>
+<td><a href="/countries/CHN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/CHN.png" /> CHN</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/2503306">Giovanni Toti</a></td>
+<td><a href="/countries/ITA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ITA.png" /> ITA</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/2504605">Mariya Delcheva</a></td>
+<td><a href="/countries/BUL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/BUL.png" /> BUL</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/2505494">Goh Jin Wei</a></td>
+<td><a href="/countries/MAS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MAS.png" /> MAS</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/2505939">Hasini Ambalangodage</a></td>
+<td><a href="/countries/SRI"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SRI.png" /> SRI</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/2505982">Ashwathi Pillai</a></td>
+<td><a href="/countries/SWE"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SWE.png" /> SWE</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/2506192">Jennie Gai</a></td>
+<td><a href="/countries/USA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/USA.png" /> USA</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+</table>
+
+<h2>Event types</h2>
+<table class='table table-striped sortable'>
+<thead>
+<th>Name</th>
+<th>Gender</th>
+<th>Still contested?</th>
+<th>Times held?</th>
+</thead>
+<tbody>
+<tr valign='top'>
+<td><a href="/event_names/123">Singles</a></td>
+<td>Men</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+<td>10</td>
+</tr>
+<tr valign='top'>
+<td><a href="/event_names/124">Doubles</a></td>
+<td>Men</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+<td>10</td>
+</tr>
+<tr valign='top'>
+<td><a href="/event_names/125">Singles</a></td>
+<td>Women</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+<td>10</td>
+</tr>
+<tr valign='top'>
+<td><a href="/event_names/126">Doubles</a></td>
+<td>Women</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+<td>9</td>
+</tr>
+<tr valign='top'>
+<td><a href="/event_names/127">Doubles</a></td>
+<td>Mixed</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+<td>9</td>
+</tr>
+<tr valign='top'>
+<td><a href="/event_names/2082">Singles</a></td>
+<td>Boys</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+<td>3</td>
+</tr>
+<tr valign='top'>
+<td><a href="/event_names/2083">Singles</a></td>
+<td>Girls</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+<td>3</td>
+</tr>
+<tr valign='top'>
+<td><a href="/event_names/2287">Doubles</a></td>
+<td>Mixed Youth</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+<td>1</td>
+</tr>
+<tr valign='top'>
+<td><a href="/event_names/2446">Relay</a></td>
+<td>Mixed Youth</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+
+
+</div>
+</body>
+<footer class='footer'>
+<br>
+<div class='panel panel-info'>
+<div class='panel-heading'>
+<h3 class='panel-title'>
+<span class='glyphicon glyphicon-info-sign'></span>
+Did you know?
+</h3>
+</div>
+<div class='panel-body'>
+<p>The original Olympic Flag, dating from 1920, was replaced at the 1988 Seoul Games. The new flag was fashioned from pure raw Korean silk.</p>
+
+
+</div>
+</div>
+<div class='container'>
+<p>
+<a href="/users/sign_in">Login</a>
+|
+<a href="/statistics/olympedia">Statistics</a>
+|
+<a href="/static/about">About</a>
+|
+<a href="/static/faq">FAQ</a>
+|
+<a href="/feedbacks/new">Feedback</a>
+</p>
+<p>
+&copy; <a href="/static/about">OlyMADMen</a> 2006 — 2022
+</p>
+</div>
+</footer>
+
+<script src="/assets/lightbox.min-40fdcc195c5982250c8901f2c160e15342941a311faf6372c04117c0d9c44bc7.js"></script>
+<script>
+  $('.footnote').tooltip();
+</script>
+</html>

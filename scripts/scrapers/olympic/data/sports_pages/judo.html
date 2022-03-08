@@ -1,0 +1,1478 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Olympedia – Judo</title>
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="OBlSrwPb6q/YOWhZwQYIT+sEc2zFcFVGKFWgBEG6bcPta/wsLP86UOM8pi4bAYA8JRdUuuRcSY4EH42IaCTtEA==" />
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+<meta content='EN' http-equiv='content-language'>
+<meta content='width=device-width, initial-scale=1' name='viewport'>
+<link rel="stylesheet" media="all" href="/assets/bootstrap.min-460a43de22fd9534d595e5aea2715cb154560291c9c6401b526e31c86a5ce32d.css" />
+<link rel="stylesheet" media="all" href="/assets/bootstrap-sortable-363d232309d54b549fa85446295ef2b5d290e3f8a49f1a646247340be3705ef9.css" />
+<link rel="stylesheet" media="all" href="/assets/jquery-ui-1.11.4.min-359ba1b9eb679ad05fb4c8fda710ee4c0239354f1ba635200b6065638295d646.css" />
+<link rel="stylesheet" media="screen" href="/assets/lightbox-e29689e123fc27505d2b9d919f43ffcb6fade539cb4670f21c35aa07848105e7.css" />
+<link rel="stylesheet" media="all" href="/assets/application-dabe0afec76f540b074f0f63c688a540786e3cc47508864701ac4bfcd2198724.css" data-turbolinks-track="true" />
+<link rel="stylesheet" media="screen" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.4.3/css/ol.css" />
+<script src="/assets/application-e1a1e4d6a20243befcce18acb216d9b0e6082405323ce1f5dfbf47c401111aa1.js" data-turbolinks-track="true"></script>
+<script src="/assets/jquery-1.11.2.min-cc83565074b3fa7f2283f7f4d56b90ad171ede87008448ed5d2e91c50575bed1.js"></script>
+<script src="/assets/jquery-ui-1.11.4.min-1f37fd37d8db0404488ac8f6505560e48d1364ef1c81e384ac695e143049ab0f.js"></script>
+<script src="/assets/bootstrap.min-81d6fe3a991358b79b083d075ca476712c9f11c5c890047486176bde863c499e.js"></script>
+<script src="/assets/moment-ded3cbd5de5ae075c44be4149abb630c658e8789f17ccfb162e6bb7664e8bec9.js"></script>
+<script src="/assets/bootstrap-sortable-cd614fbc8d2030bc050ce63652169ed36d970209a94062fa218c631f2c04dc9f.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.4.3/build/ol.js"></script>
+
+</head>
+
+<body>
+<div class='navbar navbar-default navbar-fixed-top' role='navigation'>
+<div class='navbar-header'>
+<div class='button navbar-toggle' data-target='.navbar-ex1-collapse' data-toggle='collapse' type='button'>
+<span class='sr-only'>Toggle navigation</span>
+<span class='icon-bar'>
+<span class='icon-bar'>
+<span class='icon-bar'></span>
+</span>
+</span>
+</div>
+<a class='navbar-brand' href='/'>Olympedia</a>
+</div>
+<div class='collapse navbar-collapse navbar-ex1-collapse'>
+<ul class='nav navbar-nav'>
+<li class='dropdown'>
+<a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+Athletes
+<b class='caret'></b>
+</a>
+<ul class='dropdown-menu'>
+<li><a href="/athletes/advanced_search">Advanced search</a></li>
+<li><a href="/horses">Horse search</a></li>
+<li><a href="/family_relations">Related Olympians</a></li>
+<li><a href="/counts">Counts</a></li>
+<li><a href="/athletes/doubles">Doubles</a></li>
+<li><a href="/athletes/lists">Lists</a></li>
+<li class='divider'></li>
+<li><a href="/athletes">Athletes</a></li>
+</ul>
+</li>
+
+<li class='dropdown'>
+<a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+Countries
+<b class='caret'></b>
+</a>
+<ul class='dropdown-menu'>
+<li><a href="/countries/head_to_head">Head-to-head</a></li>
+<li><a href="/countries/best_results">Best results</a></li>
+<li><a href="/countries/comparison">Results comparison</a></li>
+<li class='divider'></li>
+<li><a href="/countries">Countries</a></li>
+</ul>
+</li>
+
+<li class='dropdown'>
+<a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+Games
+<b class='caret'></b>
+</a>
+<ul class='dropdown-menu'>
+<li><a href="/editions">Games</a></li>
+<li><a href="/editions/medals">Medals</a></li>
+<li><a href="/editions/results">Results</a></li>
+<li><a href="/ceremonies">Opening ceremony</a></li>
+<li><a href="/venues/menu">Venues</a></li>
+</ul>
+</li>
+
+<li class='dropdown'>
+<a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+Sports
+<b class='caret'></b>
+</a>
+<ul class='dropdown-menu'>
+<li><a href="/sports">Disciplines &amp; Sports</a></li>
+<li><a href="/event_names">Events</a></li>
+</ul>
+</li>
+
+<li class='dropdown'>
+<a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+IOC
+<b class='caret'></b>
+</a>
+<ul class='dropdown-menu'>
+<li><a href="/organizations">Organizations</a></li>
+<li><a href="/definitions">Definitions</a></li>
+<li><a href="/meetings">Meetings</a></li>
+<li><a href="/ioc/host_cities">Host city selection</a></li>
+</ul>
+</li>
+
+<li class='dropdown'>
+<a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+Statistics
+<b class='caret'></b>
+</a>
+<ul class='dropdown-menu'>
+<li></li>
+<li><a href="/statistics/medal/country">Medals by country</a></li>
+<li><a href="/statistics/medal/athlete">Medals by athlete</a></li>
+<li><a href="/statistics/medal_table">Medal tables</a></li>
+<li><a href="/statistics/participation">Participations</a></li>
+<li><a href="/statistics/age">Age records</a></li>
+<li><a href="/lists">Lists</a></li>
+<li><a href="/today">Today</a></li>
+<li></li>
+<li class='divider'></li>
+<li><a href="/statistics">Statistics</a></li>
+</ul>
+</li>
+
+
+
+
+<li><a href="/feedbacks/new">Feedback</a></li>
+<form class="navbar-form navbar-left" role="search" action="/athletes/quick_search" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="ulmha3PRpJIakLON6BRsLWboYdifUI8l6ZWrf/hZ3yUb/R3gEeW94OhINq9eMvZ2laTpwqCYE/1hSWKEYDZINQ==" />
+<div class='form-group'>
+<input type="text" name="query" id="query" class="form-control" placeholder="Athlete search" />
+</div>
+<input type="submit" name="commit" value="Go" class="btn btn-default" data-disable-with="Go" />
+</form>
+
+
+</ul>
+</div>
+</div>
+<div class='container'>
+<ol class='breadcrumb'>
+<li>
+<a href='/'>Home</a>
+</li>
+<li><a href="/sports">Disciplines &amp; Sports</a></li><li class="active">Judo</li>
+</ol>
+<h1>Judo</h1>
+<h2>Facts</h2>
+<table class='biodata'>
+<tr>
+<th>Discipline of</th>
+<td><a href="/sport_groups/JU">Judo</a></td>
+</tr>
+<tr>
+<th>Participants</th>
+<td><a href="/counts/sport/JUD">2969</a></td>
+</tr>
+<tr>
+<th>NOCs</th>
+<td>186</td>
+</tr>
+<tr>
+<th>Competitions held</th>
+<td>
+152
+(<a href="/venues/sports/JUD">Venues</a>)
+</td>
+</tr>
+<tr>
+<th>Distinct events</th>
+<td>25</td>
+</tr>
+<tr>
+<th>IF</th>
+<td><a href="/organizations/66">International Judo Federation</a></td>
+</tr>
+</table>
+<h2>
+Description
+
+</h2>
+<div class='description'>
+<p>The founder of judo, Dr. Jigaro Kano, was a long-time member of the International Olympic Committee (IOC). Judo is a form of wrestling that was developed by Dr. Kano from the ancient Japanese schools of <em>yawara</em> and <em>jujitsu</em>. He founded his first <em>dojo</em> (judo school) in 1882, termed the Kodokan. The contestants are termed judoka and are classified into grades consisting of pupils (Kyu) and degrees (Dan). There are five classes of Kyu, advancing to first Kyu, and wearing a brown belt. Thereafter, the judoka achieve a Dan, beginning with first Dan (black belt) and advancing theoretically to 12th Dan (white belt). Fighting ability and technical knowledge advance a judoka to fifth Dan, after which advancement depends on service to the sport. Leading international judoka are usually fourth or fifth Dan. The 11th and 12th Dan have never been awarded.</p>
+
+<p>Judo made its first Olympic appearance in 1964, but was not included on the program of the 1968 Olympic Games. Judo returned to the Olympic fold in 1972 and the 1992 Olympics included judo events for women for the first time. The sport, not surprisingly, has been dominated by the Japanese, followed by France and Korea.</p>
+
+<p>The sport is governed internationally by the International Judo Federation (IJF), which was formed on 11 July 1951 in London, with eight founding members: Austria, Belgium, France, Germany, Great Britain, Italy, Netherlands, and Switzerland. As of 2020 the IJF has 204 members.</p>
+
+<p>The top Olympic judo medalists have been <a href="/athletes/33327">Ryoko Tamura-Tani</a> (JPN), with five, and Cuba’s <a href="/athletes/33180">Driulys González</a> and <a href="/athletes/34206">Angelo Parisi</a>, who represented both France and Great Britain, with four. <a href="/athletes/34155">Tadahiro Nomura</a> is the only judoka to win three Olympic gold medals, while 12 judoka have won two gold medals.</p>
+
+<p>Presidents of the International Judo Federation:</p>
+
+<ul>
+  <li>Aldo Torti (ITA, 1951-1952)</li>
+  <li>Risei Kano (JPN, 1952-1965)</li>
+  <li><a href="/athletes/1200199">Charles Palmer</a> (GBR, 1965-1979)</li>
+  <li>Shigeyoshi Matsumae (JPN, 1979-1987)</li>
+  <li>Sarkis Kaloghian (ARG, 1987-1989)</li>
+  <li>Lawrie Hargrave (NZL, 1989-1991)</li>
+  <li>Luis Baguena (ESP, 1991-1995)</li>
+  <li><a href="/athletes/899278">Park Yong-Sung</a> (KOR, 1995-2007)</li>
+  <li>Marius Vizer (AUT, 2007-present)</li>
+</ul>
+
+</div>
+
+<h2>All-time medal table</h2>
+<h3>Olympic Games</h3>
+<table class='table table-striped'>
+<thead>
+<tr>
+<th colspan='2'>NOC</th>
+<th>Gold</th>
+<th>Silver</th>
+<th>Bronze</th>
+<th>Total</th>
+</tr>
+</thead>
+<tr>
+<td><a href="/countries/JPN">Japan</a></td>
+<td><a href="/countries/JPN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/JPN.png" /> JPN</a></td>
+<td>48</td>
+<td>21</td>
+<td>27</td>
+<td>96</td>
+</tr>
+<tr>
+<td><a href="/countries/FRA">France</a></td>
+<td><a href="/countries/FRA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/FRA.png" /> FRA</a></td>
+<td>16</td>
+<td>13</td>
+<td>28</td>
+<td>57</td>
+</tr>
+<tr>
+<td><a href="/countries/KOR">Republic of Korea</a></td>
+<td><a href="/countries/KOR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KOR.png" /> KOR</a></td>
+<td>11</td>
+<td>17</td>
+<td>18</td>
+<td>46</td>
+</tr>
+<tr>
+<td><a href="/countries/CHN">People&#39;s Republic of China</a></td>
+<td><a href="/countries/CHN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/CHN.png" /> CHN</a></td>
+<td>8</td>
+<td>3</td>
+<td>11</td>
+<td>22</td>
+</tr>
+<tr>
+<td><a href="/countries/CUB">Cuba</a></td>
+<td><a href="/countries/CUB"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/CUB.png" /> CUB</a></td>
+<td>6</td>
+<td>15</td>
+<td>16</td>
+<td>37</td>
+</tr>
+<tr>
+<td><a href="/countries/URS">Soviet Union</a></td>
+<td><a href="/countries/URS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/URS.png" /> URS</a></td>
+<td>5</td>
+<td>5</td>
+<td>13</td>
+<td>23</td>
+</tr>
+<tr>
+<td><a href="/countries/RUS">Russian Federation</a></td>
+<td><a href="/countries/RUS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/RUS.png" /> RUS</a></td>
+<td>5</td>
+<td>4</td>
+<td>7</td>
+<td>16</td>
+</tr>
+<tr>
+<td><a href="/countries/GEO">Georgia</a></td>
+<td><a href="/countries/GEO"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/GEO.png" /> GEO</a></td>
+<td>4</td>
+<td>5</td>
+<td>3</td>
+<td>12</td>
+</tr>
+<tr>
+<td><a href="/countries/ITA">Italy</a></td>
+<td><a href="/countries/ITA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ITA.png" /> ITA</a></td>
+<td>4</td>
+<td>4</td>
+<td>9</td>
+<td>17</td>
+</tr>
+<tr>
+<td><a href="/countries/BRA">Brazil</a></td>
+<td><a href="/countries/BRA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/BRA.png" /> BRA</a></td>
+<td>4</td>
+<td>3</td>
+<td>17</td>
+<td>24</td>
+</tr>
+<tr>
+<td><a href="/countries/NED">Netherlands</a></td>
+<td><a href="/countries/NED"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/NED.png" /> NED</a></td>
+<td>4</td>
+<td>2</td>
+<td>18</td>
+<td>24</td>
+</tr>
+<tr>
+<td><a href="/countries/GER">Germany</a></td>
+<td><a href="/countries/GER"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/GER.png" /> GER</a></td>
+<td>3</td>
+<td>4</td>
+<td>16</td>
+<td>23</td>
+</tr>
+<tr>
+<td><a href="/countries/POL">Poland</a></td>
+<td><a href="/countries/POL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/POL.png" /> POL</a></td>
+<td>3</td>
+<td>3</td>
+<td>2</td>
+<td>8</td>
+</tr>
+<tr>
+<td><a href="/countries/ESP">Spain</a></td>
+<td><a href="/countries/ESP"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ESP.png" /> ESP</a></td>
+<td>3</td>
+<td>1</td>
+<td>2</td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="/countries/KOS">Kosovo</a></td>
+<td><a href="/countries/KOS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KOS.png" /> KOS</a></td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="/countries/USA">United States</a></td>
+<td><a href="/countries/USA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/USA.png" /> USA</a></td>
+<td>2</td>
+<td>4</td>
+<td>8</td>
+<td>14</td>
+</tr>
+<tr>
+<td><a href="/countries/AUT">Austria</a></td>
+<td><a href="/countries/AUT"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/AUT.png" /> AUT</a></td>
+<td>2</td>
+<td>3</td>
+<td>2</td>
+<td>7</td>
+</tr>
+<tr>
+<td><a href="/countries/PRK">Democratic People&#39;s Republic of Korea</a></td>
+<td><a href="/countries/PRK"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/PRK.png" /> PRK</a></td>
+<td>2</td>
+<td>2</td>
+<td>4</td>
+<td>8</td>
+</tr>
+<tr>
+<td><a href="/countries/BEL">Belgium</a></td>
+<td><a href="/countries/BEL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/BEL.png" /> BEL</a></td>
+<td>2</td>
+<td>1</td>
+<td>10</td>
+<td>13</td>
+</tr>
+<tr>
+<td><a href="/countries/SLO">Slovenia</a></td>
+<td><a href="/countries/SLO"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SLO.png" /> SLO</a></td>
+<td>2</td>
+<td>1</td>
+<td>3</td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="/countries/EUN">Unified Team</a></td>
+<td><a href="/countries/EUN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/EUN.png" /> EUN</a></td>
+<td>2</td>
+<td>0</td>
+<td>2</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="/countries/CZE">Czech Republic</a></td>
+<td><a href="/countries/CZE"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/CZE.png" /> CZE</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/MGL">Mongolia</a></td>
+<td><a href="/countries/MGL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MGL.png" /> MGL</a></td>
+<td>1</td>
+<td>4</td>
+<td>6</td>
+<td>11</td>
+</tr>
+<tr>
+<td><a href="/countries/FRG">West Germany</a></td>
+<td><a href="/countries/FRG"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/FRG.png" /> FRG</a></td>
+<td>1</td>
+<td>4</td>
+<td>3</td>
+<td>8</td>
+</tr>
+<tr>
+<td><a href="/countries/HUN">Hungary</a></td>
+<td><a href="/countries/HUN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/HUN.png" /> HUN</a></td>
+<td>1</td>
+<td>3</td>
+<td>6</td>
+<td>10</td>
+</tr>
+<tr>
+<td><a href="/countries/GDR">East Germany</a></td>
+<td><a href="/countries/GDR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/GDR.png" /> GDR</a></td>
+<td>1</td>
+<td>2</td>
+<td>6</td>
+<td>9</td>
+</tr>
+<tr>
+<td><a href="/countries/ROU">Romania</a></td>
+<td><a href="/countries/ROU"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ROU.png" /> ROU</a></td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="/countries/AZE">Azerbaijan</a></td>
+<td><a href="/countries/AZE"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/AZE.png" /> AZE</a></td>
+<td>1</td>
+<td>2</td>
+<td>2</td>
+<td>5</td>
+</tr>
+<tr>
+<td><a href="/countries/SUI">Switzerland</a></td>
+<td><a href="/countries/SUI"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SUI.png" /> SUI</a></td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="/countries/ARG">Argentina</a></td>
+<td><a href="/countries/ARG"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ARG.png" /> ARG</a></td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/BLR">Belarus</a></td>
+<td><a href="/countries/BLR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/BLR.png" /> BLR</a></td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/GRE">Greece</a></td>
+<td><a href="/countries/GRE"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/GRE.png" /> GRE</a></td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/TUR">Turkey</a></td>
+<td><a href="/countries/TUR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/TUR.png" /> TUR</a></td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/GBR">Great Britain</a></td>
+<td><a href="/countries/GBR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/GBR.png" /> GBR</a></td>
+<td>0</td>
+<td>8</td>
+<td>12</td>
+<td>20</td>
+</tr>
+<tr>
+<td><a href="/countries/CAN">Canada</a></td>
+<td><a href="/countries/CAN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/CAN.png" /> CAN</a></td>
+<td>0</td>
+<td>2</td>
+<td>5</td>
+<td>7</td>
+</tr>
+<tr>
+<td><a href="/countries/UZB">Uzbekistan</a></td>
+<td><a href="/countries/UZB"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/UZB.png" /> UZB</a></td>
+<td>0</td>
+<td>2</td>
+<td>5</td>
+<td>7</td>
+</tr>
+<tr>
+<td><a href="/countries/KAZ">Kazakhstan</a></td>
+<td><a href="/countries/KAZ"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KAZ.png" /> KAZ</a></td>
+<td>0</td>
+<td>2</td>
+<td>2</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="/countries/ISR">Israel</a></td>
+<td><a href="/countries/ISR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ISR.png" /> ISR</a></td>
+<td>0</td>
+<td>1</td>
+<td>5</td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="/countries/UKR">Ukraine</a></td>
+<td><a href="/countries/UKR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/UKR.png" /> UKR</a></td>
+<td>0</td>
+<td>1</td>
+<td>3</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="/countries/BUL">Bulgaria</a></td>
+<td><a href="/countries/BUL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/BUL.png" /> BUL</a></td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="/countries/ALG">Algeria</a></td>
+<td><a href="/countries/ALG"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ALG.png" /> ALG</a></td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/COL">Colombia</a></td>
+<td><a href="/countries/COL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/COL.png" /> COL</a></td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/EGY">Egypt</a></td>
+<td><a href="/countries/EGY"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/EGY.png" /> EGY</a></td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/TPE">Chinese Taipei</a></td>
+<td><a href="/countries/TPE"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/TPE.png" /> TPE</a></td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/SVK">Slovakia</a></td>
+<td><a href="/countries/SVK"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SVK.png" /> SVK</a></td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/EST">Estonia</a></td>
+<td><a href="/countries/EST"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/EST.png" /> EST</a></td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="/countries/POR">Portugal</a></td>
+<td><a href="/countries/POR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/POR.png" /> POR</a></td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="/countries/ROC">Russian Olympic Committee</a></td>
+<td><a href="/countries/ROC"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ROC.png" /> ROC</a></td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="/countries/AUS">Australia</a></td>
+<td><a href="/countries/AUS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/AUS.png" /> AUS</a></td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/YUG">Yugoslavia</a></td>
+<td><a href="/countries/YUG"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/YUG.png" /> YUG</a></td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/TCH">Czechoslovakia</a></td>
+<td><a href="/countries/TCH"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/TCH.png" /> TCH</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/ISL">Iceland</a></td>
+<td><a href="/countries/ISL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ISL.png" /> ISL</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/KGZ">Kyrgyzstan</a></td>
+<td><a href="/countries/KGZ"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KGZ.png" /> KGZ</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/LAT">Latvia</a></td>
+<td><a href="/countries/LAT"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/LAT.png" /> LAT</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/TJK">Tajikistan</a></td>
+<td><a href="/countries/TJK"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/TJK.png" /> TJK</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/UAE">United Arab Emirates</a></td>
+<td><a href="/countries/UAE"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/UAE.png" /> UAE</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+</table>
+
+<h3>Youth Olympic Games</h3>
+<table class='table table-striped'>
+<thead>
+<tr>
+<th colspan='2'>NOC</th>
+<th>Gold</th>
+<th>Silver</th>
+<th>Bronze</th>
+<th>Total</th>
+</tr>
+</thead>
+<tr>
+<td><a href="/countries/MIX">Mixed team</a></td>
+<td><a href="/countries/MIX"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MIX.png" /> MIX</a></td>
+<td>3</td>
+<td>3</td>
+<td>6</td>
+<td>12</td>
+</tr>
+<tr>
+<td><a href="/countries/JPN">Japan</a></td>
+<td><a href="/countries/JPN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/JPN.png" /> JPN</a></td>
+<td>3</td>
+<td>0</td>
+<td>1</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="/countries/RUS">Russian Federation</a></td>
+<td><a href="/countries/RUS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/RUS.png" /> RUS</a></td>
+<td>2</td>
+<td>3</td>
+<td>1</td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="/countries/HUN">Hungary</a></td>
+<td><a href="/countries/HUN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/HUN.png" /> HUN</a></td>
+<td>2</td>
+<td>1</td>
+<td>2</td>
+<td>5</td>
+</tr>
+<tr>
+<td><a href="/countries/KAZ">Kazakhstan</a></td>
+<td><a href="/countries/KAZ"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KAZ.png" /> KAZ</a></td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="/countries/KOR">Republic of Korea</a></td>
+<td><a href="/countries/KOR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KOR.png" /> KOR</a></td>
+<td>2</td>
+<td>0</td>
+<td>2</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="/countries/USA">United States</a></td>
+<td><a href="/countries/USA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/USA.png" /> USA</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/AZE">Azerbaijan</a></td>
+<td><a href="/countries/AZE"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/AZE.png" /> AZE</a></td>
+<td>1</td>
+<td>2</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="/countries/GER">Germany</a></td>
+<td><a href="/countries/GER"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/GER.png" /> GER</a></td>
+<td>1</td>
+<td>1</td>
+<td>3</td>
+<td>5</td>
+</tr>
+<tr>
+<td><a href="/countries/BEL">Belgium</a></td>
+<td><a href="/countries/BEL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/BEL.png" /> BEL</a></td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="/countries/BRA">Brazil</a></td>
+<td><a href="/countries/BRA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/BRA.png" /> BRA</a></td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="/countries/CZE">Czech Republic</a></td>
+<td><a href="/countries/CZE"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/CZE.png" /> CZE</a></td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/ROU">Romania</a></td>
+<td><a href="/countries/ROU"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ROU.png" /> ROU</a></td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/CRO">Croatia</a></td>
+<td><a href="/countries/CRO"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/CRO.png" /> CRO</a></td>
+<td>1</td>
+<td>0</td>
+<td>2</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="/countries/TUR">Turkey</a></td>
+<td><a href="/countries/TUR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/TUR.png" /> TUR</a></td>
+<td>1</td>
+<td>0</td>
+<td>2</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="/countries/BLR">Belarus</a></td>
+<td><a href="/countries/BLR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/BLR.png" /> BLR</a></td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/VEN">Venezuela</a></td>
+<td><a href="/countries/VEN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/VEN.png" /> VEN</a></td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/IRI">Islamic Republic of Iran</a></td>
+<td><a href="/countries/IRI"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/IRI.png" /> IRI</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/GEO">Georgia</a></td>
+<td><a href="/countries/GEO"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/GEO.png" /> GEO</a></td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/MGL">Mongolia</a></td>
+<td><a href="/countries/MGL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MGL.png" /> MGL</a></td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/UKR">Ukraine</a></td>
+<td><a href="/countries/UKR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/UKR.png" /> UKR</a></td>
+<td>0</td>
+<td>1</td>
+<td>3</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="/countries/UZB">Uzbekistan</a></td>
+<td><a href="/countries/UZB"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/UZB.png" /> UZB</a></td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="/countries/PRK">Democratic People&#39;s Republic of Korea</a></td>
+<td><a href="/countries/PRK"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/PRK.png" /> PRK</a></td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/KGZ">Kyrgyzstan</a></td>
+<td><a href="/countries/KGZ"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KGZ.png" /> KGZ</a></td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/BIH">Bosnia and Herzegovina</a></td>
+<td><a href="/countries/BIH"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/BIH.png" /> BIH</a></td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/BUL">Bulgaria</a></td>
+<td><a href="/countries/BUL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/BUL.png" /> BUL</a></td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/IND">India</a></td>
+<td><a href="/countries/IND"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/IND.png" /> IND</a></td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/TUN">Tunisia</a></td>
+<td><a href="/countries/TUN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/TUN.png" /> TUN</a></td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/AUT">Austria</a></td>
+<td><a href="/countries/AUT"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/AUT.png" /> AUT</a></td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="/countries/SLO">Slovenia</a></td>
+<td><a href="/countries/SLO"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SLO.png" /> SLO</a></td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="/countries/ESP">Spain</a></td>
+<td><a href="/countries/ESP"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ESP.png" /> ESP</a></td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="/countries/CUB">Cuba</a></td>
+<td><a href="/countries/CUB"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/CUB.png" /> CUB</a></td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/NED">Netherlands</a></td>
+<td><a href="/countries/NED"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/NED.png" /> NED</a></td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/ARM">Armenia</a></td>
+<td><a href="/countries/ARM"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ARM.png" /> ARM</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/CAM">Cambodia</a></td>
+<td><a href="/countries/CAM"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/CAM.png" /> CAM</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/CAN">Canada</a></td>
+<td><a href="/countries/CAN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/CAN.png" /> CAN</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/DEN">Denmark</a></td>
+<td><a href="/countries/DEN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/DEN.png" /> DEN</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/DOM">Dominican Republic</a></td>
+<td><a href="/countries/DOM"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/DOM.png" /> DOM</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/KOS">Kosovo</a></td>
+<td><a href="/countries/KOS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KOS.png" /> KOS</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/LTU">Lithuania</a></td>
+<td><a href="/countries/LTU"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/LTU.png" /> LTU</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/CHN">People&#39;s Republic of China</a></td>
+<td><a href="/countries/CHN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/CHN.png" /> CHN</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/SVK">Slovakia</a></td>
+<td><a href="/countries/SVK"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SVK.png" /> SVK</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+</table>
+
+<h2>Most successful competitors</h2>
+<h3>Olympic Games</h3>
+<table class='table table-striped'>
+<thead>
+<tr>
+<th>Athlete</th>
+<th>Nat</th>
+<th>Gold</th>
+<th>Silver</th>
+<th>Bronze</th>
+<th>Total</th>
+</tr>
+</thead>
+<tr class='top'>
+<td><a href="/athletes/112724">Teddy Riner</a></td>
+<td><a href="/countries/FRA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/FRA.png" /> FRA</a></td>
+<td>3</td>
+<td>0</td>
+<td>2</td>
+<td>5</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/34155">Tadahiro Nomura</a></td>
+<td><a href="/countries/JPN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/JPN.png" /> JPN</a></td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/33327">Ryoko Tamura-Tani</a></td>
+<td><a href="/countries/JPN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/JPN.png" /> JPN</a></td>
+<td>2</td>
+<td>2</td>
+<td>1</td>
+<td>5</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/130152">Clarisse Agbegnenou</a></td>
+<td><a href="/countries/FRA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/FRA.png" /> FRA</a></td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/134777">Shohei Ono</a></td>
+<td><a href="/countries/JPN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/JPN.png" /> JPN</a></td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/33680">David Douillet</a></td>
+<td><a href="/countries/FRA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/FRA.png" /> FRA</a></td>
+<td>2</td>
+<td>0</td>
+<td>1</td>
+<td>3</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/33989">Waldemar Legień</a></td>
+<td><a href="/countries/POL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/POL.png" /> POL</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/34306">Wim Ruska</a></td>
+<td><a href="/countries/NED"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/NED.png" /> NED</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/34313">Hitoshi Saito</a></td>
+<td><a href="/countries/JPN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/JPN.png" /> JPN</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/34350">Peter Seisenbacher</a></td>
+<td><a href="/countries/AUT"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/AUT.png" /> AUT</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/92345">Masae Ueno</a></td>
+<td><a href="/countries/JPN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/JPN.png" /> JPN</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/106393">Xian Dongmei</a></td>
+<td><a href="/countries/CHN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/CHN.png" /> CHN</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/106417">Ayumi Tanimoto</a></td>
+<td><a href="/countries/JPN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/JPN.png" /> JPN</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/106681">Masato Uchishiba</a></td>
+<td><a href="/countries/JPN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/JPN.png" /> JPN</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/125271">Lukáš Krpálek</a></td>
+<td><a href="/countries/CZE"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/CZE.png" /> CZE</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/126771">Kayla Harrison</a></td>
+<td><a href="/countries/USA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/USA.png" /> USA</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+</table>
+
+<h3>Youth Olympic Games</h3>
+<table class='table table-striped'>
+<thead>
+<tr>
+<th>Athlete</th>
+<th>Nat</th>
+<th>Gold</th>
+<th>Silver</th>
+<th>Bronze</th>
+<th>Total</th>
+</tr>
+</thead>
+<tr class='top'>
+<td><a href="/athletes/130793">Miku Tashiro</a></td>
+<td><a href="/countries/JPN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/JPN.png" /> JPN</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/2104238">Mikhail Igolnikov</a></td>
+<td><a href="/countries/RUS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/RUS.png" /> RUS</a><br/><a href="/countries/ROC"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ROC.png" /> ROC</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/2502602">Artsiom Kolasau</a></td>
+<td><a href="/countries/BLR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/BLR.png" /> BLR</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/1301322">Lola Mansour</a></td>
+<td><a href="/countries/BEL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/BEL.png" /> BEL</a></td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/2101353">Layana Colman</a></td>
+<td><a href="/countries/BRA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/BRA.png" /> BRA</a></td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/1302014">Bae Seul-Bi</a></td>
+<td><a href="/countries/KOR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KOR.png" /> KOR</a></td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/1303209">Pedro Rivadulla</a></td>
+<td><a href="/countries/ESP"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ESP.png" /> ESP</a></td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/2101551">Brigita Matić</a></td>
+<td><a href="/countries/CRO"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/CRO.png" /> CRO</a></td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/2103742">Hifumi Abe</a></td>
+<td><a href="/countries/JPN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/JPN.png" /> JPN</a></td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/2104559">Sukhrob Tursunov</a></td>
+<td><a href="/countries/UZB"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/UZB.png" /> UZB</a></td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/2503428">Bekarys Saduakas</a></td>
+<td><a href="/countries/KAZ"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KAZ.png" /> KAZ</a></td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/2504804">Ana Viktorija Puljiz</a></td>
+<td><a href="/countries/CRO"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/CRO.png" /> CRO</a></td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+</tr>
+</table>
+
+<h2>Event types</h2>
+<table class='table table-striped sortable'>
+<thead>
+<th>Name</th>
+<th>Gender</th>
+<th>Still contested?</th>
+<th>Times held?</th>
+</thead>
+<tbody>
+<tr valign='top'>
+<td><a href="/event_names/342">Extra-Lightweight</a></td>
+<td>Men</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+<td>11</td>
+</tr>
+<tr valign='top'>
+<td><a href="/event_names/343">Half-Lightweight</a></td>
+<td>Men</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+<td>11</td>
+</tr>
+<tr valign='top'>
+<td><a href="/event_names/344">Lightweight</a></td>
+<td>Men</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+<td>14</td>
+</tr>
+<tr valign='top'>
+<td><a href="/event_names/345">Half-Middleweight</a></td>
+<td>Men</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+<td>13</td>
+</tr>
+<tr valign='top'>
+<td><a href="/event_names/346">Middleweight</a></td>
+<td>Men</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+<td>14</td>
+</tr>
+<tr valign='top'>
+<td><a href="/event_names/347">Half-Heavyweight</a></td>
+<td>Men</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+<td>13</td>
+</tr>
+<tr valign='top'>
+<td><a href="/event_names/348">Heavyweight</a></td>
+<td>Men</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+<td>14</td>
+</tr>
+<tr valign='top'>
+<td><a href="/event_names/350">Extra-Lightweight</a></td>
+<td>Women</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+<td>9</td>
+</tr>
+<tr valign='top'>
+<td><a href="/event_names/351">Half-Lightweight</a></td>
+<td>Women</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+<td>9</td>
+</tr>
+<tr valign='top'>
+<td><a href="/event_names/352">Lightweight</a></td>
+<td>Women</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+<td>9</td>
+</tr>
+<tr valign='top'>
+<td><a href="/event_names/353">Half-Middleweight</a></td>
+<td>Women</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+<td>9</td>
+</tr>
+<tr valign='top'>
+<td><a href="/event_names/354">Middleweight</a></td>
+<td>Women</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+<td>9</td>
+</tr>
+<tr valign='top'>
+<td><a href="/event_names/355">Half-Heavyweight</a></td>
+<td>Women</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+<td>9</td>
+</tr>
+<tr valign='top'>
+<td><a href="/event_names/356">Heavyweight</a></td>
+<td>Women</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+<td>9</td>
+</tr>
+<tr valign='top'>
+<td><a href="/event_names/2568">Team</a></td>
+<td>Mixed</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+<td>1</td>
+</tr>
+<tr valign='top'>
+<td><a href="/event_names/2255">≤55 kilograms</a></td>
+<td>Boys</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+<td>3</td>
+</tr>
+<tr valign='top'>
+<td><a href="/event_names/2256">≤66 kilograms</a></td>
+<td>Boys</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+<td>3</td>
+</tr>
+<tr valign='top'>
+<td><a href="/event_names/2257">≤81 kilograms</a></td>
+<td>Boys</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+<td>3</td>
+</tr>
+<tr valign='top'>
+<td><a href="/event_names/2258">≤100 kilograms</a></td>
+<td>Boys</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+<td>3</td>
+</tr>
+<tr valign='top'>
+<td><a href="/event_names/2259">≤44 kilograms</a></td>
+<td>Girls</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+<td>3</td>
+</tr>
+<tr valign='top'>
+<td><a href="/event_names/2260">≤52 kilograms</a></td>
+<td>Girls</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+<td>3</td>
+</tr>
+<tr valign='top'>
+<td><a href="/event_names/2261">≤63 kilograms</a></td>
+<td>Girls</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+<td>3</td>
+</tr>
+<tr valign='top'>
+<td><a href="/event_names/2262">≤78 kilograms</a></td>
+<td>Girls</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+<td>3</td>
+</tr>
+<tr valign='top'>
+<td><a href="/event_names/2263">Team</a></td>
+<td>Mixed Youth</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+<td>3</td>
+</tr>
+<tr valign='top'>
+<td><a href="/event_names/349">Open Class</a></td>
+<td>Men</td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+<td>5</td>
+</tr>
+</tbody>
+</table>
+
+
+</div>
+</body>
+<footer class='footer'>
+<br>
+<div class='panel panel-info'>
+<div class='panel-heading'>
+<h3 class='panel-title'>
+<span class='glyphicon glyphicon-info-sign'></span>
+Did you know?
+</h3>
+</div>
+<div class='panel-body'>
+<p>The 1948 Olympic ice hockey tournament saw two US entries: one affiliatied with the international Ice Hockey Federation, and one affiliated with the US Olympic Committee. Both were barred from entering, but the former competed anyway, only to be disqualified later.</p>
+
+
+</div>
+</div>
+<div class='container'>
+<p>
+<a href="/users/sign_in">Login</a>
+|
+<a href="/statistics/olympedia">Statistics</a>
+|
+<a href="/static/about">About</a>
+|
+<a href="/static/faq">FAQ</a>
+|
+<a href="/feedbacks/new">Feedback</a>
+</p>
+<p>
+&copy; <a href="/static/about">OlyMADMen</a> 2006 — 2022
+</p>
+</div>
+</footer>
+
+<script src="/assets/lightbox.min-40fdcc195c5982250c8901f2c160e15342941a311faf6372c04117c0d9c44bc7.js"></script>
+<script>
+  $('.footnote').tooltip();
+</script>
+</html>

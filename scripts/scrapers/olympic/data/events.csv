@@ -1,0 +1,1750 @@
+,sport_name,event_code,event_name,event_category,continued
+0,canoeing,989,"Kayak Singles, 200 metres",Men,yes
+1,canoeing,160,"Kayak Singles, 1,000 metres",Men,yes
+2,canoeing,990,"Kayak Doubles, 200 metres",Men,yes
+3,canoeing,163,"Kayak Doubles, 1,000 metres",Men,yes
+4,canoeing,2575,"Kayak Fours, 500 metres",Men,yes
+5,canoeing,165,"Kayak Fours, 1,000 metres",Men,yes
+6,canoeing,991,"Canadian Singles, 200 metres",Men,yes
+7,canoeing,169,"Canadian Singles, 1,000 metres",Men,yes
+8,canoeing,172,"Canadian Doubles, 1,000 metres",Men,yes
+9,canoeing,992,"Kayak Singles, 200 metres",Women,yes
+10,canoeing,178,"Kayak Singles, 500 metres",Women,yes
+11,canoeing,179,"Kayak Doubles, 500 metres",Women,yes
+12,canoeing,180,"Kayak Fours, 500 metres",Women,yes
+13,canoeing,2576,"Canadian Singles, 200 metres",Women,yes
+14,canoeing,2577,"Canadian Doubles, 500 metres",Women,yes
+15,canoeing,2098,"Kayak Singles, Obstacle Slalom",Boys,yes
+16,canoeing,2095,"Kayak Singles, Head to Head",Boys,yes
+17,canoeing,2099,"Canoe Singles, Obstacle Slalom",Boys,yes
+18,canoeing,2096,"Canoe Singles, Head to Head",Boys,yes
+19,canoeing,2097,"Kayak Singles, Head to Head",Girls,yes
+20,canoeing,2100,"Kayak Singles, Obstacle Slalom",Girls,yes
+21,canoeing,2293,"Canoe Singles, Head to Head",Girls,yes
+22,canoeing,2294,"Canoe Singles, Obstacle Slalom",Girls,yes
+23,canoeing,159,"Kayak Singles, 500 metres",Men,no
+24,canoeing,162,"Kayak Doubles, 500 metres",Men,no
+25,canoeing,166,"Kayak Relay, 4 × 500 metres",Men,no
+26,canoeing,168,"Canadian Singles, 500 metres",Men,no
+27,canoeing,171,"Canadian Doubles, 500 metres",Men,no
+28,canoeing,776,"Kayak Singles, 800 metres",Men,no
+29,canoeing,777,"Kayak Doubles, 800 metres",Men,no
+30,canoeing,778,"Kayak Fours, 800 metres",Men,no
+31,canoeing,779,"Canadian Singles, 800 metres",Men,no
+32,canoeing,780,"Canadian Doubles, 800 metres",Men,no
+33,canoeing,781,"Canadian Fours, 800 metres",Men,no
+34,sailing,404,Windsurfer,Men,yes
+35,sailing,405,One Person Dinghy,Men,yes
+36,sailing,406,Two Person Dinghy,Men,yes
+37,sailing,407,Two Person Keelboat,Men,yes
+38,sailing,998,Skiff,Men,yes
+39,sailing,999,One Person Heavyweight Dinghy,Men,yes
+40,sailing,408,Windsurfer,Women,yes
+41,sailing,409,One Person Dinghy,Women,yes
+42,sailing,410,Two Person Dinghy,Women,yes
+43,sailing,411,Three Person Keelboat,Women,yes
+44,sailing,1026,Skiff,Women,yes
+45,sailing,1036,Multihull,Mixed,yes
+46,sailing,2168,Windsurfer,Boys,yes
+47,sailing,2169,One Person Dinghy,Boys,yes
+48,sailing,2472,Kiteboarding,Boys,yes
+49,sailing,2170,Windsurfer,Girls,yes
+50,sailing,2171,One Person Dinghy,Girls,yes
+51,sailing,2473,Kiteboarding,Girls,yes
+52,sailing,2474,Multihull,Mixed Youth,yes
+53,sailing,685,Windsurfer,Open,no
+54,sailing,412,One Person Dinghy,Open,no
+55,sailing,413,Two Person Dinghy,Open,no
+56,sailing,414,Two Person Keelboat,Open,no
+57,sailing,416,Skiff,Open,no
+58,sailing,417,Multihull,Open,no
+59,sailing,418,Three Person Keelboat,Open,no
+60,sailing,428,12 foot,Open,no
+61,sailing,419,Two Person Heavyweight Dinghy,Open,no
+62,sailing,427,18 foot,Open,no
+63,sailing,420,5.5 metres,Open,no
+64,sailing,421,6 metres,Open,no
+65,sailing,422,6.5 metres,Open,no
+66,sailing,423,7 metres,Open,no
+67,sailing,424,8 metres,Open,no
+68,sailing,425,10 metres,Open,no
+69,sailing,426,12 metres,Open,no
+70,sailing,429,30 metres²,Open,no
+71,sailing,430,40 metres²,Open,no
+72,sailing,431,Open,Open,no
+73,sailing,432,0-½ Ton,Open,no
+74,sailing,433,½-1 Ton,Open,no
+75,sailing,434,1-2 Ton,Open,no
+76,sailing,435,2-3 Ton,Open,no
+77,sailing,436,3-10 Ton,Open,no
+78,sailing,437,10-20 Ton,Open,no
+79,sailing,438,20+ Ton,Open,no
+80,skijoring,743,Ski Joring,Men,no
+81,golf,305,Individual,Men,yes
+82,golf,307,Individual,Women,yes
+83,golf,2299,Individual,Boys,yes
+84,golf,2300,Individual,Girls,yes
+85,golf,2301,Team,Mixed Youth,yes
+86,golf,2400,Driving Contest,Men,no
+87,golf,2401,Putting Contest,Men,no
+88,golf,306,Team,Men,no
+89,golf,933,"Individual, Handicap",Men,no
+90,golf,934,"Individual, Professional",Men,no
+91,athletics,40,100 metres,Men,yes
+92,athletics,41,200 metres,Men,yes
+93,athletics,42,400 metres,Men,yes
+94,athletics,43,800 metres,Men,yes
+95,athletics,44,"1,500 metres",Men,yes
+96,athletics,45,"5,000 metres",Men,yes
+97,athletics,47,"10,000 metres",Men,yes
+98,athletics,48,Marathon,Men,yes
+99,athletics,49,110 metres Hurdles,Men,yes
+100,athletics,51,400 metres Hurdles,Men,yes
+101,athletics,54,"3,000 metres Steeplechase",Men,yes
+102,athletics,57,4 × 100 metres Relay,Men,yes
+103,athletics,58,4 × 400 metres Relay,Men,yes
+104,athletics,69,20 kilometres Walk,Men,yes
+105,athletics,70,50 kilometres Walk,Men,yes
+106,athletics,73,High Jump,Men,yes
+107,athletics,75,Pole Vault,Men,yes
+108,athletics,76,Long Jump,Men,yes
+109,athletics,78,Triple Jump,Men,yes
+110,athletics,80,Shot Put,Men,yes
+111,athletics,84,Discus Throw,Men,yes
+112,athletics,87,Hammer Throw,Men,yes
+113,athletics,88,Javelin Throw,Men,yes
+114,athletics,93,Decathlon,Men,yes
+115,athletics,95,100 metres,Women,yes
+116,athletics,96,200 metres,Women,yes
+117,athletics,97,400 metres,Women,yes
+118,athletics,98,800 metres,Women,yes
+119,athletics,99,"1,500 metres",Women,yes
+120,athletics,101,"5,000 metres",Women,yes
+121,athletics,102,"10,000 metres",Women,yes
+122,athletics,103,Marathon,Women,yes
+123,athletics,105,100 metres Hurdles,Women,yes
+124,athletics,106,400 metres Hurdles,Women,yes
+125,athletics,700,"3,000 metres Steeplechase",Women,yes
+126,athletics,107,4 × 100 metres Relay,Women,yes
+127,athletics,108,4 × 400 metres Relay,Women,yes
+128,athletics,110,20 kilometres Walk,Women,yes
+129,athletics,111,High Jump,Women,yes
+130,athletics,112,Pole Vault,Women,yes
+131,athletics,113,Long Jump,Women,yes
+132,athletics,114,Triple Jump,Women,yes
+133,athletics,115,Shot Put,Women,yes
+134,athletics,116,Discus Throw,Women,yes
+135,athletics,117,Hammer Throw,Women,yes
+136,athletics,118,Javelin Throw,Women,yes
+137,athletics,120,Heptathlon,Women,yes
+138,athletics,2572,4 × 400 metres Relay,Mixed,yes
+139,athletics,2211,100 metres,Boys,yes
+140,athletics,2212,200 metres,Boys,yes
+141,athletics,2213,400 metres,Boys,yes
+142,athletics,2280,800 metres,Boys,yes
+143,athletics,2214,"1,000 metres",Boys,yes
+144,athletics,2281,"1,500 metres",Boys,yes
+145,athletics,2215,"3,000 metres",Boys,yes
+146,athletics,2216,110 metres Hurdles,Boys,yes
+147,athletics,2217,400 metres Hurdles,Boys,yes
+148,athletics,2218,"2,000 metres Steeplechase",Boys,yes
+149,athletics,2219,Medley Relay,Boys,yes
+150,athletics,2220,"10,000 metres Walk",Boys,yes
+151,athletics,2221,High Jump,Boys,yes
+152,athletics,2222,Pole Vault,Boys,yes
+153,athletics,2223,Long Jump,Boys,yes
+154,athletics,2224,Triple Jump,Boys,yes
+155,athletics,2225,Shot Put,Boys,yes
+156,athletics,2226,Discus Throw,Boys,yes
+157,athletics,2227,Hammer Throw,Boys,yes
+158,athletics,2228,Javelin Throw,Boys,yes
+159,athletics,2451,"5,000 metres Walk",Boys,yes
+160,athletics,2229,100 metres,Girls,yes
+161,athletics,2230,200 metres,Girls,yes
+162,athletics,2231,400 metres,Girls,yes
+163,athletics,2282,800 metres,Girls,yes
+164,athletics,2232,"1,000 metres",Girls,yes
+165,athletics,2283,"1,500 metres",Girls,yes
+166,athletics,2233,"3,000 metres",Girls,yes
+167,athletics,2234,100 metres Hurdles,Girls,yes
+168,athletics,2235,400 metres Hurdles,Girls,yes
+169,athletics,2236,"2,000 metres Steeplechase",Girls,yes
+170,athletics,2237,Medley Relay,Girls,yes
+171,athletics,2238,"5,000 metres Walk",Girls,yes
+172,athletics,2239,High Jump,Girls,yes
+173,athletics,2240,Pole Vault,Girls,yes
+174,athletics,2241,Long Jump,Girls,yes
+175,athletics,2242,Triple Jump,Girls,yes
+176,athletics,2243,Shot Put,Girls,yes
+177,athletics,2244,Discus Throw,Girls,yes
+178,athletics,2245,Hammer Throw,Girls,yes
+179,athletics,2246,Javelin Throw,Girls,yes
+180,athletics,2452,"5,000 metres Walk",Girls,yes
+181,athletics,2284,8 × 100 metres Relay,Mixed Youth,yes
+182,athletics,39,60 metres,Men,no
+183,athletics,2369,100 yards,Men,no
+184,athletics,2370,220 yards,Men,no
+185,athletics,2433,Stade Race,Men,no
+186,athletics,2427,Diaulos,Men,no
+187,athletics,2377,440 yards,Men,no
+188,athletics,2371,880 yards,Men,no
+189,athletics,2372,1 mile,Men,no
+190,athletics,2373,2 miles,Men,no
+191,athletics,2429,Long Race (Dolikhos),Men,no
+192,athletics,46,5 miles,Men,no
+193,athletics,2374,120 yards Hurdles,Men,no
+194,athletics,50,200 metres Hurdles,Men,no
+195,athletics,2375,220 yards Hurdles,Men,no
+196,athletics,52,"2,500 metres Steeplechase",Men,no
+197,athletics,53,"2,590 metres Steeplechase",Men,no
+198,athletics,55,"3,200 metres Steeplechase",Men,no
+199,athletics,56,"4,000 metres Steeplechase",Men,no
+200,athletics,2380,4 × 440 yards Relay,Men,no
+201,athletics,59,"1,600 metres Medley Relay",Men,no
+202,athletics,60,"3,000 metres, Team",Men,no
+203,athletics,61,"3 miles, Team",Men,no
+204,athletics,62,"5,000 metres, Team",Men,no
+205,athletics,63,"4 miles, Team",Men,no
+206,athletics,64,"1,500 metres Walk",Men,no
+207,athletics,65,"3,000 metres Walk",Men,no
+208,athletics,66,"3,500 metres Walk",Men,no
+209,athletics,67,10 kilometres Walk,Men,no
+210,athletics,68,10 miles Walk,Men,no
+211,athletics,71,"Cross-Country, Individual",Men,no
+212,athletics,72,"Cross-Country, Team",Men,no
+213,athletics,74,Standing High Jump,Men,no
+214,athletics,77,Standing Long Jump,Men,no
+215,athletics,79,Standing Triple Jump,Men,no
+216,athletics,2431,Plain Jump,Men,no
+217,athletics,81,"Shot Put, Both Hands",Men,no
+218,athletics,2430,Over the Ditch Jump,Men,no
+219,athletics,82,56-pound Weight Throw,Men,no
+220,athletics,83,Stone Throw,Men,no
+221,athletics,85,"Discus Throw, Greek Style",Men,no
+222,athletics,86,"Discus Throw, Both Hands",Men,no
+223,athletics,89,"Javelin Throw, Both Hands",Men,no
+224,athletics,90,"Javelin Throw, Freestyle",Men,no
+225,athletics,2428,Javelin Throw for Accuracy,Men,no
+226,athletics,2381,Bolo Throw,Men,no
+227,athletics,2382,Baseball Throw,Men,no
+228,athletics,2383,Ball Throw for Accuracy,Men,no
+229,athletics,91,Pentathlon,Men,no
+230,athletics,92,Pentathlon (Ancient),Men,no
+231,athletics,2379,"Pentathlon, Team",Men,no
+232,athletics,94,All-Around Championship,Men,no
+233,athletics,2376,Team,Men,no
+234,athletics,876,Special Scratch Pole Vault #1,Men,no
+235,athletics,877,Special Scratch Pole Vault #2,Men,no
+236,athletics,2331,"60 yards, Handicap",Men,no
+237,athletics,2432,Pole Vault Over a Ditch,Men,no
+238,athletics,2332,"100 yards, Handicap",Men,no
+239,athletics,864,"100 metres, Handicap",Men,no
+240,athletics,2333,"220 yards, Handicap",Men,no
+241,athletics,865,"400 metres, Handicap",Men,no
+242,athletics,2334,"440 yards, Handicap",Men,no
+243,athletics,866,"800 metres, Handicap",Men,no
+244,athletics,2335,"880 yards, Handicap",Men,no
+245,athletics,867,"1,500 metres, Handicap",Men,no
+246,athletics,2336,"1 mile, Handicap",Men,no
+247,athletics,2362,"2 miles, Handicap",Men,no
+248,athletics,2338,"120 yards Hurdles, Handicap",Men,no
+249,athletics,868,"110 metres Hurdles, Handicap",Men,no
+250,athletics,2339,"220 yards Hurdles, Handicap",Men,no
+251,athletics,869,"400 metres Hurdles, Handicap",Men,no
+252,athletics,870,"2,500 metres Steeplechase, Handicap",Men,no
+253,athletics,2337,"1 mile, Team, Handicap",Men,no
+254,athletics,871,"High Jump, Handicap",Men,no
+255,athletics,872,"Long Jump, Handicap",Men,no
+256,athletics,873,"Pole Vault, Handicap",Men,no
+257,athletics,874,"Shot Put, Handicap",Men,no
+258,athletics,875,"Discus Throw, Handicap",Men,no
+259,athletics,2345,"Hammer Throw, Handicap",Men,no
+260,athletics,2346,"56-pound Weight Throw, Handicap",Men,no
+261,athletics,2363,"Team, Handicap",Men,no
+262,athletics,878,"100 metres, Professionals",Men,no
+263,athletics,879,"400 metres, Professionals",Men,no
+264,athletics,880,"1,500 metres, Professionals",Men,no
+265,athletics,881,"5,000 metres, Professionals",Men,no
+266,athletics,882,"6-hour race, Professionals",Men,no
+267,athletics,883,"110 metres Hurdles, Professionals",Men,no
+268,athletics,884,"2,500 metres Steeplechase, Professionals",Men,no
+269,athletics,885,"High Jump, Professionals",Men,no
+270,athletics,886,"Long Jump, Professionals",Men,no
+271,athletics,887,"Shot Put, Professionals",Men,no
+272,athletics,768,"1,500 metres Wheelchair",Men,no
+273,athletics,2426,Bladdering,Men,no
+274,athletics,100,"3,000 metres",Women,no
+275,athletics,104,80 metres Hurdles,Women,no
+276,athletics,109,10 kilometres Walk,Women,no
+277,athletics,119,Pentathlon,Women,no
+278,athletics,769,800 metres Wheelchair,Women,no
+279,athletics,2365,50 yards,Boys,no
+280,athletics,2347,100 yards,Boys,no
+281,athletics,2348,220 yards,Boys,no
+282,athletics,2349,440 yards,Boys,no
+283,athletics,2350,880 yards,Boys,no
+284,athletics,2351,1 mile,Boys,no
+285,athletics,2366,2 miles,Boys,no
+286,athletics,2367,5 miles,Boys,no
+287,athletics,2352,120 yards Hurdles,Boys,no
+288,athletics,2353,220 yards Hurdles,Boys,no
+289,athletics,2378,4 × 220 yards Relay,Boys,no
+290,athletics,2354,4 × 440 yards Relay,Boys,no
+291,athletics,2368,56-pound Weight Throw,Boys,no
+292,athletics,2361,Team,Boys,no
+293,squash,2493,Exhibition,Mixed Youth,yes
+294,roller_skating,2470,Combined,Boys,yes
+295,roller_skating,2471,Combined,Girls,yes
+296,tennis,607,Singles,Men,yes
+297,tennis,608,Doubles,Men,yes
+298,tennis,609,Singles,Women,yes
+299,tennis,610,Doubles,Women,yes
+300,tennis,611,Doubles,Mixed,yes
+301,tennis,2179,Singles,Boys,yes
+302,tennis,2180,Doubles,Boys,yes
+303,tennis,2181,Singles,Girls,yes
+304,tennis,2182,Doubles,Girls,yes
+305,tennis,2310,Doubles,Mixed Youth,yes
+306,tennis,1013,"Singles, Covered Courts",Men,no
+307,tennis,1014,"Doubles, Covered Courts",Men,no
+308,tennis,2415,"Singles, Handicap",Men,no
+309,tennis,2416,"Doubles, Handicap",Men,no
+310,tennis,2419,"Singles, Professionals",Men,no
+311,tennis,2420,"Doubles, Professionals, Handicap",Men,no
+312,tennis,1015,"Singles, Covered Courts",Women,no
+313,tennis,2417,"Singles, Handicap",Women,no
+314,tennis,2418,"Doubles, Handicap",Mixed,no
+315,tennis,1016,"Doubles, Covered Courts",Mixed,no
+316,rugby,403,Rugby,Men,no
+317,biathlon,128,10 kilometres Sprint,Men,yes
+318,biathlon,129,12.5 kilometres Pursuit,Men,yes
+319,biathlon,130,15 kilometres Mass Start,Men,yes
+320,biathlon,131,20 kilometres,Men,yes
+321,biathlon,132,4 × 7.5 kilometres Relay,Men,yes
+322,biathlon,133,7.5 kilometres Sprint,Women,yes
+323,biathlon,134,10 kilometres Pursuit,Women,yes
+324,biathlon,135,12.5 kilometres Mass Start,Women,yes
+325,biathlon,136,15 kilometres,Women,yes
+326,biathlon,138,4 × 6 kilometres Relay,Women,yes
+327,biathlon,1001,2 × 6 kilometres and 2 × 7.5 kilometres Relay,Mixed,yes
+328,biathlon,2012,7.5 kilometres Sprint,Boys,yes
+329,biathlon,2011,10 kilometres Pursuit,Boys,yes
+330,biathlon,2311,12.5 kilometres,Boys,yes
+331,biathlon,2009,6 kilometres Sprint,Girls,yes
+332,biathlon,2010,7.5 kilometres Pursuit,Girls,yes
+333,biathlon,2312,10 kilometres,Girls,yes
+334,biathlon,2014,2 × 6 kilometres and 2 × 7.5 kilometres Relay,Mixed Youth,yes
+335,biathlon,2066,6 and 7.5 kilometres Single Relay,Mixed Youth,yes
+336,biathlon,137,3 × 7.5 kilometres Relay,Women,no
+337,biathlon,139,4 × 7.5 kilometres Relay,Women,no
+338,lacrosse,357,Lacrosse,Men,no
+339,football,303,Football,Men,yes
+340,football,304,Football,Women,yes
+341,football,2249,Football,Boys,yes
+342,football,2250,Football,Girls,yes
+343,table_tennis,625,Singles,Men,yes
+344,table_tennis,705,Team,Men,yes
+345,table_tennis,627,Singles,Women,yes
+346,table_tennis,706,Team,Women,yes
+347,table_tennis,2573,Doubles,Mixed,yes
+348,table_tennis,2277,Singles,Boys,yes
+349,table_tennis,2278,Singles,Girls,yes
+350,table_tennis,2279,Team,Mixed Youth,yes
+351,table_tennis,626,Doubles,Men,no
+352,table_tennis,628,Doubles,Women,no
+353,equestrian_driving,274,Hacks and Hunter Combined,Open,no
+354,equestrian_driving,275,Four-In-Hand Competition,Open,no
+355,curling,209,Curling,Men,yes
+356,curling,210,Curling,Women,yes
+357,curling,1031,Mixed Doubles,Mixed,yes
+358,curling,2021,Doubles,Mixed Youth,yes
+359,curling,2022,Curling,Mixed Youth,yes
+360,croquet,916,"Singles, Two Balls, Handicap",Men,no
+361,croquet,206,"Singles, One Ball",Open,no
+362,croquet,207,"Singles, Two Balls",Open,no
+363,croquet,208,Doubles,Open,no
+364,beach_handball,2453,Beach Handball,Boys,yes
+365,beach_handball,2454,Beach Handball,Girls,yes
+366,art_competitions,2421,Drama Competition,Men,no
+367,art_competitions,2425,Poetry Competition,Men,no
+368,art_competitions,2423,"Music, Compositions",Men,no
+369,art_competitions,2424,"Music, Groups of Musicians",Men,no
+370,art_competitions,2422,Intellectual Competition,Men,no
+371,art_competitions,711,Architecture,Open,no
+372,art_competitions,712,"Architecture, Designs For Town Planning",Open,no
+373,art_competitions,713,"Architecture, Architectural Designs",Open,no
+374,art_competitions,714,"Architecture, Further Entries",Open,no
+375,art_competitions,715,Literature,Open,no
+376,art_competitions,716,"Literature, Dramatic Works",Open,no
+377,art_competitions,717,"Literature, Epic Works",Open,no
+378,art_competitions,718,"Literature, Lyric Works",Open,no
+379,art_competitions,719,"Literature, Unknown Event",Open,no
+380,art_competitions,720,Music,Open,no
+381,art_competitions,721,"Music, Compositions For Orchestra",Open,no
+382,art_competitions,722,"Music, Compositions For Solo Or Chorus",Open,no
+383,art_competitions,723,"Music, Instrumental And Chamber",Open,no
+384,art_competitions,724,"Music, Vocals",Open,no
+385,art_competitions,725,Painting,Open,no
+386,art_competitions,1022,"Music, Unknown Event",Open,no
+387,art_competitions,726,"Painting, Drawings And Water Colors",Open,no
+388,art_competitions,728,"Painting, Graphic Arts",Open,no
+389,art_competitions,737,"Painting, Paintings",Open,no
+390,art_competitions,729,"Painting, Unknown Event",Open,no
+391,art_competitions,1021,"Painting, Applied Arts",Open,no
+392,art_competitions,730,Sculpturing,Open,no
+393,art_competitions,731,"Sculpturing, Medals",Open,no
+394,art_competitions,732,"Sculpturing, Medals And Plaques",Open,no
+395,art_competitions,733,"Sculpturing, Medals And Reliefs",Open,no
+396,art_competitions,734,"Sculpturing, Reliefs",Open,no
+397,art_competitions,735,"Sculpturing, Statues",Open,no
+398,art_competitions,736,"Sculpturing, Unknown Event",Open,no
+399,art_competitions,834,Unknown Event,Open,no
+400,kaatsen,790,Kaatsen,Men,no
+401,polo,2492,Exhibition,Mixed Youth,yes
+402,polo,372,Polo,Men,no
+403,winter_pentathlon,750,Winter Pentathlon,Men,no
+404,alpinism,709,Alpinism,Open,no
+405,ski_jumping,518,"Normal Hill, Individual",Men,yes
+406,ski_jumping,519,"Large Hill, Individual",Men,yes
+407,ski_jumping,520,"Large Hill, Team",Men,yes
+408,ski_jumping,1008,"Normal Hill, Individual",Women,yes
+409,ski_jumping,2585,"Normal Hill, Team",Mixed,yes
+410,ski_jumping,2044,"Medium Hill, Individual",Boys,yes
+411,ski_jumping,2074,"Normal Hill, Individual",Boys,yes
+412,ski_jumping,2043,"Medium Hill, Individual",Girls,yes
+413,ski_jumping,2073,"Normal Hill, Individual",Girls,yes
+414,ski_jumping,2045,"Medium Hill, Team",Mixed Youth,yes
+415,ski_jumping,2070,"Normal Hill, Team",Mixed Youth,yes
+416,surfing,2561,Shortboard,Men,yes
+417,surfing,2562,Shortboard,Women,yes
+418,kendo,1017,Embusen,Open,no
+419,kendo,1018,Renshu,Open,no
+420,kendo,1019,Shiai - Red-White,Open,no
+421,kendo,1020,Shiai - East-West,Open,no
+422,luge,358,Singles,Men,yes
+423,luge,359,Singles,Women,yes
+424,luge,1007,Team Relay,Mixed,yes
+425,luge,360,Doubles,Open,yes
+426,luge,2038,Singles,Boys,yes
+427,luge,2317,Doubles,Boys,yes
+428,luge,2036,Singles,Girls,yes
+429,luge,2318,Doubles,Girls,yes
+430,luge,2039,Team Relay,Mixed Youth,yes
+431,luge,2037,Doubles,Open Youth,no
+432,futsal,2460,Futsal,Boys,yes
+433,futsal,2461,Futsal,Girls,yes
+434,canoe_marathon,161,"Kayak Singles, 10,000 metres",Men,no
+435,canoe_marathon,164,"Kayak Doubles, 10,000 metres",Men,no
+436,canoe_marathon,170,"Canadian Singles, 10,000 metres",Men,no
+437,canoe_marathon,173,"Canadian Doubles, 10,000 metres",Men,no
+438,canoe_marathon,176,"Folding Kayak Singles, 10,000 metres",Men,no
+439,canoe_marathon,177,"Folding Kayak Doubles, 10,000 metres",Men,no
+440,baseball,156,Baseball,Men,yes
+441,freestyle_skiing,294,Moguls,Men,yes
+442,freestyle_skiing,295,Aerials,Men,yes
+443,freestyle_skiing,739,Ski Cross,Men,yes
+444,freestyle_skiing,1002,Halfpipe,Men,yes
+445,freestyle_skiing,1004,Slopestyle,Men,yes
+446,freestyle_skiing,2582,Big Air,Men,yes
+447,freestyle_skiing,296,Moguls,Women,yes
+448,freestyle_skiing,297,Aerials,Women,yes
+449,freestyle_skiing,740,Ski Cross,Women,yes
+450,freestyle_skiing,1003,Halfpipe,Women,yes
+451,freestyle_skiing,1005,Slopestyle,Women,yes
+452,freestyle_skiing,2583,Big Air,Women,yes
+453,freestyle_skiing,2584,Team Aerials,Mixed,yes
+454,freestyle_skiing,2026,Ski Cross,Boys,yes
+455,freestyle_skiing,2025,Halfpipe,Boys,yes
+456,freestyle_skiing,2078,Slopestyle,Boys,yes
+457,freestyle_skiing,2313,Big Air,Boys,yes
+458,freestyle_skiing,2024,Ski Cross,Girls,yes
+459,freestyle_skiing,2023,Halfpipe,Girls,yes
+460,freestyle_skiing,2077,Slopestyle,Girls,yes
+461,freestyle_skiing,2314,Big Air,Girls,yes
+462,freestyle_skiing,759,Ballet,Men,no
+463,freestyle_skiing,760,Ballet,Women,no
+464,hockey,337,Hockey,Men,yes
+465,hockey,338,Hockey,Women,yes
+466,hockey,2253,Hockey,Boys,yes
+467,hockey,2254,Hockey,Girls,yes
+468,3-on-3_ice_hockey,2315,3-on-3 Ice Hockey,Boys,yes
+469,3-on-3_ice_hockey,2316,3-on-3 Ice Hockey,Girls,yes
+470,rugby_sevens,1028,Rugby Sevens,Men,yes
+471,rugby_sevens,1029,Rugby Sevens,Women,yes
+472,rugby_sevens,2304,Rugby Sevens,Boys,yes
+473,rugby_sevens,2305,Rugby Sevens,Girls,yes
+474,roller_sports,2557,Street,Men,yes
+475,roller_sports,2559,Park,Men,yes
+476,roller_sports,2558,Street,Women,yes
+477,roller_sports,2560,Park,Women,yes
+478,ancient_art_competitions,2523,Competition for Heralds,Men,no
+479,ancient_art_competitions,2524,Competition for Trumpeters,Men,no
+480,ancient_art_competitions,2525,Competition for Tragedy,Men,no
+481,ancient_art_competitions,2526,Rhetoric Competition,Men,no
+482,ancient_art_competitions,2527,Competition for Lyre-Playing,Men,no
+483,ancient_art_competitions,2528,Poetry Competition,Men,no
+484,ancient_art_competitions,2529,Aulos (Wind Instrument) Competition,Men,no
+485,ancient_art_competitions,2530,Comedy Competition,Men,no
+486,ancient_art_competitions,2531,Competition for Flute Playing,Men,no
+487,fishing,932,Concours d'honneur,Men,no
+488,waterskiing,813,Slalom,Men,no
+489,waterskiing,814,Tricks,Men,no
+490,waterskiing,815,Jumping,Men,no
+491,waterskiing,816,Slalom,Women,no
+492,waterskiing,817,Tricks,Women,no
+493,waterskiing,818,Jumping,Women,no
+494,speed_skating,530,500 metres,Men,yes
+495,speed_skating,531,"1,000 metres",Men,yes
+496,speed_skating,532,"1,500 metres",Men,yes
+497,speed_skating,533,"5,000 metres",Men,yes
+498,speed_skating,534,"10,000 metres",Men,yes
+499,speed_skating,1034,Mass Start,Men,yes
+500,speed_skating,535,Team Pursuit (8 laps),Men,yes
+501,speed_skating,537,500 metres,Women,yes
+502,speed_skating,538,"1,000 metres",Women,yes
+503,speed_skating,539,"1,500 metres",Women,yes
+504,speed_skating,540,"3,000 metres",Women,yes
+505,speed_skating,541,"5,000 metres",Women,yes
+506,speed_skating,1035,Mass Start,Women,yes
+507,speed_skating,542,Team Pursuit (6 laps),Women,yes
+508,speed_skating,2056,500 metres,Boys,yes
+509,speed_skating,2054,"1,500 metres",Boys,yes
+510,speed_skating,2055,"3,000 metres",Boys,yes
+511,speed_skating,2057,Mass Start,Boys,yes
+512,speed_skating,2052,500 metres,Girls,yes
+513,speed_skating,2050,"1,500 metres",Girls,yes
+514,speed_skating,2051,"3,000 metres",Girls,yes
+515,speed_skating,2053,Mass Start,Girls,yes
+516,speed_skating,2063,Team Sprint,Mixed Youth,yes
+517,speed_skating,536,Allround,Men,no
+518,alpine_skiing,29,Downhill,Men,yes
+519,alpine_skiing,30,Super G,Men,yes
+520,alpine_skiing,31,Giant Slalom,Men,yes
+521,alpine_skiing,32,Slalom,Men,yes
+522,alpine_skiing,33,Combined,Men,yes
+523,alpine_skiing,34,Downhill,Women,yes
+524,alpine_skiing,35,Super G,Women,yes
+525,alpine_skiing,36,Giant Slalom,Women,yes
+526,alpine_skiing,37,Slalom,Women,yes
+527,alpine_skiing,38,Combined,Women,yes
+528,alpine_skiing,1030,Team,Mixed,yes
+529,alpine_skiing,2007,Super G,Boys,yes
+530,alpine_skiing,2004,Giant Slalom,Boys,yes
+531,alpine_skiing,2005,Slalom,Boys,yes
+532,alpine_skiing,2006,Combined,Boys,yes
+533,alpine_skiing,2003,Super G,Girls,yes
+534,alpine_skiing,2000,Giant Slalom,Girls,yes
+535,alpine_skiing,2001,Slalom,Girls,yes
+536,alpine_skiing,2002,Combined,Girls,yes
+537,alpine_skiing,2008,Team,Mixed Youth,yes
+538,alpine_skiing,755,"Giant Slalom, LW2",Men,no
+539,alpine_skiing,752,"Giant Slalom, LW4",Men,no
+540,alpine_skiing,754,"Giant Slalom, LW5/7",Men,no
+541,alpine_skiing,753,"Giant Slalom, LW6/8",Men,no
+542,alpine_skiing,756,"Giant Slalom, LW2",Women,no
+543,pesäpallo,802,Pesäpallo,Men,no
+544,racquets,373,Singles,Men,no
+545,racquets,374,Doubles,Men,no
+546,softball,529,Softball,Women,yes
+547,badminton,123,Singles,Men,yes
+548,badminton,124,Doubles,Men,yes
+549,badminton,125,Singles,Women,yes
+550,badminton,126,Doubles,Women,yes
+551,badminton,127,Doubles,Mixed,yes
+552,badminton,2082,Singles,Boys,yes
+553,badminton,2083,Singles,Girls,yes
+554,badminton,2287,Doubles,Mixed Youth,yes
+555,badminton,2446,Relay,Mixed Youth,yes
+556,ballooning,888,"Longest distance travelled (#1), Handicap",Open,no
+557,ballooning,889,"Longest distance travelled (#2), Handicap",Open,no
+558,ballooning,890,Longest distance travelled (#3),Open,no
+559,ballooning,903,"Longest distance travelled (#4), Second Degree",Open,no
+560,ballooning,891,"Longest time travelled (#1), Handicap",Open,no
+561,ballooning,892,"Longest time travelled (#2), Handicap",Open,no
+562,ballooning,893,Longest time travelled (#3),Open,no
+563,ballooning,904,"Longest time travelled (#4), Second Degree",Open,no
+564,ballooning,894,"Greatest height achieved (#1), Handicap",Open,no
+565,ballooning,895,"Greatest height achieved (#2), Handicap",Open,no
+566,ballooning,896,Greatest height achieved (#3),Open,no
+567,ballooning,897,Closest landing to target (#1),Open,no
+568,ballooning,898,Closest landing to target (#2),Open,no
+569,ballooning,899,"Closest landing to target (#3), Combined",Open,no
+570,ballooning,900,"Closest landing to target (#3), Intermediate stop",Open,no
+571,ballooning,901,"Closest landing to target (#3), Final stop",Open,no
+572,ballooning,902,"Closest landing to target (#4), Self-selected target",Open,no
+573,ballooning,905,Grand Prix de l'aéronautique,Open,no
+574,ballooning,906,Balloon inflation,Open,no
+575,ballooning,907,"Ascension report, Single ascent",Open,no
+576,ballooning,908,"Ascension report, Combined",Open,no
+577,ballooning,909,"Best photograph, 9 September event",Open,no
+578,ballooning,910,"Best photograph, All events",Open,no
+579,ballooning,911,Kites (large),Open,no
+580,ballooning,912,Kites (medium),Open,no
+581,ballooning,913,Kites (small),Open,no
+582,ancient_athletics,2494,Stadion,Men,no
+583,ancient_athletics,2538,Unknown Event,Men,no
+584,ancient_athletics,2495,Diaulos,Men,no
+585,ancient_athletics,2496,Race in Armor (Hoplite Race),Men,no
+586,ancient_athletics,2497,Dolikhos,Men,no
+587,ancient_athletics,2498,Foot Race,Men,no
+588,ancient_athletics,2499,Pentathlon,Men,no
+589,ancient_athletics,2500,Special Event,Men,no
+590,ancient_athletics,2501,Stadion / Diaulos,Men,no
+591,ancient_athletics,2502,Diaulos or Race in Armour,Men,no
+592,ancient_athletics,2532,Stadion,Boys,no
+593,ancient_athletics,2541,Unknown Event,Boys,no
+594,ancient_athletics,2533,Pentathlon,Boys,no
+595,ice_stock_sport,745,Target Shooting,Men,no
+596,ice_stock_sport,746,Distance Shooting,Men,no
+597,ice_stock_sport,747,Team,Men,no
+598,ice_stock_sport,748,Target Shooting,Women,no
+599,ice_stock_sport,749,Team,Women,no
+600,diving,250,Springboard,Men,yes
+601,diving,251,Platform,Men,yes
+602,diving,253,Synchronized Springboard,Men,yes
+603,diving,254,Synchronized Platform,Men,yes
+604,diving,255,Springboard,Women,yes
+605,diving,256,Platform,Women,yes
+606,diving,258,Synchronized Springboard,Women,yes
+607,diving,259,Synchronized Platform,Women,yes
+608,diving,2105,Springboard,Boys,yes
+609,diving,2106,Platform,Boys,yes
+610,diving,2107,Springboard,Girls,yes
+611,diving,2108,Platform,Girls,yes
+612,diving,2298,Team,Mixed Youth,yes
+613,diving,252,Plain High,Men,no
+614,diving,257,Plain High,Women,no
+615,volleyball,629,Volleyball,Men,yes
+616,volleyball,630,Volleyball,Women,yes
+617,volleyball,2199,Volleyball,Boys,yes
+618,volleyball,2200,Volleyball,Girls,yes
+619,nordic_combined,741,"Normal Hill / 10 km, Individual",Men,yes
+620,nordic_combined,742,"Large Hill / 10 km, Individual",Men,yes
+621,nordic_combined,370,Team,Men,yes
+622,nordic_combined,2040,"Medium Hill / 10 km, Individual",Boys,yes
+623,nordic_combined,2072,"Normal Hill / 5 km, Individual",Boys,yes
+624,nordic_combined,2319,"Normal Hill / 6 km, Individual",Boys,yes
+625,nordic_combined,2320,"Normal Hill / 4 km, Individual",Girls,yes
+626,nordic_combined,2321,Team,Mixed Youth,yes
+627,nordic_combined,368,Individual,Men,no
+628,nordic_combined,369,Sprint,Men,no
+629,acrobatic_gymnastics,2462,Pairs,Mixed Youth,yes
+630,wrestling,657,"Featherweight, Greco-Roman",Men,yes
+631,wrestling,659,"Welterweight, Greco-Roman",Men,yes
+632,wrestling,660,"Middleweight, Greco-Roman",Men,yes
+633,wrestling,663,"Light-Heavyweight, Greco-Roman",Men,yes
+634,wrestling,664,"Heavyweight, Greco-Roman",Men,yes
+635,wrestling,665,"Super-Heavyweight, Greco-Roman",Men,yes
+636,wrestling,671,"Featherweight, Freestyle",Men,yes
+637,wrestling,673,"Welterweight, Freestyle",Men,yes
+638,wrestling,674,"Middleweight, Freestyle",Men,yes
+639,wrestling,675,"Light-Heavyweight, Freestyle",Men,yes
+640,wrestling,676,"Heavyweight, Freestyle",Men,yes
+641,wrestling,677,"Super-Heavyweight, Freestyle",Men,yes
+642,wrestling,678,"Flyweight, Freestyle",Women,yes
+643,wrestling,1024,"Featherweight, Freestyle",Women,yes
+644,wrestling,679,"Lightweight, Freestyle",Women,yes
+645,wrestling,680,"Middleweight, Freestyle",Women,yes
+646,wrestling,1025,"Light-Heavyweight, Freestyle",Women,yes
+647,wrestling,681,"Heavyweight, Freestyle",Women,yes
+648,wrestling,2143,"≤42 kilograms, Greco Roman",Boys,yes
+649,wrestling,2476,"≤45 kilograms, Greco-Roman",Boys,yes
+650,wrestling,2144,"≤50 kilograms, Greco Roman",Boys,yes
+651,wrestling,2145,"≤58 kilograms, Greco Roman",Boys,yes
+652,wrestling,2146,"≤69 kilograms, Greco Roman",Boys,yes
+653,wrestling,2147,"≤85 kilograms, Greco Roman",Boys,yes
+654,wrestling,2148,"≤46 kilograms, Freestyle",Boys,yes
+655,wrestling,2149,"≤54 kilograms, Freestyle",Boys,yes
+656,wrestling,2150,"≤63 kilograms, Freestyle",Boys,yes
+657,wrestling,2151,"≤76 kilograms, Freestyle",Boys,yes
+658,wrestling,2152,"≤100 kilograms, Freestyle",Boys,yes
+659,wrestling,2477,"≤51 kilograms, Greco-Roman",Boys,yes
+660,wrestling,2478,"≤60 kilograms, Greco-Roman",Boys,yes
+661,wrestling,2479,"≤71 kilograms, Greco-Roman",Boys,yes
+662,wrestling,2480,"≤92 kilograms, Greco-Roman",Boys,yes
+663,wrestling,2481,"≤48 kilograms, Freestyle",Boys,yes
+664,wrestling,2482,"≤55 kilograms, Freestyle",Boys,yes
+665,wrestling,2483,"≤65 kilograms, Freestyle",Boys,yes
+666,wrestling,2484,"≤80 kilograms, Freestyle",Boys,yes
+667,wrestling,2485,"≤110 kilograms, Freestyle",Boys,yes
+668,wrestling,2153,"≤46 kilograms, Freestyle",Girls,yes
+669,wrestling,2486,"≤43 kilograms, Freestyle",Girls,yes
+670,wrestling,2154,"≤52 kilograms, Freestyle",Girls,yes
+671,wrestling,2155,"≤60 kilograms, Freestyle",Girls,yes
+672,wrestling,2487,"≤49 kilograms, Freestyle",Girls,yes
+673,wrestling,2156,"≤70 kilograms, Freestyle",Girls,yes
+674,wrestling,2488,"≤57 kilograms, Freestyle",Girls,yes
+675,wrestling,2489,"≤65 kilograms, Freestyle",Girls,yes
+676,wrestling,2490,"≤73 kilograms, Freestyle",Girls,yes
+677,wrestling,654,"Light-Flyweight, Greco-Roman",Men,no
+678,wrestling,655,"Flyweight, Greco-Roman",Men,no
+679,wrestling,656,"Bantamweight, Greco-Roman",Men,no
+680,wrestling,658,"Lightweight, Greco-Roman",Men,no
+681,wrestling,661,"Middleweight A, Greco-Roman",Men,no
+682,wrestling,662,"Middleweight B, Greco-Roman",Men,no
+683,wrestling,666,"Unlimited Class, Greco-Roman",Men,no
+684,wrestling,667,"All-Around, Greco-Roman",Men,no
+685,wrestling,2437,Wrestling and Somersault,Men,no
+686,wrestling,668,"Light-Flyweight, Freestyle",Men,no
+687,wrestling,669,"Flyweight, Freestyle",Men,no
+688,wrestling,670,"Bantamweight, Freestyle",Men,no
+689,wrestling,672,"Lightweight, Freestyle",Men,no
+690,bobsleigh,140,Two,Men,yes
+691,bobsleigh,143,Two,Women,yes
+692,bobsleigh,2581,Monobob,Women,yes
+693,bobsleigh,1037,Four,Open,yes
+694,bobsleigh,2016,Two,Boys,yes
+695,bobsleigh,2064,Monobob,Boys,yes
+696,bobsleigh,2015,Two,Girls,yes
+697,bobsleigh,2065,Monobob,Girls,yes
+698,bobsleigh,141,Four,Men,no
+699,bobsleigh,142,Four/Five,Men,no
+700,canoe_slalom,167,"Kayak Singles, Slalom",Men,yes
+701,canoe_slalom,174,"Canadian Singles, Slalom",Men,yes
+702,canoe_slalom,175,"Canadian Doubles, Slalom",Men,yes
+703,canoe_slalom,181,"Kayak Singles, Slalom",Women,yes
+704,canoe_slalom,2578,"Canadian Singles, Slalom",Women,yes
+705,american_football,766,American Football,Men,no
+706,artistic_gymnastics,311,Individual All-Around,Men,yes
+707,artistic_gymnastics,312,Team All-Around,Men,yes
+708,artistic_gymnastics,315,Floor Exercise,Men,yes
+709,artistic_gymnastics,316,Horse Vault,Men,yes
+710,artistic_gymnastics,317,Parallel Bars,Men,yes
+711,artistic_gymnastics,319,Horizontal Bar,Men,yes
+712,artistic_gymnastics,321,Rings,Men,yes
+713,artistic_gymnastics,322,Pommelled Horse,Men,yes
+714,artistic_gymnastics,332,Individual All-Around,Women,yes
+715,artistic_gymnastics,333,Team All-Around,Women,yes
+716,artistic_gymnastics,328,Floor Exercise,Women,yes
+717,artistic_gymnastics,329,Horse Vault,Women,yes
+718,artistic_gymnastics,330,Uneven Bars,Women,yes
+719,artistic_gymnastics,331,Balance Beam,Women,yes
+720,artistic_gymnastics,2193,Individual All-Around,Boys,yes
+721,artistic_gymnastics,2187,Floor Exercise,Boys,yes
+722,artistic_gymnastics,2188,Horse Vault,Boys,yes
+723,artistic_gymnastics,2189,Parallel Bars,Boys,yes
+724,artistic_gymnastics,2190,Horizontal Bar,Boys,yes
+725,artistic_gymnastics,2191,Rings,Boys,yes
+726,artistic_gymnastics,2192,Pommelled Horse,Boys,yes
+727,artistic_gymnastics,2198,Individual All-Around,Girls,yes
+728,artistic_gymnastics,2194,Floor Exercise,Girls,yes
+729,artistic_gymnastics,2195,Horse Vault,Girls,yes
+730,artistic_gymnastics,2196,Uneven Bars,Girls,yes
+731,artistic_gymnastics,2197,Balance Beam,Girls,yes
+732,artistic_gymnastics,308,"Individual All-Around, Field Sports",Men,no
+733,artistic_gymnastics,309,"Individual All-Around, 4 Events",Men,no
+734,artistic_gymnastics,310,"Individual All-Around, 5 Events",Men,no
+735,artistic_gymnastics,326,"Individual All-Around, Apparatus Work",Men,no
+736,artistic_gymnastics,313,"Team All-Around, Free System",Men,no
+737,artistic_gymnastics,314,"Team All-Around, Swedish System",Men,no
+738,artistic_gymnastics,318,"Parallel Bars, Teams",Men,no
+739,artistic_gymnastics,320,"Horizontal Bar, Teams",Men,no
+740,artistic_gymnastics,323,Rope Climbing,Men,no
+741,artistic_gymnastics,2436,Pole Climbing,Men,no
+742,artistic_gymnastics,2435,"Pole Climbing, Inclined Pole",Men,no
+743,artistic_gymnastics,324,Club Swinging,Men,no
+744,artistic_gymnastics,325,Tumbling,Men,no
+745,artistic_gymnastics,2434,"Pole Climbing, Greasy Pole",Men,no
+746,artistic_gymnastics,327,Side Horse,Men,no
+747,artistic_gymnastics,935,"26th Federal Festival, Society and Association Contests, Simultaneous, Excellence Division",Men,no
+748,artistic_gymnastics,936,"26th Federal Festival, Society and Association Contests, Simultaneous, Superior Division",Men,no
+749,artistic_gymnastics,937,"26th Federal Festival, Society and Association Contests, Simultaneous, First Division",Men,no
+750,artistic_gymnastics,938,"26th Federal Festival, Society and Association Contests, Simultaneous, Second Division",Men,no
+751,artistic_gymnastics,939,"26th Federal Festival, Society and Association Contests, Simultaneous, Third Division",Men,no
+752,artistic_gymnastics,940,"26th Federal Festival, Society and Association Contests, Non-Simultaneous, Excellence Division",Men,no
+753,artistic_gymnastics,941,"26th Federal Festival, Society and Association Contests, Non-Simultaneous, Superior Division",Men,no
+754,artistic_gymnastics,942,"26th Federal Festival, Society and Association Contests, Non-Simultaneous, First Division",Men,no
+755,artistic_gymnastics,943,"26th Federal Festival, Society and Association Contests, Non-Simultaneous, Second Division",Men,no
+756,artistic_gymnastics,944,"26th Federal Festival, Society and Association Contests, Non-Simultaneous, Third Division",Men,no
+757,artistic_gymnastics,945,"26th Federal Festival, Society and Association Contests, Non-Simultaneous, Special Contest, Handsfree, Group 1",Men,no
+758,artistic_gymnastics,946,"26th Federal Festival, Society and Association Contests, Non-Simultaneous, Special Contest, Handsfree, Group A",Men,no
+759,artistic_gymnastics,947,"26th Federal Festival, Society and Association Contests, Non-Simultaneous, Apparatus, Group 1",Men,no
+760,artistic_gymnastics,948,"26th Federal Festival, Society and Association Contests, Non-Simultaneous, Boxing, Group 1",Men,no
+761,artistic_gymnastics,949,"26th Federal Festival, Society and Association Contests, Non-Simultaneous, Canne, Group 1",Men,no
+762,artistic_gymnastics,950,"26th Federal Festival, Society and Association Contests, Non-Simultaneous, Fencing, Group 1",Men,no
+763,artistic_gymnastics,951,"26th Federal Festival, Society and Association Contests, Non-Simultaneous, Military Exercises",Men,no
+764,artistic_gymnastics,952,"26th Federal Festival, Society and Association Contests, Non-Simultaneous, Pyramids without Apparatus, Group 1",Men,no
+765,artistic_gymnastics,953,"26th Federal Festival, Society and Association Contests, Non-Simultaneous, Pyramids with Apparatus, Group 1",Men,no
+766,artistic_gymnastics,954,"26th Federal Festival, Society and Association Contests, Non-Simultaneous, Ballet",Men,no
+767,artistic_gymnastics,955,"26th Federal Festival, Society and Association Contests, Non-Simultaneous, Tournament",Men,no
+768,artistic_gymnastics,956,"26th Federal Festival, Society and Association Contests, Non-Simultaneous, Statue Poses",Men,no
+769,artistic_gymnastics,957,"26th Federal Festival, Society and Association Contests, Non-Simultaneous, Special Event",Men,no
+770,artistic_gymnastics,958,"26th Federal Festival, Society and Association Contests, Non-Simultaneous, Racing Contest",Men,no
+771,artistic_gymnastics,959,"26th Federal Festival, Society and Association Contests, Non-Simultaneous, National Championships",Men,no
+772,artistic_gymnastics,960,"26th Federal Festival, Society and Association Contests, Non-Simultaneous, Olympic Championships, Individual",Men,no
+773,artistic_gymnastics,961,"26th Federal Festival, Society and Association Contests, Non-Simultaneous, Shooting Championships, Youth",Men,no
+774,artistic_gymnastics,963,"26th Federal Festival, Society and Association Contests, Non-Simultaneous, Shooting Championships, Honorary Members and Associates",Men,no
+775,artistic_gymnastics,964,"Festival for Societies of the Seine, Instructors",Men,no
+776,artistic_gymnastics,965,"Festival for Societies of the Seine, Advanced",Men,no
+777,artistic_gymnastics,966,"Festival for Societies of the Seine, Swimming, Team",Men,no
+778,artistic_gymnastics,967,"Festival for Societies of the Seine, Swimming, Individual",Men,no
+779,artistic_gymnastics,968,"Festival for Societies of the Seine, Gymnastics",Men,no
+780,artistic_gymnastics,969,"Festival for Societies of the Seine, Alternative Contest",Men,no
+781,artistic_gymnastics,970,"Festival for Societies of the Seine, Simultaneous Contest",Men,no
+782,artistic_gymnastics,971,"Festival for Societies of the Seine, Racing Contest",Men,no
+783,artistic_gymnastics,972,"Festival for Societies of the Seine, Handsfree",Men,no
+784,artistic_gymnastics,973,"Festival for Societies of the Seine, Apparatus",Men,no
+785,artistic_gymnastics,974,"Festival for Societies of the Seine, Wrestling",Men,no
+786,artistic_gymnastics,975,"Festival for Societies of the Seine, Boxing",Men,no
+787,artistic_gymnastics,976,"Festival for Societies of the Seine, Pyramids without Apparatus",Men,no
+788,artistic_gymnastics,977,"Festival for Societies of the Seine, Pyramids with Apparatus",Men,no
+789,artistic_gymnastics,978,"Festival for Societies of the Seine, Individual",Men,no
+790,artistic_gymnastics,979,"Festival for Societies of the Seine, Artistic, Individual",Men,no
+791,artistic_gymnastics,980,"Festival for Societies of the Seine, Olympic Competition, Individual",Men,no
+792,artistic_gymnastics,981,"Festival for Societies of the Seine, Gymnastics, Team",Men,no
+793,artistic_gymnastics,982,"Festival for Societies of the Seine, Simultaneous Contest (#2)",Men,no
+794,artistic_gymnastics,983,"Festival for Societies of the Seine, Race",Men,no
+795,artistic_gymnastics,984,"Festival for Societies of the Seine, Individual (#2)",Men,no
+796,artistic_gymnastics,985,"Festival for Societies of the Seine, Swimming, students, individuals, societies",Men,no
+797,artistic_gymnastics,334,Team Portable Apparatus,Women,no
+798,artistic_gymnastics,962,"26th Federal Festival, Society and Association Contests, Non-Simultaneous, Shooting Championships, Honorary Members and Associates",Women,no
+799,artistic_gymnastics,788,Swedish Gymnastics,Open,no
+800,gaelic_football,2399,Gaelic Football,Men,no
+801,fencing,278,"Foil, Individual",Men,yes
+802,fencing,280,"Foil, Team",Men,yes
+803,fencing,281,"Épée, Individual",Men,yes
+804,fencing,283,"Épée, Team",Men,yes
+805,fencing,284,"Sabre, Individual",Men,yes
+806,fencing,287,"Sabre, Team",Men,yes
+807,fencing,289,"Foil, Individual",Women,yes
+808,fencing,290,"Foil, Team",Women,yes
+809,fencing,291,"Épée, Individual",Women,yes
+810,fencing,292,"Épée, Team",Women,yes
+811,fencing,293,"Sabre, Individual",Women,yes
+812,fencing,707,"Sabre, Team",Women,yes
+813,fencing,2204,"Foil, Individual",Boys,yes
+814,fencing,2205,"Épée, Individual",Boys,yes
+815,fencing,2206,"Sabre, Individual",Boys,yes
+816,fencing,2207,"Foil, Individual",Girls,yes
+817,fencing,2208,"Épée, Individual",Girls,yes
+818,fencing,2209,"Sabre, Individual",Girls,yes
+819,fencing,2210,"Mixed Weapon, Team",Mixed Youth,yes
+820,fencing,279,"Foil, Masters, Individual",Men,no
+821,fencing,282,"Épée, Masters, Individual",Men,no
+822,fencing,682,"Épée, Masters and Amateurs, Individual",Men,no
+823,fencing,285,"Sabre, Masters, Individual",Men,no
+824,fencing,286,"Sabre, Individual, Three Hits",Men,no
+825,fencing,288,"Single Sticks, Individual",Men,no
+826,fencing,2542,"Foil, Individual",Open,no
+827,figure_skating,298,Singles,Men,yes
+828,figure_skating,300,Singles,Women,yes
+829,figure_skating,301,Pairs,Mixed,yes
+830,figure_skating,302,Ice Dancing,Mixed,yes
+831,figure_skating,1006,Team,Mixed,yes
+832,figure_skating,2028,Singles,Boys,yes
+833,figure_skating,2027,Singles,Girls,yes
+834,figure_skating,2031,Pairs,Mixed Youth,yes
+835,figure_skating,2029,Ice Dancing,Mixed Youth,yes
+836,figure_skating,2030,Team,Mixed Youth,yes
+837,figure_skating,299,Special Figures,Men,no
+838,kyudo,771,Unknown Event,Men,no
+839,bowling,774,Individual,Men,no
+840,bowling,775,Individual,Women,no
+841,karate,2547,Kata,Men,yes
+842,karate,2549,"Kumite, ≤67 kg",Men,yes
+843,karate,2550,"Kumite, ≤75 kg",Men,yes
+844,karate,2551,"Kumite, >75 kg",Men,yes
+845,karate,2548,Kata,Women,yes
+846,karate,2552,"Kumite, ≤55 kg",Women,yes
+847,karate,2553,"Kumite, ≤61 kg",Women,yes
+848,karate,2554,"Kumite, >61 kg",Women,yes
+849,karate,2464,"Kumite, ≤61 kilograms",Boys,yes
+850,karate,2465,"Kumite, ≤68 kilograms",Boys,yes
+851,karate,2466,"Kumite, >68 kilograms",Boys,yes
+852,karate,2467,"Kumite, ≤53 kilograms",Girls,yes
+853,karate,2468,"Kumite, ≤59 kilograms",Girls,yes
+854,karate,2469,"Kumite, >59 kilograms",Girls,yes
+855,korfball,789,Korfball,Mixed,no
+856,cycling_mountain_bike,241,Cross-Country,Men,yes
+857,cycling_mountain_bike,248,Cross-Country,Women,yes
+858,3x3_basketball,2543,3x3 Basketball,Men,yes
+859,3x3_basketball,2544,3x3 Basketball,Women,yes
+860,3x3_basketball,2202,3x3 Basketball,Boys,yes
+861,3x3_basketball,2285,Dunk Contest,Boys,yes
+862,3x3_basketball,2203,3x3 Basketball,Girls,yes
+863,3x3_basketball,2286,Shoot-out Contest,Girls,yes
+864,hockey_5s,2302,Hockey 5s,Boys,yes
+865,hockey_5s,2303,Hockey 5s,Girls,yes
+866,ancient_sports,2537,Unknown Event,Men,no
+867,short_track_speed_skating,543,500 metres,Men,yes
+868,short_track_speed_skating,544,"1,000 metres",Men,yes
+869,short_track_speed_skating,545,"1,500 metres",Men,yes
+870,short_track_speed_skating,546,"5,000 metres Relay",Men,yes
+871,short_track_speed_skating,547,500 metres,Women,yes
+872,short_track_speed_skating,548,"1,000 metres",Women,yes
+873,short_track_speed_skating,549,"1,500 metres",Women,yes
+874,short_track_speed_skating,550,"3,000 metres Relay",Women,yes
+875,short_track_speed_skating,2587,"2,000 metres Relay",Mixed,yes
+876,short_track_speed_skating,2061,500 metres,Boys,yes
+877,short_track_speed_skating,2060,"1,000 metres",Boys,yes
+878,short_track_speed_skating,2059,500 metres,Girls,yes
+879,short_track_speed_skating,2058,"1,000 metres",Girls,yes
+880,short_track_speed_skating,2062,"3,000 metres Relay",Mixed Youth,yes
+881,short_track_speed_skating,763,"3,000 m",Men,no
+882,short_track_speed_skating,764,"3,000 m",Women,no
+883,weightlifting,635,Featherweight,Men,yes
+884,weightlifting,636,Lightweight,Men,yes
+885,weightlifting,637,Middleweight,Men,yes
+886,weightlifting,638,Light-Heavyweight,Men,yes
+887,weightlifting,639,Middle-Heavyweight,Men,yes
+888,weightlifting,640,Heavyweight,Men,yes
+889,weightlifting,643,Super-Heavyweight,Men,yes
+890,weightlifting,647,Flyweight,Women,yes
+891,weightlifting,648,Featherweight,Women,yes
+892,weightlifting,649,Lightweight,Women,yes
+893,weightlifting,650,Middleweight,Women,yes
+894,weightlifting,651,Light-Heavyweight,Women,yes
+895,weightlifting,652,Heavyweight,Women,yes
+896,weightlifting,653,Super-Heavyweight,Women,yes
+897,weightlifting,2157,Bantamweight,Boys,yes
+898,weightlifting,2158,Featherweight,Boys,yes
+899,weightlifting,2159,Lightweight,Boys,yes
+900,weightlifting,2160,Middleweight,Boys,yes
+901,weightlifting,2161,Heavyweight,Boys,yes
+902,weightlifting,2162,Super-Heavyweight,Boys,yes
+903,weightlifting,2163,Featherweight,Girls,yes
+904,weightlifting,2475,Bantamweight,Girls,yes
+905,weightlifting,2164,Lightweight,Girls,yes
+906,weightlifting,2165,Middleweight,Girls,yes
+907,weightlifting,2166,Heavyweight,Girls,yes
+908,weightlifting,2167,Super-Heavyweight,Girls,yes
+909,weightlifting,633,Flyweight,Men,no
+910,weightlifting,634,Bantamweight,Men,no
+911,weightlifting,641,Heavyweight I,Men,no
+912,weightlifting,642,Heavyweight II,Men,no
+913,weightlifting,644,"Unlimited, One Hand",Men,no
+914,weightlifting,645,"Unlimited, Two Hands",Men,no
+915,weightlifting,646,All-Around Dumbbell Contest,Men,no
+916,boxing,144,Light-Flyweight,Men,yes
+917,boxing,145,Flyweight,Men,yes
+918,boxing,146,Bantamweight,Men,yes
+919,boxing,148,Lightweight,Men,yes
+920,boxing,149,Light-Welterweight,Men,yes
+921,boxing,150,Welterweight,Men,yes
+922,boxing,152,Middleweight,Men,yes
+923,boxing,153,Light-Heavyweight,Men,yes
+924,boxing,154,Heavyweight,Men,yes
+925,boxing,155,Super-Heavyweight,Men,yes
+926,boxing,986,Flyweight,Women,yes
+927,boxing,2579,Featherweight,Women,yes
+928,boxing,987,Lightweight,Women,yes
+929,boxing,2580,Welterweight,Women,yes
+930,boxing,988,Middleweight,Women,yes
+931,boxing,2088,Light-Flyweight,Boys,yes
+932,boxing,2086,Flyweight,Boys,yes
+933,boxing,2084,Bantamweight,Boys,yes
+934,boxing,2085,Featherweight,Boys,yes
+935,boxing,2091,Lightweight,Boys,yes
+936,boxing,2090,Light-Welterweight,Boys,yes
+937,boxing,2094,Welterweight,Boys,yes
+938,boxing,2092,Middleweight,Boys,yes
+939,boxing,2089,Light-Heavyweight,Boys,yes
+940,boxing,2087,Heavyweight,Boys,yes
+941,boxing,2093,Super-Heavyweight,Boys,yes
+942,boxing,2288,Flyweight,Girls,yes
+943,boxing,2289,Lightweight,Girls,yes
+944,boxing,2447,Featherweight,Girls,yes
+945,boxing,2290,Middleweight,Girls,yes
+946,boxing,147,Featherweight,Men,no
+947,boxing,151,Light-Middleweight,Men,no
+948,hurling,2402,Hurling,Men,no
+949,equestrian,266,Individual,Men,no
+950,equestrian,267,Team,Men,no
+951,ancient_combative_sports,2540,Unknown Event,Men,no
+952,ancient_combative_sports,2503,Boxing,Men,no
+953,ancient_combative_sports,2504,Pankration,Men,no
+954,ancient_combative_sports,2505,Wrestling,Men,no
+955,ancient_combative_sports,2506,Wrestling or Pankration,Men,no
+956,ancient_combative_sports,2534,Boxing,Boys,no
+957,ancient_combative_sports,2535,Wrestling,Boys,no
+958,ancient_combative_sports,2536,Pankration,Boys,no
+959,bicycle_polo,770,Bicycle Polo,Men,no
+960,swimming,552,50 metres Freestyle,Men,yes
+961,swimming,554,100 metres Freestyle,Men,yes
+962,swimming,556,200 metres Freestyle,Men,yes
+963,swimming,558,400 metres Freestyle,Men,yes
+964,swimming,2569,800 metres Freestyle,Men,yes
+965,swimming,563,"1,500 metres Freestyle",Men,yes
+966,swimming,567,4 × 100 metres Freestyle Relay,Men,yes
+967,swimming,568,4 × 200 metres Freestyle Relay,Men,yes
+968,swimming,571,100 metres Backstroke,Men,yes
+969,swimming,572,200 metres Backstroke,Men,yes
+970,swimming,573,100 metres Breaststroke,Men,yes
+971,swimming,574,200 metres Breaststroke,Men,yes
+972,swimming,577,100 metres Butterfly,Men,yes
+973,swimming,578,200 metres Butterfly,Men,yes
+974,swimming,579,200 metres Individual Medley,Men,yes
+975,swimming,580,400 metres Individual Medley,Men,yes
+976,swimming,581,4 × 100 metres Medley Relay,Men,yes
+977,swimming,587,50 metres Freestyle,Women,yes
+978,swimming,588,100 metres Freestyle,Women,yes
+979,swimming,589,200 metres Freestyle,Women,yes
+980,swimming,591,400 metres Freestyle,Women,yes
+981,swimming,592,800 metres Freestyle,Women,yes
+982,swimming,593,4 × 100 metres Freestyle Relay,Women,yes
+983,swimming,2570,"1,500 metres Freestyle",Women,yes
+984,swimming,594,4 × 200 metres Freestyle Relay,Women,yes
+985,swimming,595,100 metres Backstroke,Women,yes
+986,swimming,596,200 metres Backstroke,Women,yes
+987,swimming,597,100 metres Breaststroke,Women,yes
+988,swimming,598,200 metres Breaststroke,Women,yes
+989,swimming,599,100 metres Butterfly,Women,yes
+990,swimming,600,200 metres Butterfly,Women,yes
+991,swimming,601,200 metres Individual Medley,Women,yes
+992,swimming,602,400 metres Individual Medley,Women,yes
+993,swimming,603,4 × 100 metres Medley Relay,Women,yes
+994,swimming,2571,4 × 100 metres Medley Relay,Mixed,yes
+995,swimming,2109,50 metres Freestyle,Boys,yes
+996,swimming,2110,100 metres Freestyle,Boys,yes
+997,swimming,2111,200 metres Freestyle,Boys,yes
+998,swimming,2112,400 metres Freestyle,Boys,yes
+999,swimming,2113,4 × 100 metres Freestyle Relay,Boys,yes
+1000,swimming,2308,800 metres Freestyle,Boys,yes
+1001,swimming,2114,50 metres Backstroke,Boys,yes
+1002,swimming,2115,100 metres Backstroke,Boys,yes
+1003,swimming,2116,200 metres Backstroke,Boys,yes
+1004,swimming,2117,50 metres Breaststroke,Boys,yes
+1005,swimming,2118,100 metres Breaststroke,Boys,yes
+1006,swimming,2119,200 metres Breaststroke,Boys,yes
+1007,swimming,2120,50 metres Butterfly,Boys,yes
+1008,swimming,2121,100 metres Butterfly,Boys,yes
+1009,swimming,2122,200 metres Butterfly,Boys,yes
+1010,swimming,2123,200 metres Individual Medley,Boys,yes
+1011,swimming,2124,4 × 100 metres Medley Relay,Boys,yes
+1012,swimming,2125,50 metres Freestyle,Girls,yes
+1013,swimming,2126,100 metres Freestyle,Girls,yes
+1014,swimming,2127,200 metres Freestyle,Girls,yes
+1015,swimming,2128,400 metres Freestyle,Girls,yes
+1016,swimming,2309,800 metres Freestyle,Girls,yes
+1017,swimming,2129,4 × 100 metres Freestyle Relay,Girls,yes
+1018,swimming,2130,50 metres Backstroke,Girls,yes
+1019,swimming,2131,100 metres Backstroke,Girls,yes
+1020,swimming,2132,200 metres Backstroke,Girls,yes
+1021,swimming,2133,50 metres Breaststroke,Girls,yes
+1022,swimming,2134,100 metres Breaststroke,Girls,yes
+1023,swimming,2135,200 metres Breaststroke,Girls,yes
+1024,swimming,2136,50 metres Butterfly,Girls,yes
+1025,swimming,2137,100 metres Butterfly,Girls,yes
+1026,swimming,2138,200 metres Butterfly,Girls,yes
+1027,swimming,2139,200 metres Individual Medley,Girls,yes
+1028,swimming,2140,4 × 100 metres Medley Relay,Girls,yes
+1029,swimming,2141,4 × 100 metres Freestyle Relay,Mixed Youth,yes
+1030,swimming,2142,4 × 100 metres Medley Relay,Mixed Youth,yes
+1031,swimming,551,50 yards Freestyle,Men,no
+1032,swimming,553,100 yards Freestyle,Men,no
+1033,swimming,555,220 yards Freestyle,Men,no
+1034,swimming,557,440 yards Freestyle,Men,no
+1035,swimming,559,500 metres Freestyle,Men,no
+1036,swimming,560,880 yards Freestyle,Men,no
+1037,swimming,561,"1,000 metres Freestyle",Men,no
+1038,swimming,562,"1,200 metres Freestyle",Men,no
+1039,swimming,564,1 mile Freestyle,Men,no
+1040,swimming,565,"4,000 metres Freestyle",Men,no
+1041,swimming,566,4 × 50 yards Freestyle Relay,Men,no
+1042,swimming,569,4 × 250 metres Freestyle Relay,Men,no
+1043,swimming,570,100 yards Backstroke,Men,no
+1044,swimming,575,440 yards Breaststroke,Men,no
+1045,swimming,576,400 metres Breaststroke,Men,no
+1046,swimming,582,100 metres Freestyle For Sailors,Men,no
+1047,swimming,583,Underwater Swimming,Men,no
+1048,swimming,584,Plunge For Distance,Men,no
+1049,swimming,585,200 metres Obstacle Course,Men,no
+1050,swimming,586,200 metres Team Swimming,Men,no
+1051,swimming,2409,"100 yards, Handicap",Men,no
+1052,swimming,2410,"220 yards, Handicap",Men,no
+1053,swimming,2411,"440 yards, Handicap",Men,no
+1054,swimming,2412,"880 yards, Handicap",Men,no
+1055,swimming,2413,"1 mile, Handicap",Men,no
+1056,swimming,590,300 metres Freestyle,Women,no
+1057,ancient_equestrianism,2539,Unknown Event,Men,no
+1058,ancient_equestrianism,2507,Tethrippon,Men,no
+1059,ancient_equestrianism,2508,Synoris,Men,no
+1060,ancient_equestrianism,2509,Horse Race (Keles),Men,no
+1061,ancient_equestrianism,2510,Race for Mares (Kalpe),Men,no
+1062,ancient_equestrianism,2511,Apene (Mule-Cart Race),Men,no
+1063,ancient_equestrianism,2512,Foals' Tethrippon,Men,no
+1064,ancient_equestrianism,2513,Foals' Synoris,Men,no
+1065,ancient_equestrianism,2514,Foals' Race,Men,no
+1066,ancient_equestrianism,2515,Colts' Tethrippon,Men,no
+1067,ancient_equestrianism,2516,Colts' Synoris,Men,no
+1068,ancient_equestrianism,2517,Chariot Race,Men,no
+1069,ancient_equestrianism,2518,Chariot Race for 10 Horses,Men,no
+1070,ancient_equestrianism,2519,Chariot Race for Foals,Men,no
+1071,ancient_equestrianism,2520,Tethrippon or Synoris for Foals,Men,no
+1072,ancient_equestrianism,2522,Unknown Event for Foals,Men,no
+1073,rowing,378,Single Sculls,Men,yes
+1074,rowing,379,Double Sculls,Men,yes
+1075,rowing,380,Coxless Pairs,Men,yes
+1076,rowing,384,Quadruple Sculls,Men,yes
+1077,rowing,385,Coxless Fours,Men,yes
+1078,rowing,389,Eights,Men,yes
+1079,rowing,390,Lightweight Double Sculls,Men,yes
+1080,rowing,394,Single Sculls,Women,yes
+1081,rowing,395,Double Sculls,Women,yes
+1082,rowing,396,Coxless Pairs,Women,yes
+1083,rowing,397,Quadruple Sculls,Women,yes
+1084,rowing,398,Coxless Fours,Women,yes
+1085,rowing,401,Eights,Women,yes
+1086,rowing,402,Lightweight Double Sculls,Women,yes
+1087,rowing,2101,Single Sculls,Boys,yes
+1088,rowing,2102,Coxless Pairs,Boys,yes
+1089,rowing,2103,Single Sculls,Girls,yes
+1090,rowing,2104,Coxless Pairs,Girls,yes
+1091,rowing,381,Coxed Pairs (1 kilometre),Men,no
+1092,rowing,382,Coxed Pairs (1 mile),Men,no
+1093,rowing,383,Coxed Pairs,Men,no
+1094,rowing,386,Coxed Fours,Men,no
+1095,rowing,387,"Coxed Fours, Outriggers",Men,no
+1096,rowing,388,"Coxed Fours, Inriggers",Men,no
+1097,rowing,391,Lightweight Coxless Fours,Men,no
+1098,rowing,392,6-Man Naval Rowing Boats,Men,no
+1099,rowing,393,17-Man Naval Rowing Boats,Men,no
+1100,rowing,2403,"Single Sculls, Intermediate",Men,no
+1101,rowing,2404,"Single Sculls, Association",Men,no
+1102,rowing,2405,"Double Sculls, Intermediate",Men,no
+1103,rowing,2406,"Coxless Pairs, Intermediate",Men,no
+1104,rowing,2407,"Coxless Fours, Intermediate",Men,no
+1105,rowing,2408,"Eights, Intermediate",Men,no
+1106,rowing,399,Coxed Fours,Women,no
+1107,rowing,400,Coxed Quadruple Sculls,Women,no
+1108,skating,530,500 metres,Men,yes
+1109,skating,531,"1,000 metres",Men,yes
+1110,skating,532,"1,500 metres",Men,yes
+1111,skating,533,"5,000 metres",Men,yes
+1112,skating,534,"10,000 metres",Men,yes
+1113,skating,1034,Mass Start,Men,yes
+1114,skating,535,Team Pursuit (8 laps),Men,yes
+1115,skating,537,500 metres,Women,yes
+1116,skating,538,"1,000 metres",Women,yes
+1117,skating,539,"1,500 metres",Women,yes
+1118,skating,540,"3,000 metres",Women,yes
+1119,skating,541,"5,000 metres",Women,yes
+1120,skating,1035,Mass Start,Women,yes
+1121,skating,542,Team Pursuit (6 laps),Women,yes
+1122,skating,2056,500 metres,Boys,yes
+1123,skating,2054,"1,500 metres",Boys,yes
+1124,skating,2055,"3,000 metres",Boys,yes
+1125,skating,2057,Mass Start,Boys,yes
+1126,skating,2052,500 metres,Girls,yes
+1127,skating,2050,"1,500 metres",Girls,yes
+1128,skating,2051,"3,000 metres",Girls,yes
+1129,skating,2053,Mass Start,Girls,yes
+1130,skating,2063,Team Sprint,Mixed Youth,yes
+1131,skating,536,Allround,Men,no
+1132,handball,335,Handball,Men,yes
+1133,handball,336,Handball,Women,yes
+1134,handball,2251,Handball,Boys,yes
+1135,handball,2252,Handball,Girls,yes
+1136,archery,1,Individual,Men,yes
+1137,archery,2,Team,Men,yes
+1138,archery,25,Individual,Women,yes
+1139,archery,26,Team,Women,yes
+1140,archery,2563,Team,Mixed,yes
+1141,archery,2079,Individual,Boys,yes
+1142,archery,2080,Individual,Girls,yes
+1143,archery,2081,Team,Mixed Youth,yes
+1144,archery,3,"Target Archery, 28 metres, Individual",Men,no
+1145,archery,4,"Target Archery, 33 metres, Individual",Men,no
+1146,archery,5,"Target Archery, 50 metres, Individual",Men,no
+1147,archery,6,"Target Archery, 28 metres, Team",Men,no
+1148,archery,7,"Target Archery, 33 metres, Team",Men,no
+1149,archery,8,"Target Archery, 50 metres, Team",Men,no
+1150,archery,9,"Pole Archery, Small Birds, Individual",Men,no
+1151,archery,10,"Pole Archery, Large Birds, Individual",Men,no
+1152,archery,11,"Pole Archery, Small Birds, Team",Men,no
+1153,archery,12,"Pole Archery, Large Birds, Team",Men,no
+1154,archery,13,"Au Chapelet, 33 metres",Men,no
+1155,archery,14,"Au Chapelet, 50 metres",Men,no
+1156,archery,15,"Au Cordon Doré, 33 metres",Men,no
+1157,archery,16,"Au Cordon Doré, 50 metres",Men,no
+1158,archery,17,Sur La Perche À La Herse,Men,no
+1159,archery,18,Sur La Perche À La Pyramide,Men,no
+1160,archery,19,Championnat Du Monde,Men,no
+1161,archery,20,Double American Round,Men,no
+1162,archery,21,Double York Round,Men,no
+1163,archery,22,Continental Style,Men,no
+1164,archery,23,Team Round,Men,no
+1165,archery,24,Unknown Event,Men,no
+1166,archery,852,"Au Chapelet - 33 metres, Team",Men,no
+1167,archery,853,"Au Chapelet - 50 metres, Team",Men,no
+1168,archery,854,"Au Cordon Doré - 33 metres, Team",Men,no
+1169,archery,855,"Au Cordon Doré - 50 metres, Team",Men,no
+1170,archery,856,"French Championship, Individual",Men,no
+1171,archery,858,"French Championship, Team",Men,no
+1172,archery,859,"Crossbows, Large Arrows - 35 metres, Individual",Men,no
+1173,archery,860,"Crossbows, Large Arrows - 35 metres, Team",Men,no
+1174,archery,861,"Crossbows, Arrows - 28 metres, Individual",Men,no
+1175,archery,862,"Crossbows, Arrows - 28 metres, Team",Men,no
+1176,archery,863,"Crossbows, Small Arrows - 20 metres, Individual",Men,no
+1177,archery,857,"Crossbows, French Championship",Men,no
+1178,archery,2329,Flight Shooting,Men,no
+1179,archery,27,Double Columbia Round,Women,no
+1180,archery,28,Double National Round,Women,no
+1181,archery,1000,Team Round,Women,no
+1182,archery,2330,Flight Shooting,Women,no
+1183,water_polo,631,Water Polo,Men,yes
+1184,water_polo,632,Water Polo,Women,yes
+1185,aquatics,631,Water Polo,Men,yes
+1186,aquatics,632,Water Polo,Women,yes
+1187,wushu,819,Changquan,Men,no
+1188,wushu,820,Daoshu & Gunshu,Men,no
+1189,wushu,821,Nanquan & Nangun,Men,no
+1190,wushu,822,Jianshu & Qiangshu,Men,no
+1191,wushu,823,Taijiquan & Taijijuan,Men,no
+1192,wushu,829,Sanshou (≤56 kilograms),Men,no
+1193,wushu,830,Sanshou (≤70 kilograms),Men,no
+1194,wushu,831,Sanshou (≤85 kilograms),Men,no
+1195,wushu,824,Changquan,Women,no
+1196,wushu,825,Daoshu & Gunshu,Women,no
+1197,wushu,826,Nanquan & Nandao,Women,no
+1198,wushu,827,Jianshu & Qiangshu,Women,no
+1199,wushu,828,Taijiquan & Taijijuan,Women,no
+1200,wushu,832,Sanshou (≤52 kilograms),Women,no
+1201,wushu,833,Sanshou (≤60 kilograms),Women,no
+1202,gymnastics,620,Individual,Men,yes
+1203,gymnastics,621,Individual,Women,yes
+1204,gymnastics,2185,Individual,Boys,yes
+1205,gymnastics,2186,Individual,Girls,yes
+1206,mountaineering_and_climbing,709,Alpinism,Open,no
+1207,gotland_sports,785,Pärkspel,Men,no
+1208,gotland_sports,786,Varpastning,Men,no
+1209,gotland_sports,787,Stångstörtning,Men,no
+1210,snowboarding,521,Parallel Giant Slalom,Men,yes
+1211,snowboarding,1011,Slopestyle,Men,yes
+1212,snowboarding,523,Halfpipe,Men,yes
+1213,snowboarding,524,Boardercross,Men,yes
+1214,snowboarding,1032,Big Air,Men,yes
+1215,snowboarding,525,Parallel Giant Slalom,Women,yes
+1216,snowboarding,1012,Slopestyle,Women,yes
+1217,snowboarding,527,Halfpipe,Women,yes
+1218,snowboarding,528,Boardercross,Women,yes
+1219,snowboarding,1033,Big Air,Women,yes
+1220,snowboarding,2586,Team Boardercross,Mixed,yes
+1221,snowboarding,2049,Slopestyle,Boys,yes
+1222,snowboarding,2048,Halfpipe,Boys,yes
+1223,snowboarding,2076,Boardercross,Boys,yes
+1224,snowboarding,2327,Big Air,Boys,yes
+1225,snowboarding,2075,Boardercross,Girls,yes
+1226,snowboarding,2047,Slopestyle,Girls,yes
+1227,snowboarding,2046,Halfpipe,Girls,yes
+1228,snowboarding,2328,Big Air,Girls,yes
+1229,snowboarding,1009,Parallel Slalom,Men,no
+1230,snowboarding,522,Giant Slalom,Men,no
+1231,snowboarding,1010,Parallel Slalom,Women,no
+1232,snowboarding,526,Giant Slalom,Women,no
+1233,cricket,205,Cricket,Men,no
+1234,cycling_track,215,Sprint,Men,yes
+1235,cycling_track,219,Keirin,Men,yes
+1236,cycling_track,221,Team Sprint,Men,yes
+1237,cycling_track,223,"Team Pursuit, 4,000 metres",Men,yes
+1238,cycling_track,993,Omnium,Men,yes
+1239,cycling_track,244,Sprint,Women,yes
+1240,cycling_track,994,Keirin,Women,yes
+1241,cycling_track,995,Team Sprint,Women,yes
+1242,cycling_track,996,Team Pursuit,Women,yes
+1243,cycling_track,997,Omnium,Women,yes
+1244,cycling_track,2574,Madison,Women,yes
+1245,cycling_track,217,333⅓ metres Time Trial,Men,no
+1246,cycling_track,218,"1,000 metres Time Trial",Men,no
+1247,cycling_track,220,"Tandem Sprint, 2,000 metres",Men,no
+1248,cycling_track,222,"Individual Pursuit, 4,000 metres",Men,no
+1249,cycling_track,249,"Team Pursuit, 1,980 yards",Men,no
+1250,cycling_track,224,Points Race,Men,no
+1251,cycling_track,226,Madison,Men,no
+1252,cycling_track,227,¼ mile,Men,no
+1253,cycling_track,228,⅓ mile,Men,no
+1254,cycling_track,229,½ mile,Men,no
+1255,cycling_track,230,1 mile,Men,no
+1256,cycling_track,2398,"1 mile, Motorcycle",Men,no
+1257,cycling_track,231,2 miles,Men,no
+1258,cycling_track,232,"5,000 metres",Men,no
+1259,cycling_track,233,5 miles,Men,no
+1260,cycling_track,234,"10,000 metres",Men,no
+1261,cycling_track,235,20 kilometres,Men,no
+1262,cycling_track,236,25 kilometres,Men,no
+1263,cycling_track,237,25 miles,Men,no
+1264,cycling_track,238,50 kilometres,Men,no
+1265,cycling_track,239,100 kilometres,Men,no
+1266,cycling_track,240,12-Hours Race,Men,no
+1267,cycling_track,2388,"1 mile, Novice",Men,no
+1268,cycling_track,2386,"½ mile, Handicap",Men,no
+1269,cycling_track,2387,"1 mile, Handicap",Men,no
+1270,cycling_track,2389,"5 miles, Handicap",Men,no
+1271,cycling_track,917,"Sprint, Professionals",Men,no
+1272,cycling_track,918,"Tandem Sprint, Professionals",Men,no
+1273,cycling_track,919,"Team Sprint, Professionals",Men,no
+1274,cycling_track,920,"Points Race, Professionals",Men,no
+1275,cycling_track,2390,"⅓ mile, Professionals",Men,no
+1276,cycling_track,2391,"½ mile, Professionals",Men,no
+1277,cycling_track,2392,"⅔ mile, Professionals",Men,no
+1278,cycling_track,2393,"1 mile, Professionals",Men,no
+1279,cycling_track,921,"50 kilometres, Professionals",Men,no
+1280,cycling_track,922,"100 kilometres, Professionals",Men,no
+1281,cycling_track,923,"100 miles, Professionals",Men,no
+1282,cycling_track,924,"24-Hours Race, Professionals",Men,no
+1283,cycling_track,925,"3,000 metres, Handicap, Professionals",Men,no
+1284,cycling_track,926,"25 kilometres Motor-paced, Professionals",Men,no
+1285,cycling_track,927,"National Team Sprint, Professionals",Men,no
+1286,cycling_track,2397,"Australian Team Pursuit, Professionals",Men,no
+1287,cycling_track,2394,"½ mile, Handicap, Professionals",Men,no
+1288,cycling_track,2395,"1 mile, Handicap, Professionals",Men,no
+1289,cycling_track,2396,"2 miles, Handicap, Professionals",Men,no
+1290,cycling_track,245,500 metres Time Trial,Women,no
+1291,cycling_track,246,Individual Pursuit,Women,no
+1292,cycling_track,247,Points Race,Women,no
+1293,beach_volleyball,157,Beach Volleyball,Men,yes
+1294,beach_volleyball,158,Beach Volleyball,Women,yes
+1295,beach_volleyball,2291,Beach Volleyball,Boys,yes
+1296,beach_volleyball,2292,Beach Volleyball,Girls,yes
+1297,cycling_bmx_racing,701,BMX,Men,yes
+1298,cycling_bmx_racing,702,BMX,Women,yes
+1299,cycling_bmx_racing,2449,Team,Mixed Youth,yes
+1300,waterskiing_and_wakeboarding,813,Slalom,Men,no
+1301,waterskiing_and_wakeboarding,814,Tricks,Men,no
+1302,waterskiing_and_wakeboarding,815,Jumping,Men,no
+1303,waterskiing_and_wakeboarding,816,Slalom,Women,no
+1304,waterskiing_and_wakeboarding,817,Tricks,Women,no
+1305,waterskiing_and_wakeboarding,818,Jumping,Women,no
+1306,roller_hockey,803,Roller Hockey,Men,no
+1307,cycling_bmx_freestyle,2545,Park,Men,yes
+1308,cycling_bmx_freestyle,2546,Park,Women,yes
+1309,cycling_bmx_freestyle,2450,Team,Mixed Youth,yes
+1310,rhythmic_gymnastics,375,Individual,Women,yes
+1311,rhythmic_gymnastics,376,Group,Women,yes
+1312,rhythmic_gymnastics,2183,Individual,Girls,yes
+1313,rhythmic_gymnastics,2184,Group,Girls,yes
+1314,dance,2455,Individual,Boys,yes
+1315,dance,2456,Individual,Girls,yes
+1316,dance,2457,Team,Mixed Youth,yes
+1317,basque_pelota,371,Two-Man Teams With Cesta,Men,no
+1318,basque_pelota,791,"Mano, Triples",Men,no
+1319,basque_pelota,792,"Mano, Doubles",Men,no
+1320,basque_pelota,793,"Mano, Singles",Men,no
+1321,basque_pelota,794,"Pala Corta, Doubles",Men,no
+1322,basque_pelota,795,"Paleta Cuero, Doubles",Men,no
+1323,basque_pelota,796,"Paleta Goma, Doubles",Men,no
+1324,basque_pelota,797,"Frontenis, Doubles",Men,no
+1325,basque_pelota,800,"Cesta Punta, Doubles",Men,no
+1326,basque_pelota,801,"Blé, Triples",Men,no
+1327,basque_pelota,1023,"Pala, Doubles",Men,no
+1328,basque_pelota,799,"Cesta Punta, Triples",Men,no
+1329,basque_pelota,798,"Frontenis, Doubles",Women,no
+1330,modern_pentathlon,361,Individual,Men,yes
+1331,modern_pentathlon,363,Individual,Women,yes
+1332,modern_pentathlon,2264,Individual,Boys,yes
+1333,modern_pentathlon,2265,Individual,Girls,yes
+1334,modern_pentathlon,2266,Relay,Mixed Youth,yes
+1335,modern_pentathlon,362,Team,Men,no
+1336,military_ski_patrol,364,Military Ski Patrol,Men,no
+1337,air_sports,783,Gliding,Open,no
+1338,roque,377,Singles,Men,no
+1339,judo,342,Extra-Lightweight,Men,yes
+1340,judo,343,Half-Lightweight,Men,yes
+1341,judo,344,Lightweight,Men,yes
+1342,judo,345,Half-Middleweight,Men,yes
+1343,judo,346,Middleweight,Men,yes
+1344,judo,347,Half-Heavyweight,Men,yes
+1345,judo,348,Heavyweight,Men,yes
+1346,judo,350,Extra-Lightweight,Women,yes
+1347,judo,351,Half-Lightweight,Women,yes
+1348,judo,352,Lightweight,Women,yes
+1349,judo,353,Half-Middleweight,Women,yes
+1350,judo,354,Middleweight,Women,yes
+1351,judo,355,Half-Heavyweight,Women,yes
+1352,judo,356,Heavyweight,Women,yes
+1353,judo,2568,Team,Mixed,yes
+1354,judo,2255,≤55 kilograms,Boys,yes
+1355,judo,2256,≤66 kilograms,Boys,yes
+1356,judo,2257,≤81 kilograms,Boys,yes
+1357,judo,2258,≤100 kilograms,Boys,yes
+1358,judo,2259,≤44 kilograms,Girls,yes
+1359,judo,2260,≤52 kilograms,Girls,yes
+1360,judo,2261,≤63 kilograms,Girls,yes
+1361,judo,2262,≤78 kilograms,Girls,yes
+1362,judo,2263,Team,Mixed Youth,yes
+1363,judo,349,Open Class,Men,no
+1364,taekwondo,612,Flyweight,Men,yes
+1365,taekwondo,613,Featherweight,Men,yes
+1366,taekwondo,614,Welterweight,Men,yes
+1367,taekwondo,615,Heavyweight,Men,yes
+1368,taekwondo,616,Flyweight,Women,yes
+1369,taekwondo,617,Featherweight,Women,yes
+1370,taekwondo,618,Welterweight,Women,yes
+1371,taekwondo,619,Heavyweight,Women,yes
+1372,taekwondo,2267,≤48 kilograms,Boys,yes
+1373,taekwondo,2268,≤55 kilograms,Boys,yes
+1374,taekwondo,2269,≤63 kilograms,Boys,yes
+1375,taekwondo,2270,≤73 kilograms,Boys,yes
+1376,taekwondo,2271,>73 kilograms,Boys,yes
+1377,taekwondo,2272,≤44 kilograms,Girls,yes
+1378,taekwondo,2273,≤49 kilograms,Girls,yes
+1379,taekwondo,2274,≤55 kilograms,Girls,yes
+1380,taekwondo,2275,≤63 kilograms,Girls,yes
+1381,taekwondo,2276,>63 kilograms,Girls,yes
+1382,taekwondo,805,Finweight,Men,no
+1383,taekwondo,806,Bantamweight,Men,no
+1384,taekwondo,807,Lightweight,Men,no
+1385,taekwondo,808,Middleweight,Men,no
+1386,taekwondo,809,Finweight,Women,no
+1387,taekwondo,810,Bantamweight,Women,no
+1388,taekwondo,811,Lightweight,Women,no
+1389,taekwondo,812,Middleweight,Women,no
+1390,equestrian_vaulting,266,Individual,Men,no
+1391,equestrian_vaulting,267,Team,Men,no
+1392,gaelic_sports,2402,Hurling,Men,no
+1393,motorcycle_sports,844,"Paris-Toulouse-Paris, Motorcycles",Men,no
+1394,motorcycle_sports,842,"Reliability Contest, Motorcycles",Men,no
+1395,basketball,121,Basketball,Men,yes
+1396,basketball,122,Basketball,Women,yes
+1397,basketball,2385,Basketball,Boys,no
+1398,boules,914,"Jeu lyonnais, Quartets",Men,no
+1399,boules,915,"Jeu de berges, Quartets",Men,no
+1400,ski_mountaineering,2322,Sprint,Boys,yes
+1401,ski_mountaineering,2323,Individual,Boys,yes
+1402,ski_mountaineering,2324,Sprint,Girls,yes
+1403,ski_mountaineering,2325,Individual,Girls,yes
+1404,ski_mountaineering,2326,Relay,Mixed Youth,yes
+1405,dogsled_racing,744,Dog Sled Racing,Open,no
+1406,australian_rules_football,767,Australian Rules Football,Men,no
+1407,skeleton,516,Skeleton,Men,yes
+1408,skeleton,517,Skeleton,Women,yes
+1409,skeleton,2042,Skeleton,Boys,yes
+1410,skeleton,2041,Skeleton,Girls,yes
+1411,automobile_racing,2491,"Karting, Team",Mixed Youth,yes
+1412,automobile_racing,843,"Paris-Toulouse-Paris, Cars",Men,no
+1413,automobile_racing,845,"Paris-Toulouse-Paris, Voiturettes",Men,no
+1414,automobile_racing,851,"Reliability Contest, Touring Cars, Two-seater",Men,no
+1415,automobile_racing,840,"Reliability Contest, Touring Cars, Four-seater",Men,no
+1416,automobile_racing,846,"Reliability Contest, Touring Cars, Six-seater",Men,no
+1417,automobile_racing,849,"Reliability Contest, Touring Cars, Seven or more seats",Men,no
+1418,automobile_racing,835,"Reliability Contest, Voiturettes, Two-seater (<250 kg)",Men,no
+1419,automobile_racing,836,"Reliability Contest, Voiturettes, Two-seater (<400 kg)",Men,no
+1420,automobile_racing,838,"Reliability Contest, Hackney Carriages, Gasoline Engine",Men,no
+1421,automobile_racing,837,"Reliability Contest, Hackney Carriages, Electrical Engine",Men,no
+1422,automobile_racing,848,"Reliability Contest, Delivery Cars, Gasoline Engine",Men,no
+1423,automobile_racing,847,"Reliability Contest, Delivery Cars, Electrical Engine",Men,no
+1424,automobile_racing,841,"Reliability Contest, Light Trucks",Men,no
+1425,automobile_racing,850,"Reliability Contest, Heavy Trucks",Men,no
+1426,ice_hockey,339,Ice Hockey,Men,yes
+1427,ice_hockey,340,Ice Hockey,Women,yes
+1428,ice_hockey,2033,Ice Hockey,Boys,yes
+1429,ice_hockey,2035,Skills Challenge,Boys,yes
+1430,ice_hockey,2032,Ice Hockey,Girls,yes
+1431,ice_hockey,2034,Skills Challenge,Girls,yes
+1432,ice_hockey,765,Ice Hockey Exhibition,Men,no
+1433,marathon_swimming,703,10 kilometres Open Water,Men,yes
+1434,marathon_swimming,704,10 kilometres Open Water,Women,yes
+1435,sumo,772,Unknown Event,Men,no
+1436,breaking,2455,Individual,Boys,yes
+1437,breaking,2456,Individual,Girls,yes
+1438,breaking,2457,Team,Mixed Youth,yes
+1439,cycling_road,211,"Road Race, Individual",Men,yes
+1440,cycling_road,213,Individual Time Trial,Men,yes
+1441,cycling_road,242,"Road Race, Individual",Women,yes
+1442,cycling_road,243,Individual Time Trial,Women,yes
+1443,cycling_road,2295,Combined Team,Boys,yes
+1444,cycling_road,2296,Combined Team,Girls,yes
+1445,cycling_road,2201,Combined Team,Mixed Youth,yes
+1446,cycling_road,2297,Relay,Mixed Youth,yes
+1447,cycling_road,212,"Road Race, Team",Men,no
+1448,cycling_road,214,100 kilometres Team Time Trial,Men,no
+1449,equestrian_dressage,268,Individual,Open,yes
+1450,equestrian_dressage,269,Team,Open,yes
+1451,equestrian_dressage,260,Individual,Men,no
+1452,equestrian_dressage,261,Team,Men,no
+1453,glíma,784,Glíma,Men,no
+1454,triathlon,623,Olympic Distance,Men,yes
+1455,triathlon,624,Olympic Distance,Women,yes
+1456,triathlon,2564,Relay,Mixed,yes
+1457,triathlon,2172,Sprint,Boys,yes
+1458,triathlon,2173,Sprint,Girls,yes
+1459,triathlon,2174,Relay,Mixed Youth,yes
+1460,unknown_sport,2537,Unknown Event,Men,no
+1461,jeu_de_paume,341,Singles,Men,no
+1462,speed_skiing,761,Individual,Men,no
+1463,speed_skiing,762,Individual,Women,no
+1464,shooting,439,"Air Pistol, 10 metres",Men,yes
+1465,shooting,440,"Rapid-Fire Pistol, 25 metres",Men,yes
+1466,shooting,454,"Air Rifle, 10 metres",Men,yes
+1467,shooting,478,"Small-Bore Rifle, Three Positions, 50 metres",Men,yes
+1468,shooting,494,Trap,Men,yes
+1469,shooting,499,Skeet,Men,yes
+1470,shooting,501,"Air Pistol, 10 metres",Women,yes
+1471,shooting,502,"Sporting Pistol, 25 metres",Women,yes
+1472,shooting,503,"Air Rifle, 10 metres",Women,yes
+1473,shooting,504,"Small-Bore Rifle, Three Positions, 50 metres",Women,yes
+1474,shooting,505,Trap,Women,yes
+1475,shooting,507,Skeet,Women,yes
+1476,shooting,2565,"Air Pistol, 10 metres, Team",Mixed,yes
+1477,shooting,2566,"Air Rifle, 10 metres, Team",Mixed,yes
+1478,shooting,2567,"Trap, Team",Mixed,yes
+1479,shooting,2176,"Air Pistol, 10 metres",Boys,yes
+1480,shooting,2175,"Air Rifle, 10 metres",Boys,yes
+1481,shooting,2178,"Air Pistol, 10 metres",Girls,yes
+1482,shooting,2177,"Air Rifle, 10 metres",Girls,yes
+1483,shooting,2307,"Air Pistol, 10 metres, Team",Mixed Youth,yes
+1484,shooting,2306,"Air Rifle, 10 metres, Team",Mixed Youth,yes
+1485,shooting,441,"Military Pistol, Team",Men,no
+1486,shooting,442,"Free Pistol, 25 metres",Men,no
+1487,shooting,443,"Free Pistol, 30 metres",Men,no
+1488,shooting,444,"Free Pistol, 50 yards",Men,no
+1489,shooting,445,"Free Pistol, 50 yards, Team",Men,no
+1490,shooting,446,"Free Pistol, 50 metres",Men,no
+1491,shooting,447,"Free Pistol, 50 metres, Team",Men,no
+1492,shooting,448,"Military Pistol, 25 metres",Men,no
+1493,shooting,689,"Military Pistol, 30 metres",Men,no
+1494,shooting,449,"Military Revolver, 1873-1874 Gras Model, 20 metres",Men,no
+1495,shooting,450,"Military Revolver, 20 metres",Men,no
+1496,shooting,451,Dueling Pistol Au Visé 20 metres,Men,no
+1497,shooting,452,"Dueling Pistol Au Commandement, 25 metres",Men,no
+1498,shooting,687,"Dueling Pistol, 30 metres",Men,no
+1499,shooting,453,"Dueling Pistol, 30 metres, Team",Men,no
+1500,shooting,686,"Muzzle-Loading Pistol, 25 metres",Men,no
+1501,shooting,455,"Free Rifle, Three Positions, 300 metres",Men,no
+1502,shooting,456,"Free Rifle, Three Positions, 300 metres, Team",Men,no
+1503,shooting,457,"Free Rifle, Any Position, 300 metres",Men,no
+1504,shooting,458,"Free Rifle, Kneeling, 300 metres",Men,no
+1505,shooting,459,"Free Rifle, Prone, 300 metres",Men,no
+1506,shooting,738,"Free Rifle, Prone, 600 metres",Men,no
+1507,shooting,460,"Free Rifle, Standing, 300 metres",Men,no
+1508,shooting,2438,"Free Weapon, 200 Metres, Open",Men,no
+1509,shooting,462,"Free Rifle, 400, 600 and 800 metres, Team",Men,no
+1510,shooting,2439,"Shooting, Unknown Event",Men,no
+1511,shooting,463,"Free Rifle, 1,000 yards",Men,no
+1512,shooting,464,"Military Rifle, Three Positions, 300 metres",Men,no
+1513,shooting,2440,"Krag Gun, 200 metres, Civilians",Men,no
+1514,shooting,2441,"Krag Gun, 200 metres, Military",Men,no
+1515,shooting,465,"Military Rifle, Any Position, 600 metres",Men,no
+1516,shooting,2442,"Krag Gun, 200 metres, Open",Men,no
+1517,shooting,466,"Military Rifle, 1873-1874 Gras Model, Kneeling Or Standing, 200 metres",Men,no
+1518,shooting,2443,"Krag Gun, 400 metres, Civilians",Men,no
+1519,shooting,467,"Military Rifle, Kneeling Or Standing, 300 metres",Men,no
+1520,shooting,468,"Military Rifle, Prone, 300 metres",Men,no
+1521,shooting,2444,"Krag Gun, 400 metres, Military",Men,no
+1522,shooting,469,"Military Rifle, Prone, 300 metres, Team",Men,no
+1523,shooting,2445,"Krag Gun, 400 metres, Open",Men,no
+1524,shooting,470,"Military Rifle, Prone, 600 metres",Men,no
+1525,shooting,471,"Military Rifle, Prone, 600 metres, Team",Men,no
+1526,shooting,472,"Military Rifle, Standing, 300 metres",Men,no
+1527,shooting,473,"Military Rifle, Standing, 300 metres, Team",Men,no
+1528,shooting,474,"Military Rifle, 200 metres",Men,no
+1529,shooting,475,"Military Rifle, 200, 400, 500 and 600 metres, Team",Men,no
+1530,shooting,476,"Military Rifle, 200/500/600/800/900/1,000 yards, Team",Men,no
+1531,shooting,477,"Military Rifle, Prone, 300 and 600 metres, Team",Men,no
+1532,shooting,688,"Small-Bore Rifle, Any Position, 50 metres",Men,no
+1533,shooting,479,"Small-Bore Rifle, Prone, 50 metres",Men,no
+1534,shooting,480,"Small-Bore Rifle, Prone, 50 metres, Team",Men,no
+1535,shooting,481,"Small-Bore Rifle, Standing, 50 metres",Men,no
+1536,shooting,482,"Small Bore-Rifle, Standing, 50 metres, Team",Men,no
+1537,shooting,683,"Small-Bore Rifle, Prone, 50 and 100 yards",Men,no
+1538,shooting,483,"Small-Bore Rifle, 50 and 100 yards, Team",Men,no
+1539,shooting,484,"Small-Bore Rifle, Disappearing Target, 25 metres",Men,no
+1540,shooting,485,"Small-Bore Rifle, Disappearing Target, 25 metres, Team",Men,no
+1541,shooting,486,"Small-Bore Rifle, Disappearing Target, 25 yards",Men,no
+1542,shooting,487,"Small-Bore Rifle, Moving Target, 25 yards",Men,no
+1543,shooting,488,"Running Target, 10 metres",Men,no
+1544,shooting,684,"Running Target, 50 metres",Men,no
+1545,shooting,489,"Running Target, Single Shot",Men,no
+1546,shooting,490,"Running Target, Single Shot, Team",Men,no
+1547,shooting,491,"Running Target, Double Shot",Men,no
+1548,shooting,492,"Running Target, Double Shot, Team",Men,no
+1549,shooting,493,"Running Target, Single and Double Shot",Men,no
+1550,shooting,495,"Trap, Single Shot, 16 metres",Men,no
+1551,shooting,496,"Trap, Double Shot, 14 metres",Men,no
+1552,shooting,497,"Trap, Team",Men,no
+1553,shooting,498,Double Trap,Men,no
+1554,shooting,500,Unknown Event,Men,no
+1555,shooting,506,Double Trap,Women,no
+1556,shooting,508,"Rapid-Fire Pistol, 25 metres",Open,no
+1557,shooting,509,"Free Pistol, 50 metres",Open,no
+1558,shooting,510,"Free Rifle, Three Positions, 300 metres",Open,no
+1559,shooting,511,"Small-Bore Rifle, Three Positions, 50 metres",Open,no
+1560,shooting,512,"Small-Bore Rifle, Prone, 50 metres",Open,no
+1561,shooting,513,"Running Target, 50 metres",Open,no
+1562,shooting,514,Trap,Open,no
+1563,shooting,515,Skeet,Open,no
+1564,mixed_sports,2463,"Multidiscipline Gymnastics, Team",Mixed Youth,yes
+1565,mixed_sports,2013,Cross-Country / Biathlon Relay,Mixed Youth,yes
+1566,mixed_sports,2069,Cross-Country Skiing / Ski Jumping / Nordic Combined Team,Mixed Youth,yes
+1567,mixed_sports,2071,Freestyle/Snowboard Relay,Mixed Youth,yes
+1568,cross_country_skiing,182,Sprint,Men,yes
+1569,cross_country_skiing,184,15 kilometres,Men,yes
+1570,cross_country_skiing,187,50 kilometres,Men,yes
+1571,cross_country_skiing,190,30 kilometres Skiathlon,Men,yes
+1572,cross_country_skiing,191,4 × 10 kilometres Relay,Men,yes
+1573,cross_country_skiing,192,Team Sprint,Men,yes
+1574,cross_country_skiing,193,Sprint,Women,yes
+1575,cross_country_skiing,195,10 kilometres,Women,yes
+1576,cross_country_skiing,198,30 kilometres,Women,yes
+1577,cross_country_skiing,200,15 kilometres Skiathlon,Women,yes
+1578,cross_country_skiing,203,4 × 5 kilometres Relay,Women,yes
+1579,cross_country_skiing,204,Team Sprint,Women,yes
+1580,cross_country_skiing,2020,Sprint,Boys,yes
+1581,cross_country_skiing,2019,10 kilometres,Boys,yes
+1582,cross_country_skiing,2067,Cross,Boys,yes
+1583,cross_country_skiing,2018,Sprint,Girls,yes
+1584,cross_country_skiing,2017,5 kilometres,Girls,yes
+1585,cross_country_skiing,2068,Cross,Girls,yes
+1586,cross_country_skiing,183,10 kilometres,Men,no
+1587,cross_country_skiing,185,18 kilometres,Men,no
+1588,cross_country_skiing,186,30 kilometres,Men,no
+1589,cross_country_skiing,188,10/10 kilometres Pursuit,Men,no
+1590,cross_country_skiing,189,10/15 kilometres Pursuit,Men,no
+1591,cross_country_skiing,757,"5 kilometres, B1",Men,no
+1592,cross_country_skiing,194,5 kilometres,Women,no
+1593,cross_country_skiing,196,15 kilometres,Women,no
+1594,cross_country_skiing,197,20 kilometres,Women,no
+1595,cross_country_skiing,199,5/5 kilometres Pursuit,Women,no
+1596,cross_country_skiing,201,5/10 kilometres Pursuit,Women,no
+1597,cross_country_skiing,202,3 × 5 kilometres Relay,Women,no
+1598,cross_country_skiing,758,"5 kilometres, B1",Women,no
+1599,skiing,761,Individual,Men,no
+1600,skiing,762,Individual,Women,no
+1601,motorboating,365,A-Class (Open),Open,no
+1602,motorboating,366,B-Class (Under 60 feet),Open,no
+1603,motorboating,367,C-Class,Open,no
+1604,sport_climbing,2555,Combined,Men,yes
+1605,sport_climbing,2556,Combined,Women,yes
+1606,sport_climbing,2458,Combined,Boys,yes
+1607,sport_climbing,2459,Combined,Girls,yes
+1608,skateboarding,2557,Street,Men,yes
+1609,skateboarding,2559,Park,Men,yes
+1610,skateboarding,2558,Street,Women,yes
+1611,skateboarding,2560,Park,Women,yes
+1612,firefighting,928,"Maneuvering, National",Men,no
+1613,firefighting,929,"Maneuvering, International, Volunteer Firefighters",Men,no
+1614,firefighting,930,"Maneuvering, International, Professional Firefighters",Men,no
+1615,firefighting,931,"Maneuvering, International, British Firefighters",Men,no
+1616,automobile_sports,2491,"Karting, Team",Mixed Youth,yes
+1617,automobile_sports,843,"Paris-Toulouse-Paris, Cars",Men,no
+1618,automobile_sports,845,"Paris-Toulouse-Paris, Voiturettes",Men,no
+1619,automobile_sports,851,"Reliability Contest, Touring Cars, Two-seater",Men,no
+1620,automobile_sports,840,"Reliability Contest, Touring Cars, Four-seater",Men,no
+1621,automobile_sports,846,"Reliability Contest, Touring Cars, Six-seater",Men,no
+1622,automobile_sports,849,"Reliability Contest, Touring Cars, Seven or more seats",Men,no
+1623,automobile_sports,835,"Reliability Contest, Voiturettes, Two-seater (<250 kg)",Men,no
+1624,automobile_sports,836,"Reliability Contest, Voiturettes, Two-seater (<400 kg)",Men,no
+1625,automobile_sports,838,"Reliability Contest, Hackney Carriages, Gasoline Engine",Men,no
+1626,automobile_sports,837,"Reliability Contest, Hackney Carriages, Electrical Engine",Men,no
+1627,automobile_sports,848,"Reliability Contest, Delivery Cars, Gasoline Engine",Men,no
+1628,automobile_sports,847,"Reliability Contest, Delivery Cars, Electrical Engine",Men,no
+1629,automobile_sports,841,"Reliability Contest, Light Trucks",Men,no
+1630,automobile_sports,850,"Reliability Contest, Heavy Trucks",Men,no
+1631,trampolining,620,Individual,Men,yes
+1632,trampolining,621,Individual,Women,yes
+1633,trampolining,2185,Individual,Boys,yes
+1634,trampolining,2186,Individual,Girls,yes
+1635,savate,804,Savate,Men,no
+1636,gliding,783,Gliding,Open,no
+1637,cycling,215,Sprint,Men,yes
+1638,cycling,219,Keirin,Men,yes
+1639,cycling,221,Team Sprint,Men,yes
+1640,cycling,223,"Team Pursuit, 4,000 metres",Men,yes
+1641,cycling,993,Omnium,Men,yes
+1642,cycling,244,Sprint,Women,yes
+1643,cycling,994,Keirin,Women,yes
+1644,cycling,995,Team Sprint,Women,yes
+1645,cycling,996,Team Pursuit,Women,yes
+1646,cycling,997,Omnium,Women,yes
+1647,cycling,2574,Madison,Women,yes
+1648,cycling,217,333⅓ metres Time Trial,Men,no
+1649,cycling,218,"1,000 metres Time Trial",Men,no
+1650,cycling,220,"Tandem Sprint, 2,000 metres",Men,no
+1651,cycling,222,"Individual Pursuit, 4,000 metres",Men,no
+1652,cycling,249,"Team Pursuit, 1,980 yards",Men,no
+1653,cycling,224,Points Race,Men,no
+1654,cycling,226,Madison,Men,no
+1655,cycling,227,¼ mile,Men,no
+1656,cycling,228,⅓ mile,Men,no
+1657,cycling,229,½ mile,Men,no
+1658,cycling,230,1 mile,Men,no
+1659,cycling,2398,"1 mile, Motorcycle",Men,no
+1660,cycling,231,2 miles,Men,no
+1661,cycling,232,"5,000 metres",Men,no
+1662,cycling,233,5 miles,Men,no
+1663,cycling,234,"10,000 metres",Men,no
+1664,cycling,235,20 kilometres,Men,no
+1665,cycling,236,25 kilometres,Men,no
+1666,cycling,237,25 miles,Men,no
+1667,cycling,238,50 kilometres,Men,no
+1668,cycling,239,100 kilometres,Men,no
+1669,cycling,240,12-Hours Race,Men,no
+1670,cycling,2388,"1 mile, Novice",Men,no
+1671,cycling,2386,"½ mile, Handicap",Men,no
+1672,cycling,2387,"1 mile, Handicap",Men,no
+1673,cycling,2389,"5 miles, Handicap",Men,no
+1674,cycling,917,"Sprint, Professionals",Men,no
+1675,cycling,918,"Tandem Sprint, Professionals",Men,no
+1676,cycling,919,"Team Sprint, Professionals",Men,no
+1677,cycling,920,"Points Race, Professionals",Men,no
+1678,cycling,2390,"⅓ mile, Professionals",Men,no
+1679,cycling,2391,"½ mile, Professionals",Men,no
+1680,cycling,2392,"⅔ mile, Professionals",Men,no
+1681,cycling,2393,"1 mile, Professionals",Men,no
+1682,cycling,921,"50 kilometres, Professionals",Men,no
+1683,cycling,922,"100 kilometres, Professionals",Men,no
+1684,cycling,923,"100 miles, Professionals",Men,no
+1685,cycling,924,"24-Hours Race, Professionals",Men,no
+1686,cycling,925,"3,000 metres, Handicap, Professionals",Men,no
+1687,cycling,926,"25 kilometres Motor-paced, Professionals",Men,no
+1688,cycling,927,"National Team Sprint, Professionals",Men,no
+1689,cycling,2397,"Australian Team Pursuit, Professionals",Men,no
+1690,cycling,2394,"½ mile, Handicap, Professionals",Men,no
+1691,cycling,2395,"1 mile, Handicap, Professionals",Men,no
+1692,cycling,2396,"2 miles, Handicap, Professionals",Men,no
+1693,cycling,245,500 metres Time Trial,Women,no
+1694,cycling,246,Individual Pursuit,Women,no
+1695,cycling,247,Points Race,Women,no
+1696,canne_de_combat,782,Canne de combat,Men,no
+1697,canoe_sprint,989,"Kayak Singles, 200 metres",Men,yes
+1698,canoe_sprint,160,"Kayak Singles, 1,000 metres",Men,yes
+1699,canoe_sprint,990,"Kayak Doubles, 200 metres",Men,yes
+1700,canoe_sprint,163,"Kayak Doubles, 1,000 metres",Men,yes
+1701,canoe_sprint,2575,"Kayak Fours, 500 metres",Men,yes
+1702,canoe_sprint,165,"Kayak Fours, 1,000 metres",Men,yes
+1703,canoe_sprint,991,"Canadian Singles, 200 metres",Men,yes
+1704,canoe_sprint,169,"Canadian Singles, 1,000 metres",Men,yes
+1705,canoe_sprint,172,"Canadian Doubles, 1,000 metres",Men,yes
+1706,canoe_sprint,992,"Kayak Singles, 200 metres",Women,yes
+1707,canoe_sprint,178,"Kayak Singles, 500 metres",Women,yes
+1708,canoe_sprint,179,"Kayak Doubles, 500 metres",Women,yes
+1709,canoe_sprint,180,"Kayak Fours, 500 metres",Women,yes
+1710,canoe_sprint,2576,"Canadian Singles, 200 metres",Women,yes
+1711,canoe_sprint,2577,"Canadian Doubles, 500 metres",Women,yes
+1712,canoe_sprint,2095,"Kayak Singles, Head to Head",Boys,yes
+1713,canoe_sprint,2098,"Kayak Singles, Obstacle Slalom",Boys,yes
+1714,canoe_sprint,2099,"Canoe Singles, Obstacle Slalom",Boys,yes
+1715,canoe_sprint,2096,"Canoe Singles, Head to Head",Boys,yes
+1716,canoe_sprint,2100,"Kayak Singles, Obstacle Slalom",Girls,yes
+1717,canoe_sprint,2097,"Kayak Singles, Head to Head",Girls,yes
+1718,canoe_sprint,2293,"Canoe Singles, Head to Head",Girls,yes
+1719,canoe_sprint,2294,"Canoe Singles, Obstacle Slalom",Girls,yes
+1720,canoe_sprint,159,"Kayak Singles, 500 metres",Men,no
+1721,canoe_sprint,162,"Kayak Doubles, 500 metres",Men,no
+1722,canoe_sprint,166,"Kayak Relay, 4 × 500 metres",Men,no
+1723,canoe_sprint,168,"Canadian Singles, 500 metres",Men,no
+1724,canoe_sprint,171,"Canadian Doubles, 500 metres",Men,no
+1725,canoe_sprint,776,"Kayak Singles, 800 metres",Men,no
+1726,canoe_sprint,777,"Kayak Doubles, 800 metres",Men,no
+1727,canoe_sprint,778,"Kayak Fours, 800 metres",Men,no
+1728,canoe_sprint,779,"Canadian Singles, 800 metres",Men,no
+1729,canoe_sprint,780,"Canadian Doubles, 800 metres",Men,no
+1730,canoe_sprint,781,"Canadian Fours, 800 metres",Men,no
+1731,equestrian_eventing,272,Individual,Open,yes
+1732,equestrian_eventing,273,Team,Open,yes
+1733,equestrian_eventing,264,Individual,Men,no
+1734,equestrian_eventing,265,Team,Men,no
+1735,artistic_swimming,605,Duet,Women,yes
+1736,artistic_swimming,606,Team,Women,yes
+1737,artistic_swimming,604,Solo,Women,no
+1738,aeronautics,710,Aeronautics,Open,no
+1739,equestrian_jumping,270,Individual,Open,yes
+1740,equestrian_jumping,271,Team,Open,yes
+1741,equestrian_jumping,2247,Individual,Open Youth,yes
+1742,equestrian_jumping,2248,Team,Open Youth,yes
+1743,equestrian_jumping,262,Individual,Men,no
+1744,equestrian_jumping,263,Team,Men,no
+1745,equestrian_jumping,276,Long Jump,Open,no
+1746,equestrian_jumping,277,High Jump,Open,no
+1747,tug-of-war,622,Tug-Of-War,Men,no
+1748,bandy,751,Bandy,Men,no
