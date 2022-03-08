@@ -2,6 +2,7 @@ from scripts.scrapers.scrape_utils import ScrapingUtils
 from country_codes import CountryCodes
 from games_list import GamesList
 from sports_events import SportsEvents
+from medals_counts import MedalsCounts
 
 
 class OlympicScraper:
@@ -15,6 +16,8 @@ class OlympicScraper:
                                        scrape_utils=scr_utils)
         self.sports_scraper = SportsEvents(data_path="data", url="https://www.olympedia.org/sports",
                                            scrape_utils=scr_utils)
+        self.medals_scraper = MedalsCounts(data_path="data", url="https://www.olympedia.org/statistics/medal/country",
+                                           scrape_utils=scr_utils)
 
     def scrape(self, do_fetch):
         if self.can_crawl:
@@ -22,6 +25,7 @@ class OlympicScraper:
             self.cc_scraper.run_scrape(do_fetch)
             self.games_scraper.run_scrape(do_fetch)
             self.sports_scraper.run_scrape(do_fetch)
+            self.medals_scraper.run_scrape(do_fetch)
         else:
             print("It is not possible to crawl this page.")
 
