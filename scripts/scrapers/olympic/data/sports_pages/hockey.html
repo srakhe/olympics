@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Olympedia – Hockey</title>
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="GVzfW7oG8K6gg+fhAqwtZ5emYVg1BABEwVFns/ZRTSy+sXzpVCzYe/7p+Xq4Up5aq+i29n/OuNFmfUpwhkuMww==" />
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+<meta content='EN' http-equiv='content-language'>
+<meta content='width=device-width, initial-scale=1' name='viewport'>
+<link rel="stylesheet" media="all" href="/assets/bootstrap.min-460a43de22fd9534d595e5aea2715cb154560291c9c6401b526e31c86a5ce32d.css" />
+<link rel="stylesheet" media="all" href="/assets/bootstrap-sortable-363d232309d54b549fa85446295ef2b5d290e3f8a49f1a646247340be3705ef9.css" />
+<link rel="stylesheet" media="all" href="/assets/jquery-ui-1.11.4.min-359ba1b9eb679ad05fb4c8fda710ee4c0239354f1ba635200b6065638295d646.css" />
+<link rel="stylesheet" media="screen" href="/assets/lightbox-e29689e123fc27505d2b9d919f43ffcb6fade539cb4670f21c35aa07848105e7.css" />
+<link rel="stylesheet" media="all" href="/assets/application-dabe0afec76f540b074f0f63c688a540786e3cc47508864701ac4bfcd2198724.css" data-turbolinks-track="true" />
+<link rel="stylesheet" media="screen" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.4.3/css/ol.css" />
+<script src="/assets/application-e1a1e4d6a20243befcce18acb216d9b0e6082405323ce1f5dfbf47c401111aa1.js" data-turbolinks-track="true"></script>
+<script src="/assets/jquery-1.11.2.min-cc83565074b3fa7f2283f7f4d56b90ad171ede87008448ed5d2e91c50575bed1.js"></script>
+<script src="/assets/jquery-ui-1.11.4.min-1f37fd37d8db0404488ac8f6505560e48d1364ef1c81e384ac695e143049ab0f.js"></script>
+<script src="/assets/bootstrap.min-81d6fe3a991358b79b083d075ca476712c9f11c5c890047486176bde863c499e.js"></script>
+<script src="/assets/moment-ded3cbd5de5ae075c44be4149abb630c658e8789f17ccfb162e6bb7664e8bec9.js"></script>
+<script src="/assets/bootstrap-sortable-cd614fbc8d2030bc050ce63652169ed36d970209a94062fa218c631f2c04dc9f.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.4.3/build/ol.js"></script>
+
+</head>
+
+<body>
+<div class='navbar navbar-default navbar-fixed-top' role='navigation'>
+<div class='navbar-header'>
+<div class='button navbar-toggle' data-target='.navbar-ex1-collapse' data-toggle='collapse' type='button'>
+<span class='sr-only'>Toggle navigation</span>
+<span class='icon-bar'>
+<span class='icon-bar'>
+<span class='icon-bar'></span>
+</span>
+</span>
+</div>
+<a class='navbar-brand' href='/'>Olympedia</a>
+</div>
+<div class='collapse navbar-collapse navbar-ex1-collapse'>
+<ul class='nav navbar-nav'>
+<li class='dropdown'>
+<a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+Athletes
+<b class='caret'></b>
+</a>
+<ul class='dropdown-menu'>
+<li><a href="/athletes/advanced_search">Advanced search</a></li>
+<li><a href="/horses">Horse search</a></li>
+<li><a href="/family_relations">Related Olympians</a></li>
+<li><a href="/counts">Counts</a></li>
+<li><a href="/athletes/doubles">Doubles</a></li>
+<li><a href="/athletes/lists">Lists</a></li>
+<li class='divider'></li>
+<li><a href="/athletes">Athletes</a></li>
+</ul>
+</li>
+
+<li class='dropdown'>
+<a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+Countries
+<b class='caret'></b>
+</a>
+<ul class='dropdown-menu'>
+<li><a href="/countries/head_to_head">Head-to-head</a></li>
+<li><a href="/countries/best_results">Best results</a></li>
+<li><a href="/countries/comparison">Results comparison</a></li>
+<li class='divider'></li>
+<li><a href="/countries">Countries</a></li>
+</ul>
+</li>
+
+<li class='dropdown'>
+<a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+Games
+<b class='caret'></b>
+</a>
+<ul class='dropdown-menu'>
+<li><a href="/editions">Games</a></li>
+<li><a href="/editions/medals">Medals</a></li>
+<li><a href="/editions/results">Results</a></li>
+<li><a href="/ceremonies">Opening ceremony</a></li>
+<li><a href="/venues/menu">Venues</a></li>
+</ul>
+</li>
+
+<li class='dropdown'>
+<a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+Sports
+<b class='caret'></b>
+</a>
+<ul class='dropdown-menu'>
+<li><a href="/sports">Disciplines &amp; Sports</a></li>
+<li><a href="/event_names">Events</a></li>
+</ul>
+</li>
+
+<li class='dropdown'>
+<a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+IOC
+<b class='caret'></b>
+</a>
+<ul class='dropdown-menu'>
+<li><a href="/organizations">Organizations</a></li>
+<li><a href="/definitions">Definitions</a></li>
+<li><a href="/meetings">Meetings</a></li>
+<li><a href="/ioc/host_cities">Host city selection</a></li>
+</ul>
+</li>
+
+<li class='dropdown'>
+<a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+Statistics
+<b class='caret'></b>
+</a>
+<ul class='dropdown-menu'>
+<li></li>
+<li><a href="/statistics/medal/country">Medals by country</a></li>
+<li><a href="/statistics/medal/athlete">Medals by athlete</a></li>
+<li><a href="/statistics/medal_table">Medal tables</a></li>
+<li><a href="/statistics/participation">Participations</a></li>
+<li><a href="/statistics/age">Age records</a></li>
+<li><a href="/lists">Lists</a></li>
+<li><a href="/today">Today</a></li>
+<li></li>
+<li class='divider'></li>
+<li><a href="/statistics">Statistics</a></li>
+</ul>
+</li>
+
+
+
+
+<li><a href="/feedbacks/new">Feedback</a></li>
+<form class="navbar-form navbar-left" role="search" action="/athletes/quick_search" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="T7RWbpkXfNwFlmykHvpBS1c5WVvCQiNPsJGcCfRFt8dAYebwLpJdYOew7G9+72tL0Kr+z6rv40haZPRbtRq+hQ==" />
+<div class='form-group'>
+<input type="text" name="query" id="query" class="form-control" placeholder="Athlete search" />
+</div>
+<input type="submit" name="commit" value="Go" class="btn btn-default" data-disable-with="Go" />
+</form>
+
+
+</ul>
+</div>
+</div>
+<div class='container'>
+<ol class='breadcrumb'>
+<li>
+<a href='/'>Home</a>
+</li>
+<li><a href="/sports">Disciplines &amp; Sports</a></li><li class="active">Hockey</li>
+</ol>
+<h1>Hockey</h1>
+<h2>Facts</h2>
+<table class='biodata'>
+<tr>
+<th>Discipline of</th>
+<td><a href="/sport_groups/HO">Hockey</a></td>
+</tr>
+<tr>
+<th>Participants</th>
+<td><a href="/counts/sport/HOC">4085</a></td>
+</tr>
+<tr>
+<th>NOCs</th>
+<td>43</td>
+</tr>
+<tr>
+<th>Competitions held</th>
+<td>
+35
+(<a href="/venues/sports/HOC">Venues</a>)
+</td>
+</tr>
+<tr>
+<th>Distinct events</th>
+<td>4</td>
+</tr>
+</table>
+<h2>
+Description
+
+</h2>
+<div class='description'>
+<p>Hockey is the oldest known ball and stick game. Records exist of it having been played in Persia in 2000 BCE. It became so popular by the Middle Ages that it was banned in England for a time because it interfered with the practice of archery, which was the basis for national defense.</p>
+
+<p>The modern game of hockey, however, was developed in England in the late 19th century. It spread throughout the British Empire, as a result, and most of the dominant nations in the early years of the sport were members of that Empire. This includes India, Pakistan, Australia, New Zealand, and the United Kingdom. India’s dominance in this team sport at the Olympics is matched only by the United States’ dominance of basketball, Hungary’s dominance of water polo, and Canadian and Soviet dominance of ice hockey. Between 1928 and 1956, India won six gold medals and 30 consecutive games.</p>
+
+<p>Hockey appeared on the Olympic Program in 1908 and 1920. It was not included in the Olympic program in 1924, because no international federation existed. In 1928, it was held at Amsterdam and has been an Olympic sport since. In 1980, hockey for women was first introduced as an Olympic sport.</p>
+
+<p>Hockey is governed internationally by the Fédération Internationale de Hockey (FIH), which was formed on 7 January 1924 in Paris, with seven founding members: Austria, Belgium, Czechoslovakia, France, Hungary, Spain, and Switzerland. The International Federation of Women’s Hockey Associations (IFWHA) was founded in 1927, with eight founding members: Australia, Denmark, England, Ireland, Scotland, South Africa, the United States, and Wales. When women’s hockey was added to the Olympic program in 1980, the International Olympic Committee (IOC) demanded that federations merge. On 23 April 1983 the IFWHA was dissolved and women’s hockey became part of the FIH. As of 2020 the FIH has 137 member nations.</p>
+
+<p>While 52 Olympians have won three hockey medals, only <a href="/athletes/19312">Udham Singh</a> (IND), <a href="/athletes/19159">Leslie Claudius</a> (IND), <a href="/athletes/19736">Teun de Nooijer</a> (NED), and <a href="/athletes/91766">Lucha Aymar</a> (ARG) have won four. Eight Olympians have won three gold medals, among them Udham Singh and Claudius, and five other Indian players – <a href="/athletes/19148">Dhyan Chand</a>, <a href="/athletes/19305">Balbir Singh, Sr.</a>; <a href="/athletes/19178">Ranganandhan Francis</a>, <a href="/athletes/19308">Randhir Singh Gentle</a>, and <a href="/athletes/19145">Richard Allen</a>. Australian <a href="/athletes/17472">Rechelle Hawkes</a> is the only non-Indian hockey Olympian to win three gold medals.</p>
+
+<p>Presidents of the Fédération Internationale de Hockey:</p>
+
+<ul>
+  <li>Paul Léautey (FRA, 1924-1926)</li>
+  <li><a href="/athletes/68474">Frantz Reichel</a> (FRA, 1926-1932)</li>
+  <li><a href="/athletes/79601">Marc Bellin du Coteau</a> (FRA, 1932-1936)</li>
+  <li>Georg Evers (GER, 1936-1945)</li>
+  <li>Robert Liégeois (BEL, a.i. 1945-1946)</li>
+  <li><a href="/athletes/1200977">Jaap Quarles van Ufford</a> (NED, 1946-1966)</li>
+  <li><a href="/athletes/1200291">Rene Frank</a> (BEL, 1966-1983)</li>
+  <li><a href="/athletes/1200585">Étienne Glichitch</a> (FRA, 1984-1996)</li>
+  <li><a href="/athletes/18470">Juan Ángel Calzado </a> (ESP, 1996-2001)</li>
+  <li><a href="/athletes/899370">Els van Breda Vriesman</a> (NED, 2001-2008)</li>
+  <li><a href="/athletes/701574">Leandro Negre</a> (ESP, 2008-2016)</li>
+  <li><a href="/athletes/1202254">Narinder Batra</a> (IND, 2016-present)</li>
+</ul>
+
+<p>Presidents of the International Federation of Women’s Hockey Associations (dissolved 1983):</p>
+
+<ul>
+  <li>Catherine J. Gaskell (GBR, 1927-1933)</li>
+  <li>Helen Krumbhaar (USA, 1933-1948)</li>
+  <li>M. Dietrich (RSA, 1948-1950)</li>
+  <li>Hilda M. Light (GBR, 1950-1953)</li>
+  <li>Marie Hamilton (AUS, 1953-1955)</li>
+  <li>Eve Redfern (AUS, 1955-1956)</li>
+  <li>Eska de Josselin de Jong (NED, 1956-1959)</li>
+  <li>Nancy Sawin (USA, 1959-1963)</li>
+  <li>Bärbel Kolbenschlag (FRG, 1963-1967)</li>
+  <li>Aileen Gooder (NZL, 1967-1971)</li>
+  <li>Eileen Hyndman (GBR, 1971-1983)</li>
+</ul>
+
+</div>
+
+<h2>All-time medal table</h2>
+<h3>Olympic Games</h3>
+<table class='table table-striped'>
+<thead>
+<tr>
+<th colspan='2'>NOC</th>
+<th>Gold</th>
+<th>Silver</th>
+<th>Bronze</th>
+<th>Total</th>
+</tr>
+</thead>
+<tr>
+<td><a href="/countries/IND">India</a></td>
+<td><a href="/countries/IND"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/IND.png" /> IND</a></td>
+<td>8</td>
+<td>1</td>
+<td>3</td>
+<td>12</td>
+</tr>
+<tr>
+<td><a href="/countries/NED">Netherlands</a></td>
+<td><a href="/countries/NED"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/NED.png" /> NED</a></td>
+<td>6</td>
+<td>6</td>
+<td>6</td>
+<td>18</td>
+</tr>
+<tr>
+<td><a href="/countries/AUS">Australia</a></td>
+<td><a href="/countries/AUS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/AUS.png" /> AUS</a></td>
+<td>4</td>
+<td>4</td>
+<td>5</td>
+<td>13</td>
+</tr>
+<tr>
+<td><a href="/countries/GBR">Great Britain</a></td>
+<td><a href="/countries/GBR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/GBR.png" /> GBR</a></td>
+<td>4</td>
+<td>2</td>
+<td>7</td>
+<td>13</td>
+</tr>
+<tr>
+<td><a href="/countries/GER">Germany</a></td>
+<td><a href="/countries/GER"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/GER.png" /> GER</a></td>
+<td>4</td>
+<td>2</td>
+<td>5</td>
+<td>11</td>
+</tr>
+<tr>
+<td><a href="/countries/PAK">Pakistan</a></td>
+<td><a href="/countries/PAK"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/PAK.png" /> PAK</a></td>
+<td>3</td>
+<td>3</td>
+<td>2</td>
+<td>8</td>
+</tr>
+<tr>
+<td><a href="/countries/ARG">Argentina</a></td>
+<td><a href="/countries/ARG"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ARG.png" /> ARG</a></td>
+<td>1</td>
+<td>3</td>
+<td>2</td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="/countries/ESP">Spain</a></td>
+<td><a href="/countries/ESP"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ESP.png" /> ESP</a></td>
+<td>1</td>
+<td>3</td>
+<td>1</td>
+<td>5</td>
+</tr>
+<tr>
+<td><a href="/countries/FRG">West Germany</a></td>
+<td><a href="/countries/FRG"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/FRG.png" /> FRG</a></td>
+<td>1</td>
+<td>3</td>
+<td>0</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="/countries/BEL">Belgium</a></td>
+<td><a href="/countries/BEL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/BEL.png" /> BEL</a></td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="/countries/NZL">New Zealand</a></td>
+<td><a href="/countries/NZL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/NZL.png" /> NZL</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/ZIM">Zimbabwe</a></td>
+<td><a href="/countries/ZIM"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ZIM.png" /> ZIM</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/KOR">Republic of Korea</a></td>
+<td><a href="/countries/KOR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KOR.png" /> KOR</a></td>
+<td>0</td>
+<td>3</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="/countries/TCH">Czechoslovakia</a></td>
+<td><a href="/countries/TCH"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/TCH.png" /> TCH</a></td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/DEN">Denmark</a></td>
+<td><a href="/countries/DEN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/DEN.png" /> DEN</a></td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/JPN">Japan</a></td>
+<td><a href="/countries/JPN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/JPN.png" /> JPN</a></td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/CHN">People&#39;s Republic of China</a></td>
+<td><a href="/countries/CHN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/CHN.png" /> CHN</a></td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/URS">Soviet Union</a></td>
+<td><a href="/countries/URS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/URS.png" /> URS</a></td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/USA">United States</a></td>
+<td><a href="/countries/USA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/USA.png" /> USA</a></td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>2</td>
+</tr>
+</table>
+
+<h3>Youth Olympic Games</h3>
+<table class='table table-striped'>
+<thead>
+<tr>
+<th colspan='2'>NOC</th>
+<th>Gold</th>
+<th>Silver</th>
+<th>Bronze</th>
+<th>Total</th>
+</tr>
+</thead>
+<tr>
+<td><a href="/countries/AUS">Australia</a></td>
+<td><a href="/countries/AUS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/AUS.png" /> AUS</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/NED">Netherlands</a></td>
+<td><a href="/countries/NED"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/NED.png" /> NED</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/ARG">Argentina</a></td>
+<td><a href="/countries/ARG"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ARG.png" /> ARG</a></td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/PAK">Pakistan</a></td>
+<td><a href="/countries/PAK"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/PAK.png" /> PAK</a></td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/BEL">Belgium</a></td>
+<td><a href="/countries/BEL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/BEL.png" /> BEL</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/NZL">New Zealand</a></td>
+<td><a href="/countries/NZL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/NZL.png" /> NZL</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+</table>
+
+<h2>Most successful competitors</h2>
+<h3>Olympic Games</h3>
+<table class='table table-striped'>
+<thead>
+<tr>
+<th>Athlete</th>
+<th>Nat</th>
+<th>Gold</th>
+<th>Silver</th>
+<th>Bronze</th>
+<th>Total</th>
+</tr>
+</thead>
+<tr class='top'>
+<td><a href="/athletes/19159">Leslie Claudius</a></td>
+<td><a href="/countries/IND"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/IND.png" /> IND</a></td>
+<td>3</td>
+<td>1</td>
+<td>0</td>
+<td>4</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/19312">Udham Singh</a></td>
+<td><a href="/countries/IND"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/IND.png" /> IND</a></td>
+<td>3</td>
+<td>1</td>
+<td>0</td>
+<td>4</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/114027">Lidewij Welten</a></td>
+<td><a href="/countries/NED"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/NED.png" /> NED</a></td>
+<td>3</td>
+<td>1</td>
+<td>0</td>
+<td>4</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/114028">Eva de Goede</a></td>
+<td><a href="/countries/NED"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/NED.png" /> NED</a></td>
+<td>3</td>
+<td>1</td>
+<td>0</td>
+<td>4</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/17472">Rechelle Hawkes</a></td>
+<td><a href="/countries/AUS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/AUS.png" /> AUS</a></td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/19145">Richard Allen</a></td>
+<td><a href="/countries/IND"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/IND.png" /> IND</a></td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/19148">Dhyan Chand</a></td>
+<td><a href="/countries/IND"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/IND.png" /> IND</a></td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/19178">Ranganathan Francis</a></td>
+<td><a href="/countries/IND"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/IND.png" /> IND</a></td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/19305">Balbir Singh, Sr.</a></td>
+<td><a href="/countries/IND"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/IND.png" /> IND</a></td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/19308">Randhir Singh Gentle</a></td>
+<td><a href="/countries/IND"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/IND.png" /> IND</a><br/><a href="/countries/UGA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/UGA.png" /> UGA</a></td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+</tr>
+</table>
+
+<h3>Youth Olympic Games</h3>
+<table class='table table-striped'>
+<thead>
+<tr>
+<th>Athlete</th>
+<th>Nat</th>
+<th>Gold</th>
+<th>Silver</th>
+<th>Bronze</th>
+<th>Total</th>
+</tr>
+</thead>
+<tr class='top'>
+<td><a href="/athletes/131171">Marloes Keetels</a></td>
+<td><a href="/countries/NED"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/NED.png" /> NED</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/132511">Daniel Beale</a></td>
+<td><a href="/countries/AUS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/AUS.png" /> AUS</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/1100177">Jeremy Hayward</a></td>
+<td><a href="/countries/AUS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/AUS.png" /> AUS</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/1302114">Roos Broek</a></td>
+<td><a href="/countries/NED"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/NED.png" /> NED</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/1302115">Jet de Graeff</a></td>
+<td><a href="/countries/NED"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/NED.png" /> NED</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/1302116">Lisanne de Lange</a></td>
+<td><a href="/countries/NED"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/NED.png" /> NED</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/1302117">Macey de Ruiter</a></td>
+<td><a href="/countries/NED"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/NED.png" /> NED</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/1302118">Lara Dell&#39;Anna</a></td>
+<td><a href="/countries/NED"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/NED.png" /> NED</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/1302119">Frederique Derkx</a></td>
+<td><a href="/countries/NED"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/NED.png" /> NED</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/1302120">Mathilde Hotting</a></td>
+<td><a href="/countries/NED"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/NED.png" /> NED</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/1302121">Elsie Nix</a></td>
+<td><a href="/countries/NED"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/NED.png" /> NED</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/1302122">Floor Ouwerling</a></td>
+<td><a href="/countries/NED"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/NED.png" /> NED</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/1302123">Floortje Plokker</a></td>
+<td><a href="/countries/NED"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/NED.png" /> NED</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/1302124">Lisa Scheerlinck</a></td>
+<td><a href="/countries/NED"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/NED.png" /> NED</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/1302125">Saskia van Duivenboden</a></td>
+<td><a href="/countries/NED"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/NED.png" /> NED</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/1302126">Juliette van Hattum</a></td>
+<td><a href="/countries/NED"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/NED.png" /> NED</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/1302127">Liselotte van Mens</a></td>
+<td><a href="/countries/NED"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/NED.png" /> NED</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/1302128">Lieke van Wijk</a></td>
+<td><a href="/countries/NED"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/NED.png" /> NED</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/1302747">Robert Bell</a></td>
+<td><a href="/countries/AUS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/AUS.png" /> AUS</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/1302748">Andrew Butturini</a></td>
+<td><a href="/countries/AUS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/AUS.png" /> AUS</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/1302749">Ryan Edge</a></td>
+<td><a href="/countries/AUS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/AUS.png" /> AUS</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/1302750">Jake Farrell</a></td>
+<td><a href="/countries/AUS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/AUS.png" /> AUS</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/1302751">Casey Hammond</a></td>
+<td><a href="/countries/AUS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/AUS.png" /> AUS</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/1302753">Daniel Mathiesen</a></td>
+<td><a href="/countries/AUS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/AUS.png" /> AUS</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/1302754">Rory Middleton</a></td>
+<td><a href="/countries/AUS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/AUS.png" /> AUS</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/1302755">Luke Noblett</a></td>
+<td><a href="/countries/AUS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/AUS.png" /> AUS</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/1302756">Flynn Ogilvie</a></td>
+<td><a href="/countries/AUS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/AUS.png" /> AUS</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/1302757">Jayshaan Randhawa</a></td>
+<td><a href="/countries/AUS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/AUS.png" /> AUS</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/1302758">Byron Walton</a></td>
+<td><a href="/countries/AUS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/AUS.png" /> AUS</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/1302759">Jordan Willott</a></td>
+<td><a href="/countries/AUS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/AUS.png" /> AUS</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/1302760">Oscar Wookey</a></td>
+<td><a href="/countries/AUS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/AUS.png" /> AUS</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/1302761">Dylan Wotherspoon</a></td>
+<td><a href="/countries/AUS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/AUS.png" /> AUS</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+</table>
+
+<h2>Event types</h2>
+<table class='table table-striped sortable'>
+<thead>
+<th>Name</th>
+<th>Gender</th>
+<th>Still contested?</th>
+<th>Times held?</th>
+</thead>
+<tbody>
+<tr valign='top'>
+<td><a href="/event_names/337">Hockey</a></td>
+<td>Men</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+<td>24</td>
+</tr>
+<tr valign='top'>
+<td><a href="/event_names/338">Hockey</a></td>
+<td>Women</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+<td>11</td>
+</tr>
+<tr valign='top'>
+<td><a href="/event_names/2253">Hockey</a></td>
+<td>Boys</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+<td>1</td>
+</tr>
+<tr valign='top'>
+<td><a href="/event_names/2254">Hockey</a></td>
+<td>Girls</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+
+
+</div>
+</body>
+<footer class='footer'>
+<br>
+<div class='panel panel-info'>
+<div class='panel-heading'>
+<h3 class='panel-title'>
+<span class='glyphicon glyphicon-info-sign'></span>
+Did you know?
+</h3>
+</div>
+<div class='panel-body'>
+<p>The only time in history that no bobsleigh events were held was in 1960. The organizers of the Games in Squaw Valley, California, thought construction of a run was too expensive.</p>
+
+
+</div>
+</div>
+<div class='container'>
+<p>
+<a href="/users/sign_in">Login</a>
+|
+<a href="/statistics/olympedia">Statistics</a>
+|
+<a href="/static/about">About</a>
+|
+<a href="/static/faq">FAQ</a>
+|
+<a href="/feedbacks/new">Feedback</a>
+</p>
+<p>
+&copy; <a href="/static/about">OlyMADMen</a> 2006 — 2022
+</p>
+</div>
+</footer>
+
+<script src="/assets/lightbox.min-40fdcc195c5982250c8901f2c160e15342941a311faf6372c04117c0d9c44bc7.js"></script>
+<script>
+  $('.footnote').tooltip();
+</script>
+</html>
