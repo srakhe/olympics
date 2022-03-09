@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Olympedia – Sports &amp; disciplines</title>
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="Vs7Z1xq+eUL3bdca7eckO0QlU2ly9O4wKwQqIIjyxzDXMlgMi25Q6vBvTW+r2ViUfZ0GCWTmu/6y28qlAnlMzA==" />
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+<meta content='EN' http-equiv='content-language'>
+<meta content='width=device-width, initial-scale=1' name='viewport'>
+<link rel="stylesheet" media="all" href="/assets/bootstrap.min-460a43de22fd9534d595e5aea2715cb154560291c9c6401b526e31c86a5ce32d.css" />
+<link rel="stylesheet" media="all" href="/assets/bootstrap-sortable-363d232309d54b549fa85446295ef2b5d290e3f8a49f1a646247340be3705ef9.css" />
+<link rel="stylesheet" media="all" href="/assets/jquery-ui-1.11.4.min-359ba1b9eb679ad05fb4c8fda710ee4c0239354f1ba635200b6065638295d646.css" />
+<link rel="stylesheet" media="screen" href="/assets/lightbox-e29689e123fc27505d2b9d919f43ffcb6fade539cb4670f21c35aa07848105e7.css" />
+<link rel="stylesheet" media="all" href="/assets/application-dabe0afec76f540b074f0f63c688a540786e3cc47508864701ac4bfcd2198724.css" data-turbolinks-track="true" />
+<link rel="stylesheet" media="screen" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.4.3/css/ol.css" />
+<script src="/assets/application-e1a1e4d6a20243befcce18acb216d9b0e6082405323ce1f5dfbf47c401111aa1.js" data-turbolinks-track="true"></script>
+<script src="/assets/jquery-1.11.2.min-cc83565074b3fa7f2283f7f4d56b90ad171ede87008448ed5d2e91c50575bed1.js"></script>
+<script src="/assets/jquery-ui-1.11.4.min-1f37fd37d8db0404488ac8f6505560e48d1364ef1c81e384ac695e143049ab0f.js"></script>
+<script src="/assets/bootstrap.min-81d6fe3a991358b79b083d075ca476712c9f11c5c890047486176bde863c499e.js"></script>
+<script src="/assets/moment-ded3cbd5de5ae075c44be4149abb630c658e8789f17ccfb162e6bb7664e8bec9.js"></script>
+<script src="/assets/bootstrap-sortable-cd614fbc8d2030bc050ce63652169ed36d970209a94062fa218c631f2c04dc9f.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.4.3/build/ol.js"></script>
+
+</head>
+
+<body>
+<div class='navbar navbar-default navbar-fixed-top' role='navigation'>
+<div class='navbar-header'>
+<div class='button navbar-toggle' data-target='.navbar-ex1-collapse' data-toggle='collapse' type='button'>
+<span class='sr-only'>Toggle navigation</span>
+<span class='icon-bar'>
+<span class='icon-bar'>
+<span class='icon-bar'></span>
+</span>
+</span>
+</div>
+<a class='navbar-brand' href='/'>Olympedia</a>
+</div>
+<div class='collapse navbar-collapse navbar-ex1-collapse'>
+<ul class='nav navbar-nav'>
+<li class='dropdown'>
+<a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+Athletes
+<b class='caret'></b>
+</a>
+<ul class='dropdown-menu'>
+<li><a href="/athletes/advanced_search">Advanced search</a></li>
+<li><a href="/horses">Horse search</a></li>
+<li><a href="/family_relations">Related Olympians</a></li>
+<li><a href="/counts">Counts</a></li>
+<li><a href="/athletes/doubles">Doubles</a></li>
+<li><a href="/athletes/lists">Lists</a></li>
+<li class='divider'></li>
+<li><a href="/athletes">Athletes</a></li>
+</ul>
+</li>
+
+<li class='dropdown'>
+<a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+Countries
+<b class='caret'></b>
+</a>
+<ul class='dropdown-menu'>
+<li><a href="/countries/head_to_head">Head-to-head</a></li>
+<li><a href="/countries/best_results">Best results</a></li>
+<li><a href="/countries/comparison">Results comparison</a></li>
+<li class='divider'></li>
+<li><a href="/countries">Countries</a></li>
+</ul>
+</li>
+
+<li class='dropdown'>
+<a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+Games
+<b class='caret'></b>
+</a>
+<ul class='dropdown-menu'>
+<li><a href="/editions">Games</a></li>
+<li><a href="/editions/medals">Medals</a></li>
+<li><a href="/editions/results">Results</a></li>
+<li><a href="/ceremonies">Opening ceremony</a></li>
+<li><a href="/venues/menu">Venues</a></li>
+</ul>
+</li>
+
+<li class='dropdown'>
+<a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+Sports
+<b class='caret'></b>
+</a>
+<ul class='dropdown-menu'>
+<li><a href="/sports">Disciplines &amp; Sports</a></li>
+<li><a href="/event_names">Events</a></li>
+</ul>
+</li>
+
+<li class='dropdown'>
+<a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+IOC
+<b class='caret'></b>
+</a>
+<ul class='dropdown-menu'>
+<li><a href="/organizations">Organizations</a></li>
+<li><a href="/definitions">Definitions</a></li>
+<li><a href="/meetings">Meetings</a></li>
+<li><a href="/ioc/host_cities">Host city selection</a></li>
+</ul>
+</li>
+
+<li class='dropdown'>
+<a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+Statistics
+<b class='caret'></b>
+</a>
+<ul class='dropdown-menu'>
+<li></li>
+<li><a href="/statistics/medal/country">Medals by country</a></li>
+<li><a href="/statistics/medal/athlete">Medals by athlete</a></li>
+<li><a href="/statistics/medal_table">Medal tables</a></li>
+<li><a href="/statistics/participation">Participations</a></li>
+<li><a href="/statistics/age">Age records</a></li>
+<li><a href="/lists">Lists</a></li>
+<li><a href="/today">Today</a></li>
+<li></li>
+<li class='divider'></li>
+<li><a href="/statistics">Statistics</a></li>
+</ul>
+</li>
+
+
+
+
+<li><a href="/feedbacks/new">Feedback</a></li>
+<form class="navbar-form navbar-left" role="search" action="/athletes/quick_search" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="QDL8y1fszskTXeb75MndEJNGimItzwRbEqldtfHTifclvjSSXvyXdpqNbHxdrRuvkSvQ9OaxCSFUnfCquO4Qsw==" />
+<div class='form-group'>
+<input type="text" name="query" id="query" class="form-control" placeholder="Athlete search" />
+</div>
+<input type="submit" name="commit" value="Go" class="btn btn-default" data-disable-with="Go" />
+</form>
+
+
+</ul>
+</div>
+</div>
+<div class='container'>
+<ol class='breadcrumb'>
+<li>
+<a href='/'>Home</a>
+</li>
+<li><a href="/sports">Disciplines &amp; Sports</a></li><li class="active">Sports &amp; disciplines</li>
+</ol>
+<h1>Sports &amp; disciplines</h1>
+<table class='table table-striped sortable'>
+<thead>
+<th>Abbreviation</th>
+<th>Discipline</th>
+<th>Sport</th>
+<th>Season</th>
+<th data-disablesort='true'>Olympic Status?</th>
+</thead>
+<tbody>
+<tr>
+<td>IH3</td>
+<td><a href="/sports/IH3">3-on-3 Ice Hockey</a></td>
+<td><a href="/sport_groups/IH">Ice Hockey</a></td>
+<td>Winter</td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td>BK3</td>
+<td><a href="/sports/BK3">3x3 Basketball</a></td>
+<td><a href="/sport_groups/BK">Basketball</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td>GAC</td>
+<td><a href="/sports/GAC">Acrobatic Gymnastics</a></td>
+<td><a href="/sport_groups/GY">Gymnastics</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td>AER</td>
+<td><a href="/sports/AER">Aeronautics</a></td>
+<td><a href="/sport_groups/AS">Air Sports</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td>ALP</td>
+<td><a href="/sports/ALP">Alpine Skiing</a></td>
+<td><a href="/sport_groups/SI">Skiing</a></td>
+<td>Winter</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td>APN</td>
+<td><a href="/sports/APN">Alpinism</a></td>
+<td><a href="/sport_groups/MT">Mountaineering and Climbing</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td>AFB</td>
+<td><a href="/sports/AFB">American Football</a></td>
+<td><a href="/sport_groups/UF">American Football</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td>AAR</td>
+<td><a href="/sports/AAR">Ancient Art Competitions</a></td>
+<td><a href="/sport_groups/AN">Ancient Sports</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td>AAT</td>
+<td><a href="/sports/AAT">Ancient Athletics</a></td>
+<td><a href="/sport_groups/AN">Ancient Sports</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td>ACB</td>
+<td><a href="/sports/ACB">Ancient Combative Sports</a></td>
+<td><a href="/sport_groups/AN">Ancient Sports</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td>AEQ</td>
+<td><a href="/sports/AEQ">Ancient Equestrianism</a></td>
+<td><a href="/sport_groups/AN">Ancient Sports</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td>ARC</td>
+<td><a href="/sports/ARC">Archery</a></td>
+<td><a href="/sport_groups/AR">Archery</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td>ART</td>
+<td><a href="/sports/ART">Art Competitions</a></td>
+<td><a href="/sport_groups/AC">Art Competitions</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td>GAR</td>
+<td><a href="/sports/GAR">Artistic Gymnastics</a></td>
+<td><a href="/sport_groups/GY">Gymnastics</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td>SWA</td>
+<td><a href="/sports/SWA">Artistic Swimming</a></td>
+<td><a href="/sport_groups/AQ">Aquatics</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td>ATH</td>
+<td><a href="/sports/ATH">Athletics</a></td>
+<td><a href="/sport_groups/AT">Athletics</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td>ARF</td>
+<td><a href="/sports/ARF">Australian Rules Football</a></td>
+<td><a href="/sport_groups/AF">Australian Rules Football</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td>AUT</td>
+<td><a href="/sports/AUT">Automobile Racing</a></td>
+<td><a href="/sport_groups/AU">Automobile Sports</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td>BDM</td>
+<td><a href="/sports/BDM">Badminton</a></td>
+<td><a href="/sport_groups/BD">Badminton</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td>BLN</td>
+<td><a href="/sports/BLN">Ballooning</a></td>
+<td><a href="/sport_groups/AS">Air Sports</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td>BDY</td>
+<td><a href="/sports/BDY">Bandy</a></td>
+<td><a href="/sport_groups/BY">Bandy</a></td>
+<td>Winter</td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td>BSB</td>
+<td><a href="/sports/BSB">Baseball</a></td>
+<td><a href="/sport_groups/SB">Baseball/Softball</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td>BKB</td>
+<td><a href="/sports/BKB">Basketball</a></td>
+<td><a href="/sport_groups/BK">Basketball</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td>PEL</td>
+<td><a href="/sports/PEL">Basque pelota</a></td>
+<td><a href="/sport_groups/PB">Basque pelota</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td>BHA</td>
+<td><a href="/sports/BHA">Beach Handball</a></td>
+<td><a href="/sport_groups/HB">Handball</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td>VBV</td>
+<td><a href="/sports/VBV">Beach Volleyball</a></td>
+<td><a href="/sport_groups/VB">Volleyball</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td>BTH</td>
+<td><a href="/sports/BTH">Biathlon</a></td>
+<td><a href="/sport_groups/BT">Biathlon</a></td>
+<td>Winter</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td>BPO</td>
+<td><a href="/sports/BPO">Bicycle Polo</a></td>
+<td><a href="/sport_groups/CY">Cycling</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td>BOB</td>
+<td><a href="/sports/BOB">Bobsleigh</a></td>
+<td><a href="/sport_groups/BS">Bobsleigh</a></td>
+<td>Winter</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td>BLS</td>
+<td><a href="/sports/BLS">Boules</a></td>
+<td><a href="/sport_groups/BO">Boules</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td>BWL</td>
+<td><a href="/sports/BWL">Bowling</a></td>
+<td><a href="/sport_groups/BW">Bowling</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td>BOX</td>
+<td><a href="/sports/BOX">Boxing</a></td>
+<td><a href="/sport_groups/BX">Boxing</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td>BRK</td>
+<td><a href="/sports/BRK">Breaking</a></td>
+<td><a href="/sport_groups/DA">Dance</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td>CNN</td>
+<td><a href="/sports/CNN">Canne De Combat</a></td>
+<td><a href="/sport_groups/SV">Savate</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td>CMA</td>
+<td><a href="/sports/CMA">Canoe Marathon</a></td>
+<td><a href="/sport_groups/CA">Canoeing</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td>CSL</td>
+<td><a href="/sports/CSL">Canoe Slalom</a></td>
+<td><a href="/sport_groups/CA">Canoeing</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td>CSP</td>
+<td><a href="/sports/CSP">Canoe Sprint</a></td>
+<td><a href="/sport_groups/CA">Canoeing</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td>CRI</td>
+<td><a href="/sports/CRI">Cricket</a></td>
+<td><a href="/sport_groups/CI">Cricket</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td>CRO</td>
+<td><a href="/sports/CRO">Croquet</a></td>
+<td><a href="/sport_groups/CO">Croquet</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td>CCS</td>
+<td><a href="/sports/CCS">Cross Country Skiing</a></td>
+<td><a href="/sport_groups/SI">Skiing</a></td>
+<td>Winter</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td>CUR</td>
+<td><a href="/sports/CUR">Curling</a></td>
+<td><a href="/sport_groups/CU">Curling</a></td>
+<td>Winter</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td>BMF</td>
+<td><a href="/sports/BMF">Cycling BMX Freestyle</a></td>
+<td><a href="/sport_groups/CY">Cycling</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td>BMX</td>
+<td><a href="/sports/BMX">Cycling BMX Racing</a></td>
+<td><a href="/sport_groups/CY">Cycling</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td>MTB</td>
+<td><a href="/sports/MTB">Cycling Mountain Bike</a></td>
+<td><a href="/sport_groups/CY">Cycling</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td>CRD</td>
+<td><a href="/sports/CRD">Cycling Road</a></td>
+<td><a href="/sport_groups/CY">Cycling</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td>CTR</td>
+<td><a href="/sports/CTR">Cycling Track</a></td>
+<td><a href="/sport_groups/CY">Cycling</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td>DIV</td>
+<td><a href="/sports/DIV">Diving</a></td>
+<td><a href="/sport_groups/AQ">Aquatics</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td>DSR</td>
+<td><a href="/sports/DSR">Dogsled Racing</a></td>
+<td><a href="/sport_groups/DS">Dogsled Racing</a></td>
+<td>Winter</td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td>EDR</td>
+<td><a href="/sports/EDR">Equestrian Dressage</a></td>
+<td><a href="/sport_groups/EQ">Equestrian</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td>EDV</td>
+<td><a href="/sports/EDV">Equestrian Driving</a></td>
+<td><a href="/sport_groups/EQ">Equestrian</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td>EVE</td>
+<td><a href="/sports/EVE">Equestrian Eventing</a></td>
+<td><a href="/sport_groups/EQ">Equestrian</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td>EJP</td>
+<td><a href="/sports/EJP">Equestrian Jumping</a></td>
+<td><a href="/sport_groups/EQ">Equestrian</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td>EVA</td>
+<td><a href="/sports/EVA">Equestrian Vaulting</a></td>
+<td><a href="/sport_groups/EQ">Equestrian</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td>FEN</td>
+<td><a href="/sports/FEN">Fencing</a></td>
+<td><a href="/sport_groups/FE">Fencing</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td>FSK</td>
+<td><a href="/sports/FSK">Figure Skating</a></td>
+<td><a href="/sport_groups/SK">Skating</a></td>
+<td>Winter</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td>FFG</td>
+<td><a href="/sports/FFG">Firefighting</a></td>
+<td><a href="/sport_groups/FF">Firefighting</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td>FSH</td>
+<td><a href="/sports/FSH">Fishing</a></td>
+<td><a href="/sport_groups/FS">Fishing</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td>FBL</td>
+<td><a href="/sports/FBL">Football</a></td>
+<td><a href="/sport_groups/FB">Football</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td>FRS</td>
+<td><a href="/sports/FRS">Freestyle Skiing</a></td>
+<td><a href="/sport_groups/SI">Skiing</a></td>
+<td>Winter</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td>FTS</td>
+<td><a href="/sports/FTS">Futsal</a></td>
+<td><a href="/sport_groups/FB">Football</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td>GFB</td>
+<td><a href="/sports/GFB">Gaelic Football</a></td>
+<td><a href="/sport_groups/GS">Gaelic Sports</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td>GLD</td>
+<td><a href="/sports/GLD">Gliding</a></td>
+<td><a href="/sport_groups/AS">Air Sports</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td>GLM</td>
+<td><a href="/sports/GLM">Glíma</a></td>
+<td><a href="/sport_groups/GL">Glíma</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td>GLF</td>
+<td><a href="/sports/GLF">Golf</a></td>
+<td><a href="/sport_groups/GO">Golf</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td>GTS</td>
+<td><a href="/sports/GTS">Gotland Sports</a></td>
+<td><a href="/sport_groups/GT">Gotland Sports</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td>HBL</td>
+<td><a href="/sports/HBL">Handball</a></td>
+<td><a href="/sport_groups/HB">Handball</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td>HOC</td>
+<td><a href="/sports/HOC">Hockey</a></td>
+<td><a href="/sport_groups/HO">Hockey</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td>HK5</td>
+<td><a href="/sports/HK5">Hockey 5s</a></td>
+<td><a href="/sport_groups/HO">Hockey</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td>HUR</td>
+<td><a href="/sports/HUR">Hurling</a></td>
+<td><a href="/sport_groups/GS">Gaelic Sports</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td>IHO</td>
+<td><a href="/sports/IHO">Ice Hockey</a></td>
+<td><a href="/sport_groups/IH">Ice Hockey</a></td>
+<td>Winter</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td>ISS</td>
+<td><a href="/sports/ISS">Ice Stock Sport</a></td>
+<td><a href="/sport_groups/IS">Ice Stock Sport</a></td>
+<td>Winter</td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td>JDP</td>
+<td><a href="/sports/JDP">Jeu De Paume</a></td>
+<td><a href="/sport_groups/JP">Jeu de Paume</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td>JUD</td>
+<td><a href="/sports/JUD">Judo</a></td>
+<td><a href="/sport_groups/JU">Judo</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td>KTS</td>
+<td><a href="/sports/KTS">Kaatsen</a></td>
+<td><a href="/sport_groups/KS">Kaatsen</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td>KTE</td>
+<td><a href="/sports/KTE">Karate</a></td>
+<td><a href="/sport_groups/KT">Karate</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td>KEN</td>
+<td><a href="/sports/KEN">Kendo</a></td>
+<td><a href="/sport_groups/KE">Kendo</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td>KFB</td>
+<td><a href="/sports/KFB">Korfball</a></td>
+<td><a href="/sport_groups/KB">Korfball</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td>KYU</td>
+<td><a href="/sports/KYU">Kyudo</a></td>
+<td><a href="/sport_groups/KY">Kyudo</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td>LAX</td>
+<td><a href="/sports/LAX">Lacrosse</a></td>
+<td><a href="/sport_groups/LX">Lacrosse</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td>LUG</td>
+<td><a href="/sports/LUG">Luge</a></td>
+<td><a href="/sport_groups/LG">Luge</a></td>
+<td>Winter</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td>OWS</td>
+<td><a href="/sports/OWS">Marathon Swimming</a></td>
+<td><a href="/sport_groups/AQ">Aquatics</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td>MSP</td>
+<td><a href="/sports/MSP">Military Ski Patrol</a></td>
+<td><a href="/sport_groups/SI">Skiing</a></td>
+<td>Winter</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td>MIX</td>
+<td><a href="/sports/MIX">Mixed Sports</a></td>
+<td><a href="/sport_groups/XX">Mixed Sports</a></td>
+<td>Winter</td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td>MPN</td>
+<td><a href="/sports/MPN">Modern Pentathlon</a></td>
+<td><a href="/sport_groups/MP">Modern Pentathlon</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td>MBO</td>
+<td><a href="/sports/MBO">Motorboating</a></td>
+<td><a href="/sport_groups/MB">Motorboating</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td>MCS</td>
+<td><a href="/sports/MCS">Motorcycle Sports</a></td>
+<td><a href="/sport_groups/MC">Motorcycle Sports</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td>NCB</td>
+<td><a href="/sports/NCB">Nordic Combined</a></td>
+<td><a href="/sport_groups/SI">Skiing</a></td>
+<td>Winter</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td>PSP</td>
+<td><a href="/sports/PSP">Pesäpallo</a></td>
+<td><a href="/sport_groups/PS">Pesäpallo</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td>POL</td>
+<td><a href="/sports/POL">Polo</a></td>
+<td><a href="/sport_groups/PO">Polo</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td>RAQ</td>
+<td><a href="/sports/RAQ">Racquets</a></td>
+<td><a href="/sport_groups/RC">Racquets</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td>GRY</td>
+<td><a href="/sports/GRY">Rhythmic Gymnastics</a></td>
+<td><a href="/sport_groups/GY">Gymnastics</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td>RHK</td>
+<td><a href="/sports/RHK">Roller Hockey</a></td>
+<td><a href="/sport_groups/RS">Roller Sports</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td>ROL</td>
+<td><a href="/sports/ROL">Roller Skating</a></td>
+<td><a href="/sport_groups/RS">Roller Sports</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td>ROQ</td>
+<td><a href="/sports/ROQ">Roque</a></td>
+<td><a href="/sport_groups/RQ">Roque</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td>ROW</td>
+<td><a href="/sports/ROW">Rowing</a></td>
+<td><a href="/sport_groups/RO">Rowing</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td>RGB</td>
+<td><a href="/sports/RGB">Rugby</a></td>
+<td><a href="/sport_groups/RU">Rugby</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td>RUG</td>
+<td><a href="/sports/RUG">Rugby Sevens</a></td>
+<td><a href="/sport_groups/RU">Rugby</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td>SAL</td>
+<td><a href="/sports/SAL">Sailing</a></td>
+<td><a href="/sport_groups/SA">Sailing</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td>SAV</td>
+<td><a href="/sports/SAV">Savate</a></td>
+<td><a href="/sport_groups/SV">Savate</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td>SHO</td>
+<td><a href="/sports/SHO">Shooting</a></td>
+<td><a href="/sport_groups/SH">Shooting</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td>STK</td>
+<td><a href="/sports/STK">Short Track Speed Skating</a></td>
+<td><a href="/sport_groups/SK">Skating</a></td>
+<td>Winter</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td>SKB</td>
+<td><a href="/sports/SKB">Skateboarding</a></td>
+<td><a href="/sport_groups/RS">Roller Sports</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td>SKN</td>
+<td><a href="/sports/SKN">Skeleton</a></td>
+<td><a href="/sport_groups/BS">Bobsleigh</a></td>
+<td>Winter</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td>SJP</td>
+<td><a href="/sports/SJP">Ski Jumping</a></td>
+<td><a href="/sport_groups/SI">Skiing</a></td>
+<td>Winter</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td>SMT</td>
+<td><a href="/sports/SMT">Ski Mountaineering</a></td>
+<td><a href="/sport_groups/SM">Ski Mountaineering</a></td>
+<td>Winter</td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td>SJR</td>
+<td><a href="/sports/SJR">Skijoring</a></td>
+<td><a href="/sport_groups/SI">Skiing</a></td>
+<td>Winter</td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td>SBD</td>
+<td><a href="/sports/SBD">Snowboarding</a></td>
+<td><a href="/sport_groups/SI">Skiing</a></td>
+<td>Winter</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td>SOF</td>
+<td><a href="/sports/SOF">Softball</a></td>
+<td><a href="/sport_groups/SB">Baseball/Softball</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td>SSK</td>
+<td><a href="/sports/SSK">Speed Skating</a></td>
+<td><a href="/sport_groups/SK">Skating</a></td>
+<td>Winter</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td>SPS</td>
+<td><a href="/sports/SPS">Speed Skiing</a></td>
+<td><a href="/sport_groups/SI">Skiing</a></td>
+<td>Winter</td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td>CLB</td>
+<td><a href="/sports/CLB">Sport Climbing</a></td>
+<td><a href="/sport_groups/CL">Sport Climbing</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td>SQU</td>
+<td><a href="/sports/SQU">Squash</a></td>
+<td><a href="/sport_groups/SQ">Squash</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td>SUM</td>
+<td><a href="/sports/SUM">Sumo</a></td>
+<td><a href="/sport_groups/SU">Sumo</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td>SRF</td>
+<td><a href="/sports/SRF">Surfing</a></td>
+<td><a href="/sport_groups/SF">Surfing</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td>SWM</td>
+<td><a href="/sports/SWM">Swimming</a></td>
+<td><a href="/sport_groups/AQ">Aquatics</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td>TTE</td>
+<td><a href="/sports/TTE">Table Tennis</a></td>
+<td><a href="/sport_groups/TT">Table Tennis</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td>TKW</td>
+<td><a href="/sports/TKW">Taekwondo</a></td>
+<td><a href="/sport_groups/TK">Taekwondo</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td>TEN</td>
+<td><a href="/sports/TEN">Tennis</a></td>
+<td><a href="/sport_groups/TE">Tennis</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td>GTR</td>
+<td><a href="/sports/GTR">Trampolining</a></td>
+<td><a href="/sport_groups/GY">Gymnastics</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td>TRI</td>
+<td><a href="/sports/TRI">Triathlon</a></td>
+<td><a href="/sport_groups/TR">Triathlon</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td>TOW</td>
+<td><a href="/sports/TOW">Tug-Of-War</a></td>
+<td><a href="/sport_groups/TW">Tug-Of-War</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td>UNK</td>
+<td><a href="/sports/UNK">Unknown Sport</a></td>
+<td><a href="/sport_groups/AN">Ancient Sports</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td>VVO</td>
+<td><a href="/sports/VVO">Volleyball</a></td>
+<td><a href="/sport_groups/VB">Volleyball</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td>WPO</td>
+<td><a href="/sports/WPO">Water Polo</a></td>
+<td><a href="/sport_groups/AQ">Aquatics</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td>WSK</td>
+<td><a href="/sports/WSK">Waterskiing</a></td>
+<td><a href="/sport_groups/WW">Waterskiing and Wakeboarding</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td>WLF</td>
+<td><a href="/sports/WLF">Weightlifting</a></td>
+<td><a href="/sport_groups/WL">Weightlifting</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td>WPE</td>
+<td><a href="/sports/WPE">Winter Pentathlon</a></td>
+<td><a href="/sport_groups/WP">Winter Pentathlon</a></td>
+<td>Winter</td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+<tr>
+<td>WRE</td>
+<td><a href="/sports/WRE">Wrestling</a></td>
+<td><a href="/sport_groups/WR">Wrestling</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+</tr>
+<tr>
+<td>WUS</td>
+<td><a href="/sports/WUS">Wushu</a></td>
+<td><a href="/sport_groups/WU">Wushu</a></td>
+<td>Summer</td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</body>
+<footer class='footer'>
+<br>
+<div class='panel panel-info'>
+<div class='panel-heading'>
+<h3 class='panel-title'>
+<span class='glyphicon glyphicon-info-sign'></span>
+Did you know?
+</h3>
+</div>
+<div class='panel-body'>
+<p>Through 1956, all Olympic field hockey gold medals were won by either Great Britain or India. They had never played each other until the 1948 Olympics, when India beat the hosts 4-0.</p>
+
+
+</div>
+</div>
+<div class='container'>
+<p>
+<a href="/users/sign_in">Login</a>
+|
+<a href="/statistics/olympedia">Statistics</a>
+|
+<a href="/static/about">About</a>
+|
+<a href="/static/faq">FAQ</a>
+|
+<a href="/feedbacks/new">Feedback</a>
+</p>
+<p>
+&copy; <a href="/static/about">OlyMADMen</a> 2006 — 2022
+</p>
+</div>
+</footer>
+
+<script src="/assets/lightbox.min-40fdcc195c5982250c8901f2c160e15342941a311faf6372c04117c0d9c44bc7.js"></script>
+<script>
+  $('.footnote').tooltip();
+</script>
+</html>

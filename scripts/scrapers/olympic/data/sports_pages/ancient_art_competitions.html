@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Olympedia – Ancient Art Competitions</title>
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="naiGOl2u5xocyW1fK1BB8Szxej6Qo6vfCGEXqOvChbRlq1vrl8VtXRR80sBDVQbtXEvfESfzXe0Qyzz5eCigJw==" />
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+<meta content='EN' http-equiv='content-language'>
+<meta content='width=device-width, initial-scale=1' name='viewport'>
+<link rel="stylesheet" media="all" href="/assets/bootstrap.min-460a43de22fd9534d595e5aea2715cb154560291c9c6401b526e31c86a5ce32d.css" />
+<link rel="stylesheet" media="all" href="/assets/bootstrap-sortable-363d232309d54b549fa85446295ef2b5d290e3f8a49f1a646247340be3705ef9.css" />
+<link rel="stylesheet" media="all" href="/assets/jquery-ui-1.11.4.min-359ba1b9eb679ad05fb4c8fda710ee4c0239354f1ba635200b6065638295d646.css" />
+<link rel="stylesheet" media="screen" href="/assets/lightbox-e29689e123fc27505d2b9d919f43ffcb6fade539cb4670f21c35aa07848105e7.css" />
+<link rel="stylesheet" media="all" href="/assets/application-dabe0afec76f540b074f0f63c688a540786e3cc47508864701ac4bfcd2198724.css" data-turbolinks-track="true" />
+<link rel="stylesheet" media="screen" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.4.3/css/ol.css" />
+<script src="/assets/application-e1a1e4d6a20243befcce18acb216d9b0e6082405323ce1f5dfbf47c401111aa1.js" data-turbolinks-track="true"></script>
+<script src="/assets/jquery-1.11.2.min-cc83565074b3fa7f2283f7f4d56b90ad171ede87008448ed5d2e91c50575bed1.js"></script>
+<script src="/assets/jquery-ui-1.11.4.min-1f37fd37d8db0404488ac8f6505560e48d1364ef1c81e384ac695e143049ab0f.js"></script>
+<script src="/assets/bootstrap.min-81d6fe3a991358b79b083d075ca476712c9f11c5c890047486176bde863c499e.js"></script>
+<script src="/assets/moment-ded3cbd5de5ae075c44be4149abb630c658e8789f17ccfb162e6bb7664e8bec9.js"></script>
+<script src="/assets/bootstrap-sortable-cd614fbc8d2030bc050ce63652169ed36d970209a94062fa218c631f2c04dc9f.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.4.3/build/ol.js"></script>
+
+</head>
+
+<body>
+<div class='navbar navbar-default navbar-fixed-top' role='navigation'>
+<div class='navbar-header'>
+<div class='button navbar-toggle' data-target='.navbar-ex1-collapse' data-toggle='collapse' type='button'>
+<span class='sr-only'>Toggle navigation</span>
+<span class='icon-bar'>
+<span class='icon-bar'>
+<span class='icon-bar'></span>
+</span>
+</span>
+</div>
+<a class='navbar-brand' href='/'>Olympedia</a>
+</div>
+<div class='collapse navbar-collapse navbar-ex1-collapse'>
+<ul class='nav navbar-nav'>
+<li class='dropdown'>
+<a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+Athletes
+<b class='caret'></b>
+</a>
+<ul class='dropdown-menu'>
+<li><a href="/athletes/advanced_search">Advanced search</a></li>
+<li><a href="/horses">Horse search</a></li>
+<li><a href="/family_relations">Related Olympians</a></li>
+<li><a href="/counts">Counts</a></li>
+<li><a href="/athletes/doubles">Doubles</a></li>
+<li><a href="/athletes/lists">Lists</a></li>
+<li class='divider'></li>
+<li><a href="/athletes">Athletes</a></li>
+</ul>
+</li>
+
+<li class='dropdown'>
+<a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+Countries
+<b class='caret'></b>
+</a>
+<ul class='dropdown-menu'>
+<li><a href="/countries/head_to_head">Head-to-head</a></li>
+<li><a href="/countries/best_results">Best results</a></li>
+<li><a href="/countries/comparison">Results comparison</a></li>
+<li class='divider'></li>
+<li><a href="/countries">Countries</a></li>
+</ul>
+</li>
+
+<li class='dropdown'>
+<a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+Games
+<b class='caret'></b>
+</a>
+<ul class='dropdown-menu'>
+<li><a href="/editions">Games</a></li>
+<li><a href="/editions/medals">Medals</a></li>
+<li><a href="/editions/results">Results</a></li>
+<li><a href="/ceremonies">Opening ceremony</a></li>
+<li><a href="/venues/menu">Venues</a></li>
+</ul>
+</li>
+
+<li class='dropdown'>
+<a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+Sports
+<b class='caret'></b>
+</a>
+<ul class='dropdown-menu'>
+<li><a href="/sports">Disciplines &amp; Sports</a></li>
+<li><a href="/event_names">Events</a></li>
+</ul>
+</li>
+
+<li class='dropdown'>
+<a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+IOC
+<b class='caret'></b>
+</a>
+<ul class='dropdown-menu'>
+<li><a href="/organizations">Organizations</a></li>
+<li><a href="/definitions">Definitions</a></li>
+<li><a href="/meetings">Meetings</a></li>
+<li><a href="/ioc/host_cities">Host city selection</a></li>
+</ul>
+</li>
+
+<li class='dropdown'>
+<a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+Statistics
+<b class='caret'></b>
+</a>
+<ul class='dropdown-menu'>
+<li></li>
+<li><a href="/statistics/medal/country">Medals by country</a></li>
+<li><a href="/statistics/medal/athlete">Medals by athlete</a></li>
+<li><a href="/statistics/medal_table">Medal tables</a></li>
+<li><a href="/statistics/participation">Participations</a></li>
+<li><a href="/statistics/age">Age records</a></li>
+<li><a href="/lists">Lists</a></li>
+<li><a href="/today">Today</a></li>
+<li></li>
+<li class='divider'></li>
+<li><a href="/statistics">Statistics</a></li>
+</ul>
+</li>
+
+
+
+
+<li><a href="/feedbacks/new">Feedback</a></li>
+<form class="navbar-form navbar-left" role="search" action="/athletes/quick_search" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="KeV+Tv47PbBmaz3qmiwTF12cFFAzXpZtAL1pPLZylAouoR3ppGroxN1jviIokkBV9CzAYWGoRnIor2bHNKJSyA==" />
+<div class='form-group'>
+<input type="text" name="query" id="query" class="form-control" placeholder="Athlete search" />
+</div>
+<input type="submit" name="commit" value="Go" class="btn btn-default" data-disable-with="Go" />
+</form>
+
+
+</ul>
+</div>
+</div>
+<div class='container'>
+<ol class='breadcrumb'>
+<li>
+<a href='/'>Home</a>
+</li>
+<li><a href="/sports">Disciplines &amp; Sports</a></li><li class="active">Ancient Art Competitions</li>
+</ol>
+<h1>Ancient Art Competitions</h1>
+<h2>Facts</h2>
+<table class='biodata'>
+<tr>
+<th>Discipline of</th>
+<td><a href="/sport_groups/AN">Ancient Sports</a></td>
+</tr>
+<tr>
+<th>Participants</th>
+<td><a href="/counts/sport/AAR">0</a></td>
+</tr>
+<tr>
+<th>NOCs</th>
+<td>0</td>
+</tr>
+<tr>
+<th>Competitions held</th>
+<td>
+0
+(<a href="/venues/sports/AAR">Venues</a>)
+</td>
+</tr>
+<tr>
+<th>Distinct events</th>
+<td>9</td>
+</tr>
+</table>
+<h2>
+Description
+
+</h2>
+<div class='description'>
+<p>Arts competitions were held at the Ancient Olympic Games, with the Competition for Trumpeters (22 times) and Competition for Heralds (18 times) contested most often. All of the other events were on the program only once or twice. The Heralds and Trumpeters events were first held at the 396 BCE Olympics.</p>
+
+</div>
+
+<h2>All-time medal table</h2>
+<h3>Ancient Olympic Games</h3>
+<table class='table table-striped'>
+<thead>
+<tr>
+<th colspan='2'>NOC</th>
+<th>Gold</th>
+<th>Silver</th>
+<th>Bronze</th>
+<th>Total</th>
+</tr>
+</thead>
+<tr>
+<td><a href="/countries/MEG">Megara</a></td>
+<td><a href="/countries/MEG"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MEG.png" /> MEG</a></td>
+<td>11</td>
+<td>0</td>
+<td>0</td>
+<td>11</td>
+</tr>
+<tr>
+<td><a href="/countries/EPH">Ephesus</a></td>
+<td><a href="/countries/EPH"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/EPH.png" /> EPH</a></td>
+<td>7</td>
+<td>0</td>
+<td>0</td>
+<td>7</td>
+</tr>
+<tr>
+<td><a href="/countries/MIL">Miletus</a></td>
+<td><a href="/countries/MIL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MIL.png" /> MIL</a></td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>5</td>
+</tr>
+<tr>
+<td><a href="/countries/SIN">Sinope</a></td>
+<td><a href="/countries/SIN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SIN.png" /> SIN</a></td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="/countries/ROM">Roma</a></td>
+<td><a href="/countries/ROM"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ROM.png" /> ROM</a></td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="/countries/ELI">Elis</a></td>
+<td><a href="/countries/ELI"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ELI.png" /> ELI</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/HYB">Hyblaia</a></td>
+<td><a href="/countries/HYB"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/HYB.png" /> HYB</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/TNG">Tanagra</a></td>
+<td><a href="/countries/TNG"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/TNG.png" /> TNG</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/ATH">Athens</a></td>
+<td><a href="/countries/ATH"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ATH.png" /> ATH</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/ATT">Attaleia</a></td>
+<td><a href="/countries/ATT"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ATT.png" /> ATT</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/DEL">Delos</a></td>
+<td><a href="/countries/DEL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/DEL.png" /> DEL</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/HMN">Hermione</a></td>
+<td><a href="/countries/HMN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/HMN.png" /> HMN</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/HMP">Hermopolis</a></td>
+<td><a href="/countries/HMP"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/HMP.png" /> HMP</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/HRP">Hierapolis</a></td>
+<td><a href="/countries/HRP"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/HRP.png" /> HRP</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/SKS">Kos</a></td>
+<td><a href="/countries/SKS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SKS.png" /> SKS</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/KYZ">Kyzikos</a></td>
+<td><a href="/countries/KYZ"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KYZ.png" /> KYZ</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/LDL">Laodikeia on the Lykos</a></td>
+<td><a href="/countries/LDL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/LDL.png" /> LDL</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/MEL">Melos</a></td>
+<td><a href="/countries/MEL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MEL.png" /> MEL</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/PES">Pessinous</a></td>
+<td><a href="/countries/PES"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/PES.png" /> PES</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/SIK">Sikyon</a></td>
+<td><a href="/countries/SIK"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SIK.png" /> SIK</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/TRS">Tarsos</a></td>
+<td><a href="/countries/TRS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/TRS.png" /> TRS</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/TYA">Tyana</a></td>
+<td><a href="/countries/TYA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/TYA.png" /> TYA</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/UNK">Unknown</a></td>
+<td><a href="/countries/UNK"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/UNK.png" /> UNK</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+</table>
+
+<h2>Most successful competitors</h2>
+<h3>Ancient Olympic Games</h3>
+<table class='table table-striped'>
+<thead>
+<tr>
+<th>Athlete</th>
+<th>Nat</th>
+<th>Gold</th>
+<th>Silver</th>
+<th>Bronze</th>
+<th>Total</th>
+</tr>
+</thead>
+<tr class='top'>
+<td><a href="/athletes/2800415">Herodoros</a></td>
+<td><a href="/countries/MEG"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MEG.png" /> MEG</a></td>
+<td>11</td>
+<td>0</td>
+<td>0</td>
+<td>11</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/2800300">Diogenes</a></td>
+<td><a href="/countries/EPH"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/EPH.png" /> EPH</a></td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>5</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/2800291">Demosthenes</a></td>
+<td><a href="/countries/MIL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MIL.png" /> MIL</a></td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>4</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/2800871">Valerius Eklektus</a></td>
+<td><a href="/countries/SIN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SIN.png" /> SIN</a></td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>4</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/2800827">Nero, Emperor of Roma</a></td>
+<td><a href="/countries/ROM"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ROM.png" /> ROM</a></td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/2800210">Arkhias</a></td>
+<td><a href="/countries/HYB"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/HYB.png" /> HYB</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/2800688">Phorystas</a></td>
+<td><a href="/countries/TNG"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/TNG.png" /> TNG</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/2800079">(…)obios</a></td>
+<td><a href="/countries/DEL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/DEL.png" /> DEL</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/2800236">Aurelius Ankharenos Phaidros</a></td>
+<td><a href="/countries/EPH"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/EPH.png" /> EPH</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/2800237">Aurelius Athenaios</a></td>
+<td><a href="/countries/TYA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/TYA.png" /> TYA</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/2800249">Bentidios Sota</a></td>
+<td><a href="/countries/UNK"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/UNK.png" /> UNK</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/2800381">Gaius Julius Bassus</a></td>
+<td><a href="/countries/MIL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MIL.png" /> MIL</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/2800500">Krates</a></td>
+<td><a href="/countries/ELI"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ELI.png" /> ELI</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/2800560">Marcus Aurelius Alexandros</a></td>
+<td><a href="/countries/SKS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SKS.png" /> SKS</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/2800575">Marcus Aurelius Silvanus</a></td>
+<td><a href="/countries/HMP"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/HMP.png" /> HMP</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/2800577">Marcus Flavius Antoninus</a></td>
+<td><a href="/countries/HRP"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/HRP.png" /> HRP</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/2800582">Marcus Ulpius Heliodoros</a></td>
+<td><a href="/countries/ATT"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ATT.png" /> ATT</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/2800594">Menekrates</a></td>
+<td><a href="/countries/SIK"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SIK.png" /> SIK</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/2800721">Publius Aelius (…)</a></td>
+<td><a href="/countries/KYZ"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KYZ.png" /> KYZ</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/2800725">Publius Aelius Artemas</a></td>
+<td><a href="/countries/LDL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/LDL.png" /> LDL</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/2800726">Publius Aelius Aurelius Serapion</a></td>
+<td><a href="/countries/EPH"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/EPH.png" /> EPH</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/2800739">Pythokles</a></td>
+<td><a href="/countries/HMN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/HMN.png" /> HMN</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/2800744">Quintus Marcius Straton</a></td>
+<td><a href="/countries/ATH"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ATH.png" /> ATH</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/2800754">Serapo(doros)</a></td>
+<td><a href="/countries/MEL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MEL.png" /> MEL</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/2800835">Timaios</a></td>
+<td><a href="/countries/ELI"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ELI.png" /> ELI</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/2800850">Titus Aelius Aurelius Apollonius</a></td>
+<td><a href="/countries/TRS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/TRS.png" /> TRS</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/2800855">Titus Antonius Eutykhianos</a></td>
+<td><a href="/countries/PES"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/PES.png" /> PES</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+</table>
+
+<h2>Event types</h2>
+<table class='table table-striped sortable'>
+<thead>
+<th>Name</th>
+<th>Gender</th>
+<th>Still contested?</th>
+<th>Times held?</th>
+</thead>
+<tbody>
+<tr valign='top'>
+<td><a href="/event_names/2523">Competition for Heralds</a></td>
+<td>Men</td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+<td>18</td>
+</tr>
+<tr valign='top'>
+<td><a href="/event_names/2524">Competition for Trumpeters</a></td>
+<td>Men</td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+<td>22</td>
+</tr>
+<tr valign='top'>
+<td><a href="/event_names/2525">Competition for Tragedy</a></td>
+<td>Men</td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+<td>2</td>
+</tr>
+<tr valign='top'>
+<td><a href="/event_names/2526">Rhetoric Competition</a></td>
+<td>Men</td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+<td>2</td>
+</tr>
+<tr valign='top'>
+<td><a href="/event_names/2527">Competition for Lyre-Playing</a></td>
+<td>Men</td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+<td>2</td>
+</tr>
+<tr valign='top'>
+<td><a href="/event_names/2528">Poetry Competition</a></td>
+<td>Men</td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+<td>1</td>
+</tr>
+<tr valign='top'>
+<td><a href="/event_names/2529">Aulos (Wind Instrument) Competition</a></td>
+<td>Men</td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+<td>1</td>
+</tr>
+<tr valign='top'>
+<td><a href="/event_names/2530">Comedy Competition</a></td>
+<td>Men</td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+<td>2</td>
+</tr>
+<tr valign='top'>
+<td><a href="/event_names/2531">Competition for Flute Playing</a></td>
+<td>Men</td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+
+
+</div>
+</body>
+<footer class='footer'>
+<br>
+<div class='panel panel-info'>
+<div class='panel-heading'>
+<h3 class='panel-title'>
+<span class='glyphicon glyphicon-info-sign'></span>
+Did you know?
+</h3>
+</div>
+<div class='panel-body'>
+<p>The first time the Olympic torch relay was held was for the 1936 Olympics. The idea was conceived by Carl Diem, who proposed the flame would be lit in Ancient Olympia.</p>
+
+
+</div>
+</div>
+<div class='container'>
+<p>
+<a href="/users/sign_in">Login</a>
+|
+<a href="/statistics/olympedia">Statistics</a>
+|
+<a href="/static/about">About</a>
+|
+<a href="/static/faq">FAQ</a>
+|
+<a href="/feedbacks/new">Feedback</a>
+</p>
+<p>
+&copy; <a href="/static/about">OlyMADMen</a> 2006 — 2022
+</p>
+</div>
+</footer>
+
+<script src="/assets/lightbox.min-40fdcc195c5982250c8901f2c160e15342941a311faf6372c04117c0d9c44bc7.js"></script>
+<script>
+  $('.footnote').tooltip();
+</script>
+</html>
