@@ -20,14 +20,14 @@ tweets_list2 = []
 for i,tweet in enumerate(sntwitter.TwitterSearchScraper('Olympics since:2021-07-17 until:2021-07-23').get_items()):
     # print(i)
     # print(tweet.username)
-    if i>1000:
+    if i>10000:
         break
     tweets_list2.append([tweet.date, tweet.id, tweet.content, tweet.username])
     
 # Creating a dataframe from the tweets list above
 tweets_df2 = pd.DataFrame(tweets_list2, columns=['Datetime', 'Tweet Id', 'Text', 'Username'])
 
-tweets_df2.to_csv('Tweets_before_a_week.csv')
+tweets_df2.to_csv('Sentiment_Analysis_Before_Olympic_Start.csv')
 
 from transformers import pipeline
 import tensorflow as tf
@@ -49,14 +49,14 @@ tweets_list2 = []
 for i,tweet in enumerate(sntwitter.TwitterSearchScraper('Olympics since:2021-07-23 until:2021-08-01').get_items()):
     # print(i)
     # print(tweet.username)
-    if i>1000:
+    if i>10000:
         break
     tweets_list2.append([tweet.date, tweet.id, tweet.content, tweet.username])
     
 # Creating a dataframe from the tweets list above
 tweets_df2 = pd.DataFrame(tweets_list2, columns=['Datetime', 'Tweet Id', 'Text', 'Username'])
 
-tweets_df2.to_csv('Tweets_after_a_week.csv')
+tweets_df2.to_csv('Sentiment_Analysis_After_Olympic_End.csv')
 
 from transformers import pipeline
 import tensorflow as tf
