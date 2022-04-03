@@ -46,7 +46,7 @@ class SportsEvents:
         return data
 
     def run_scrape(self, do_fetch):
-        print("Running sports list data scraper.")
+        print("Running sports list data scraper")
         webpage_scraped = True
         sports_scraped = False
         sports_data = []
@@ -57,9 +57,9 @@ class SportsEvents:
             sports_data = self.sports_scraper()
             self.scrape_utils.create_csv(data=sports_data, path=self.data_path, name="sports.csv")
             sports_scraped = True
-        print("Completed sports list data scraper.")
+        print("Completed sports list data scraper")
         if sports_scraped:
-            print("Running events list data scraper.")
+            print("Running events list data scraper")
             all_webpages_scraped = True
             if do_fetch:
                 for each_sport in sports_data:
@@ -74,4 +74,4 @@ class SportsEvents:
             if all_webpages_scraped:
                 events_data = self.events_scraper()
                 self.scrape_utils.create_csv(data=events_data, path=self.data_path, name="events.csv")
-        print("Completed events list data scraper.")
+        print("Completed events list data scraper")

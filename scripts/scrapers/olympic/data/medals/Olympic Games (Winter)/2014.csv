@@ -1,0 +1,27 @@
+,country,country_code,gold,silver,bronze,total
+0,Norway,NOR,11,5,10,26
+1,Russian Federation,RUS,10,10,9,29
+2,Canada,CAN,10,10,5,25
+3,United States,USA,9,9,10,28
+4,Netherlands,NED,8,7,9,24
+5,Germany,GER,8,6,5,19
+6,Switzerland,SUI,7,2,2,11
+7,Belarus,BLR,5,0,1,6
+8,Austria,AUT,4,8,5,17
+9,France,FRA,4,4,7,15
+10,Poland,POL,4,1,1,6
+11,People's Republic of China,CHN,3,4,2,9
+12,Republic of Korea,KOR,3,3,2,8
+13,Sweden,SWE,2,7,6,15
+14,Czech Republic,CZE,2,4,2,8
+15,Slovenia,SLO,2,2,4,8
+16,Japan,JPN,1,4,3,8
+17,Finland,FIN,1,3,1,5
+18,Great Britain,GBR,1,1,3,5
+19,Latvia,LAT,1,1,3,5
+20,Ukraine,UKR,1,0,1,2
+21,Slovakia,SVK,1,0,0,1
+22,Italy,ITA,0,2,6,8
+23,Australia,AUS,0,2,1,3
+24,Croatia,CRO,0,1,0,1
+25,Kazakhstan,KAZ,0,0,1,1

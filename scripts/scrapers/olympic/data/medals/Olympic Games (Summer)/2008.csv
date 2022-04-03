@@ -1,0 +1,88 @@
+,country,country_code,gold,silver,bronze,total
+0,People's Republic of China,CHN,48,22,30,100
+1,United States,USA,36,39,37,112
+2,Russian Federation,RUS,24,13,23,60
+3,Great Britain,GBR,19,13,19,51
+4,Germany,GER,16,11,14,41
+5,Australia,AUS,14,15,17,46
+6,Republic of Korea,KOR,13,11,8,32
+7,Japan,JPN,9,8,8,25
+8,Italy,ITA,8,9,10,27
+9,France,FRA,7,16,20,43
+10,Netherlands,NED,7,5,4,16
+11,Ukraine,UKR,7,4,11,22
+12,Kenya,KEN,6,4,6,16
+13,Spain,ESP,5,11,3,19
+14,Jamaica,JAM,5,4,2,11
+15,Poland,POL,4,5,2,11
+16,Ethiopia,ETH,4,2,1,7
+17,Romania,ROU,4,1,4,9
+18,Cuba,CUB,3,10,17,30
+19,Canada,CAN,3,9,8,20
+20,Hungary,HUN,3,5,2,10
+21,Norway,NOR,3,5,1,9
+22,Brazil,BRA,3,4,10,17
+23,Belarus,BLR,3,4,7,14
+24,Czech Republic,CZE,3,3,1,7
+25,Slovakia,SVK,3,3,0,6
+26,New Zealand,NZL,3,2,4,9
+27,Georgia,GEO,3,2,2,7
+28,Kazakhstan,KAZ,2,3,4,9
+29,Denmark,DEN,2,2,3,7
+30,Democratic People's Republic of Korea,PRK,2,2,2,6
+31,Thailand,THA,2,2,2,6
+32,Mongolia,MGL,2,2,0,4
+33,Switzerland,SUI,2,1,4,7
+34,Argentina,ARG,2,0,4,6
+35,Mexico,MEX,2,0,2,4
+36,Belgium,BEL,2,0,0,2
+37,Zimbabwe,ZIM,1,3,0,4
+38,Slovenia,SLO,1,2,2,5
+39,Azerbaijan,AZE,1,1,4,6
+40,Indonesia,INA,1,1,4,6
+41,Bulgaria,BUL,1,1,3,5
+42,Turkey,TUR,1,1,3,5
+43,Chinese Taipei,TPE,1,1,2,4
+44,Finland,FIN,1,1,2,4
+45,Latvia,LAT,1,1,1,3
+46,Dominican Republic,DOM,1,1,0,2
+47,Estonia,EST,1,1,0,2
+48,Portugal,POR,1,1,0,2
+49,Trinidad and Tobago,TTO,1,1,0,2
+50,India,IND,1,0,2,3
+51,Islamic Republic of Iran,IRI,1,0,1,2
+52,Cameroon,CMR,1,0,0,1
+53,Panama,PAN,1,0,0,1
+54,Tunisia,TUN,1,0,0,1
+55,Sweden,SWE,0,4,1,5
+56,Lithuania,LTU,0,3,2,5
+57,Nigeria,NGR,0,3,2,5
+58,Croatia,CRO,0,2,3,5
+59,Colombia,COL,0,2,1,3
+60,Greece,GRE,0,2,1,3
+61,Armenia,ARM,0,1,4,5
+62,Uzbekistan,UZB,0,1,3,4
+63,Austria,AUT,0,1,2,3
+64,Ireland,IRL,0,1,2,3
+65,Kyrgyzstan,KGZ,0,1,2,3
+66,Serbia,SRB,0,1,2,3
+67,Algeria,ALG,0,1,1,2
+68,Morocco,MAR,0,1,1,2
+69,Tajikistan,TJK,0,1,1,2
+70,The Bahamas,BAH,0,1,1,2
+71,Chile,CHI,0,1,0,1
+72,Ecuador,ECU,0,1,0,1
+73,Iceland,ISL,0,1,0,1
+74,Malaysia,MAS,0,1,0,1
+75,Samoa,SAM,0,1,0,1
+76,Singapore,SGP,0,1,0,1
+77,South Africa,RSA,0,1,0,1
+78,Sudan,SUD,0,1,0,1
+79,Vietnam,VIE,0,1,0,1
+80,Egypt,EGY,0,0,2,2
+81,Afghanistan,AFG,0,0,1,1
+82,Israel,ISR,0,0,1,1
+83,Mauritius,MRI,0,0,1,1
+84,Republic of Moldova,MDA,0,0,1,1
+85,Togo,TOG,0,0,1,1
+86,Venezuela,VEN,0,0,1,1

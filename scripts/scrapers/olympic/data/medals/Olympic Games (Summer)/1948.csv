@@ -1,0 +1,39 @@
+,country,country_code,gold,silver,bronze,total
+0,United States,USA,38,27,19,84
+1,Sweden,SWE,17,11,18,46
+2,France,FRA,11,6,15,32
+3,Finland,FIN,10,8,6,24
+4,Hungary,HUN,10,5,13,28
+5,Italy,ITA,9,12,10,31
+6,Turkey,TUR,6,4,2,12
+7,Czechoslovakia,TCH,6,2,3,11
+8,Switzerland,SUI,5,12,6,23
+9,Denmark,DEN,5,8,9,22
+10,Netherlands,NED,5,2,9,16
+11,Great Britain,GBR,4,16,7,27
+12,Argentina,ARG,3,3,1,7
+13,Australia,AUS,2,6,5,13
+14,Austria,AUT,2,2,4,8
+15,Belgium,BEL,2,2,3,7
+16,South Africa,RSA,2,2,2,6
+17,Egypt,EGY,2,2,1,5
+18,Mexico,MEX,2,1,2,5
+19,Norway,NOR,1,3,3,7
+20,Jamaica,JAM,1,2,0,3
+21,Poland,POL,1,0,1,2
+22,India,IND,1,0,0,1
+23,Peru,PER,1,0,0,1
+24,Canada,CAN,0,2,2,4
+25,Yugoslavia,YUG,0,2,0,2
+26,Portugal,POR,0,1,1,2
+27,Uruguay,URU,0,1,1,2
+28,Cuba,CUB,0,1,0,1
+29,Spain,ESP,0,1,0,1
+30,Sri Lanka,SRI,0,1,0,1
+31,Trinidad and Tobago,TTO,0,1,0,1
+32,Panama,PAN,0,0,2,2
+33,Republic of Korea,KOR,0,0,2,2
+34,Brazil,BRA,0,0,1,1
+35,Ireland,IRL,0,0,1,1
+36,Islamic Republic of Iran,IRI,0,0,1,1
+37,Puerto Rico,PUR,0,0,1,1

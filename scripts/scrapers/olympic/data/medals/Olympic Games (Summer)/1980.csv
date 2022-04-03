@@ -1,0 +1,37 @@
+,country,country_code,gold,silver,bronze,total
+0,Soviet Union,URS,80,69,46,195
+1,East Germany,GDR,47,37,42,126
+2,Bulgaria,BUL,8,16,17,41
+3,Cuba,CUB,8,7,5,20
+4,Italy,ITA,8,3,4,15
+5,Hungary,HUN,7,10,15,32
+6,Romania,ROU,6,6,13,25
+7,France,FRA,6,5,3,14
+8,Great Britain,GBR,5,7,9,21
+9,Poland,POL,3,14,15,32
+10,Sweden,SWE,3,3,6,12
+11,Finland,FIN,3,1,4,8
+12,Czechoslovakia,TCH,2,3,9,14
+13,Yugoslavia,YUG,2,3,4,9
+14,Australia,AUS,2,2,5,9
+15,Denmark,DEN,2,1,2,5
+16,Brazil,BRA,2,0,2,4
+17,Ethiopia,ETH,2,0,2,4
+18,Switzerland,SUI,2,0,0,2
+19,Spain,ESP,1,3,2,6
+20,Austria,AUT,1,2,1,4
+21,Greece,GRE,1,0,2,3
+22,Belgium,BEL,1,0,0,1
+23,India,IND,1,0,0,1
+24,Zimbabwe,ZIM,1,0,0,1
+25,Democratic People's Republic of Korea,PRK,0,3,2,5
+26,Mongolia,MGL,0,2,2,4
+27,United Republic of Tanzania,TAN,0,2,0,2
+28,Mexico,MEX,0,1,3,4
+29,Netherlands,NED,0,1,2,3
+30,Ireland,IRL,0,1,1,2
+31,Uganda,UGA,0,1,0,1
+32,Venezuela,VEN,0,1,0,1
+33,Jamaica,JAM,0,0,3,3
+34,Guyana,GUY,0,0,1,1
+35,Lebanon,LBN,0,0,1,1

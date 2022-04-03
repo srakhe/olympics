@@ -29,7 +29,7 @@ class MedalsCounts:
         return data
 
     def run_scrape(self, do_fetch):
-        print("Running medals count data scraper.")
+        print("Running medals count data scraper")
         webpage_scraped = True
         if do_fetch:
             webpage_scraped = self.scrape_utils.fetch_webpage(page_url=self.url, path=self.data_path,
@@ -38,4 +38,4 @@ class MedalsCounts:
             medals_data = self.scraper()
             self.scrape_utils.create_csv(data=medals_data, path=self.data_path,
                                          name=f"medals.csv")
-        print("Completed medals count data scraper.")
+        print("Completed medals count data scraper")
