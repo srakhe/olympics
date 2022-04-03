@@ -1,0 +1,75 @@
+,country,country_code,gold,silver,bronze,total
+0,United States,USA,36,39,26,101
+1,People's Republic of China,CHN,32,17,14,63
+2,Russian Federation,RUS,28,26,36,90
+3,Australia,AUS,17,16,17,50
+4,Japan,JPN,16,9,12,37
+5,Germany,GER,13,16,20,49
+6,France,FRA,11,9,13,33
+7,Italy,ITA,10,11,11,32
+8,Republic of Korea,KOR,9,12,9,30
+9,Great Britain,GBR,9,9,12,30
+10,Cuba,CUB,9,7,11,27
+11,Hungary,HUN,8,6,3,17
+12,Ukraine,UKR,8,5,9,22
+13,Romania,ROU,8,5,6,19
+14,Greece,GRE,6,6,4,16
+15,Brazil,BRA,5,2,3,10
+16,Norway,NOR,5,0,1,6
+17,Netherlands,NED,4,9,9,22
+18,Sweden,SWE,4,2,1,7
+19,Spain,ESP,3,11,6,20
+20,Canada,CAN,3,6,3,12
+21,Turkey,TUR,3,3,4,10
+22,Poland,POL,3,2,5,10
+23,New Zealand,NZL,3,2,0,5
+24,Thailand,THA,3,1,4,8
+25,Belarus,BLR,2,5,6,13
+26,Austria,AUT,2,4,1,7
+27,Ethiopia,ETH,2,3,2,7
+28,Islamic Republic of Iran,IRI,2,2,2,6
+29,Slovakia,SVK,2,2,2,6
+30,Chinese Taipei,TPE,2,2,1,5
+31,Georgia,GEO,2,2,0,4
+32,Bulgaria,BUL,2,1,9,12
+33,Denmark,DEN,2,1,5,8
+34,Jamaica,JAM,2,1,2,5
+35,Uzbekistan,UZB,2,1,2,5
+36,Morocco,MAR,2,1,0,3
+37,Argentina,ARG,2,0,4,6
+38,Chile,CHI,2,0,1,3
+39,Kazakhstan,KAZ,1,4,3,8
+40,Kenya,KEN,1,4,2,7
+41,Czech Republic,CZE,1,3,5,9
+42,South Africa,RSA,1,3,2,6
+43,Croatia,CRO,1,2,2,5
+44,Lithuania,LTU,1,2,0,3
+45,Egypt,EGY,1,1,3,5
+46,Switzerland,SUI,1,1,3,5
+47,Indonesia,INA,1,1,2,4
+48,Zimbabwe,ZIM,1,1,1,3
+49,Azerbaijan,AZE,1,0,4,5
+50,Belgium,BEL,1,0,2,3
+51,Israel,ISR,1,0,1,2
+52,The Bahamas,BAH,1,0,1,2
+53,Cameroon,CMR,1,0,0,1
+54,Dominican Republic,DOM,1,0,0,1
+55,United Arab Emirates,UAE,1,0,0,1
+56,Democratic People's Republic of Korea,PRK,0,4,1,5
+57,Latvia,LAT,0,4,0,4
+58,Mexico,MEX,0,3,1,4
+59,Portugal,POR,0,2,1,3
+60,Finland,FIN,0,2,0,2
+61,Serbia and Montenegro,SCG,0,2,0,2
+62,Slovenia,SLO,0,1,3,4
+63,Estonia,EST,0,1,2,3
+64,"Hong Kong, China",HKG,0,1,0,1
+65,India,IND,0,1,0,1
+66,Paraguay,PAR,0,1,0,1
+67,Colombia,COL,0,0,2,2
+68,Nigeria,NGR,0,0,2,2
+69,Venezuela,VEN,0,0,2,2
+70,Eritrea,ERI,0,0,1,1
+71,Mongolia,MGL,0,0,1,1
+72,Syrian Arab Republic,SYR,0,0,1,1
+73,Trinidad and Tobago,TTO,0,0,1,1

@@ -1,0 +1,14 @@
+,country,country_code,gold,silver,bronze,total
+0,Norway,NOR,7,3,6,16
+1,United States,USA,4,6,1,11
+2,Finland,FIN,3,4,2,9
+3,Germany,GER,3,2,2,7
+4,Austria,AUT,2,4,2,8
+5,Canada,CAN,1,0,1,2
+6,Italy,ITA,1,0,1,2
+7,Great Britain,GBR,1,0,0,1
+8,Netherlands,NED,0,3,0,3
+9,Sweden,SWE,0,0,4,4
+10,Switzerland,SUI,0,0,2,2
+11,France,FRA,0,0,1,1
+12,Hungary,HUN,0,0,1,1

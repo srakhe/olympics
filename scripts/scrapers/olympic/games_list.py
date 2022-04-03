@@ -37,7 +37,7 @@ class GamesList:
         return games
 
     def run_scrape(self, do_fetch):
-        print("Running games list data scraper.")
+        print("Running games list data scraper")
         webpage_scraped = True
         if do_fetch:
             webpage_scraped = self.scrape_utils.fetch_webpage(page_url=self.url, path=self.data_path, name="games.html")
@@ -46,4 +46,4 @@ class GamesList:
             for each_game, each_game_data in games_data.items():
                 self.scrape_utils.create_csv(data=each_game_data, path=self.data_path + "/games",
                                              name=f"{each_game.lower()}.csv")
-        print("Completed games list data scraper.")
+        print("Completed games list data scraper")

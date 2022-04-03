@@ -21,17 +21,17 @@ class ScrapingUtils:
 
     def fetch_webpage(self, page_url, path, name):
         delay = self.get_crawl_delay()
-        print(f"Waiting for time: {delay} seconds before doing a fetch.")
+        print(f"Waiting for time: {delay} seconds before doing a fetch")
         time.sleep(float(delay))
         try:
             html_data = requests.get(page_url)
             with open(path + "/" + name, "w+") as htmlFile:
                 htmlFile.write(html_data.text)
         except:
-            print("Webpage fetch successful.")
+            print("Webpage fetch successful")
             return False
         else:
-            print("Webpage fetch successful.")
+            print("Webpage fetch successful")
             return True
 
     def get_webpage_data(self, path, name):
@@ -39,13 +39,13 @@ class ScrapingUtils:
             with open(path + "/" + name, "r+") as htmlFile:
                 html_data = htmlFile.read()
         except:
-            print("Saved webpage data fetch successful.")
+            print("Saved webpage data fetch successful")
             return False
         else:
-            print("Saved webpage data fetch successful.")
+            print("Saved webpage data fetch successful")
             return html_data
 
     def create_csv(self, data, path, name):
         df = pd.DataFrame(data=data, index=None)
         df.to_csv(f"{path}/{name}")
-        print("Data saved in csv.")
+        print("Data saved in csv")

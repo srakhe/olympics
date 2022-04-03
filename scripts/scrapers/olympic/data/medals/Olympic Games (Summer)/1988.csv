@@ -1,0 +1,53 @@
+,country,country_code,gold,silver,bronze,total
+0,Soviet Union,URS,55,31,46,132
+1,East Germany,GDR,37,35,30,102
+2,United States,USA,36,31,27,94
+3,Republic of Korea,KOR,12,10,11,33
+4,West Germany,FRG,11,14,15,40
+5,Hungary,HUN,11,6,6,23
+6,Bulgaria,BUL,10,12,13,35
+7,Romania,ROU,7,11,6,24
+8,France,FRA,6,4,6,16
+9,Italy,ITA,6,4,4,14
+10,People's Republic of China,CHN,5,11,12,28
+11,Great Britain,GBR,5,10,9,24
+12,Kenya,KEN,5,2,2,9
+13,Japan,JPN,4,3,7,14
+14,Australia,AUS,3,6,5,14
+15,Yugoslavia,YUG,3,4,5,12
+16,Czechoslovakia,TCH,3,3,2,8
+17,New Zealand,NZL,3,2,8,13
+18,Canada,CAN,3,2,5,10
+19,Poland,POL,2,5,9,16
+20,Norway,NOR,2,3,0,5
+21,Netherlands,NED,2,2,5,9
+22,Denmark,DEN,2,1,1,4
+23,Brazil,BRA,1,2,3,6
+24,Finland,FIN,1,1,2,4
+25,Spain,ESP,1,1,2,4
+26,Turkey,TUR,1,1,0,2
+27,Morocco,MAR,1,0,2,3
+28,Austria,AUT,1,0,0,1
+29,Portugal,POR,1,0,0,1
+30,Suriname,SUR,1,0,0,1
+31,Sweden,SWE,0,4,7,11
+32,Switzerland,SUI,0,2,2,4
+33,Jamaica,JAM,0,2,0,2
+34,Argentina,ARG,0,1,1,2
+35,Chile,CHI,0,1,0,1
+36,Costa Rica,CRC,0,1,0,1
+37,Indonesia,INA,0,1,0,1
+38,Islamic Republic of Iran,IRI,0,1,0,1
+39,Netherlands Antilles,AHO,0,1,0,1
+40,Peru,PER,0,1,0,1
+41,Senegal,SEN,0,1,0,1
+42,United States Virgin Islands,ISV,0,1,0,1
+43,Belgium,BEL,0,0,2,2
+44,Mexico,MEX,0,0,2,2
+45,Colombia,COL,0,0,1,1
+46,Djibouti,DJI,0,0,1,1
+47,Greece,GRE,0,0,1,1
+48,Mongolia,MGL,0,0,1,1
+49,Pakistan,PAK,0,0,1,1
+50,Philippines,PHI,0,0,1,1
+51,Thailand,THA,0,0,1,1

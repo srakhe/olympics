@@ -1,0 +1,42 @@
+,country,country_code,gold,silver,bronze,total
+0,Soviet Union,URS,49,41,35,125
+1,East Germany,GDR,40,25,25,90
+2,United States,USA,34,35,25,94
+3,West Germany,FRG,10,12,17,39
+4,Japan,JPN,9,6,10,25
+5,Poland,POL,7,6,13,26
+6,Bulgaria,BUL,6,9,7,22
+7,Cuba,CUB,6,4,3,13
+8,Romania,ROU,4,9,14,27
+9,Hungary,HUN,4,5,13,22
+10,Finland,FIN,4,2,0,6
+11,Sweden,SWE,4,1,0,5
+12,Great Britain,GBR,3,5,5,13
+13,Italy,ITA,2,7,4,13
+14,France,FRA,2,3,4,9
+15,Yugoslavia,YUG,2,3,3,8
+16,Czechoslovakia,TCH,2,2,4,8
+17,New Zealand,NZL,2,1,1,4
+18,Republic of Korea,KOR,1,1,4,6
+19,Switzerland,SUI,1,1,2,4
+20,Democratic People's Republic of Korea,PRK,1,1,0,2
+21,Jamaica,JAM,1,1,0,2
+22,Norway,NOR,1,1,0,2
+23,Denmark,DEN,1,0,2,3
+24,Mexico,MEX,1,0,1,2
+25,Trinidad and Tobago,TTO,1,0,0,1
+26,Canada,CAN,0,5,6,11
+27,Belgium,BEL,0,3,3,6
+28,Netherlands,NED,0,2,3,5
+29,Portugal,POR,0,2,0,2
+30,Spain,ESP,0,2,0,2
+31,Australia,AUS,0,1,4,5
+32,Islamic Republic of Iran,IRI,0,1,1,2
+33,Mongolia,MGL,0,1,0,1
+34,Venezuela,VEN,0,1,0,1
+35,Brazil,BRA,0,0,2,2
+36,Austria,AUT,0,0,1,1
+37,Bermuda,BER,0,0,1,1
+38,Pakistan,PAK,0,0,1,1
+39,Puerto Rico,PUR,0,0,1,1
+40,Thailand,THA,0,0,1,1
