@@ -30,7 +30,7 @@ class CountryCodes:
         return country_codes, country_names
 
     def run_scrape(self, do_fetch):
-        print("Running country codes data scraper.")
+        print("Running country codes data scraper")
         webpage_scraped = True
         if do_fetch:
             webpage_scraped = self.scrape_utils.fetch_webpage(page_url=self.url, path=self.data_path,
@@ -39,4 +39,4 @@ class CountryCodes:
             codes, names = self.scraper()
             data = {"country_code": codes, "country_name": names}
             self.scrape_utils.create_csv(data=data, path=self.data_path, name="countries.csv")
-        print("Completed country codes data scraper.")
+        print("Completed country codes data scraper")

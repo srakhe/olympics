@@ -1,0 +1,1229 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Olympedia – Ancient Combative Sports</title>
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="DaAMKJj97W/IzJ+93GSLbvU5H6+m3RMzITF8XQjACzH77zUcxyDq3UtcYPH13vSx73pG6Cm6rVRataAv1+3rRg==" />
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+<meta content='EN' http-equiv='content-language'>
+<meta content='width=device-width, initial-scale=1' name='viewport'>
+<link rel="stylesheet" media="all" href="/assets/bootstrap.min-460a43de22fd9534d595e5aea2715cb154560291c9c6401b526e31c86a5ce32d.css" />
+<link rel="stylesheet" media="all" href="/assets/bootstrap-sortable-363d232309d54b549fa85446295ef2b5d290e3f8a49f1a646247340be3705ef9.css" />
+<link rel="stylesheet" media="all" href="/assets/jquery-ui-1.11.4.min-359ba1b9eb679ad05fb4c8fda710ee4c0239354f1ba635200b6065638295d646.css" />
+<link rel="stylesheet" media="screen" href="/assets/lightbox-e29689e123fc27505d2b9d919f43ffcb6fade539cb4670f21c35aa07848105e7.css" />
+<link rel="stylesheet" media="all" href="/assets/application-dabe0afec76f540b074f0f63c688a540786e3cc47508864701ac4bfcd2198724.css" data-turbolinks-track="true" />
+<link rel="stylesheet" media="screen" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.4.3/css/ol.css" />
+<script src="/assets/application-e1a1e4d6a20243befcce18acb216d9b0e6082405323ce1f5dfbf47c401111aa1.js" data-turbolinks-track="true"></script>
+<script src="/assets/jquery-1.11.2.min-cc83565074b3fa7f2283f7f4d56b90ad171ede87008448ed5d2e91c50575bed1.js"></script>
+<script src="/assets/jquery-ui-1.11.4.min-1f37fd37d8db0404488ac8f6505560e48d1364ef1c81e384ac695e143049ab0f.js"></script>
+<script src="/assets/bootstrap.min-81d6fe3a991358b79b083d075ca476712c9f11c5c890047486176bde863c499e.js"></script>
+<script src="/assets/moment-ded3cbd5de5ae075c44be4149abb630c658e8789f17ccfb162e6bb7664e8bec9.js"></script>
+<script src="/assets/bootstrap-sortable-cd614fbc8d2030bc050ce63652169ed36d970209a94062fa218c631f2c04dc9f.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.4.3/build/ol.js"></script>
+
+</head>
+
+<body>
+<div class='navbar navbar-default navbar-fixed-top' role='navigation'>
+<div class='navbar-header'>
+<div class='button navbar-toggle' data-target='.navbar-ex1-collapse' data-toggle='collapse' type='button'>
+<span class='sr-only'>Toggle navigation</span>
+<span class='icon-bar'>
+<span class='icon-bar'>
+<span class='icon-bar'></span>
+</span>
+</span>
+</div>
+<a class='navbar-brand' href='/'>Olympedia</a>
+</div>
+<div class='collapse navbar-collapse navbar-ex1-collapse'>
+<ul class='nav navbar-nav'>
+<li class='dropdown'>
+<a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+Athletes
+<b class='caret'></b>
+</a>
+<ul class='dropdown-menu'>
+<li><a href="/athletes/advanced_search">Advanced search</a></li>
+<li><a href="/horses">Horse search</a></li>
+<li><a href="/family_relations">Related Olympians</a></li>
+<li><a href="/counts">Counts</a></li>
+<li><a href="/athletes/doubles">Doubles</a></li>
+<li><a href="/athletes/lists">Lists</a></li>
+<li class='divider'></li>
+<li><a href="/athletes">Athletes</a></li>
+</ul>
+</li>
+
+<li class='dropdown'>
+<a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+Countries
+<b class='caret'></b>
+</a>
+<ul class='dropdown-menu'>
+<li><a href="/countries/head_to_head">Head-to-head</a></li>
+<li><a href="/countries/best_results">Best results</a></li>
+<li><a href="/countries/comparison">Results comparison</a></li>
+<li class='divider'></li>
+<li><a href="/countries">Countries</a></li>
+</ul>
+</li>
+
+<li class='dropdown'>
+<a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+Games
+<b class='caret'></b>
+</a>
+<ul class='dropdown-menu'>
+<li><a href="/editions">Games</a></li>
+<li><a href="/editions/medals">Medals</a></li>
+<li><a href="/editions/results">Results</a></li>
+<li><a href="/ceremonies">Opening ceremony</a></li>
+<li><a href="/venues/menu">Venues</a></li>
+</ul>
+</li>
+
+<li class='dropdown'>
+<a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+Sports
+<b class='caret'></b>
+</a>
+<ul class='dropdown-menu'>
+<li><a href="/sports">Disciplines &amp; Sports</a></li>
+<li><a href="/event_names">Events</a></li>
+</ul>
+</li>
+
+<li class='dropdown'>
+<a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+IOC
+<b class='caret'></b>
+</a>
+<ul class='dropdown-menu'>
+<li><a href="/organizations">Organizations</a></li>
+<li><a href="/definitions">Definitions</a></li>
+<li><a href="/meetings">Meetings</a></li>
+<li><a href="/ioc/host_cities">Host city selection</a></li>
+</ul>
+</li>
+
+<li class='dropdown'>
+<a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+Statistics
+<b class='caret'></b>
+</a>
+<ul class='dropdown-menu'>
+<li></li>
+<li><a href="/statistics/medal/country">Medals by country</a></li>
+<li><a href="/statistics/medal/athlete">Medals by athlete</a></li>
+<li><a href="/statistics/medal_table">Medal tables</a></li>
+<li><a href="/statistics/participation">Participations</a></li>
+<li><a href="/statistics/age">Age records</a></li>
+<li><a href="/lists">Lists</a></li>
+<li><a href="/today">Today</a></li>
+<li></li>
+<li class='divider'></li>
+<li><a href="/statistics">Statistics</a></li>
+</ul>
+</li>
+
+
+
+
+<li><a href="/feedbacks/new">Feedback</a></li>
+<form class="navbar-form navbar-left" role="search" action="/athletes/quick_search" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="nCVnAJZ+k9WK3m3mzNrR9c/yXzBgDur1x2MQhiLcNW9fsNffVznpwu36n81NfU+uG1DQLoZA0MWzHI6jQbO18w==" />
+<div class='form-group'>
+<input type="text" name="query" id="query" class="form-control" placeholder="Athlete search" />
+</div>
+<input type="submit" name="commit" value="Go" class="btn btn-default" data-disable-with="Go" />
+</form>
+
+
+</ul>
+</div>
+</div>
+<div class='container'>
+<ol class='breadcrumb'>
+<li>
+<a href='/'>Home</a>
+</li>
+<li><a href="/sports">Disciplines &amp; Sports</a></li><li class="active">Ancient Combative Sports</li>
+</ol>
+<h1>Ancient Combative Sports</h1>
+<h2>Facts</h2>
+<table class='biodata'>
+<tr>
+<th>Discipline of</th>
+<td><a href="/sport_groups/AN">Ancient Sports</a></td>
+</tr>
+<tr>
+<th>Participants</th>
+<td><a href="/counts/sport/ACB">2</a></td>
+</tr>
+<tr>
+<th>NOCs</th>
+<td>2</td>
+</tr>
+<tr>
+<th>Competitions held</th>
+<td>
+0
+(<a href="/venues/sports/ACB">Venues</a>)
+</td>
+</tr>
+<tr>
+<th>Distinct events</th>
+<td>8</td>
+</tr>
+</table>
+<h2>
+Description
+
+</h2>
+<div class='description'>
+<p>There were three combative sports at the Ancient Olympic Games – wrestling, boxing, and <em>pankration</em>. Wrestling was first documented from 708 BCE with boys’ wrestling first known in 632 BCE. Boxing was first documented from 688 BCE with boys’ wrestling first known in 616 BCE, while the <em>pankration</em> was held first in 648 BCE, with a boys’ <em>pankration</em> contested in 380 BCE. <em>Pankration</em> was a mixture of boxing and wrestling, somewhat similar to modern mixed martial arts, and once described as “imperfect wrestling with imperfect boxing.”</p>
+
+</div>
+
+<h2>All-time medal table</h2>
+<h3>Ancient Olympic Games</h3>
+<table class='table table-striped'>
+<thead>
+<tr>
+<th colspan='2'>NOC</th>
+<th>Gold</th>
+<th>Silver</th>
+<th>Bronze</th>
+<th>Total</th>
+</tr>
+</thead>
+<tr>
+<td><a href="/countries/ELI">Elis</a></td>
+<td><a href="/countries/ELI"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ELI.png" /> ELI</a></td>
+<td>36</td>
+<td>0</td>
+<td>0</td>
+<td>36</td>
+</tr>
+<tr>
+<td><a href="/countries/ALX">Alexandria</a></td>
+<td><a href="/countries/ALX"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ALX.png" /> ALX</a></td>
+<td>18</td>
+<td>0</td>
+<td>0</td>
+<td>18</td>
+</tr>
+<tr>
+<td><a href="/countries/RHD">Rhodes</a></td>
+<td><a href="/countries/RHD"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/RHD.png" /> RHD</a></td>
+<td>18</td>
+<td>0</td>
+<td>0</td>
+<td>18</td>
+</tr>
+<tr>
+<td><a href="/countries/SPA">Sparta</a></td>
+<td><a href="/countries/SPA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SPA.png" /> SPA</a></td>
+<td>16</td>
+<td>0</td>
+<td>0</td>
+<td>16</td>
+</tr>
+<tr>
+<td><a href="/countries/ATH">Athens</a></td>
+<td><a href="/countries/ATH"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ATH.png" /> ATH</a></td>
+<td>14</td>
+<td>0</td>
+<td>0</td>
+<td>14</td>
+</tr>
+<tr>
+<td><a href="/countries/KRT">Kroton</a></td>
+<td><a href="/countries/KRT"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KRT.png" /> KRT</a></td>
+<td>10</td>
+<td>0</td>
+<td>0</td>
+<td>10</td>
+</tr>
+<tr>
+<td><a href="/countries/MNM">Magnesia on the Maiandros</a></td>
+<td><a href="/countries/MNM"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MNM.png" /> MNM</a></td>
+<td>10</td>
+<td>0</td>
+<td>0</td>
+<td>10</td>
+</tr>
+<tr>
+<td><a href="/countries/UNK">Unknown</a></td>
+<td><a href="/countries/UNK"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/UNK.png" /> UNK</a></td>
+<td>10</td>
+<td>0</td>
+<td>0</td>
+<td>10</td>
+</tr>
+<tr>
+<td><a href="/countries/EPH">Ephesus</a></td>
+<td><a href="/countries/EPH"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/EPH.png" /> EPH</a></td>
+<td>9</td>
+<td>0</td>
+<td>0</td>
+<td>9</td>
+</tr>
+<tr>
+<td><a href="/countries/MIL">Miletus</a></td>
+<td><a href="/countries/MIL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MIL.png" /> MIL</a></td>
+<td>9</td>
+<td>0</td>
+<td>0</td>
+<td>9</td>
+</tr>
+<tr>
+<td><a href="/countries/AIG">Aigion</a></td>
+<td><a href="/countries/AIG"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/AIG.png" /> AIG</a></td>
+<td>8</td>
+<td>0</td>
+<td>0</td>
+<td>8</td>
+</tr>
+<tr>
+<td><a href="/countries/MES">Messene</a></td>
+<td><a href="/countries/MES"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MES.png" /> MES</a></td>
+<td>8</td>
+<td>0</td>
+<td>0</td>
+<td>8</td>
+</tr>
+<tr>
+<td><a href="/countries/MAI">Mainalos</a></td>
+<td><a href="/countries/MAI"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MAI.png" /> MAI</a></td>
+<td>7</td>
+<td>0</td>
+<td>0</td>
+<td>7</td>
+</tr>
+<tr>
+<td><a href="/countries/SMS">Samos</a></td>
+<td><a href="/countries/SMS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SMS.png" /> SMS</a></td>
+<td>7</td>
+<td>0</td>
+<td>0</td>
+<td>7</td>
+</tr>
+<tr>
+<td><a href="/countries/SMY">Smyrna</a></td>
+<td><a href="/countries/SMY"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SMY.png" /> SMY</a></td>
+<td>7</td>
+<td>0</td>
+<td>0</td>
+<td>7</td>
+</tr>
+<tr>
+<td><a href="/countries/LEP">Lepreon</a></td>
+<td><a href="/countries/LEP"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/LEP.png" /> LEP</a></td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="/countries/MAN">Manteneia</a></td>
+<td><a href="/countries/MAN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MAN.png" /> MAN</a></td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="/countries/SIK">Sikyon</a></td>
+<td><a href="/countries/SIK"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SIK.png" /> SIK</a></td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="/countries/THP">Thespiai</a></td>
+<td><a href="/countries/THP"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/THP.png" /> THP</a></td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="/countries/ATO">Antiochia on the Orontes</a></td>
+<td><a href="/countries/ATO"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ATO.png" /> ATO</a></td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>5</td>
+</tr>
+<tr>
+<td><a href="/countries/PEL">Pellene</a></td>
+<td><a href="/countries/PEL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/PEL.png" /> PEL</a></td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>5</td>
+</tr>
+<tr>
+<td><a href="/countries/PHN">Phoenicia</a></td>
+<td><a href="/countries/PHN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/PHN.png" /> PHN</a></td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>5</td>
+</tr>
+<tr>
+<td><a href="/countries/HER">Heraia</a></td>
+<td><a href="/countries/HER"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/HER.png" /> HER</a></td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="/countries/PGL">Phigaleia</a></td>
+<td><a href="/countries/PGL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/PGL.png" /> PGL</a></td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="/countries/SAR">Sardis</a></td>
+<td><a href="/countries/SAR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SAR.png" /> SAR</a></td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="/countries/SRA">Syria (Antocheia)</a></td>
+<td><a href="/countries/SRA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SRA.png" /> SRA</a></td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="/countries/LOK">Unknown city in Lokria</a></td>
+<td><a href="/countries/LOK"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/LOK.png" /> LOK</a></td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="/countries/AGS">Argos</a></td>
+<td><a href="/countries/AGS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/AGS.png" /> AGS</a></td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="/countries/EDR">Epidauros</a></td>
+<td><a href="/countries/EDR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/EDR.png" /> EDR</a></td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="/countries/KLT">Kleitor</a></td>
+<td><a href="/countries/KLT"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KLT.png" /> KLT</a></td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="/countries/KOL">Kolophon</a></td>
+<td><a href="/countries/KOL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KOL.png" /> KOL</a></td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="/countries/KKY">Korkyra</a></td>
+<td><a href="/countries/KKY"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KKY.png" /> KKY</a></td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="/countries/NAX">Naxos</a></td>
+<td><a href="/countries/NAX"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/NAX.png" /> NAX</a></td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="/countries/OPS">Opous</a></td>
+<td><a href="/countries/OPS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/OPS.png" /> OPS</a></td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="/countries/PHA">Pharsalos</a></td>
+<td><a href="/countries/PHA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/PHA.png" /> PHA</a></td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="/countries/SLT">Seleukeia on the Tigris</a></td>
+<td><a href="/countries/SLT"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SLT.png" /> SLT</a></td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="/countries/STR">Stratonikeia</a></td>
+<td><a href="/countries/STR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/STR.png" /> STR</a></td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="/countries/THB">Thebes</a></td>
+<td><a href="/countries/THB"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/THB.png" /> THB</a></td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="/countries/ADA">Adana</a></td>
+<td><a href="/countries/ADA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ADA.png" /> ADA</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/ATD">Anthedon</a></td>
+<td><a href="/countries/ATD"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ATD.png" /> ATD</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/APM">Apamea-Myrleia</a></td>
+<td><a href="/countries/APM"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/APM.png" /> APM</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/ERY">Erythrai</a></td>
+<td><a href="/countries/ERY"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ERY.png" /> ERY</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/KHI">Khios</a></td>
+<td><a href="/countries/KHI"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KHI.png" /> KHI</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/LIN">Lindos</a></td>
+<td><a href="/countries/LIN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/LIN.png" /> LIN</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/PRH">Parrhasia</a></td>
+<td><a href="/countries/PRH"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/PRH.png" /> PRH</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/PAT">Patrai</a></td>
+<td><a href="/countries/PAT"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/PAT.png" /> PAT</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/SAL">Salamis</a></td>
+<td><a href="/countries/SAL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SAL.png" /> SAL</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/SYB">Sybaris</a></td>
+<td><a href="/countries/SYB"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SYB.png" /> SYB</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/TAR">Taranto</a></td>
+<td><a href="/countries/TAR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/TAR.png" /> TAR</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/THS">Thasos</a></td>
+<td><a href="/countries/THS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/THS.png" /> THS</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/TRA">Tralles</a></td>
+<td><a href="/countries/TRA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/TRA.png" /> TRA</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/ARK">Unknown city in Arkadia</a></td>
+<td><a href="/countries/ARK"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ARK.png" /> ARK</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/ADR">Adramyttion</a></td>
+<td><a href="/countries/ADR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ADR.png" /> ADR</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/AGR">Aigeira</a></td>
+<td><a href="/countries/AGR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/AGR.png" /> AGR</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/AIZ">Aizanoi</a></td>
+<td><a href="/countries/AIZ"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/AIZ.png" /> AIZ</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/AKA">Akarnan</a></td>
+<td><a href="/countries/AKA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/AKA.png" /> AKA</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/AKR">Akragas</a></td>
+<td><a href="/countries/AKR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/AKR.png" /> AKR</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/ANS">Andros</a></td>
+<td><a href="/countries/ANS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ANS.png" /> ANS</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/ATK">Antikyra</a></td>
+<td><a href="/countries/ATK"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ATK.png" /> ATK</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/AMN">Armenia</a></td>
+<td><a href="/countries/AMN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/AMN.png" /> AMN</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/ATP">Astypalaia</a></td>
+<td><a href="/countries/ATP"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ATP.png" /> ATP</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/BRK">Barke</a></td>
+<td><a href="/countries/BRK"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/BRK.png" /> BRK</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/DLP">Delphi</a></td>
+<td><a href="/countries/DLP"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/DLP.png" /> DLP</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/DIP">Dipaia</a></td>
+<td><a href="/countries/DIP"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/DIP.png" /> DIP</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/HAL">Halicarnassus</a></td>
+<td><a href="/countries/HAL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/HAL.png" /> HAL</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/HMP">Hermopolis</a></td>
+<td><a href="/countries/HMP"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/HMP.png" /> HMP</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/KAR">Karian</a></td>
+<td><a href="/countries/KAR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KAR.png" /> KAR</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/KRS">Karystos</a></td>
+<td><a href="/countries/KRS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KRS.png" /> KRS</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/KEL">Kelonai</a></td>
+<td><a href="/countries/KEL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KEL.png" /> KEL</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/KTH">Korinth</a></td>
+<td><a href="/countries/KTH"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KTH.png" /> KTH</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/SKS">Kos</a></td>
+<td><a href="/countries/SKS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SKS.png" /> SKS</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/KPS">Kyparissia</a></td>
+<td><a href="/countries/KPS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KPS.png" /> KPS</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/KYR">Kyrene</a></td>
+<td><a href="/countries/KYR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KYR.png" /> KYR</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/KYZ">Kyzikos</a></td>
+<td><a href="/countries/KYZ"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KYZ.png" /> KYZ</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/LDL">Laodikeia on the Lykos</a></td>
+<td><a href="/countries/LDL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/LDL.png" /> LDL</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/MRN">Maroneia</a></td>
+<td><a href="/countries/MRN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MRN.png" /> MRN</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/MEG">Megara</a></td>
+<td><a href="/countries/MEG"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MEG.png" /> MEG</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/MYL">Mylasa</a></td>
+<td><a href="/countries/MYL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MYL.png" /> MYL</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/MYR">Myra</a></td>
+<td><a href="/countries/MYR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MYR.png" /> MYR</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/MTL">Mytilene</a></td>
+<td><a href="/countries/MTL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MTL.png" /> MTL</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/NKT">Naukratis</a></td>
+<td><a href="/countries/NKT"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/NKT.png" /> NKT</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/OIN">Oinoanda</a></td>
+<td><a href="/countries/OIN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/OIN.png" /> OIN</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/ORS">Orestheia</a></td>
+<td><a href="/countries/ORS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ORS.png" /> ORS</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/PGM">Pergamon</a></td>
+<td><a href="/countries/PGM"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/PGM.png" /> PGM</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/PLD">Philadelphia</a></td>
+<td><a href="/countries/PLD"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/PLD.png" /> PLD</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/SIN">Sinope</a></td>
+<td><a href="/countries/SIN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SIN.png" /> SIN</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/SIR">Siracusa</a></td>
+<td><a href="/countries/SIR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SIR.png" /> SIR</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/SKO">Skotoussa</a></td>
+<td><a href="/countries/SKO"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SKO.png" /> SKO</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/TND">Tenedos</a></td>
+<td><a href="/countries/TND"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/TND.png" /> TND</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/THL">Thessaly</a></td>
+<td><a href="/countries/THL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/THL.png" /> THL</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/THR">Thourioi</a></td>
+<td><a href="/countries/THR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/THR.png" /> THR</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/THY">Thyateira</a></td>
+<td><a href="/countries/THY"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/THY.png" /> THY</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/TIR">Tiryns</a></td>
+<td><a href="/countries/TIR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/TIR.png" /> TIR</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/TRT">Tritaia</a></td>
+<td><a href="/countries/TRT"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/TRT.png" /> TRT</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/TRZ">Troizen</a></td>
+<td><a href="/countries/TRZ"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/TRZ.png" /> TRZ</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/KRE">Unknown city in Crete</a></td>
+<td><a href="/countries/KRE"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KRE.png" /> KRE</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/EGP">Unknown city in Egypt</a></td>
+<td><a href="/countries/EGP"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/EGP.png" /> EGP</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/ZAK">Zakynthos</a></td>
+<td><a href="/countries/ZAK"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ZAK.png" /> ZAK</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+</table>
+
+<h2>Most successful competitors</h2>
+<h3>Ancient Olympic Games</h3>
+<table class='table table-striped'>
+<thead>
+<tr>
+<th>Athlete</th>
+<th>Nat</th>
+<th>Gold</th>
+<th>Silver</th>
+<th>Bronze</th>
+<th>Total</th>
+</tr>
+</thead>
+<tr class='top'>
+<td><a href="/athletes/2800601">Milon</a></td>
+<td><a href="/countries/KRT"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KRT.png" /> KRT</a></td>
+<td>7</td>
+<td>0</td>
+<td>0</td>
+<td>7</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/2800426">Hipposthenes</a></td>
+<td><a href="/countries/SPA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SPA.png" /> SPA</a></td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>6</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/2800418">Hetoimokles</a></td>
+<td><a href="/countries/SPA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SPA.png" /> SPA</a></td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>5</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/2800241">Aurelius Helix</a></td>
+<td><a href="/countries/PHN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/PHN.png" /> PHN</a></td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>4</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/2800467">Khairon</a></td>
+<td><a href="/countries/PEL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/PEL.png" /> PEL</a></td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>4</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/2800561">Marcus Aurelius Asklepiades</a></td>
+<td><a href="/countries/ALX"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ALX.png" /> ALX</a></td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>4</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/2800784">Stratonikos</a></td>
+<td><a href="/countries/ALX"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ALX.png" /> ALX</a></td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>4</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/2800213">Arrikhion</a></td>
+<td><a href="/countries/PGL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/PGL.png" /> PGL</a></td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/2800221">Astyanax</a></td>
+<td><a href="/countries/MIL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MIL.png" /> MIL</a></td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/2800288">Demokrates</a></td>
+<td><a href="/countries/MNM"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MNM.png" /> MNM</a></td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/2800309">Dionysios</a></td>
+<td><a href="/countries/SLT"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SLT.png" /> SLT</a></td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/2800316">Dorieus</a></td>
+<td><a href="/countries/RHD"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/RHD.png" /> RHD</a></td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/2800375">Euthymos</a></td>
+<td><a href="/countries/LOK"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/LOK.png" /> LOK</a></td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/2800772">Sostratos</a></td>
+<td><a href="/countries/SIK"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SIK.png" /> SIK</a></td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/2800831">Tiberius Claudius Patrobius</a></td>
+<td><a href="/countries/SRA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SRA.png" /> SRA</a></td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/2800846">Tisandros</a></td>
+<td><a href="/countries/NAX"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/NAX.png" /> NAX</a></td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+</tr>
+</table>
+
+<h2>Event types</h2>
+<table class='table table-striped sortable'>
+<thead>
+<th>Name</th>
+<th>Gender</th>
+<th>Still contested?</th>
+<th>Times held?</th>
+</thead>
+<tbody>
+<tr valign='top'>
+<td><a href="/event_names/2540">Unknown Event</a></td>
+<td>Men</td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+<td>6</td>
+</tr>
+<tr valign='top'>
+<td><a href="/event_names/2503">Boxing</a></td>
+<td>Men</td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+<td>74</td>
+</tr>
+<tr valign='top'>
+<td><a href="/event_names/2504">Pankration</a></td>
+<td>Men</td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+<td>86</td>
+</tr>
+<tr valign='top'>
+<td><a href="/event_names/2505">Wrestling</a></td>
+<td>Men</td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+<td>81</td>
+</tr>
+<tr valign='top'>
+<td><a href="/event_names/2506">Wrestling or Pankration</a></td>
+<td>Men</td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+<td>1</td>
+</tr>
+<tr valign='top'>
+<td><a href="/event_names/2534">Boxing</a></td>
+<td>Boys</td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+<td>48</td>
+</tr>
+<tr valign='top'>
+<td><a href="/event_names/2535">Wrestling</a></td>
+<td>Boys</td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+<td>42</td>
+</tr>
+<tr valign='top'>
+<td><a href="/event_names/2536">Pankration</a></td>
+<td>Boys</td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+<td>17</td>
+</tr>
+</tbody>
+</table>
+
+
+</div>
+</body>
+<footer class='footer'>
+<br>
+<div class='panel panel-info'>
+<div class='panel-heading'>
+<h3 class='panel-title'>
+<span class='glyphicon glyphicon-info-sign'></span>
+Did you know?
+</h3>
+</div>
+<div class='panel-body'>
+<p>The 1924 Winter Olympics weren’t officially declared Olympic until 1926. They were known as “International Winter Sports Week” in 1924, although generally referred to as Olympics.</p>
+
+
+</div>
+</div>
+<div class='container'>
+<p>
+<a href="/users/sign_in">Login</a>
+|
+<a href="/statistics/olympedia">Statistics</a>
+|
+<a href="/static/about">About</a>
+|
+<a href="/static/faq">FAQ</a>
+|
+<a href="/feedbacks/new">Feedback</a>
+</p>
+<p>
+&copy; <a href="/static/about">OlyMADMen</a> 2006 — 2022
+</p>
+</div>
+</footer>
+
+<script src="/assets/lightbox.min-40fdcc195c5982250c8901f2c160e15342941a311faf6372c04117c0d9c44bc7.js"></script>
+<script>
+  $('.footnote').tooltip();
+</script>
+</html>

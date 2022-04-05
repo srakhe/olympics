@@ -1,0 +1,45 @@
+,country,country_code,gold,silver,bronze,total
+0,Soviet Union,URS,43,29,31,103
+1,United States,USA,34,21,16,71
+2,Italy,ITA,13,10,13,36
+3,Germany,GER,12,19,11,42
+4,Australia,AUS,8,8,6,22
+5,Turkey,TUR,7,2,0,9
+6,Hungary,HUN,6,8,7,21
+7,Japan,JPN,4,7,7,18
+8,Poland,POL,4,6,11,21
+9,Czechoslovakia,TCH,3,2,3,8
+10,Romania,ROU,3,1,6,10
+11,Great Britain,GBR,2,6,12,20
+12,Denmark,DEN,2,3,1,6
+13,New Zealand,NZL,2,0,1,3
+14,Bulgaria,BUL,1,3,3,7
+15,Sweden,SWE,1,2,3,6
+16,Finland,FIN,1,1,3,5
+17,Austria,AUT,1,1,0,2
+18,Yugoslavia,YUG,1,1,0,2
+19,Pakistan,PAK,1,0,1,2
+20,Ethiopia,ETH,1,0,0,1
+21,Greece,GRE,1,0,0,1
+22,Norway,NOR,1,0,0,1
+23,Switzerland,SUI,0,3,3,6
+24,France,FRA,0,2,3,5
+25,Belgium,BEL,0,2,2,4
+26,Islamic Republic of Iran,IRI,0,1,3,4
+27,Netherlands,NED,0,1,2,3
+28,South Africa,RSA,0,1,2,3
+29,Argentina,ARG,0,1,1,2
+30,United Arab Republic,UAR,0,1,1,2
+31,Canada,CAN,0,1,0,1
+32,Chinese Taipei,TPE,0,1,0,1
+33,Ghana,GHA,0,1,0,1
+34,India,IND,0,1,0,1
+35,Morocco,MAR,0,1,0,1
+36,Portugal,POR,0,1,0,1
+37,Singapore,SGP,0,1,0,1
+38,Brazil,BRA,0,0,2,2
+39,West Indies Federation,WIF,0,0,2,2
+40,Iraq,IRQ,0,0,1,1
+41,Mexico,MEX,0,0,1,1
+42,Spain,ESP,0,0,1,1
+43,Venezuela,VEN,0,0,1,1

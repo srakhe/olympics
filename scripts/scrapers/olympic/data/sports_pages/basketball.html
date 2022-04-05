@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Olympedia – Basketball</title>
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="H42dNeeeQ1LMnPBvTVL0xM/tCMtU2Hzuy3RdR7AUNksQN63kFNVijFG6OsN4WtrKo8HwpuQeUkEvNK3KYVolVw==" />
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+<meta content='EN' http-equiv='content-language'>
+<meta content='width=device-width, initial-scale=1' name='viewport'>
+<link rel="stylesheet" media="all" href="/assets/bootstrap.min-460a43de22fd9534d595e5aea2715cb154560291c9c6401b526e31c86a5ce32d.css" />
+<link rel="stylesheet" media="all" href="/assets/bootstrap-sortable-363d232309d54b549fa85446295ef2b5d290e3f8a49f1a646247340be3705ef9.css" />
+<link rel="stylesheet" media="all" href="/assets/jquery-ui-1.11.4.min-359ba1b9eb679ad05fb4c8fda710ee4c0239354f1ba635200b6065638295d646.css" />
+<link rel="stylesheet" media="screen" href="/assets/lightbox-e29689e123fc27505d2b9d919f43ffcb6fade539cb4670f21c35aa07848105e7.css" />
+<link rel="stylesheet" media="all" href="/assets/application-dabe0afec76f540b074f0f63c688a540786e3cc47508864701ac4bfcd2198724.css" data-turbolinks-track="true" />
+<link rel="stylesheet" media="screen" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.4.3/css/ol.css" />
+<script src="/assets/application-e1a1e4d6a20243befcce18acb216d9b0e6082405323ce1f5dfbf47c401111aa1.js" data-turbolinks-track="true"></script>
+<script src="/assets/jquery-1.11.2.min-cc83565074b3fa7f2283f7f4d56b90ad171ede87008448ed5d2e91c50575bed1.js"></script>
+<script src="/assets/jquery-ui-1.11.4.min-1f37fd37d8db0404488ac8f6505560e48d1364ef1c81e384ac695e143049ab0f.js"></script>
+<script src="/assets/bootstrap.min-81d6fe3a991358b79b083d075ca476712c9f11c5c890047486176bde863c499e.js"></script>
+<script src="/assets/moment-ded3cbd5de5ae075c44be4149abb630c658e8789f17ccfb162e6bb7664e8bec9.js"></script>
+<script src="/assets/bootstrap-sortable-cd614fbc8d2030bc050ce63652169ed36d970209a94062fa218c631f2c04dc9f.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.4.3/build/ol.js"></script>
+
+</head>
+
+<body>
+<div class='navbar navbar-default navbar-fixed-top' role='navigation'>
+<div class='navbar-header'>
+<div class='button navbar-toggle' data-target='.navbar-ex1-collapse' data-toggle='collapse' type='button'>
+<span class='sr-only'>Toggle navigation</span>
+<span class='icon-bar'>
+<span class='icon-bar'>
+<span class='icon-bar'></span>
+</span>
+</span>
+</div>
+<a class='navbar-brand' href='/'>Olympedia</a>
+</div>
+<div class='collapse navbar-collapse navbar-ex1-collapse'>
+<ul class='nav navbar-nav'>
+<li class='dropdown'>
+<a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+Athletes
+<b class='caret'></b>
+</a>
+<ul class='dropdown-menu'>
+<li><a href="/athletes/advanced_search">Advanced search</a></li>
+<li><a href="/horses">Horse search</a></li>
+<li><a href="/family_relations">Related Olympians</a></li>
+<li><a href="/counts">Counts</a></li>
+<li><a href="/athletes/doubles">Doubles</a></li>
+<li><a href="/athletes/lists">Lists</a></li>
+<li class='divider'></li>
+<li><a href="/athletes">Athletes</a></li>
+</ul>
+</li>
+
+<li class='dropdown'>
+<a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+Countries
+<b class='caret'></b>
+</a>
+<ul class='dropdown-menu'>
+<li><a href="/countries/head_to_head">Head-to-head</a></li>
+<li><a href="/countries/best_results">Best results</a></li>
+<li><a href="/countries/comparison">Results comparison</a></li>
+<li class='divider'></li>
+<li><a href="/countries">Countries</a></li>
+</ul>
+</li>
+
+<li class='dropdown'>
+<a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+Games
+<b class='caret'></b>
+</a>
+<ul class='dropdown-menu'>
+<li><a href="/editions">Games</a></li>
+<li><a href="/editions/medals">Medals</a></li>
+<li><a href="/editions/results">Results</a></li>
+<li><a href="/ceremonies">Opening ceremony</a></li>
+<li><a href="/venues/menu">Venues</a></li>
+</ul>
+</li>
+
+<li class='dropdown'>
+<a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+Sports
+<b class='caret'></b>
+</a>
+<ul class='dropdown-menu'>
+<li><a href="/sports">Disciplines &amp; Sports</a></li>
+<li><a href="/event_names">Events</a></li>
+</ul>
+</li>
+
+<li class='dropdown'>
+<a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+IOC
+<b class='caret'></b>
+</a>
+<ul class='dropdown-menu'>
+<li><a href="/organizations">Organizations</a></li>
+<li><a href="/definitions">Definitions</a></li>
+<li><a href="/meetings">Meetings</a></li>
+<li><a href="/ioc/host_cities">Host city selection</a></li>
+</ul>
+</li>
+
+<li class='dropdown'>
+<a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+Statistics
+<b class='caret'></b>
+</a>
+<ul class='dropdown-menu'>
+<li></li>
+<li><a href="/statistics/medal/country">Medals by country</a></li>
+<li><a href="/statistics/medal/athlete">Medals by athlete</a></li>
+<li><a href="/statistics/medal_table">Medal tables</a></li>
+<li><a href="/statistics/participation">Participations</a></li>
+<li><a href="/statistics/age">Age records</a></li>
+<li><a href="/lists">Lists</a></li>
+<li><a href="/today">Today</a></li>
+<li></li>
+<li class='divider'></li>
+<li><a href="/statistics">Statistics</a></li>
+</ul>
+</li>
+
+
+
+
+<li><a href="/feedbacks/new">Feedback</a></li>
+<form class="navbar-form navbar-left" role="search" action="/athletes/quick_search" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="Zrvg5Z/V+MhBxb4N5gyW5KkD7bpPxFeQdUyrqJMhERZQbRRjMJHGzGAy5Uqfrf73ro57+7GlqHYYc1exHY1krA==" />
+<div class='form-group'>
+<input type="text" name="query" id="query" class="form-control" placeholder="Athlete search" />
+</div>
+<input type="submit" name="commit" value="Go" class="btn btn-default" data-disable-with="Go" />
+</form>
+
+
+</ul>
+</div>
+</div>
+<div class='container'>
+<ol class='breadcrumb'>
+<li>
+<a href='/'>Home</a>
+</li>
+<li><a href="/sports">Disciplines &amp; Sports</a></li><li class="active">Basketball</li>
+</ol>
+<h1>Basketball</h1>
+<h2>Facts</h2>
+<table class='biodata'>
+<tr>
+<th>Discipline of</th>
+<td><a href="/sport_groups/BK">Basketball</a></td>
+</tr>
+<tr>
+<th>Participants</th>
+<td><a href="/counts/sport/BKB">3619</a></td>
+</tr>
+<tr>
+<th>NOCs</th>
+<td>67</td>
+</tr>
+<tr>
+<th>Competitions held</th>
+<td>
+32
+(<a href="/venues/sports/BKB">Venues</a>)
+</td>
+</tr>
+<tr>
+<th>Distinct events</th>
+<td>3</td>
+</tr>
+</table>
+<h2>
+Description
+
+</h2>
+<div class='description'>
+<p>Basketball is one of the few sports for which the precise origin is known. The game was invented in 1891 by James W. Naismith, an instructor at the International YMCA Training School in Springfield, Massachusetts, now Springfield College. The game was originally played with peach baskets and an attendant on a ladder retrieved the ball after a made basket. Naismith formulated 13 rules of the game, of which 12 still form the basics of the modern game.</p>
+
+<p>In 1936, basketball made its first appearance as a medal sport at the Olympics. In 1976, women’s basketball was added to the program. The United States has dominated international basketball. The USA won all the Olympic titles until 1972 when it was upset by the Soviet Union in a very controversial game. The Soviet women were originally the top team on the female side, but the USA women have surpassed them, winning the gold medal in 1984, 1988, 1996, 2000, 2004, 2008, 2012, and 2016.</p>
+
+<p>Today, basketball has become one of the most popular sports in the world. US college basketball is very popular in the United States and the National Basketball Association (NBA) has engendered international interest. In addition, numerous international leagues have added to the growth of the sport. In 1992, for the first time, the United States was allowed to use professional players from the NBA. This NBA All-Star Team, dubbed “The Dream Team” by the world’s media, is certainly the greatest basketball team ever assembled and dominated the 1992 Olympic tournament.</p>
+
+<p>An NBA All-Star team also represented the United States in 1996 and 2000, winning those gold medals as well, though the margin between the NBA and the rest of the world was shrinking, and in 2004, despite using NBA players, the United States men won only a bronze medal. However, in 2008, the United States team again won the gold medal, after instituting a program to restore the USA to international prominence under the tutelage of Duke coach Mike Krzyzewski, and they repeated in 2012 and 2016, with Krzyzewski at the helm.</p>
+
+<p>Basketball is governed worldwide by the Fédération internationale de basket-ball (FIBA), formerly known as the Fédération Internationale de Basket-ball Amateur, that was founded on 18 June 1932 in Geneva, Switzerland, with eight founding members: Argentina, Czechoslovakia, Greece, Italy, Latvia, Portugal, Romania, and Switzerland. As a measure of its popularity, FIBA currently (2020) has 213 member nations.</p>
+
+<p>Five women, <a href="/athletes/5336">Lisa Leslie</a>, <a href="/athletes/103092">Sue Bird</a>, <a href="/athletes/103097">Diana Taurasi</a>, <a href="/athletes/103095">Tamika Catchings</a>, and <a href="/athletes/5226">Teresa Edwards</a>, have won four Olympic basketball gold medals, with Edwards adding a bronze to make her the only Olympian with five basketball medals. Two men have won four medals – Soviets <a href="/athletes/5708">Sergey Belov</a> and <a href="/athletes/7318">Gennady Volnov</a>, while among men, only <a href="/athletes/108542">Carmelo Anthony</a> has won three gold medals.</p>
+
+</div>
+
+<h2>All-time medal table</h2>
+<h3>Olympic Games</h3>
+<table class='table table-striped'>
+<thead>
+<tr>
+<th colspan='2'>NOC</th>
+<th>Gold</th>
+<th>Silver</th>
+<th>Bronze</th>
+<th>Total</th>
+</tr>
+</thead>
+<tr>
+<td><a href="/countries/USA">United States</a></td>
+<td><a href="/countries/USA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/USA.png" /> USA</a></td>
+<td>25</td>
+<td>2</td>
+<td>3</td>
+<td>30</td>
+</tr>
+<tr>
+<td><a href="/countries/URS">Soviet Union</a></td>
+<td><a href="/countries/URS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/URS.png" /> URS</a></td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>12</td>
+</tr>
+<tr>
+<td><a href="/countries/YUG">Yugoslavia</a></td>
+<td><a href="/countries/YUG"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/YUG.png" /> YUG</a></td>
+<td>1</td>
+<td>4</td>
+<td>2</td>
+<td>7</td>
+</tr>
+<tr>
+<td><a href="/countries/ARG">Argentina</a></td>
+<td><a href="/countries/ARG"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ARG.png" /> ARG</a></td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/EUN">Unified Team</a></td>
+<td><a href="/countries/EUN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/EUN.png" /> EUN</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/FRA">France</a></td>
+<td><a href="/countries/FRA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/FRA.png" /> FRA</a></td>
+<td>0</td>
+<td>4</td>
+<td>1</td>
+<td>5</td>
+</tr>
+<tr>
+<td><a href="/countries/ESP">Spain</a></td>
+<td><a href="/countries/ESP"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ESP.png" /> ESP</a></td>
+<td>0</td>
+<td>4</td>
+<td>1</td>
+<td>5</td>
+</tr>
+<tr>
+<td><a href="/countries/AUS">Australia</a></td>
+<td><a href="/countries/AUS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/AUS.png" /> AUS</a></td>
+<td>0</td>
+<td>3</td>
+<td>3</td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="/countries/ITA">Italy</a></td>
+<td><a href="/countries/ITA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ITA.png" /> ITA</a></td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/BRA">Brazil</a></td>
+<td><a href="/countries/BRA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/BRA.png" /> BRA</a></td>
+<td>0</td>
+<td>1</td>
+<td>4</td>
+<td>5</td>
+</tr>
+<tr>
+<td><a href="/countries/BUL">Bulgaria</a></td>
+<td><a href="/countries/BUL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/BUL.png" /> BUL</a></td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/CHN">People&#39;s Republic of China</a></td>
+<td><a href="/countries/CHN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/CHN.png" /> CHN</a></td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/SRB">Serbia</a></td>
+<td><a href="/countries/SRB"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SRB.png" /> SRB</a></td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/CAN">Canada</a></td>
+<td><a href="/countries/CAN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/CAN.png" /> CAN</a></td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/CRO">Croatia</a></td>
+<td><a href="/countries/CRO"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/CRO.png" /> CRO</a></td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/JPN">Japan</a></td>
+<td><a href="/countries/JPN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/JPN.png" /> JPN</a></td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/KOR">Republic of Korea</a></td>
+<td><a href="/countries/KOR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KOR.png" /> KOR</a></td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/SCG">Serbia and Montenegro</a></td>
+<td><a href="/countries/SCG"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SCG.png" /> SCG</a></td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/LTU">Lithuania</a></td>
+<td><a href="/countries/LTU"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/LTU.png" /> LTU</a></td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="/countries/RUS">Russian Federation</a></td>
+<td><a href="/countries/RUS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/RUS.png" /> RUS</a></td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="/countries/URU">Uruguay</a></td>
+<td><a href="/countries/URU"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/URU.png" /> URU</a></td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/CUB">Cuba</a></td>
+<td><a href="/countries/CUB"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/CUB.png" /> CUB</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/MEX">Mexico</a></td>
+<td><a href="/countries/MEX"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MEX.png" /> MEX</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+</table>
+
+<h2>Most successful competitors</h2>
+<h3>Olympic Games</h3>
+<table class='table table-striped'>
+<thead>
+<tr>
+<th>Athlete</th>
+<th>Nat</th>
+<th>Gold</th>
+<th>Silver</th>
+<th>Bronze</th>
+<th>Total</th>
+</tr>
+</thead>
+<tr class='top'>
+<td><a href="/athletes/103092">Sue Bird</a></td>
+<td><a href="/countries/USA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/USA.png" /> USA</a></td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>5</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/103097">Diana Taurasi</a></td>
+<td><a href="/countries/USA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/USA.png" /> USA</a></td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>5</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/5226">Teresa Edwards</a></td>
+<td><a href="/countries/USA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/USA.png" /> USA</a></td>
+<td>4</td>
+<td>0</td>
+<td>1</td>
+<td>5</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/5336">Lisa Leslie</a></td>
+<td><a href="/countries/USA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/USA.png" /> USA</a></td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>4</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/103095">Tamika Catchings</a></td>
+<td><a href="/countries/USA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/USA.png" /> USA</a></td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>4</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/111846">Sylvia Fowles</a></td>
+<td><a href="/countries/USA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/USA.png" /> USA</a></td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>4</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/108542">Carmelo Anthony</a></td>
+<td><a href="/countries/USA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/USA.png" /> USA</a></td>
+<td>3</td>
+<td>0</td>
+<td>1</td>
+<td>4</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/5493">Dawn Staley</a></td>
+<td><a href="/countries/USA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/USA.png" /> USA</a></td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/5508">Sheryl Swoopes</a></td>
+<td><a href="/countries/USA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/USA.png" /> USA</a></td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/90093">Katie Smith</a></td>
+<td><a href="/countries/USA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/USA.png" /> USA</a></td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/111848">Seimone Augustus</a></td>
+<td><a href="/countries/USA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/USA.png" /> USA</a></td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/126091">Kevin Durant</a></td>
+<td><a href="/countries/USA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/USA.png" /> USA</a></td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/126712">Tina Charles</a></td>
+<td><a href="/countries/USA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/USA.png" /> USA</a></td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+</tr>
+</table>
+
+<h2>Event types</h2>
+<table class='table table-striped sortable'>
+<thead>
+<th>Name</th>
+<th>Gender</th>
+<th>Still contested?</th>
+<th>Times held?</th>
+</thead>
+<tbody>
+<tr valign='top'>
+<td><a href="/event_names/121">Basketball</a></td>
+<td>Men</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+<td>23</td>
+</tr>
+<tr valign='top'>
+<td><a href="/event_names/122">Basketball</a></td>
+<td>Women</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+<td>12</td>
+</tr>
+<tr valign='top'>
+<td><a href="/event_names/2385">Basketball</a></td>
+<td>Boys</td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+<td>4</td>
+</tr>
+</tbody>
+</table>
+
+
+</div>
+</body>
+<footer class='footer'>
+<br>
+<div class='panel panel-info'>
+<div class='panel-heading'>
+<h3 class='panel-title'>
+<span class='glyphicon glyphicon-info-sign'></span>
+Did you know?
+</h3>
+</div>
+<div class='panel-body'>
+<p>The only time in history that no bobsleigh events were held was in 1960. The organizers of the Games in Squaw Valley, California, thought construction of a run was too expensive.</p>
+
+
+</div>
+</div>
+<div class='container'>
+<p>
+<a href="/users/sign_in">Login</a>
+|
+<a href="/statistics/olympedia">Statistics</a>
+|
+<a href="/static/about">About</a>
+|
+<a href="/static/faq">FAQ</a>
+|
+<a href="/feedbacks/new">Feedback</a>
+</p>
+<p>
+&copy; <a href="/static/about">OlyMADMen</a> 2006 — 2022
+</p>
+</div>
+</footer>
+
+<script src="/assets/lightbox.min-40fdcc195c5982250c8901f2c160e15342941a311faf6372c04117c0d9c44bc7.js"></script>
+<script>
+  $('.footnote').tooltip();
+</script>
+</html>

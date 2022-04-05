@@ -1,0 +1,4661 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Olympedia – Medals by country</title>
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="56j2bvDNPNbzWlSkpNuyP2LOE+98+qhrHCUS/ljAY1swkLewqQPSIYPgJibxvMM0zjX1Ub8tdjuECAPODrsaxg==" />
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+<meta content='EN' http-equiv='content-language'>
+<meta content='width=device-width, initial-scale=1' name='viewport'>
+<link rel="stylesheet" media="all" href="/assets/bootstrap.min-460a43de22fd9534d595e5aea2715cb154560291c9c6401b526e31c86a5ce32d.css" />
+<link rel="stylesheet" media="all" href="/assets/bootstrap-sortable-363d232309d54b549fa85446295ef2b5d290e3f8a49f1a646247340be3705ef9.css" />
+<link rel="stylesheet" media="all" href="/assets/jquery-ui-1.11.4.min-359ba1b9eb679ad05fb4c8fda710ee4c0239354f1ba635200b6065638295d646.css" />
+<link rel="stylesheet" media="screen" href="/assets/lightbox-e29689e123fc27505d2b9d919f43ffcb6fade539cb4670f21c35aa07848105e7.css" />
+<link rel="stylesheet" media="all" href="/assets/application-dabe0afec76f540b074f0f63c688a540786e3cc47508864701ac4bfcd2198724.css" data-turbolinks-track="true" />
+<link rel="stylesheet" media="screen" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.4.3/css/ol.css" />
+<script src="/assets/application-e1a1e4d6a20243befcce18acb216d9b0e6082405323ce1f5dfbf47c401111aa1.js" data-turbolinks-track="true"></script>
+<script src="/assets/jquery-1.11.2.min-cc83565074b3fa7f2283f7f4d56b90ad171ede87008448ed5d2e91c50575bed1.js"></script>
+<script src="/assets/jquery-ui-1.11.4.min-1f37fd37d8db0404488ac8f6505560e48d1364ef1c81e384ac695e143049ab0f.js"></script>
+<script src="/assets/bootstrap.min-81d6fe3a991358b79b083d075ca476712c9f11c5c890047486176bde863c499e.js"></script>
+<script src="/assets/moment-ded3cbd5de5ae075c44be4149abb630c658e8789f17ccfb162e6bb7664e8bec9.js"></script>
+<script src="/assets/bootstrap-sortable-cd614fbc8d2030bc050ce63652169ed36d970209a94062fa218c631f2c04dc9f.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.4.3/build/ol.js"></script>
+
+</head>
+
+<body>
+<div class='navbar navbar-default navbar-fixed-top' role='navigation'>
+<div class='navbar-header'>
+<div class='button navbar-toggle' data-target='.navbar-ex1-collapse' data-toggle='collapse' type='button'>
+<span class='sr-only'>Toggle navigation</span>
+<span class='icon-bar'>
+<span class='icon-bar'>
+<span class='icon-bar'></span>
+</span>
+</span>
+</div>
+<a class='navbar-brand' href='/'>Olympedia</a>
+</div>
+<div class='collapse navbar-collapse navbar-ex1-collapse'>
+<ul class='nav navbar-nav'>
+<li class='dropdown'>
+<a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+Athletes
+<b class='caret'></b>
+</a>
+<ul class='dropdown-menu'>
+<li><a href="/athletes/advanced_search">Advanced search</a></li>
+<li><a href="/horses">Horse search</a></li>
+<li><a href="/family_relations">Related Olympians</a></li>
+<li><a href="/counts">Counts</a></li>
+<li><a href="/athletes/doubles">Doubles</a></li>
+<li><a href="/athletes/lists">Lists</a></li>
+<li class='divider'></li>
+<li><a href="/athletes">Athletes</a></li>
+</ul>
+</li>
+
+<li class='dropdown'>
+<a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+Countries
+<b class='caret'></b>
+</a>
+<ul class='dropdown-menu'>
+<li><a href="/countries/head_to_head">Head-to-head</a></li>
+<li><a href="/countries/best_results">Best results</a></li>
+<li><a href="/countries/comparison">Results comparison</a></li>
+<li class='divider'></li>
+<li><a href="/countries">Countries</a></li>
+</ul>
+</li>
+
+<li class='dropdown'>
+<a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+Games
+<b class='caret'></b>
+</a>
+<ul class='dropdown-menu'>
+<li><a href="/editions">Games</a></li>
+<li><a href="/editions/medals">Medals</a></li>
+<li><a href="/editions/results">Results</a></li>
+<li><a href="/ceremonies">Opening ceremony</a></li>
+<li><a href="/venues/menu">Venues</a></li>
+</ul>
+</li>
+
+<li class='dropdown'>
+<a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+Sports
+<b class='caret'></b>
+</a>
+<ul class='dropdown-menu'>
+<li><a href="/sports">Disciplines &amp; Sports</a></li>
+<li><a href="/event_names">Events</a></li>
+</ul>
+</li>
+
+<li class='dropdown'>
+<a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+IOC
+<b class='caret'></b>
+</a>
+<ul class='dropdown-menu'>
+<li><a href="/organizations">Organizations</a></li>
+<li><a href="/definitions">Definitions</a></li>
+<li><a href="/meetings">Meetings</a></li>
+<li><a href="/ioc/host_cities">Host city selection</a></li>
+</ul>
+</li>
+
+<li class='dropdown'>
+<a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+Statistics
+<b class='caret'></b>
+</a>
+<ul class='dropdown-menu'>
+<li></li>
+<li><a href="/statistics/medal/country">Medals by country</a></li>
+<li><a href="/statistics/medal/athlete">Medals by athlete</a></li>
+<li><a href="/statistics/medal_table">Medal tables</a></li>
+<li><a href="/statistics/participation">Participations</a></li>
+<li><a href="/statistics/age">Age records</a></li>
+<li><a href="/lists">Lists</a></li>
+<li><a href="/today">Today</a></li>
+<li></li>
+<li class='divider'></li>
+<li><a href="/statistics">Statistics</a></li>
+</ul>
+</li>
+
+
+
+
+<li><a href="/feedbacks/new">Feedback</a></li>
+<form class="navbar-form navbar-left" role="search" action="/athletes/quick_search" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="1D2fxHbw29dvTQam7OvPLO3KFi0Sw18vP+TKYv7jLznL4fisbGmYExXlpmeYpXA/HNM6Gf+oA/VCr7dyXAFxDg==" />
+<div class='form-group'>
+<input type="text" name="query" id="query" class="form-control" placeholder="Athlete search" />
+</div>
+<input type="submit" name="commit" value="Go" class="btn btn-default" data-disable-with="Go" />
+</form>
+
+
+</ul>
+</div>
+</div>
+<div class='container'>
+<ol class='breadcrumb'>
+<li>
+<a href='/'>Home</a>
+</li>
+<li><a href="/statistics">Statistics</a></li><li class="active">Medals by country</li>
+</ol>
+<h1>Medals by country</h1>
+<form class='form-inline' id='filter'>
+<select name="sport_id" id="sport_select" class="form-control"><option value="">By discipline</option>
+<option value="AAR">AAR - Ancient Art Competitions</option>
+<option value="AAT">AAT - Ancient Athletics</option>
+<option value="ACB">ACB - Ancient Combative Sports</option>
+<option value="AEQ">AEQ - Ancient Equestrianism</option>
+<option value="AER">AER - Aeronautics</option>
+<option value="AFB">AFB - American Football</option>
+<option value="ALP">ALP - Alpine Skiing</option>
+<option value="APN">APN - Alpinism</option>
+<option value="ARC">ARC - Archery</option>
+<option value="ARF">ARF - Australian Rules Football</option>
+<option value="ART">ART - Art Competitions</option>
+<option value="ATH">ATH - Athletics</option>
+<option value="AUT">AUT - Automobile Racing</option>
+<option value="BDM">BDM - Badminton</option>
+<option value="BDY">BDY - Bandy</option>
+<option value="BHA">BHA - Beach Handball</option>
+<option value="BK3">BK3 - 3x3 Basketball</option>
+<option value="BKB">BKB - Basketball</option>
+<option value="BLN">BLN - Ballooning</option>
+<option value="BLS">BLS - Boules</option>
+<option value="BMF">BMF - Cycling BMX Freestyle</option>
+<option value="BMX">BMX - Cycling BMX Racing</option>
+<option value="BOB">BOB - Bobsleigh</option>
+<option value="BOX">BOX - Boxing</option>
+<option value="BPO">BPO - Bicycle Polo</option>
+<option value="BRK">BRK - Breaking</option>
+<option value="BSB">BSB - Baseball</option>
+<option value="BTH">BTH - Biathlon</option>
+<option value="BWL">BWL - Bowling</option>
+<option value="CCS">CCS - Cross Country Skiing</option>
+<option value="CLB">CLB - Sport Climbing</option>
+<option value="CMA">CMA - Canoe Marathon</option>
+<option value="CNN">CNN - Canne De Combat</option>
+<option value="CRD">CRD - Cycling Road</option>
+<option value="CRI">CRI - Cricket</option>
+<option value="CRO">CRO - Croquet</option>
+<option value="CSL">CSL - Canoe Slalom</option>
+<option value="CSP">CSP - Canoe Sprint</option>
+<option value="CTR">CTR - Cycling Track</option>
+<option value="CUR">CUR - Curling</option>
+<option value="DIV">DIV - Diving</option>
+<option value="DSR">DSR - Dogsled Racing</option>
+<option value="EDR">EDR - Equestrian Dressage</option>
+<option value="EDV">EDV - Equestrian Driving</option>
+<option value="EJP">EJP - Equestrian Jumping</option>
+<option value="EVA">EVA - Equestrian Vaulting</option>
+<option value="EVE">EVE - Equestrian Eventing</option>
+<option value="FBL">FBL - Football</option>
+<option value="FEN">FEN - Fencing</option>
+<option value="FFG">FFG - Firefighting</option>
+<option value="FRS">FRS - Freestyle Skiing</option>
+<option value="FSH">FSH - Fishing</option>
+<option value="FSK">FSK - Figure Skating</option>
+<option value="FTS">FTS - Futsal</option>
+<option value="GAC">GAC - Acrobatic Gymnastics</option>
+<option value="GAR">GAR - Artistic Gymnastics</option>
+<option value="GFB">GFB - Gaelic Football</option>
+<option value="GLD">GLD - Gliding</option>
+<option value="GLF">GLF - Golf</option>
+<option value="GLM">GLM - Glíma</option>
+<option value="GRY">GRY - Rhythmic Gymnastics</option>
+<option value="GTR">GTR - Trampolining</option>
+<option value="GTS">GTS - Gotland Sports</option>
+<option value="HBL">HBL - Handball</option>
+<option value="HK5">HK5 - Hockey 5s</option>
+<option value="HOC">HOC - Hockey</option>
+<option value="HUR">HUR - Hurling</option>
+<option value="IH3">IH3 - 3-on-3 Ice Hockey</option>
+<option value="IHO">IHO - Ice Hockey</option>
+<option value="ISS">ISS - Ice Stock Sport</option>
+<option value="JDP">JDP - Jeu De Paume</option>
+<option value="JUD">JUD - Judo</option>
+<option value="KEN">KEN - Kendo</option>
+<option value="KFB">KFB - Korfball</option>
+<option value="KTE">KTE - Karate</option>
+<option value="KTS">KTS - Kaatsen</option>
+<option value="KYU">KYU - Kyudo</option>
+<option value="LAX">LAX - Lacrosse</option>
+<option value="LUG">LUG - Luge</option>
+<option value="MBO">MBO - Motorboating</option>
+<option value="MCS">MCS - Motorcycle Sports</option>
+<option value="MIX">MIX - Mixed Sports</option>
+<option value="MPN">MPN - Modern Pentathlon</option>
+<option value="MSP">MSP - Military Ski Patrol</option>
+<option value="MTB">MTB - Cycling Mountain Bike</option>
+<option value="NCB">NCB - Nordic Combined</option>
+<option value="OWS">OWS - Marathon Swimming</option>
+<option value="PEL">PEL - Basque pelota</option>
+<option value="POL">POL - Polo</option>
+<option value="PSP">PSP - Pesäpallo</option>
+<option value="RAQ">RAQ - Racquets</option>
+<option value="RGB">RGB - Rugby</option>
+<option value="RHK">RHK - Roller Hockey</option>
+<option value="ROL">ROL - Roller Skating</option>
+<option value="ROQ">ROQ - Roque</option>
+<option value="ROW">ROW - Rowing</option>
+<option value="RUG">RUG - Rugby Sevens</option>
+<option value="SAL">SAL - Sailing</option>
+<option value="SAV">SAV - Savate</option>
+<option value="SBD">SBD - Snowboarding</option>
+<option value="SHO">SHO - Shooting</option>
+<option value="SJP">SJP - Ski Jumping</option>
+<option value="SJR">SJR - Skijoring</option>
+<option value="SKB">SKB - Skateboarding</option>
+<option value="SKN">SKN - Skeleton</option>
+<option value="SMT">SMT - Ski Mountaineering</option>
+<option value="SOF">SOF - Softball</option>
+<option value="SPS">SPS - Speed Skiing</option>
+<option value="SQU">SQU - Squash</option>
+<option value="SRF">SRF - Surfing</option>
+<option value="SSK">SSK - Speed Skating</option>
+<option value="STK">STK - Short Track Speed Skating</option>
+<option value="SUM">SUM - Sumo</option>
+<option value="SWA">SWA - Artistic Swimming</option>
+<option value="SWM">SWM - Swimming</option>
+<option value="TEN">TEN - Tennis</option>
+<option value="TKW">TKW - Taekwondo</option>
+<option value="TOW">TOW - Tug-Of-War</option>
+<option value="TRI">TRI - Triathlon</option>
+<option value="TTE">TTE - Table Tennis</option>
+<option value="UNK">UNK - Unknown Sport</option>
+<option value="VBV">VBV - Beach Volleyball</option>
+<option value="VVO">VVO - Volleyball</option>
+<option value="WLF">WLF - Weightlifting</option>
+<option value="WPE">WPE - Winter Pentathlon</option>
+<option value="WPO">WPO - Water Polo</option>
+<option value="WRE">WRE - Wrestling</option>
+<option value="WSK">WSK - Waterskiing</option>
+<option value="WUS">WUS - Wushu</option></select>
+<select name="sport_group_id" id="sport_select" class="form-control"><option value="">By sport</option>
+<option value="AC">AC - Art Competitions</option>
+<option value="AF">AF - Australian Rules Football</option>
+<option value="AN">AN - Ancient Sports</option>
+<option value="AQ">AQ - Aquatics</option>
+<option value="AR">AR - Archery</option>
+<option value="AS">AS - Air Sports</option>
+<option value="AT">AT - Athletics</option>
+<option value="AU">AU - Automobile Sports</option>
+<option value="BD">BD - Badminton</option>
+<option value="BK">BK - Basketball</option>
+<option value="BO">BO - Boules</option>
+<option value="BS">BS - Bobsleigh</option>
+<option value="BT">BT - Biathlon</option>
+<option value="BW">BW - Bowling</option>
+<option value="BX">BX - Boxing</option>
+<option value="BY">BY - Bandy</option>
+<option value="CA">CA - Canoeing</option>
+<option value="CI">CI - Cricket</option>
+<option value="CL">CL - Sport Climbing</option>
+<option value="CO">CO - Croquet</option>
+<option value="CU">CU - Curling</option>
+<option value="CY">CY - Cycling</option>
+<option value="DA">DA - Dance</option>
+<option value="DS">DS - Dogsled Racing</option>
+<option value="EQ">EQ - Equestrian</option>
+<option value="FB">FB - Football</option>
+<option value="FE">FE - Fencing</option>
+<option value="FF">FF - Firefighting</option>
+<option value="FS">FS - Fishing</option>
+<option value="GL">GL - Glíma</option>
+<option value="GO">GO - Golf</option>
+<option value="GS">GS - Gaelic Sports</option>
+<option value="GT">GT - Gotland Sports</option>
+<option value="GY">GY - Gymnastics</option>
+<option value="HB">HB - Handball</option>
+<option value="HO">HO - Hockey</option>
+<option value="IH">IH - Ice Hockey</option>
+<option value="IS">IS - Ice Stock Sport</option>
+<option value="JP">JP - Jeu de Paume</option>
+<option value="JU">JU - Judo</option>
+<option value="KB">KB - Korfball</option>
+<option value="KE">KE - Kendo</option>
+<option value="KS">KS - Kaatsen</option>
+<option value="KT">KT - Karate</option>
+<option value="KY">KY - Kyudo</option>
+<option value="LG">LG - Luge</option>
+<option value="LX">LX - Lacrosse</option>
+<option value="MB">MB - Motorboating</option>
+<option value="MC">MC - Motorcycle Sports</option>
+<option value="MP">MP - Modern Pentathlon</option>
+<option value="MT">MT - Mountaineering and Climbing</option>
+<option value="PB">PB - Basque pelota</option>
+<option value="PO">PO - Polo</option>
+<option value="PS">PS - Pesäpallo</option>
+<option value="RC">RC - Racquets</option>
+<option value="RO">RO - Rowing</option>
+<option value="RQ">RQ - Roque</option>
+<option value="RS">RS - Roller Sports</option>
+<option value="RU">RU - Rugby</option>
+<option value="SA">SA - Sailing</option>
+<option value="SB">SB - Baseball/Softball</option>
+<option value="SF">SF - Surfing</option>
+<option value="SH">SH - Shooting</option>
+<option value="SI">SI - Skiing</option>
+<option value="SK">SK - Skating</option>
+<option value="SM">SM - Ski Mountaineering</option>
+<option value="SQ">SQ - Squash</option>
+<option value="SU">SU - Sumo</option>
+<option value="SV">SV - Savate</option>
+<option value="TE">TE - Tennis</option>
+<option value="TK">TK - Taekwondo</option>
+<option value="TR">TR - Triathlon</option>
+<option value="TT">TT - Table Tennis</option>
+<option value="TW">TW - Tug-Of-War</option>
+<option value="UF">UF - American Football</option>
+<option value="VB">VB - Volleyball</option>
+<option value="WL">WL - Weightlifting</option>
+<option value="WP">WP - Winter Pentathlon</option>
+<option value="WR">WR - Wrestling</option>
+<option value="WU">WU - Wushu</option>
+<option value="WW">WW - Waterskiing and Wakeboarding</option>
+<option value="XX">XX - Mixed Sports</option></select>
+<select name="edition_id" id="edition_select" class="form-control"><option value="">By Games</option><optgroup label="Olympic Games (Summer)"><option value="1">1896</option>
+<option value="2">1900</option>
+<option value="3">1904</option>
+<option value="5">1908</option>
+<option value="6">1912</option>
+<option value="7">1920</option>
+<option value="8">1924</option>
+<option value="9">1928</option>
+<option value="10">1932</option>
+<option value="11">1936</option>
+<option value="12">1948</option>
+<option value="13">1952</option>
+<option value="14">1956</option>
+<option value="15">1960</option>
+<option value="16">1964</option>
+<option value="17">1968</option>
+<option value="18">1972</option>
+<option value="19">1976</option>
+<option value="20">1980</option>
+<option value="21">1984</option>
+<option value="22">1988</option>
+<option value="23">1992</option>
+<option value="24">1996</option>
+<option value="25">2000</option>
+<option value="26">2004</option>
+<option value="53">2008</option>
+<option value="54">2012</option>
+<option value="59">2016</option>
+<option value="61">2020</option></optgroup><optgroup label="Olympic Games (Winter)"><option value="29">1924</option>
+<option value="30">1928</option>
+<option value="31">1932</option>
+<option value="32">1936</option>
+<option value="33">1948</option>
+<option value="34">1952</option>
+<option value="35">1956</option>
+<option value="36">1960</option>
+<option value="37">1964</option>
+<option value="38">1968</option>
+<option value="39">1972</option>
+<option value="40">1976</option>
+<option value="41">1980</option>
+<option value="42">1984</option>
+<option value="43">1988</option>
+<option value="44">1992</option>
+<option value="45">1994</option>
+<option value="46">1998</option>
+<option value="47">2002</option>
+<option value="49">2006</option>
+<option value="57">2010</option>
+<option value="58">2014</option>
+<option value="60">2018</option>
+<option value="62">2022</option></optgroup><optgroup label="Olympic Games (Equestrian)"><option value="48">1956</option></optgroup><optgroup label="Intercalated Games (Summer)"><option value="4">1906</option></optgroup><optgroup label="Youth Olympic Games (Summer)"><option value="65">2010</option>
+<option value="67">2014</option>
+<option value="69">2018</option></optgroup><optgroup label="Youth Olympic Games (Winter)"><option value="66">2012</option>
+<option value="68">2016</option>
+<option value="70">2020</option></optgroup></select>
+<select name="competition_type_id" id="competition_type_id" class="form-control"><option value="">Any type</option>
+<option selected="selected" value="1">Olympic Games</option>
+<option value="2">Intercalated Games</option>
+<option value="3">Youth Olympic Games</option>
+<option value="4">Forerunners To The Olympic Games</option>
+<option value="5">Ancient Olympic Games</option></select>
+<select name="season_id" id="season_id" class="form-control"><option value="">By season</option>
+<option value="1">Summer</option>
+<option value="2">Winter</option>
+<option value="3">Equestrian</option></select>
+<select name="athlete_gender" id="athlete_gender" class="form-control"><option value="">By athlete gender</option>
+<option value="male">male</option>
+<option value="female">female</option></select>
+<select name="gender" id="gender" class="form-control"><option value="">By event gender</option>
+<option value="m">male</option>
+<option value="w">female</option>
+<option value="o">open</option>
+<option value="x">mixed</option></select>
+<select name="event_name_id" id="event_name_select" class="form-control"><option value=>By event</option><optgroup label="3-on-3 Ice Hockey"><option value="2315">3-on-3 Ice Hockey, Boys</option>
+<option value="2316">3-on-3 Ice Hockey, Girls</option></optgroup><optgroup label="3x3 Basketball"><option value="2543">3x3 Basketball, Men</option>
+<option value="2544">3x3 Basketball, Women</option>
+<option value="2202">3x3 Basketball, Boys</option>
+<option value="2285">Dunk Contest, Boys</option>
+<option value="2203">3x3 Basketball, Girls</option>
+<option value="2286">Shoot-out Contest, Girls</option></optgroup><optgroup label="Acrobatic Gymnastics"><option value="2462">Pairs, Mixed Youth</option></optgroup><optgroup label="Aeronautics"><option value="710">Aeronautics, Open</option></optgroup><optgroup label="Alpine Skiing"><option value="29">Downhill, Men</option>
+<option value="30">Super G, Men</option>
+<option value="31">Giant Slalom, Men</option>
+<option value="32">Slalom, Men</option>
+<option value="33">Combined, Men</option>
+<option value="34">Downhill, Women</option>
+<option value="35">Super G, Women</option>
+<option value="36">Giant Slalom, Women</option>
+<option value="37">Slalom, Women</option>
+<option value="38">Combined, Women</option>
+<option value="1030">Team, Mixed</option>
+<option value="2007">Super G, Boys</option>
+<option value="2004">Giant Slalom, Boys</option>
+<option value="2005">Slalom, Boys</option>
+<option value="2006">Combined, Boys</option>
+<option value="2003">Super G, Girls</option>
+<option value="2000">Giant Slalom, Girls</option>
+<option value="2001">Slalom, Girls</option>
+<option value="2002">Combined, Girls</option>
+<option value="2008">Team, Mixed Youth</option>
+<option value="755">Giant Slalom, LW2, Men</option>
+<option value="752">Giant Slalom, LW4, Men</option>
+<option value="754">Giant Slalom, LW5/7, Men</option>
+<option value="753">Giant Slalom, LW6/8, Men</option>
+<option value="756">Giant Slalom, LW2, Women</option></optgroup><optgroup label="Alpinism"><option value="709">Alpinism, Open</option></optgroup><optgroup label="American Football"><option value="766">American Football, Men</option></optgroup><optgroup label="Ancient Art Competitions"><option value="2523">Competition for Heralds, Men</option>
+<option value="2524">Competition for Trumpeters, Men</option>
+<option value="2525">Competition for Tragedy, Men</option>
+<option value="2526">Rhetoric Competition, Men</option>
+<option value="2527">Competition for Lyre-Playing, Men</option>
+<option value="2528">Poetry Competition, Men</option>
+<option value="2529">Aulos (Wind Instrument) Competition, Men</option>
+<option value="2530">Comedy Competition, Men</option>
+<option value="2531">Competition for Flute Playing, Men</option></optgroup><optgroup label="Ancient Athletics"><option value="2538">Unknown Event, Men</option>
+<option value="2494">Stadion, Men</option>
+<option value="2495">Diaulos, Men</option>
+<option value="2496">Race in Armor (Hoplite Race), Men</option>
+<option value="2497">Dolikhos, Men</option>
+<option value="2498">Foot Race, Men</option>
+<option value="2499">Pentathlon, Men</option>
+<option value="2500">Special Event, Men</option>
+<option value="2501">Stadion / Diaulos, Men</option>
+<option value="2502">Diaulos or Race in Armour, Men</option>
+<option value="2532">Stadion, Boys</option>
+<option value="2541">Unknown Event, Boys</option>
+<option value="2533">Pentathlon, Boys</option></optgroup><optgroup label="Ancient Combative Sports"><option value="2503">Boxing, Men</option>
+<option value="2540">Unknown Event, Men</option>
+<option value="2504">Pankration, Men</option>
+<option value="2505">Wrestling, Men</option>
+<option value="2506">Wrestling or Pankration, Men</option>
+<option value="2534">Boxing, Boys</option>
+<option value="2535">Wrestling, Boys</option>
+<option value="2536">Pankration, Boys</option></optgroup><optgroup label="Ancient Equestrianism"><option value="2507">Tethrippon, Men</option>
+<option value="2539">Unknown Event, Men</option>
+<option value="2508">Synoris, Men</option>
+<option value="2509">Horse Race (Keles), Men</option>
+<option value="2510">Race for Mares (Kalpe), Men</option>
+<option value="2511">Apene (Mule-Cart Race), Men</option>
+<option value="2512">Foals&#39; Tethrippon, Men</option>
+<option value="2513">Foals&#39; Synoris, Men</option>
+<option value="2514">Foals&#39; Race, Men</option>
+<option value="2515">Colts&#39; Tethrippon, Men</option>
+<option value="2516">Colts&#39; Synoris, Men</option>
+<option value="2517">Chariot Race, Men</option>
+<option value="2518">Chariot Race for 10 Horses, Men</option>
+<option value="2519">Chariot Race for Foals, Men</option>
+<option value="2520">Tethrippon or Synoris for Foals, Men</option>
+<option value="2522">Unknown Event for Foals, Men</option></optgroup><optgroup label="Archery"><option value="1">Individual, Men</option>
+<option value="2">Team, Men</option>
+<option value="25">Individual, Women</option>
+<option value="26">Team, Women</option>
+<option value="2563">Team, Mixed</option>
+<option value="2079">Individual, Boys</option>
+<option value="2080">Individual, Girls</option>
+<option value="2081">Team, Mixed Youth</option>
+<option value="3">Target Archery, 28 metres, Individual, Men</option>
+<option value="4">Target Archery, 33 metres, Individual, Men</option>
+<option value="5">Target Archery, 50 metres, Individual, Men</option>
+<option value="6">Target Archery, 28 metres, Team, Men</option>
+<option value="7">Target Archery, 33 metres, Team, Men</option>
+<option value="8">Target Archery, 50 metres, Team, Men</option>
+<option value="9">Pole Archery, Small Birds, Individual, Men</option>
+<option value="10">Pole Archery, Large Birds, Individual, Men</option>
+<option value="11">Pole Archery, Small Birds, Team, Men</option>
+<option value="12">Pole Archery, Large Birds, Team, Men</option>
+<option value="13">Au Chapelet, 33 metres, Men</option>
+<option value="14">Au Chapelet, 50 metres, Men</option>
+<option value="15">Au Cordon Doré, 33 metres, Men</option>
+<option value="16">Au Cordon Doré, 50 metres, Men</option>
+<option value="17">Sur La Perche À La Herse, Men</option>
+<option value="18">Sur La Perche À La Pyramide, Men</option>
+<option value="19">Championnat Du Monde, Men</option>
+<option value="20">Double American Round, Men</option>
+<option value="21">Double York Round, Men</option>
+<option value="22">Continental Style, Men</option>
+<option value="23">Team Round, Men</option>
+<option value="24">Unknown Event, Men</option>
+<option value="852">Au Chapelet - 33 metres, Team, Men</option>
+<option value="853">Au Chapelet - 50 metres, Team, Men</option>
+<option value="854">Au Cordon Doré - 33 metres, Team, Men</option>
+<option value="855">Au Cordon Doré - 50 metres, Team, Men</option>
+<option value="856">French Championship, Individual, Men</option>
+<option value="858">French Championship, Team, Men</option>
+<option value="859">Crossbows, Large Arrows - 35 metres, Individual, Men</option>
+<option value="860">Crossbows, Large Arrows - 35 metres, Team, Men</option>
+<option value="861">Crossbows, Arrows - 28 metres, Individual, Men</option>
+<option value="862">Crossbows, Arrows - 28 metres, Team, Men</option>
+<option value="863">Crossbows, Small Arrows - 20 metres, Individual, Men</option>
+<option value="857">Crossbows, French Championship, Men</option>
+<option value="2329">Flight Shooting, Men</option>
+<option value="27">Double Columbia Round, Women</option>
+<option value="28">Double National Round, Women</option>
+<option value="1000">Team Round, Women</option>
+<option value="2330">Flight Shooting, Women</option></optgroup><optgroup label="Art Competitions"><option value="2421">Drama Competition, Men</option>
+<option value="2425">Poetry Competition, Men</option>
+<option value="2423">Music, Compositions, Men</option>
+<option value="2424">Music, Groups of Musicians, Men</option>
+<option value="2422">Intellectual Competition, Men</option>
+<option value="711">Architecture, Open</option>
+<option value="712">Architecture, Designs For Town Planning, Open</option>
+<option value="713">Architecture, Architectural Designs, Open</option>
+<option value="714">Architecture, Further Entries, Open</option>
+<option value="715">Literature, Open</option>
+<option value="716">Literature, Dramatic Works, Open</option>
+<option value="717">Literature, Epic Works, Open</option>
+<option value="718">Literature, Lyric Works, Open</option>
+<option value="719">Literature, Unknown Event, Open</option>
+<option value="720">Music, Open</option>
+<option value="721">Music, Compositions For Orchestra, Open</option>
+<option value="722">Music, Compositions For Solo Or Chorus, Open</option>
+<option value="723">Music, Instrumental And Chamber, Open</option>
+<option value="724">Music, Vocals, Open</option>
+<option value="725">Painting, Open</option>
+<option value="1022">Music, Unknown Event, Open</option>
+<option value="726">Painting, Drawings And Water Colors, Open</option>
+<option value="728">Painting, Graphic Arts, Open</option>
+<option value="737">Painting, Paintings, Open</option>
+<option value="729">Painting, Unknown Event, Open</option>
+<option value="1021">Painting, Applied Arts, Open</option>
+<option value="730">Sculpturing, Open</option>
+<option value="731">Sculpturing, Medals, Open</option>
+<option value="732">Sculpturing, Medals And Plaques, Open</option>
+<option value="733">Sculpturing, Medals And Reliefs, Open</option>
+<option value="734">Sculpturing, Reliefs, Open</option>
+<option value="735">Sculpturing, Statues, Open</option>
+<option value="736">Sculpturing, Unknown Event, Open</option>
+<option value="834">Unknown Event, Open</option></optgroup><optgroup label="Artistic Gymnastics"><option value="311">Individual All-Around, Men</option>
+<option value="312">Team All-Around, Men</option>
+<option value="315">Floor Exercise, Men</option>
+<option value="316">Horse Vault, Men</option>
+<option value="317">Parallel Bars, Men</option>
+<option value="319">Horizontal Bar, Men</option>
+<option value="321">Rings, Men</option>
+<option value="322">Pommelled Horse, Men</option>
+<option value="332">Individual All-Around, Women</option>
+<option value="333">Team All-Around, Women</option>
+<option value="328">Floor Exercise, Women</option>
+<option value="329">Horse Vault, Women</option>
+<option value="330">Uneven Bars, Women</option>
+<option value="331">Balance Beam, Women</option>
+<option value="2193">Individual All-Around, Boys</option>
+<option value="2187">Floor Exercise, Boys</option>
+<option value="2188">Horse Vault, Boys</option>
+<option value="2189">Parallel Bars, Boys</option>
+<option value="2190">Horizontal Bar, Boys</option>
+<option value="2191">Rings, Boys</option>
+<option value="2192">Pommelled Horse, Boys</option>
+<option value="2198">Individual All-Around, Girls</option>
+<option value="2194">Floor Exercise, Girls</option>
+<option value="2195">Horse Vault, Girls</option>
+<option value="2196">Uneven Bars, Girls</option>
+<option value="2197">Balance Beam, Girls</option>
+<option value="308">Individual All-Around, Field Sports, Men</option>
+<option value="309">Individual All-Around, 4 Events, Men</option>
+<option value="310">Individual All-Around, 5 Events, Men</option>
+<option value="326">Individual All-Around, Apparatus Work, Men</option>
+<option value="313">Team All-Around, Free System, Men</option>
+<option value="314">Team All-Around, Swedish System, Men</option>
+<option value="318">Parallel Bars, Teams, Men</option>
+<option value="320">Horizontal Bar, Teams, Men</option>
+<option value="323">Rope Climbing, Men</option>
+<option value="2436">Pole Climbing, Men</option>
+<option value="324">Club Swinging, Men</option>
+<option value="2435">Pole Climbing, Inclined Pole, Men</option>
+<option value="2434">Pole Climbing, Greasy Pole, Men</option>
+<option value="325">Tumbling, Men</option>
+<option value="327">Side Horse, Men</option>
+<option value="935">26th Federal Festival, Society and Association Contests, Simultaneous, Excellence Division, Men</option>
+<option value="936">26th Federal Festival, Society and Association Contests, Simultaneous, Superior Division, Men</option>
+<option value="937">26th Federal Festival, Society and Association Contests, Simultaneous, First Division, Men</option>
+<option value="938">26th Federal Festival, Society and Association Contests, Simultaneous, Second Division, Men</option>
+<option value="939">26th Federal Festival, Society and Association Contests, Simultaneous, Third Division, Men</option>
+<option value="940">26th Federal Festival, Society and Association Contests, Non-Simultaneous, Excellence Division, Men</option>
+<option value="941">26th Federal Festival, Society and Association Contests, Non-Simultaneous, Superior Division, Men</option>
+<option value="942">26th Federal Festival, Society and Association Contests, Non-Simultaneous, First Division, Men</option>
+<option value="943">26th Federal Festival, Society and Association Contests, Non-Simultaneous, Second Division, Men</option>
+<option value="944">26th Federal Festival, Society and Association Contests, Non-Simultaneous, Third Division, Men</option>
+<option value="945">26th Federal Festival, Society and Association Contests, Non-Simultaneous, Special Contest, Handsfree, Group 1, Men</option>
+<option value="946">26th Federal Festival, Society and Association Contests, Non-Simultaneous, Special Contest, Handsfree, Group A, Men</option>
+<option value="947">26th Federal Festival, Society and Association Contests, Non-Simultaneous, Apparatus, Group 1, Men</option>
+<option value="948">26th Federal Festival, Society and Association Contests, Non-Simultaneous, Boxing, Group 1, Men</option>
+<option value="949">26th Federal Festival, Society and Association Contests, Non-Simultaneous, Canne, Group 1, Men</option>
+<option value="950">26th Federal Festival, Society and Association Contests, Non-Simultaneous, Fencing, Group 1, Men</option>
+<option value="951">26th Federal Festival, Society and Association Contests, Non-Simultaneous, Military Exercises, Men</option>
+<option value="952">26th Federal Festival, Society and Association Contests, Non-Simultaneous, Pyramids without Apparatus, Group 1, Men</option>
+<option value="953">26th Federal Festival, Society and Association Contests, Non-Simultaneous, Pyramids with Apparatus, Group 1, Men</option>
+<option value="954">26th Federal Festival, Society and Association Contests, Non-Simultaneous, Ballet, Men</option>
+<option value="955">26th Federal Festival, Society and Association Contests, Non-Simultaneous, Tournament, Men</option>
+<option value="956">26th Federal Festival, Society and Association Contests, Non-Simultaneous, Statue Poses, Men</option>
+<option value="957">26th Federal Festival, Society and Association Contests, Non-Simultaneous, Special Event, Men</option>
+<option value="958">26th Federal Festival, Society and Association Contests, Non-Simultaneous, Racing Contest, Men</option>
+<option value="959">26th Federal Festival, Society and Association Contests, Non-Simultaneous, National Championships, Men</option>
+<option value="960">26th Federal Festival, Society and Association Contests, Non-Simultaneous, Olympic Championships, Individual, Men</option>
+<option value="961">26th Federal Festival, Society and Association Contests, Non-Simultaneous, Shooting Championships, Youth, Men</option>
+<option value="963">26th Federal Festival, Society and Association Contests, Non-Simultaneous, Shooting Championships, Honorary Members and Associates, Men</option>
+<option value="964">Festival for Societies of the Seine, Instructors, Men</option>
+<option value="965">Festival for Societies of the Seine, Advanced, Men</option>
+<option value="966">Festival for Societies of the Seine, Swimming, Team, Men</option>
+<option value="967">Festival for Societies of the Seine, Swimming, Individual, Men</option>
+<option value="968">Festival for Societies of the Seine, Gymnastics, Men</option>
+<option value="969">Festival for Societies of the Seine, Alternative Contest, Men</option>
+<option value="970">Festival for Societies of the Seine, Simultaneous Contest, Men</option>
+<option value="971">Festival for Societies of the Seine, Racing Contest, Men</option>
+<option value="972">Festival for Societies of the Seine, Handsfree, Men</option>
+<option value="973">Festival for Societies of the Seine, Apparatus, Men</option>
+<option value="974">Festival for Societies of the Seine, Wrestling, Men</option>
+<option value="975">Festival for Societies of the Seine, Boxing, Men</option>
+<option value="976">Festival for Societies of the Seine, Pyramids without Apparatus, Men</option>
+<option value="977">Festival for Societies of the Seine, Pyramids with Apparatus, Men</option>
+<option value="978">Festival for Societies of the Seine, Individual, Men</option>
+<option value="979">Festival for Societies of the Seine, Artistic, Individual, Men</option>
+<option value="980">Festival for Societies of the Seine, Olympic Competition, Individual, Men</option>
+<option value="981">Festival for Societies of the Seine, Gymnastics, Team, Men</option>
+<option value="982">Festival for Societies of the Seine, Simultaneous Contest (#2), Men</option>
+<option value="983">Festival for Societies of the Seine, Race, Men</option>
+<option value="984">Festival for Societies of the Seine, Individual (#2), Men</option>
+<option value="985">Festival for Societies of the Seine, Swimming, students, individuals, societies, Men</option>
+<option value="334">Team Portable Apparatus, Women</option>
+<option value="962">26th Federal Festival, Society and Association Contests, Non-Simultaneous, Shooting Championships, Honorary Members and Associates, Women</option>
+<option value="788">Swedish Gymnastics, Open</option></optgroup><optgroup label="Artistic Swimming"><option value="605">Duet, Women</option>
+<option value="606">Team, Women</option>
+<option value="604">Solo, Women</option></optgroup><optgroup label="Athletics"><option value="40">100 metres, Men</option>
+<option value="41">200 metres, Men</option>
+<option value="42">400 metres, Men</option>
+<option value="43">800 metres, Men</option>
+<option value="44">1,500 metres, Men</option>
+<option value="45">5,000 metres, Men</option>
+<option value="47">10,000 metres, Men</option>
+<option value="48">Marathon, Men</option>
+<option value="49">110 metres Hurdles, Men</option>
+<option value="51">400 metres Hurdles, Men</option>
+<option value="54">3,000 metres Steeplechase, Men</option>
+<option value="57">4 × 100 metres Relay, Men</option>
+<option value="58">4 × 400 metres Relay, Men</option>
+<option value="69">20 kilometres Walk, Men</option>
+<option value="70">50 kilometres Walk, Men</option>
+<option value="73">High Jump, Men</option>
+<option value="75">Pole Vault, Men</option>
+<option value="76">Long Jump, Men</option>
+<option value="78">Triple Jump, Men</option>
+<option value="80">Shot Put, Men</option>
+<option value="84">Discus Throw, Men</option>
+<option value="87">Hammer Throw, Men</option>
+<option value="88">Javelin Throw, Men</option>
+<option value="93">Decathlon, Men</option>
+<option value="95">100 metres, Women</option>
+<option value="96">200 metres, Women</option>
+<option value="97">400 metres, Women</option>
+<option value="98">800 metres, Women</option>
+<option value="99">1,500 metres, Women</option>
+<option value="101">5,000 metres, Women</option>
+<option value="102">10,000 metres, Women</option>
+<option value="103">Marathon, Women</option>
+<option value="105">100 metres Hurdles, Women</option>
+<option value="106">400 metres Hurdles, Women</option>
+<option value="700">3,000 metres Steeplechase, Women</option>
+<option value="107">4 × 100 metres Relay, Women</option>
+<option value="108">4 × 400 metres Relay, Women</option>
+<option value="110">20 kilometres Walk, Women</option>
+<option value="111">High Jump, Women</option>
+<option value="112">Pole Vault, Women</option>
+<option value="113">Long Jump, Women</option>
+<option value="114">Triple Jump, Women</option>
+<option value="115">Shot Put, Women</option>
+<option value="116">Discus Throw, Women</option>
+<option value="117">Hammer Throw, Women</option>
+<option value="118">Javelin Throw, Women</option>
+<option value="120">Heptathlon, Women</option>
+<option value="2572">4 × 400 metres Relay, Mixed</option>
+<option value="2211">100 metres, Boys</option>
+<option value="2212">200 metres, Boys</option>
+<option value="2213">400 metres, Boys</option>
+<option value="2280">800 metres, Boys</option>
+<option value="2214">1,000 metres, Boys</option>
+<option value="2281">1,500 metres, Boys</option>
+<option value="2215">3,000 metres, Boys</option>
+<option value="2216">110 metres Hurdles, Boys</option>
+<option value="2217">400 metres Hurdles, Boys</option>
+<option value="2218">2,000 metres Steeplechase, Boys</option>
+<option value="2219">Medley Relay, Boys</option>
+<option value="2220">10,000 metres Walk, Boys</option>
+<option value="2221">High Jump, Boys</option>
+<option value="2222">Pole Vault, Boys</option>
+<option value="2223">Long Jump, Boys</option>
+<option value="2224">Triple Jump, Boys</option>
+<option value="2225">Shot Put, Boys</option>
+<option value="2226">Discus Throw, Boys</option>
+<option value="2227">Hammer Throw, Boys</option>
+<option value="2228">Javelin Throw, Boys</option>
+<option value="2451">5,000 metres Walk, Boys</option>
+<option value="2229">100 metres, Girls</option>
+<option value="2230">200 metres, Girls</option>
+<option value="2231">400 metres, Girls</option>
+<option value="2282">800 metres, Girls</option>
+<option value="2232">1,000 metres, Girls</option>
+<option value="2283">1,500 metres, Girls</option>
+<option value="2233">3,000 metres, Girls</option>
+<option value="2234">100 metres Hurdles, Girls</option>
+<option value="2235">400 metres Hurdles, Girls</option>
+<option value="2236">2,000 metres Steeplechase, Girls</option>
+<option value="2237">Medley Relay, Girls</option>
+<option value="2238">5,000 metres Walk, Girls</option>
+<option value="2239">High Jump, Girls</option>
+<option value="2240">Pole Vault, Girls</option>
+<option value="2241">Long Jump, Girls</option>
+<option value="2242">Triple Jump, Girls</option>
+<option value="2243">Shot Put, Girls</option>
+<option value="2244">Discus Throw, Girls</option>
+<option value="2245">Hammer Throw, Girls</option>
+<option value="2246">Javelin Throw, Girls</option>
+<option value="2452">5,000 metres Walk, Girls</option>
+<option value="2284">8 × 100 metres Relay, Mixed Youth</option>
+<option value="39">60 metres, Men</option>
+<option value="2369">100 yards, Men</option>
+<option value="2370">220 yards, Men</option>
+<option value="2433">Stade Race, Men</option>
+<option value="2427">Diaulos, Men</option>
+<option value="2377">440 yards, Men</option>
+<option value="2371">880 yards, Men</option>
+<option value="2372">1 mile, Men</option>
+<option value="2373">2 miles, Men</option>
+<option value="2429">Long Race (Dolikhos), Men</option>
+<option value="46">5 miles, Men</option>
+<option value="2374">120 yards Hurdles, Men</option>
+<option value="50">200 metres Hurdles, Men</option>
+<option value="2375">220 yards Hurdles, Men</option>
+<option value="52">2,500 metres Steeplechase, Men</option>
+<option value="53">2,590 metres Steeplechase, Men</option>
+<option value="55">3,200 metres Steeplechase, Men</option>
+<option value="56">4,000 metres Steeplechase, Men</option>
+<option value="2380">4 × 440 yards Relay, Men</option>
+<option value="59">1,600 metres Medley Relay, Men</option>
+<option value="60">3,000 metres, Team, Men</option>
+<option value="61">3 miles, Team, Men</option>
+<option value="62">5,000 metres, Team, Men</option>
+<option value="63">4 miles, Team, Men</option>
+<option value="64">1,500 metres Walk, Men</option>
+<option value="65">3,000 metres Walk, Men</option>
+<option value="66">3,500 metres Walk, Men</option>
+<option value="67">10 kilometres Walk, Men</option>
+<option value="68">10 miles Walk, Men</option>
+<option value="71">Cross-Country, Individual, Men</option>
+<option value="72">Cross-Country, Team, Men</option>
+<option value="74">Standing High Jump, Men</option>
+<option value="77">Standing Long Jump, Men</option>
+<option value="79">Standing Triple Jump, Men</option>
+<option value="2431">Plain Jump, Men</option>
+<option value="81">Shot Put, Both Hands, Men</option>
+<option value="2430">Over the Ditch Jump, Men</option>
+<option value="82">56-pound Weight Throw, Men</option>
+<option value="83">Stone Throw, Men</option>
+<option value="85">Discus Throw, Greek Style, Men</option>
+<option value="86">Discus Throw, Both Hands, Men</option>
+<option value="89">Javelin Throw, Both Hands, Men</option>
+<option value="90">Javelin Throw, Freestyle, Men</option>
+<option value="2428">Javelin Throw for Accuracy, Men</option>
+<option value="2381">Bolo Throw, Men</option>
+<option value="2382">Baseball Throw, Men</option>
+<option value="2383">Ball Throw for Accuracy, Men</option>
+<option value="91">Pentathlon, Men</option>
+<option value="92">Pentathlon (Ancient), Men</option>
+<option value="2379">Pentathlon, Team, Men</option>
+<option value="94">All-Around Championship, Men</option>
+<option value="2376">Team, Men</option>
+<option value="876">Special Scratch Pole Vault #1, Men</option>
+<option value="877">Special Scratch Pole Vault #2, Men</option>
+<option value="2331">60 yards, Handicap, Men</option>
+<option value="2432">Pole Vault Over a Ditch, Men</option>
+<option value="2332">100 yards, Handicap, Men</option>
+<option value="864">100 metres, Handicap, Men</option>
+<option value="2333">220 yards, Handicap, Men</option>
+<option value="865">400 metres, Handicap, Men</option>
+<option value="2334">440 yards, Handicap, Men</option>
+<option value="866">800 metres, Handicap, Men</option>
+<option value="2335">880 yards, Handicap, Men</option>
+<option value="867">1,500 metres, Handicap, Men</option>
+<option value="2336">1 mile, Handicap, Men</option>
+<option value="2362">2 miles, Handicap, Men</option>
+<option value="2338">120 yards Hurdles, Handicap, Men</option>
+<option value="868">110 metres Hurdles, Handicap, Men</option>
+<option value="2339">220 yards Hurdles, Handicap, Men</option>
+<option value="869">400 metres Hurdles, Handicap, Men</option>
+<option value="870">2,500 metres Steeplechase, Handicap, Men</option>
+<option value="2337">1 mile, Team, Handicap, Men</option>
+<option value="871">High Jump, Handicap, Men</option>
+<option value="872">Long Jump, Handicap, Men</option>
+<option value="873">Pole Vault, Handicap, Men</option>
+<option value="874">Shot Put, Handicap, Men</option>
+<option value="875">Discus Throw, Handicap, Men</option>
+<option value="2345">Hammer Throw, Handicap, Men</option>
+<option value="2346">56-pound Weight Throw, Handicap, Men</option>
+<option value="2363">Team, Handicap, Men</option>
+<option value="878">100 metres, Professionals, Men</option>
+<option value="879">400 metres, Professionals, Men</option>
+<option value="880">1,500 metres, Professionals, Men</option>
+<option value="881">5,000 metres, Professionals, Men</option>
+<option value="882">6-hour race, Professionals, Men</option>
+<option value="883">110 metres Hurdles, Professionals, Men</option>
+<option value="884">2,500 metres Steeplechase, Professionals, Men</option>
+<option value="885">High Jump, Professionals, Men</option>
+<option value="886">Long Jump, Professionals, Men</option>
+<option value="887">Shot Put, Professionals, Men</option>
+<option value="768">1,500 metres Wheelchair, Men</option>
+<option value="2426">Bladdering, Men</option>
+<option value="100">3,000 metres, Women</option>
+<option value="104">80 metres Hurdles, Women</option>
+<option value="109">10 kilometres Walk, Women</option>
+<option value="119">Pentathlon, Women</option>
+<option value="769">800 metres Wheelchair, Women</option>
+<option value="2365">50 yards, Boys</option>
+<option value="2347">100 yards, Boys</option>
+<option value="2348">220 yards, Boys</option>
+<option value="2349">440 yards, Boys</option>
+<option value="2350">880 yards, Boys</option>
+<option value="2351">1 mile, Boys</option>
+<option value="2366">2 miles, Boys</option>
+<option value="2367">5 miles, Boys</option>
+<option value="2352">120 yards Hurdles, Boys</option>
+<option value="2353">220 yards Hurdles, Boys</option>
+<option value="2378">4 × 220 yards Relay, Boys</option>
+<option value="2354">4 × 440 yards Relay, Boys</option>
+<option value="2368">56-pound Weight Throw, Boys</option>
+<option value="2361">Team, Boys</option></optgroup><optgroup label="Australian Rules Football"><option value="767">Australian Rules Football, Men</option></optgroup><optgroup label="Automobile Racing"><option value="2491">Karting, Team, Mixed Youth</option>
+<option value="843">Paris-Toulouse-Paris, Cars, Men</option>
+<option value="845">Paris-Toulouse-Paris, Voiturettes, Men</option>
+<option value="851">Reliability Contest, Touring Cars, Two-seater, Men</option>
+<option value="840">Reliability Contest, Touring Cars, Four-seater, Men</option>
+<option value="846">Reliability Contest, Touring Cars, Six-seater, Men</option>
+<option value="849">Reliability Contest, Touring Cars, Seven or more seats, Men</option>
+<option value="835">Reliability Contest, Voiturettes, Two-seater (&lt;250 kg), Men</option>
+<option value="836">Reliability Contest, Voiturettes, Two-seater (&lt;400 kg), Men</option>
+<option value="838">Reliability Contest, Hackney Carriages, Gasoline Engine, Men</option>
+<option value="837">Reliability Contest, Hackney Carriages, Electrical Engine, Men</option>
+<option value="848">Reliability Contest, Delivery Cars, Gasoline Engine, Men</option>
+<option value="847">Reliability Contest, Delivery Cars, Electrical Engine, Men</option>
+<option value="841">Reliability Contest, Light Trucks, Men</option>
+<option value="850">Reliability Contest, Heavy Trucks, Men</option></optgroup><optgroup label="Badminton"><option value="123">Singles, Men</option>
+<option value="124">Doubles, Men</option>
+<option value="125">Singles, Women</option>
+<option value="126">Doubles, Women</option>
+<option value="127">Doubles, Mixed</option>
+<option value="2082">Singles, Boys</option>
+<option value="2083">Singles, Girls</option>
+<option value="2287">Doubles, Mixed Youth</option>
+<option value="2446">Relay, Mixed Youth</option></optgroup><optgroup label="Ballooning"><option value="888">Longest distance travelled (#1), Handicap, Open</option>
+<option value="889">Longest distance travelled (#2), Handicap, Open</option>
+<option value="890">Longest distance travelled (#3), Open</option>
+<option value="903">Longest distance travelled (#4), Second Degree, Open</option>
+<option value="891">Longest time travelled (#1), Handicap, Open</option>
+<option value="892">Longest time travelled (#2), Handicap, Open</option>
+<option value="893">Longest time travelled (#3), Open</option>
+<option value="904">Longest time travelled (#4), Second Degree, Open</option>
+<option value="894">Greatest height achieved (#1), Handicap, Open</option>
+<option value="895">Greatest height achieved (#2), Handicap, Open</option>
+<option value="896">Greatest height achieved (#3), Open</option>
+<option value="897">Closest landing to target (#1), Open</option>
+<option value="898">Closest landing to target (#2), Open</option>
+<option value="899">Closest landing to target (#3), Combined, Open</option>
+<option value="900">Closest landing to target (#3), Intermediate stop, Open</option>
+<option value="901">Closest landing to target (#3), Final stop, Open</option>
+<option value="902">Closest landing to target (#4), Self-selected target, Open</option>
+<option value="905">Grand Prix de l&#39;aéronautique, Open</option>
+<option value="906">Balloon inflation, Open</option>
+<option value="907">Ascension report, Single ascent, Open</option>
+<option value="908">Ascension report, Combined, Open</option>
+<option value="909">Best photograph, 9 September event, Open</option>
+<option value="910">Best photograph, All events, Open</option>
+<option value="911">Kites (large), Open</option>
+<option value="912">Kites (medium), Open</option>
+<option value="913">Kites (small), Open</option></optgroup><optgroup label="Bandy"><option value="751">Bandy, Men</option></optgroup><optgroup label="Baseball"><option value="156">Baseball, Men</option></optgroup><optgroup label="Basketball"><option value="121">Basketball, Men</option>
+<option value="122">Basketball, Women</option>
+<option value="2385">Basketball, Boys</option></optgroup><optgroup label="Basque pelota"><option value="371">Two-Man Teams With Cesta, Men</option>
+<option value="791">Mano, Triples, Men</option>
+<option value="792">Mano, Doubles, Men</option>
+<option value="793">Mano, Singles, Men</option>
+<option value="794">Pala Corta, Doubles, Men</option>
+<option value="795">Paleta Cuero, Doubles, Men</option>
+<option value="796">Paleta Goma, Doubles, Men</option>
+<option value="797">Frontenis, Doubles, Men</option>
+<option value="800">Cesta Punta, Doubles, Men</option>
+<option value="801">Blé, Triples, Men</option>
+<option value="1023">Pala, Doubles, Men</option>
+<option value="799">Cesta Punta, Triples, Men</option>
+<option value="798">Frontenis, Doubles, Women</option></optgroup><optgroup label="Beach Handball"><option value="2453">Beach Handball, Boys</option>
+<option value="2454">Beach Handball, Girls</option></optgroup><optgroup label="Beach Volleyball"><option value="157">Beach Volleyball, Men</option>
+<option value="158">Beach Volleyball, Women</option>
+<option value="2291">Beach Volleyball, Boys</option>
+<option value="2292">Beach Volleyball, Girls</option></optgroup><optgroup label="Biathlon"><option value="128">10 kilometres Sprint, Men</option>
+<option value="129">12.5 kilometres Pursuit, Men</option>
+<option value="130">15 kilometres Mass Start, Men</option>
+<option value="131">20 kilometres, Men</option>
+<option value="132">4 × 7.5 kilometres Relay, Men</option>
+<option value="133">7.5 kilometres Sprint, Women</option>
+<option value="134">10 kilometres Pursuit, Women</option>
+<option value="135">12.5 kilometres Mass Start, Women</option>
+<option value="136">15 kilometres, Women</option>
+<option value="138">4 × 6 kilometres Relay, Women</option>
+<option value="1001">2 × 6 kilometres and 2 × 7.5 kilometres Relay, Mixed</option>
+<option value="2012">7.5 kilometres Sprint, Boys</option>
+<option value="2011">10 kilometres Pursuit, Boys</option>
+<option value="2311">12.5 kilometres, Boys</option>
+<option value="2009">6 kilometres Sprint, Girls</option>
+<option value="2010">7.5 kilometres Pursuit, Girls</option>
+<option value="2312">10 kilometres, Girls</option>
+<option value="2014">2 × 6 kilometres and 2 × 7.5 kilometres Relay, Mixed Youth</option>
+<option value="2066">6 and 7.5 kilometres Single Relay, Mixed Youth</option>
+<option value="137">3 × 7.5 kilometres Relay, Women</option>
+<option value="139">4 × 7.5 kilometres Relay, Women</option></optgroup><optgroup label="Bicycle Polo"><option value="770">Bicycle Polo, Men</option></optgroup><optgroup label="Bobsleigh"><option value="140">Two, Men</option>
+<option value="143">Two, Women</option>
+<option value="2581">Monobob, Women</option>
+<option value="1037">Four, Open</option>
+<option value="2064">Monobob, Boys</option>
+<option value="2016">Two, Boys</option>
+<option value="2065">Monobob, Girls</option>
+<option value="2015">Two, Girls</option>
+<option value="141">Four, Men</option>
+<option value="142">Four/Five, Men</option></optgroup><optgroup label="Boules"><option value="914">Jeu lyonnais, Quartets, Men</option>
+<option value="915">Jeu de berges, Quartets, Men</option></optgroup><optgroup label="Bowling"><option value="774">Individual, Men</option>
+<option value="775">Individual, Women</option></optgroup><optgroup label="Boxing"><option value="144">Light-Flyweight, Men</option>
+<option value="145">Flyweight, Men</option>
+<option value="146">Bantamweight, Men</option>
+<option value="148">Lightweight, Men</option>
+<option value="149">Light-Welterweight, Men</option>
+<option value="150">Welterweight, Men</option>
+<option value="152">Middleweight, Men</option>
+<option value="153">Light-Heavyweight, Men</option>
+<option value="154">Heavyweight, Men</option>
+<option value="155">Super-Heavyweight, Men</option>
+<option value="986">Flyweight, Women</option>
+<option value="2579">Featherweight, Women</option>
+<option value="987">Lightweight, Women</option>
+<option value="2580">Welterweight, Women</option>
+<option value="988">Middleweight, Women</option>
+<option value="2088">Light-Flyweight, Boys</option>
+<option value="2086">Flyweight, Boys</option>
+<option value="2084">Bantamweight, Boys</option>
+<option value="2085">Featherweight, Boys</option>
+<option value="2091">Lightweight, Boys</option>
+<option value="2090">Light-Welterweight, Boys</option>
+<option value="2094">Welterweight, Boys</option>
+<option value="2092">Middleweight, Boys</option>
+<option value="2089">Light-Heavyweight, Boys</option>
+<option value="2087">Heavyweight, Boys</option>
+<option value="2093">Super-Heavyweight, Boys</option>
+<option value="2288">Flyweight, Girls</option>
+<option value="2447">Featherweight, Girls</option>
+<option value="2289">Lightweight, Girls</option>
+<option value="2290">Middleweight, Girls</option>
+<option value="147">Featherweight, Men</option>
+<option value="151">Light-Middleweight, Men</option></optgroup><optgroup label="Breaking"><option value="2455">Individual, Boys</option>
+<option value="2456">Individual, Girls</option>
+<option value="2457">Team, Mixed Youth</option></optgroup><optgroup label="Canne De Combat"><option value="782">Canne de combat, Men</option></optgroup><optgroup label="Canoe Marathon"><option value="161">Kayak Singles, 10,000 metres, Men</option>
+<option value="164">Kayak Doubles, 10,000 metres, Men</option>
+<option value="170">Canadian Singles, 10,000 metres, Men</option>
+<option value="173">Canadian Doubles, 10,000 metres, Men</option>
+<option value="176">Folding Kayak Singles, 10,000 metres, Men</option>
+<option value="177">Folding Kayak Doubles, 10,000 metres, Men</option></optgroup><optgroup label="Canoe Slalom"><option value="167">Kayak Singles, Slalom, Men</option>
+<option value="174">Canadian Singles, Slalom, Men</option>
+<option value="175">Canadian Doubles, Slalom, Men</option>
+<option value="181">Kayak Singles, Slalom, Women</option>
+<option value="2578">Canadian Singles, Slalom, Women</option></optgroup><optgroup label="Canoe Sprint"><option value="989">Kayak Singles, 200 metres, Men</option>
+<option value="160">Kayak Singles, 1,000 metres, Men</option>
+<option value="990">Kayak Doubles, 200 metres, Men</option>
+<option value="163">Kayak Doubles, 1,000 metres, Men</option>
+<option value="2575">Kayak Fours, 500 metres, Men</option>
+<option value="165">Kayak Fours, 1,000 metres, Men</option>
+<option value="991">Canadian Singles, 200 metres, Men</option>
+<option value="169">Canadian Singles, 1,000 metres, Men</option>
+<option value="172">Canadian Doubles, 1,000 metres, Men</option>
+<option value="992">Kayak Singles, 200 metres, Women</option>
+<option value="178">Kayak Singles, 500 metres, Women</option>
+<option value="179">Kayak Doubles, 500 metres, Women</option>
+<option value="180">Kayak Fours, 500 metres, Women</option>
+<option value="2576">Canadian Singles, 200 metres, Women</option>
+<option value="2577">Canadian Doubles, 500 metres, Women</option>
+<option value="2098">Kayak Singles, Obstacle Slalom, Boys</option>
+<option value="2095">Kayak Singles, Head to Head, Boys</option>
+<option value="2096">Canoe Singles, Head to Head, Boys</option>
+<option value="2099">Canoe Singles, Obstacle Slalom, Boys</option>
+<option value="2100">Kayak Singles, Obstacle Slalom, Girls</option>
+<option value="2097">Kayak Singles, Head to Head, Girls</option>
+<option value="2293">Canoe Singles, Head to Head, Girls</option>
+<option value="2294">Canoe Singles, Obstacle Slalom, Girls</option>
+<option value="159">Kayak Singles, 500 metres, Men</option>
+<option value="162">Kayak Doubles, 500 metres, Men</option>
+<option value="166">Kayak Relay, 4 × 500 metres, Men</option>
+<option value="168">Canadian Singles, 500 metres, Men</option>
+<option value="171">Canadian Doubles, 500 metres, Men</option>
+<option value="776">Kayak Singles, 800 metres, Men</option>
+<option value="777">Kayak Doubles, 800 metres, Men</option>
+<option value="778">Kayak Fours, 800 metres, Men</option>
+<option value="779">Canadian Singles, 800 metres, Men</option>
+<option value="780">Canadian Doubles, 800 metres, Men</option>
+<option value="781">Canadian Fours, 800 metres, Men</option></optgroup><optgroup label="Cricket"><option value="205">Cricket, Men</option></optgroup><optgroup label="Croquet"><option value="916">Singles, Two Balls, Handicap, Men</option>
+<option value="206">Singles, One Ball, Open</option>
+<option value="207">Singles, Two Balls, Open</option>
+<option value="208">Doubles, Open</option></optgroup><optgroup label="Cross Country Skiing"><option value="182">Sprint, Men</option>
+<option value="184">15 kilometres, Men</option>
+<option value="187">50 kilometres, Men</option>
+<option value="190">30 kilometres Skiathlon, Men</option>
+<option value="191">4 × 10 kilometres Relay, Men</option>
+<option value="192">Team Sprint, Men</option>
+<option value="193">Sprint, Women</option>
+<option value="195">10 kilometres, Women</option>
+<option value="198">30 kilometres, Women</option>
+<option value="200">15 kilometres Skiathlon, Women</option>
+<option value="203">4 × 5 kilometres Relay, Women</option>
+<option value="204">Team Sprint, Women</option>
+<option value="2020">Sprint, Boys</option>
+<option value="2019">10 kilometres, Boys</option>
+<option value="2067">Cross, Boys</option>
+<option value="2018">Sprint, Girls</option>
+<option value="2017">5 kilometres, Girls</option>
+<option value="2068">Cross, Girls</option>
+<option value="183">10 kilometres, Men</option>
+<option value="185">18 kilometres, Men</option>
+<option value="186">30 kilometres, Men</option>
+<option value="188">10/10 kilometres Pursuit, Men</option>
+<option value="189">10/15 kilometres Pursuit, Men</option>
+<option value="757">5 kilometres, B1, Men</option>
+<option value="194">5 kilometres, Women</option>
+<option value="196">15 kilometres, Women</option>
+<option value="197">20 kilometres, Women</option>
+<option value="199">5/5 kilometres Pursuit, Women</option>
+<option value="201">5/10 kilometres Pursuit, Women</option>
+<option value="202">3 × 5 kilometres Relay, Women</option>
+<option value="758">5 kilometres, B1, Women</option></optgroup><optgroup label="Curling"><option value="209">Curling, Men</option>
+<option value="210">Curling, Women</option>
+<option value="1031">Mixed Doubles, Mixed</option>
+<option value="2021">Doubles, Mixed Youth</option>
+<option value="2022">Curling, Mixed Youth</option></optgroup><optgroup label="Cycling BMX Freestyle"><option value="2545">Park, Men</option>
+<option value="2546">Park, Women</option>
+<option value="2450">Team, Mixed Youth</option></optgroup><optgroup label="Cycling BMX Racing"><option value="701">BMX, Men</option>
+<option value="702">BMX, Women</option>
+<option value="2449">Team, Mixed Youth</option></optgroup><optgroup label="Cycling Mountain Bike"><option value="241">Cross-Country, Men</option>
+<option value="248">Cross-Country, Women</option></optgroup><optgroup label="Cycling Road"><option value="211">Road Race, Individual, Men</option>
+<option value="213">Individual Time Trial, Men</option>
+<option value="242">Road Race, Individual, Women</option>
+<option value="243">Individual Time Trial, Women</option>
+<option value="2295">Combined Team, Boys</option>
+<option value="2296">Combined Team, Girls</option>
+<option value="2201">Combined Team, Mixed Youth</option>
+<option value="2297">Relay, Mixed Youth</option>
+<option value="212">Road Race, Team, Men</option>
+<option value="214">100 kilometres Team Time Trial, Men</option></optgroup><optgroup label="Cycling Track"><option value="215">Sprint, Men</option>
+<option value="219">Keirin, Men</option>
+<option value="221">Team Sprint, Men</option>
+<option value="223">Team Pursuit, 4,000 metres, Men</option>
+<option value="993">Omnium, Men</option>
+<option value="244">Sprint, Women</option>
+<option value="994">Keirin, Women</option>
+<option value="995">Team Sprint, Women</option>
+<option value="996">Team Pursuit, Women</option>
+<option value="2574">Madison, Women</option>
+<option value="997">Omnium, Women</option>
+<option value="217">333⅓ metres Time Trial, Men</option>
+<option value="218">1,000 metres Time Trial, Men</option>
+<option value="220">Tandem Sprint, 2,000 metres, Men</option>
+<option value="222">Individual Pursuit, 4,000 metres, Men</option>
+<option value="249">Team Pursuit, 1,980 yards, Men</option>
+<option value="224">Points Race, Men</option>
+<option value="226">Madison, Men</option>
+<option value="227">¼ mile, Men</option>
+<option value="228">⅓ mile, Men</option>
+<option value="229">½ mile, Men</option>
+<option value="230">1 mile, Men</option>
+<option value="2398">1 mile, Motorcycle, Men</option>
+<option value="231">2 miles, Men</option>
+<option value="232">5,000 metres, Men</option>
+<option value="233">5 miles, Men</option>
+<option value="234">10,000 metres, Men</option>
+<option value="235">20 kilometres, Men</option>
+<option value="236">25 kilometres, Men</option>
+<option value="237">25 miles, Men</option>
+<option value="238">50 kilometres, Men</option>
+<option value="239">100 kilometres, Men</option>
+<option value="240">12-Hours Race, Men</option>
+<option value="2388">1 mile, Novice, Men</option>
+<option value="2386">½ mile, Handicap, Men</option>
+<option value="2387">1 mile, Handicap, Men</option>
+<option value="2389">5 miles, Handicap, Men</option>
+<option value="917">Sprint, Professionals, Men</option>
+<option value="918">Tandem Sprint, Professionals, Men</option>
+<option value="919">Team Sprint, Professionals, Men</option>
+<option value="920">Points Race, Professionals, Men</option>
+<option value="2390">⅓ mile, Professionals, Men</option>
+<option value="2391">½ mile, Professionals, Men</option>
+<option value="2392">⅔ mile, Professionals, Men</option>
+<option value="2393">1 mile, Professionals, Men</option>
+<option value="921">50 kilometres, Professionals, Men</option>
+<option value="922">100 kilometres, Professionals, Men</option>
+<option value="923">100 miles, Professionals, Men</option>
+<option value="924">24-Hours Race, Professionals, Men</option>
+<option value="925">3,000 metres, Handicap, Professionals, Men</option>
+<option value="926">25 kilometres Motor-paced, Professionals, Men</option>
+<option value="927">National Team Sprint, Professionals, Men</option>
+<option value="2397">Australian Team Pursuit, Professionals, Men</option>
+<option value="2394">½ mile, Handicap, Professionals, Men</option>
+<option value="2395">1 mile, Handicap, Professionals, Men</option>
+<option value="2396">2 miles, Handicap, Professionals, Men</option>
+<option value="245">500 metres Time Trial, Women</option>
+<option value="246">Individual Pursuit, Women</option>
+<option value="247">Points Race, Women</option></optgroup><optgroup label="Diving"><option value="250">Springboard, Men</option>
+<option value="251">Platform, Men</option>
+<option value="253">Synchronized Springboard, Men</option>
+<option value="254">Synchronized Platform, Men</option>
+<option value="255">Springboard, Women</option>
+<option value="256">Platform, Women</option>
+<option value="258">Synchronized Springboard, Women</option>
+<option value="259">Synchronized Platform, Women</option>
+<option value="2105">Springboard, Boys</option>
+<option value="2106">Platform, Boys</option>
+<option value="2107">Springboard, Girls</option>
+<option value="2108">Platform, Girls</option>
+<option value="2298">Team, Mixed Youth</option>
+<option value="252">Plain High, Men</option>
+<option value="257">Plain High, Women</option></optgroup><optgroup label="Dogsled Racing"><option value="744">Dog Sled Racing, Open</option></optgroup><optgroup label="Equestrian Dressage"><option value="268">Individual, Open</option>
+<option value="269">Team, Open</option>
+<option value="260">Individual, Men</option>
+<option value="261">Team, Men</option></optgroup><optgroup label="Equestrian Driving"><option value="274">Hacks and Hunter Combined, Open</option>
+<option value="275">Four-In-Hand Competition, Open</option></optgroup><optgroup label="Equestrian Eventing"><option value="272">Individual, Open</option>
+<option value="273">Team, Open</option>
+<option value="264">Individual, Men</option>
+<option value="265">Team, Men</option></optgroup><optgroup label="Equestrian Jumping"><option value="270">Individual, Open</option>
+<option value="271">Team, Open</option>
+<option value="2247">Individual, Open Youth</option>
+<option value="2248">Team, Open Youth</option>
+<option value="262">Individual, Men</option>
+<option value="263">Team, Men</option>
+<option value="276">Long Jump, Open</option>
+<option value="277">High Jump, Open</option></optgroup><optgroup label="Equestrian Vaulting"><option value="266">Individual, Men</option>
+<option value="267">Team, Men</option></optgroup><optgroup label="Fencing"><option value="278">Foil, Individual, Men</option>
+<option value="280">Foil, Team, Men</option>
+<option value="281">Épée, Individual, Men</option>
+<option value="283">Épée, Team, Men</option>
+<option value="284">Sabre, Individual, Men</option>
+<option value="287">Sabre, Team, Men</option>
+<option value="289">Foil, Individual, Women</option>
+<option value="290">Foil, Team, Women</option>
+<option value="291">Épée, Individual, Women</option>
+<option value="292">Épée, Team, Women</option>
+<option value="293">Sabre, Individual, Women</option>
+<option value="707">Sabre, Team, Women</option>
+<option value="2204">Foil, Individual, Boys</option>
+<option value="2205">Épée, Individual, Boys</option>
+<option value="2206">Sabre, Individual, Boys</option>
+<option value="2207">Foil, Individual, Girls</option>
+<option value="2208">Épée, Individual, Girls</option>
+<option value="2209">Sabre, Individual, Girls</option>
+<option value="2210">Mixed Weapon, Team, Mixed Youth</option>
+<option value="279">Foil, Masters, Individual, Men</option>
+<option value="282">Épée, Masters, Individual, Men</option>
+<option value="682">Épée, Masters and Amateurs, Individual, Men</option>
+<option value="285">Sabre, Masters, Individual, Men</option>
+<option value="286">Sabre, Individual, Three Hits, Men</option>
+<option value="288">Single Sticks, Individual, Men</option>
+<option value="2542">Foil, Individual, Open</option></optgroup><optgroup label="Figure Skating"><option value="298">Singles, Men</option>
+<option value="300">Singles, Women</option>
+<option value="301">Pairs, Mixed</option>
+<option value="302">Ice Dancing, Mixed</option>
+<option value="1006">Team, Mixed</option>
+<option value="2028">Singles, Boys</option>
+<option value="2027">Singles, Girls</option>
+<option value="2031">Pairs, Mixed Youth</option>
+<option value="2029">Ice Dancing, Mixed Youth</option>
+<option value="2030">Team, Mixed Youth</option>
+<option value="299">Special Figures, Men</option></optgroup><optgroup label="Firefighting"><option value="928">Maneuvering, National, Men</option>
+<option value="929">Maneuvering, International, Volunteer Firefighters, Men</option>
+<option value="930">Maneuvering, International, Professional Firefighters, Men</option>
+<option value="931">Maneuvering, International, British Firefighters, Men</option></optgroup><optgroup label="Fishing"><option value="932">Concours d&#39;honneur, Men</option></optgroup><optgroup label="Football"><option value="303">Football, Men</option>
+<option value="304">Football, Women</option>
+<option value="2249">Football, Boys</option>
+<option value="2250">Football, Girls</option></optgroup><optgroup label="Freestyle Skiing"><option value="294">Moguls, Men</option>
+<option value="295">Aerials, Men</option>
+<option value="739">Ski Cross, Men</option>
+<option value="1002">Halfpipe, Men</option>
+<option value="1004">Slopestyle, Men</option>
+<option value="2582">Big Air, Men</option>
+<option value="296">Moguls, Women</option>
+<option value="297">Aerials, Women</option>
+<option value="740">Ski Cross, Women</option>
+<option value="1003">Halfpipe, Women</option>
+<option value="1005">Slopestyle, Women</option>
+<option value="2583">Big Air, Women</option>
+<option value="2584">Team Aerials, Mixed</option>
+<option value="2026">Ski Cross, Boys</option>
+<option value="2025">Halfpipe, Boys</option>
+<option value="2078">Slopestyle, Boys</option>
+<option value="2313">Big Air, Boys</option>
+<option value="2024">Ski Cross, Girls</option>
+<option value="2023">Halfpipe, Girls</option>
+<option value="2077">Slopestyle, Girls</option>
+<option value="2314">Big Air, Girls</option>
+<option value="759">Ballet, Men</option>
+<option value="760">Ballet, Women</option></optgroup><optgroup label="Futsal"><option value="2460">Futsal, Boys</option>
+<option value="2461">Futsal, Girls</option></optgroup><optgroup label="Gaelic Football"><option value="2399">Gaelic Football, Men</option></optgroup><optgroup label="Gliding"><option value="783">Gliding, Open</option></optgroup><optgroup label="Glíma"><option value="784">Glíma, Men</option></optgroup><optgroup label="Golf"><option value="305">Individual, Men</option>
+<option value="307">Individual, Women</option>
+<option value="2299">Individual, Boys</option>
+<option value="2300">Individual, Girls</option>
+<option value="2301">Team, Mixed Youth</option>
+<option value="2400">Driving Contest, Men</option>
+<option value="2401">Putting Contest, Men</option>
+<option value="306">Team, Men</option>
+<option value="933">Individual, Handicap, Men</option>
+<option value="934">Individual, Professional, Men</option></optgroup><optgroup label="Gotland Sports"><option value="785">Pärkspel, Men</option>
+<option value="786">Varpastning, Men</option>
+<option value="787">Stångstörtning, Men</option></optgroup><optgroup label="Handball"><option value="335">Handball, Men</option>
+<option value="336">Handball, Women</option>
+<option value="2251">Handball, Boys</option>
+<option value="2252">Handball, Girls</option></optgroup><optgroup label="Hockey"><option value="337">Hockey, Men</option>
+<option value="338">Hockey, Women</option>
+<option value="2253">Hockey, Boys</option>
+<option value="2254">Hockey, Girls</option></optgroup><optgroup label="Hockey 5s"><option value="2302">Hockey 5s, Boys</option>
+<option value="2303">Hockey 5s, Girls</option></optgroup><optgroup label="Hurling"><option value="2402">Hurling, Men</option></optgroup><optgroup label="Ice Hockey"><option value="339">Ice Hockey, Men</option>
+<option value="340">Ice Hockey, Women</option>
+<option value="2033">Ice Hockey, Boys</option>
+<option value="2035">Skills Challenge, Boys</option>
+<option value="2032">Ice Hockey, Girls</option>
+<option value="2034">Skills Challenge, Girls</option>
+<option value="765">Ice Hockey Exhibition, Men</option></optgroup><optgroup label="Ice Stock Sport"><option value="745">Target Shooting, Men</option>
+<option value="746">Distance Shooting, Men</option>
+<option value="747">Team, Men</option>
+<option value="748">Target Shooting, Women</option>
+<option value="749">Team, Women</option></optgroup><optgroup label="Jeu De Paume"><option value="341">Singles, Men</option></optgroup><optgroup label="Judo"><option value="342">Extra-Lightweight, Men</option>
+<option value="343">Half-Lightweight, Men</option>
+<option value="344">Lightweight, Men</option>
+<option value="345">Half-Middleweight, Men</option>
+<option value="346">Middleweight, Men</option>
+<option value="347">Half-Heavyweight, Men</option>
+<option value="348">Heavyweight, Men</option>
+<option value="350">Extra-Lightweight, Women</option>
+<option value="351">Half-Lightweight, Women</option>
+<option value="352">Lightweight, Women</option>
+<option value="353">Half-Middleweight, Women</option>
+<option value="354">Middleweight, Women</option>
+<option value="355">Half-Heavyweight, Women</option>
+<option value="356">Heavyweight, Women</option>
+<option value="2568">Team, Mixed</option>
+<option value="2255">≤55 kilograms, Boys</option>
+<option value="2256">≤66 kilograms, Boys</option>
+<option value="2257">≤81 kilograms, Boys</option>
+<option value="2258">≤100 kilograms, Boys</option>
+<option value="2259">≤44 kilograms, Girls</option>
+<option value="2260">≤52 kilograms, Girls</option>
+<option value="2261">≤63 kilograms, Girls</option>
+<option value="2262">≤78 kilograms, Girls</option>
+<option value="2263">Team, Mixed Youth</option>
+<option value="349">Open Class, Men</option></optgroup><optgroup label="Kaatsen"><option value="790">Kaatsen, Men</option></optgroup><optgroup label="Karate"><option value="2547">Kata, Men</option>
+<option value="2549">Kumite, ≤67 kg, Men</option>
+<option value="2550">Kumite, ≤75 kg, Men</option>
+<option value="2551">Kumite, &gt;75 kg, Men</option>
+<option value="2548">Kata, Women</option>
+<option value="2552">Kumite, ≤55 kg, Women</option>
+<option value="2553">Kumite, ≤61 kg, Women</option>
+<option value="2554">Kumite, &gt;61 kg, Women</option>
+<option value="2464">Kumite, ≤61 kilograms, Boys</option>
+<option value="2465">Kumite, ≤68 kilograms, Boys</option>
+<option value="2466">Kumite, &gt;68 kilograms, Boys</option>
+<option value="2467">Kumite, ≤53 kilograms, Girls</option>
+<option value="2468">Kumite, ≤59 kilograms, Girls</option>
+<option value="2469">Kumite, &gt;59 kilograms, Girls</option></optgroup><optgroup label="Kendo"><option value="1017">Embusen, Open</option>
+<option value="1018">Renshu, Open</option>
+<option value="1019">Shiai - Red-White, Open</option>
+<option value="1020">Shiai - East-West, Open</option></optgroup><optgroup label="Korfball"><option value="789">Korfball, Mixed</option></optgroup><optgroup label="Kyudo"><option value="771">Unknown Event, Men</option></optgroup><optgroup label="Lacrosse"><option value="357">Lacrosse, Men</option></optgroup><optgroup label="Luge"><option value="358">Singles, Men</option>
+<option value="359">Singles, Women</option>
+<option value="1007">Team Relay, Mixed</option>
+<option value="360">Doubles, Open</option>
+<option value="2038">Singles, Boys</option>
+<option value="2317">Doubles, Boys</option>
+<option value="2036">Singles, Girls</option>
+<option value="2318">Doubles, Girls</option>
+<option value="2039">Team Relay, Mixed Youth</option>
+<option value="2037">Doubles, Open Youth</option></optgroup><optgroup label="Marathon Swimming"><option value="703">10 kilometres Open Water, Men</option>
+<option value="704">10 kilometres Open Water, Women</option></optgroup><optgroup label="Military Ski Patrol"><option value="364">Military Ski Patrol, Men</option></optgroup><optgroup label="Mixed Sports"><option value="2013">Cross-Country / Biathlon Relay, Mixed Youth</option>
+<option value="2463">Multidiscipline Gymnastics, Team, Mixed Youth</option>
+<option value="2069">Cross-Country Skiing / Ski Jumping / Nordic Combined Team, Mixed Youth</option>
+<option value="2071">Freestyle/Snowboard Relay, Mixed Youth</option></optgroup><optgroup label="Modern Pentathlon"><option value="361">Individual, Men</option>
+<option value="363">Individual, Women</option>
+<option value="2264">Individual, Boys</option>
+<option value="2265">Individual, Girls</option>
+<option value="2266">Relay, Mixed Youth</option>
+<option value="362">Team, Men</option></optgroup><optgroup label="Motorboating"><option value="365">A-Class (Open), Open</option>
+<option value="366">B-Class (Under 60 feet), Open</option>
+<option value="367">C-Class, Open</option></optgroup><optgroup label="Motorcycle Sports"><option value="844">Paris-Toulouse-Paris, Motorcycles, Men</option>
+<option value="842">Reliability Contest, Motorcycles, Men</option></optgroup><optgroup label="Nordic Combined"><option value="741">Normal Hill / 10 km, Individual, Men</option>
+<option value="742">Large Hill / 10 km, Individual, Men</option>
+<option value="370">Team, Men</option>
+<option value="2040">Medium Hill / 10 km, Individual, Boys</option>
+<option value="2072">Normal Hill / 5 km, Individual, Boys</option>
+<option value="2319">Normal Hill / 6 km, Individual, Boys</option>
+<option value="2320">Normal Hill / 4 km, Individual, Girls</option>
+<option value="2321">Team, Mixed Youth</option>
+<option value="368">Individual, Men</option>
+<option value="369">Sprint, Men</option></optgroup><optgroup label="Pesäpallo"><option value="802">Pesäpallo, Men</option></optgroup><optgroup label="Polo"><option value="2492">Exhibition, Mixed Youth</option>
+<option value="372">Polo, Men</option></optgroup><optgroup label="Racquets"><option value="373">Singles, Men</option>
+<option value="374">Doubles, Men</option></optgroup><optgroup label="Rhythmic Gymnastics"><option value="375">Individual, Women</option>
+<option value="376">Group, Women</option>
+<option value="2183">Individual, Girls</option>
+<option value="2184">Group, Girls</option></optgroup><optgroup label="Roller Hockey"><option value="803">Roller Hockey, Men</option></optgroup><optgroup label="Roller Skating"><option value="2470">Combined, Boys</option>
+<option value="2471">Combined, Girls</option></optgroup><optgroup label="Roque"><option value="377">Singles, Men</option></optgroup><optgroup label="Rowing"><option value="378">Single Sculls, Men</option>
+<option value="379">Double Sculls, Men</option>
+<option value="384">Quadruple Sculls, Men</option>
+<option value="380">Coxless Pairs, Men</option>
+<option value="385">Coxless Fours, Men</option>
+<option value="389">Eights, Men</option>
+<option value="390">Lightweight Double Sculls, Men</option>
+<option value="394">Single Sculls, Women</option>
+<option value="395">Double Sculls, Women</option>
+<option value="397">Quadruple Sculls, Women</option>
+<option value="396">Coxless Pairs, Women</option>
+<option value="398">Coxless Fours, Women</option>
+<option value="401">Eights, Women</option>
+<option value="402">Lightweight Double Sculls, Women</option>
+<option value="2101">Single Sculls, Boys</option>
+<option value="2102">Coxless Pairs, Boys</option>
+<option value="2103">Single Sculls, Girls</option>
+<option value="2104">Coxless Pairs, Girls</option>
+<option value="381">Coxed Pairs (1 kilometre), Men</option>
+<option value="382">Coxed Pairs (1 mile), Men</option>
+<option value="383">Coxed Pairs, Men</option>
+<option value="386">Coxed Fours, Men</option>
+<option value="387">Coxed Fours, Outriggers, Men</option>
+<option value="388">Coxed Fours, Inriggers, Men</option>
+<option value="391">Lightweight Coxless Fours, Men</option>
+<option value="392">6-Man Naval Rowing Boats, Men</option>
+<option value="393">17-Man Naval Rowing Boats, Men</option>
+<option value="2403">Single Sculls, Intermediate, Men</option>
+<option value="2404">Single Sculls, Association, Men</option>
+<option value="2405">Double Sculls, Intermediate, Men</option>
+<option value="2406">Coxless Pairs, Intermediate, Men</option>
+<option value="2407">Coxless Fours, Intermediate, Men</option>
+<option value="2408">Eights, Intermediate, Men</option>
+<option value="399">Coxed Fours, Women</option>
+<option value="400">Coxed Quadruple Sculls, Women</option></optgroup><optgroup label="Rugby"><option value="403">Rugby, Men</option></optgroup><optgroup label="Rugby Sevens"><option value="1028">Rugby Sevens, Men</option>
+<option value="1029">Rugby Sevens, Women</option>
+<option value="2304">Rugby Sevens, Boys</option>
+<option value="2305">Rugby Sevens, Girls</option></optgroup><optgroup label="Sailing"><option value="404">Windsurfer, Men</option>
+<option value="405">One Person Dinghy, Men</option>
+<option value="406">Two Person Dinghy, Men</option>
+<option value="407">Two Person Keelboat, Men</option>
+<option value="998">Skiff, Men</option>
+<option value="999">One Person Heavyweight Dinghy, Men</option>
+<option value="408">Windsurfer, Women</option>
+<option value="409">One Person Dinghy, Women</option>
+<option value="410">Two Person Dinghy, Women</option>
+<option value="411">Three Person Keelboat, Women</option>
+<option value="1026">Skiff, Women</option>
+<option value="1036">Multihull, Mixed</option>
+<option value="2168">Windsurfer, Boys</option>
+<option value="2169">One Person Dinghy, Boys</option>
+<option value="2472">Kiteboarding, Boys</option>
+<option value="2170">Windsurfer, Girls</option>
+<option value="2171">One Person Dinghy, Girls</option>
+<option value="2473">Kiteboarding, Girls</option>
+<option value="2474">Multihull, Mixed Youth</option>
+<option value="685">Windsurfer, Open</option>
+<option value="412">One Person Dinghy, Open</option>
+<option value="413">Two Person Dinghy, Open</option>
+<option value="414">Two Person Keelboat, Open</option>
+<option value="416">Skiff, Open</option>
+<option value="417">Multihull, Open</option>
+<option value="418">Three Person Keelboat, Open</option>
+<option value="428">12 foot, Open</option>
+<option value="419">Two Person Heavyweight Dinghy, Open</option>
+<option value="427">18 foot, Open</option>
+<option value="420">5.5 metres, Open</option>
+<option value="421">6 metres, Open</option>
+<option value="422">6.5 metres, Open</option>
+<option value="423">7 metres, Open</option>
+<option value="424">8 metres, Open</option>
+<option value="425">10 metres, Open</option>
+<option value="426">12 metres, Open</option>
+<option value="429">30 metres², Open</option>
+<option value="430">40 metres², Open</option>
+<option value="431">Open, Open</option>
+<option value="432">0-½ Ton, Open</option>
+<option value="433">½-1 Ton, Open</option>
+<option value="434">1-2 Ton, Open</option>
+<option value="435">2-3 Ton, Open</option>
+<option value="436">3-10 Ton, Open</option>
+<option value="437">10-20 Ton, Open</option>
+<option value="438">20+ Ton, Open</option></optgroup><optgroup label="Savate"><option value="804">Savate, Men</option></optgroup><optgroup label="Shooting"><option value="439">Air Pistol, 10 metres, Men</option>
+<option value="440">Rapid-Fire Pistol, 25 metres, Men</option>
+<option value="454">Air Rifle, 10 metres, Men</option>
+<option value="478">Small-Bore Rifle, Three Positions, 50 metres, Men</option>
+<option value="494">Trap, Men</option>
+<option value="499">Skeet, Men</option>
+<option value="501">Air Pistol, 10 metres, Women</option>
+<option value="502">Sporting Pistol, 25 metres, Women</option>
+<option value="503">Air Rifle, 10 metres, Women</option>
+<option value="504">Small-Bore Rifle, Three Positions, 50 metres, Women</option>
+<option value="505">Trap, Women</option>
+<option value="507">Skeet, Women</option>
+<option value="2565">Air Pistol, 10 metres, Team, Mixed</option>
+<option value="2566">Air Rifle, 10 metres, Team, Mixed</option>
+<option value="2567">Trap, Team, Mixed</option>
+<option value="2176">Air Pistol, 10 metres, Boys</option>
+<option value="2175">Air Rifle, 10 metres, Boys</option>
+<option value="2178">Air Pistol, 10 metres, Girls</option>
+<option value="2177">Air Rifle, 10 metres, Girls</option>
+<option value="2306">Air Rifle, 10 metres, Team, Mixed Youth</option>
+<option value="2307">Air Pistol, 10 metres, Team, Mixed Youth</option>
+<option value="441">Military Pistol, Team, Men</option>
+<option value="442">Free Pistol, 25 metres, Men</option>
+<option value="443">Free Pistol, 30 metres, Men</option>
+<option value="444">Free Pistol, 50 yards, Men</option>
+<option value="445">Free Pistol, 50 yards, Team, Men</option>
+<option value="446">Free Pistol, 50 metres, Men</option>
+<option value="447">Free Pistol, 50 metres, Team, Men</option>
+<option value="448">Military Pistol, 25 metres, Men</option>
+<option value="689">Military Pistol, 30 metres, Men</option>
+<option value="449">Military Revolver, 1873-1874 Gras Model, 20 metres, Men</option>
+<option value="450">Military Revolver, 20 metres, Men</option>
+<option value="451">Dueling Pistol Au Visé 20 metres, Men</option>
+<option value="452">Dueling Pistol Au Commandement, 25 metres, Men</option>
+<option value="687">Dueling Pistol, 30 metres, Men</option>
+<option value="453">Dueling Pistol, 30 metres, Team, Men</option>
+<option value="686">Muzzle-Loading Pistol, 25 metres, Men</option>
+<option value="455">Free Rifle, Three Positions, 300 metres, Men</option>
+<option value="456">Free Rifle, Three Positions, 300 metres, Team, Men</option>
+<option value="457">Free Rifle, Any Position, 300 metres, Men</option>
+<option value="458">Free Rifle, Kneeling, 300 metres, Men</option>
+<option value="459">Free Rifle, Prone, 300 metres, Men</option>
+<option value="738">Free Rifle, Prone, 600 metres, Men</option>
+<option value="460">Free Rifle, Standing, 300 metres, Men</option>
+<option value="2438">Free Weapon, 200 Metres, Open, Men</option>
+<option value="462">Free Rifle, 400, 600 and 800 metres, Team, Men</option>
+<option value="463">Free Rifle, 1,000 yards, Men</option>
+<option value="2439">Shooting, Unknown Event, Men</option>
+<option value="464">Military Rifle, Three Positions, 300 metres, Men</option>
+<option value="2440">Krag Gun, 200 metres, Civilians, Men</option>
+<option value="465">Military Rifle, Any Position, 600 metres, Men</option>
+<option value="2441">Krag Gun, 200 metres, Military, Men</option>
+<option value="2442">Krag Gun, 200 metres, Open, Men</option>
+<option value="466">Military Rifle, 1873-1874 Gras Model, Kneeling Or Standing, 200 metres, Men</option>
+<option value="2443">Krag Gun, 400 metres, Civilians, Men</option>
+<option value="467">Military Rifle, Kneeling Or Standing, 300 metres, Men</option>
+<option value="468">Military Rifle, Prone, 300 metres, Men</option>
+<option value="2444">Krag Gun, 400 metres, Military, Men</option>
+<option value="469">Military Rifle, Prone, 300 metres, Team, Men</option>
+<option value="2445">Krag Gun, 400 metres, Open, Men</option>
+<option value="470">Military Rifle, Prone, 600 metres, Men</option>
+<option value="471">Military Rifle, Prone, 600 metres, Team, Men</option>
+<option value="472">Military Rifle, Standing, 300 metres, Men</option>
+<option value="473">Military Rifle, Standing, 300 metres, Team, Men</option>
+<option value="474">Military Rifle, 200 metres, Men</option>
+<option value="475">Military Rifle, 200, 400, 500 and 600 metres, Team, Men</option>
+<option value="476">Military Rifle, 200/500/600/800/900/1,000 yards, Team, Men</option>
+<option value="477">Military Rifle, Prone, 300 and 600 metres, Team, Men</option>
+<option value="688">Small-Bore Rifle, Any Position, 50 metres, Men</option>
+<option value="479">Small-Bore Rifle, Prone, 50 metres, Men</option>
+<option value="480">Small-Bore Rifle, Prone, 50 metres, Team, Men</option>
+<option value="481">Small-Bore Rifle, Standing, 50 metres, Men</option>
+<option value="482">Small Bore-Rifle, Standing, 50 metres, Team, Men</option>
+<option value="683">Small-Bore Rifle, Prone, 50 and 100 yards, Men</option>
+<option value="483">Small-Bore Rifle, 50 and 100 yards, Team, Men</option>
+<option value="484">Small-Bore Rifle, Disappearing Target, 25 metres, Men</option>
+<option value="485">Small-Bore Rifle, Disappearing Target, 25 metres, Team, Men</option>
+<option value="486">Small-Bore Rifle, Disappearing Target, 25 yards, Men</option>
+<option value="487">Small-Bore Rifle, Moving Target, 25 yards, Men</option>
+<option value="488">Running Target, 10 metres, Men</option>
+<option value="684">Running Target, 50 metres, Men</option>
+<option value="489">Running Target, Single Shot, Men</option>
+<option value="490">Running Target, Single Shot, Team, Men</option>
+<option value="491">Running Target, Double Shot, Men</option>
+<option value="492">Running Target, Double Shot, Team, Men</option>
+<option value="493">Running Target, Single and Double Shot, Men</option>
+<option value="495">Trap, Single Shot, 16 metres, Men</option>
+<option value="496">Trap, Double Shot, 14 metres, Men</option>
+<option value="497">Trap, Team, Men</option>
+<option value="498">Double Trap, Men</option>
+<option value="500">Unknown Event, Men</option>
+<option value="506">Double Trap, Women</option>
+<option value="508">Rapid-Fire Pistol, 25 metres, Open</option>
+<option value="509">Free Pistol, 50 metres, Open</option>
+<option value="510">Free Rifle, Three Positions, 300 metres, Open</option>
+<option value="511">Small-Bore Rifle, Three Positions, 50 metres, Open</option>
+<option value="512">Small-Bore Rifle, Prone, 50 metres, Open</option>
+<option value="513">Running Target, 50 metres, Open</option>
+<option value="514">Trap, Open</option>
+<option value="515">Skeet, Open</option></optgroup><optgroup label="Short Track Speed Skating"><option value="543">500 metres, Men</option>
+<option value="544">1,000 metres, Men</option>
+<option value="545">1,500 metres, Men</option>
+<option value="546">5,000 metres Relay, Men</option>
+<option value="547">500 metres, Women</option>
+<option value="548">1,000 metres, Women</option>
+<option value="549">1,500 metres, Women</option>
+<option value="550">3,000 metres Relay, Women</option>
+<option value="2587">2,000 metres Relay, Mixed</option>
+<option value="2061">500 metres, Boys</option>
+<option value="2060">1,000 metres, Boys</option>
+<option value="2059">500 metres, Girls</option>
+<option value="2058">1,000 metres, Girls</option>
+<option value="2062">3,000 metres Relay, Mixed Youth</option>
+<option value="763">3,000 m, Men</option>
+<option value="764">3,000 m, Women</option></optgroup><optgroup label="Skateboarding"><option value="2557">Street, Men</option>
+<option value="2559">Park, Men</option>
+<option value="2558">Street, Women</option>
+<option value="2560">Park, Women</option></optgroup><optgroup label="Skeleton"><option value="516">Skeleton, Men</option>
+<option value="517">Skeleton, Women</option>
+<option value="2042">Skeleton, Boys</option>
+<option value="2041">Skeleton, Girls</option></optgroup><optgroup label="Ski Jumping"><option value="518">Normal Hill, Individual, Men</option>
+<option value="519">Large Hill, Individual, Men</option>
+<option value="520">Large Hill, Team, Men</option>
+<option value="1008">Normal Hill, Individual, Women</option>
+<option value="2585">Normal Hill, Team, Mixed</option>
+<option value="2044">Medium Hill, Individual, Boys</option>
+<option value="2074">Normal Hill, Individual, Boys</option>
+<option value="2043">Medium Hill, Individual, Girls</option>
+<option value="2073">Normal Hill, Individual, Girls</option>
+<option value="2045">Medium Hill, Team, Mixed Youth</option>
+<option value="2070">Normal Hill, Team, Mixed Youth</option></optgroup><optgroup label="Ski Mountaineering"><option value="2322">Sprint, Boys</option>
+<option value="2323">Individual, Boys</option>
+<option value="2324">Sprint, Girls</option>
+<option value="2325">Individual, Girls</option>
+<option value="2326">Relay, Mixed Youth</option></optgroup><optgroup label="Skijoring"><option value="743">Ski Joring, Men</option></optgroup><optgroup label="Snowboarding"><option value="521">Parallel Giant Slalom, Men</option>
+<option value="1011">Slopestyle, Men</option>
+<option value="523">Halfpipe, Men</option>
+<option value="524">Boardercross, Men</option>
+<option value="1032">Big Air, Men</option>
+<option value="525">Parallel Giant Slalom, Women</option>
+<option value="1012">Slopestyle, Women</option>
+<option value="527">Halfpipe, Women</option>
+<option value="528">Boardercross, Women</option>
+<option value="1033">Big Air, Women</option>
+<option value="2586">Team Boardercross, Mixed</option>
+<option value="2049">Slopestyle, Boys</option>
+<option value="2048">Halfpipe, Boys</option>
+<option value="2076">Boardercross, Boys</option>
+<option value="2327">Big Air, Boys</option>
+<option value="2047">Slopestyle, Girls</option>
+<option value="2075">Boardercross, Girls</option>
+<option value="2046">Halfpipe, Girls</option>
+<option value="2328">Big Air, Girls</option>
+<option value="1009">Parallel Slalom, Men</option>
+<option value="522">Giant Slalom, Men</option>
+<option value="1010">Parallel Slalom, Women</option>
+<option value="526">Giant Slalom, Women</option></optgroup><optgroup label="Softball"><option value="529">Softball, Women</option></optgroup><optgroup label="Speed Skating"><option value="530">500 metres, Men</option>
+<option value="531">1,000 metres, Men</option>
+<option value="532">1,500 metres, Men</option>
+<option value="533">5,000 metres, Men</option>
+<option value="534">10,000 metres, Men</option>
+<option value="1034">Mass Start, Men</option>
+<option value="535">Team Pursuit (8 laps), Men</option>
+<option value="537">500 metres, Women</option>
+<option value="538">1,000 metres, Women</option>
+<option value="539">1,500 metres, Women</option>
+<option value="540">3,000 metres, Women</option>
+<option value="541">5,000 metres, Women</option>
+<option value="1035">Mass Start, Women</option>
+<option value="542">Team Pursuit (6 laps), Women</option>
+<option value="2056">500 metres, Boys</option>
+<option value="2054">1,500 metres, Boys</option>
+<option value="2055">3,000 metres, Boys</option>
+<option value="2057">Mass Start, Boys</option>
+<option value="2052">500 metres, Girls</option>
+<option value="2050">1,500 metres, Girls</option>
+<option value="2051">3,000 metres, Girls</option>
+<option value="2053">Mass Start, Girls</option>
+<option value="2063">Team Sprint, Mixed Youth</option>
+<option value="536">Allround, Men</option></optgroup><optgroup label="Speed Skiing"><option value="761">Individual, Men</option>
+<option value="762">Individual, Women</option></optgroup><optgroup label="Sport Climbing"><option value="2555">Combined, Men</option>
+<option value="2556">Combined, Women</option>
+<option value="2458">Combined, Boys</option>
+<option value="2459">Combined, Girls</option></optgroup><optgroup label="Squash"><option value="2493">Exhibition, Mixed Youth</option></optgroup><optgroup label="Sumo"><option value="772">Unknown Event, Men</option></optgroup><optgroup label="Surfing"><option value="2561">Shortboard, Men</option>
+<option value="2562">Shortboard, Women</option></optgroup><optgroup label="Swimming"><option value="552">50 metres Freestyle, Men</option>
+<option value="554">100 metres Freestyle, Men</option>
+<option value="556">200 metres Freestyle, Men</option>
+<option value="558">400 metres Freestyle, Men</option>
+<option value="2569">800 metres Freestyle, Men</option>
+<option value="563">1,500 metres Freestyle, Men</option>
+<option value="567">4 × 100 metres Freestyle Relay, Men</option>
+<option value="568">4 × 200 metres Freestyle Relay, Men</option>
+<option value="571">100 metres Backstroke, Men</option>
+<option value="572">200 metres Backstroke, Men</option>
+<option value="573">100 metres Breaststroke, Men</option>
+<option value="574">200 metres Breaststroke, Men</option>
+<option value="577">100 metres Butterfly, Men</option>
+<option value="578">200 metres Butterfly, Men</option>
+<option value="579">200 metres Individual Medley, Men</option>
+<option value="580">400 metres Individual Medley, Men</option>
+<option value="581">4 × 100 metres Medley Relay, Men</option>
+<option value="587">50 metres Freestyle, Women</option>
+<option value="588">100 metres Freestyle, Women</option>
+<option value="589">200 metres Freestyle, Women</option>
+<option value="591">400 metres Freestyle, Women</option>
+<option value="592">800 metres Freestyle, Women</option>
+<option value="2570">1,500 metres Freestyle, Women</option>
+<option value="593">4 × 100 metres Freestyle Relay, Women</option>
+<option value="594">4 × 200 metres Freestyle Relay, Women</option>
+<option value="595">100 metres Backstroke, Women</option>
+<option value="596">200 metres Backstroke, Women</option>
+<option value="597">100 metres Breaststroke, Women</option>
+<option value="598">200 metres Breaststroke, Women</option>
+<option value="599">100 metres Butterfly, Women</option>
+<option value="600">200 metres Butterfly, Women</option>
+<option value="601">200 metres Individual Medley, Women</option>
+<option value="602">400 metres Individual Medley, Women</option>
+<option value="603">4 × 100 metres Medley Relay, Women</option>
+<option value="2571">4 × 100 metres Medley Relay, Mixed</option>
+<option value="2109">50 metres Freestyle, Boys</option>
+<option value="2110">100 metres Freestyle, Boys</option>
+<option value="2111">200 metres Freestyle, Boys</option>
+<option value="2112">400 metres Freestyle, Boys</option>
+<option value="2308">800 metres Freestyle, Boys</option>
+<option value="2113">4 × 100 metres Freestyle Relay, Boys</option>
+<option value="2114">50 metres Backstroke, Boys</option>
+<option value="2115">100 metres Backstroke, Boys</option>
+<option value="2116">200 metres Backstroke, Boys</option>
+<option value="2117">50 metres Breaststroke, Boys</option>
+<option value="2118">100 metres Breaststroke, Boys</option>
+<option value="2119">200 metres Breaststroke, Boys</option>
+<option value="2120">50 metres Butterfly, Boys</option>
+<option value="2121">100 metres Butterfly, Boys</option>
+<option value="2122">200 metres Butterfly, Boys</option>
+<option value="2123">200 metres Individual Medley, Boys</option>
+<option value="2124">4 × 100 metres Medley Relay, Boys</option>
+<option value="2125">50 metres Freestyle, Girls</option>
+<option value="2126">100 metres Freestyle, Girls</option>
+<option value="2127">200 metres Freestyle, Girls</option>
+<option value="2128">400 metres Freestyle, Girls</option>
+<option value="2129">4 × 100 metres Freestyle Relay, Girls</option>
+<option value="2309">800 metres Freestyle, Girls</option>
+<option value="2130">50 metres Backstroke, Girls</option>
+<option value="2131">100 metres Backstroke, Girls</option>
+<option value="2132">200 metres Backstroke, Girls</option>
+<option value="2133">50 metres Breaststroke, Girls</option>
+<option value="2134">100 metres Breaststroke, Girls</option>
+<option value="2135">200 metres Breaststroke, Girls</option>
+<option value="2136">50 metres Butterfly, Girls</option>
+<option value="2137">100 metres Butterfly, Girls</option>
+<option value="2138">200 metres Butterfly, Girls</option>
+<option value="2139">200 metres Individual Medley, Girls</option>
+<option value="2140">4 × 100 metres Medley Relay, Girls</option>
+<option value="2141">4 × 100 metres Freestyle Relay, Mixed Youth</option>
+<option value="2142">4 × 100 metres Medley Relay, Mixed Youth</option>
+<option value="551">50 yards Freestyle, Men</option>
+<option value="553">100 yards Freestyle, Men</option>
+<option value="555">220 yards Freestyle, Men</option>
+<option value="557">440 yards Freestyle, Men</option>
+<option value="559">500 metres Freestyle, Men</option>
+<option value="560">880 yards Freestyle, Men</option>
+<option value="561">1,000 metres Freestyle, Men</option>
+<option value="562">1,200 metres Freestyle, Men</option>
+<option value="564">1 mile Freestyle, Men</option>
+<option value="565">4,000 metres Freestyle, Men</option>
+<option value="566">4 × 50 yards Freestyle Relay, Men</option>
+<option value="569">4 × 250 metres Freestyle Relay, Men</option>
+<option value="570">100 yards Backstroke, Men</option>
+<option value="575">440 yards Breaststroke, Men</option>
+<option value="576">400 metres Breaststroke, Men</option>
+<option value="582">100 metres Freestyle For Sailors, Men</option>
+<option value="583">Underwater Swimming, Men</option>
+<option value="584">Plunge For Distance, Men</option>
+<option value="585">200 metres Obstacle Course, Men</option>
+<option value="586">200 metres Team Swimming, Men</option>
+<option value="2409">100 yards, Handicap, Men</option>
+<option value="2410">220 yards, Handicap, Men</option>
+<option value="2411">440 yards, Handicap, Men</option>
+<option value="2412">880 yards, Handicap, Men</option>
+<option value="2413">1 mile, Handicap, Men</option>
+<option value="590">300 metres Freestyle, Women</option></optgroup><optgroup label="Table Tennis"><option value="625">Singles, Men</option>
+<option value="705">Team, Men</option>
+<option value="627">Singles, Women</option>
+<option value="706">Team, Women</option>
+<option value="2573">Doubles, Mixed</option>
+<option value="2277">Singles, Boys</option>
+<option value="2278">Singles, Girls</option>
+<option value="2279">Team, Mixed Youth</option>
+<option value="626">Doubles, Men</option>
+<option value="628">Doubles, Women</option></optgroup><optgroup label="Taekwondo"><option value="612">Flyweight, Men</option>
+<option value="613">Featherweight, Men</option>
+<option value="614">Welterweight, Men</option>
+<option value="615">Heavyweight, Men</option>
+<option value="616">Flyweight, Women</option>
+<option value="617">Featherweight, Women</option>
+<option value="618">Welterweight, Women</option>
+<option value="619">Heavyweight, Women</option>
+<option value="2267">≤48 kilograms, Boys</option>
+<option value="2268">≤55 kilograms, Boys</option>
+<option value="2269">≤63 kilograms, Boys</option>
+<option value="2270">≤73 kilograms, Boys</option>
+<option value="2271">&gt;73 kilograms, Boys</option>
+<option value="2272">≤44 kilograms, Girls</option>
+<option value="2273">≤49 kilograms, Girls</option>
+<option value="2274">≤55 kilograms, Girls</option>
+<option value="2275">≤63 kilograms, Girls</option>
+<option value="2276">&gt;63 kilograms, Girls</option>
+<option value="805">Finweight, Men</option>
+<option value="806">Bantamweight, Men</option>
+<option value="807">Lightweight, Men</option>
+<option value="808">Middleweight, Men</option>
+<option value="809">Finweight, Women</option>
+<option value="810">Bantamweight, Women</option>
+<option value="811">Lightweight, Women</option>
+<option value="812">Middleweight, Women</option></optgroup><optgroup label="Tennis"><option value="607">Singles, Men</option>
+<option value="608">Doubles, Men</option>
+<option value="609">Singles, Women</option>
+<option value="610">Doubles, Women</option>
+<option value="611">Doubles, Mixed</option>
+<option value="2179">Singles, Boys</option>
+<option value="2180">Doubles, Boys</option>
+<option value="2181">Singles, Girls</option>
+<option value="2182">Doubles, Girls</option>
+<option value="2310">Doubles, Mixed Youth</option>
+<option value="1013">Singles, Covered Courts, Men</option>
+<option value="1014">Doubles, Covered Courts, Men</option>
+<option value="2415">Singles, Handicap, Men</option>
+<option value="2416">Doubles, Handicap, Men</option>
+<option value="2419">Singles, Professionals, Men</option>
+<option value="2420">Doubles, Professionals, Handicap, Men</option>
+<option value="1015">Singles, Covered Courts, Women</option>
+<option value="2417">Singles, Handicap, Women</option>
+<option value="2418">Doubles, Handicap, Mixed</option>
+<option value="1016">Doubles, Covered Courts, Mixed</option></optgroup><optgroup label="Trampolining"><option value="620">Individual, Men</option>
+<option value="621">Individual, Women</option>
+<option value="2185">Individual, Boys</option>
+<option value="2186">Individual, Girls</option></optgroup><optgroup label="Triathlon"><option value="623">Olympic Distance, Men</option>
+<option value="624">Olympic Distance, Women</option>
+<option value="2564">Relay, Mixed</option>
+<option value="2172">Sprint, Boys</option>
+<option value="2173">Sprint, Girls</option>
+<option value="2174">Relay, Mixed Youth</option></optgroup><optgroup label="Tug-Of-War"><option value="622">Tug-Of-War, Men</option></optgroup><optgroup label="Unknown Sport"><option value="2537">Unknown Event, Men</option></optgroup><optgroup label="Volleyball"><option value="629">Volleyball, Men</option>
+<option value="630">Volleyball, Women</option>
+<option value="2199">Volleyball, Boys</option>
+<option value="2200">Volleyball, Girls</option></optgroup><optgroup label="Water Polo"><option value="631">Water Polo, Men</option>
+<option value="632">Water Polo, Women</option></optgroup><optgroup label="Waterskiing"><option value="813">Slalom, Men</option>
+<option value="814">Tricks, Men</option>
+<option value="815">Jumping, Men</option>
+<option value="816">Slalom, Women</option>
+<option value="817">Tricks, Women</option>
+<option value="818">Jumping, Women</option></optgroup><optgroup label="Weightlifting"><option value="635">Featherweight, Men</option>
+<option value="636">Lightweight, Men</option>
+<option value="637">Middleweight, Men</option>
+<option value="638">Light-Heavyweight, Men</option>
+<option value="639">Middle-Heavyweight, Men</option>
+<option value="640">Heavyweight, Men</option>
+<option value="643">Super-Heavyweight, Men</option>
+<option value="647">Flyweight, Women</option>
+<option value="648">Featherweight, Women</option>
+<option value="649">Lightweight, Women</option>
+<option value="650">Middleweight, Women</option>
+<option value="651">Light-Heavyweight, Women</option>
+<option value="652">Heavyweight, Women</option>
+<option value="653">Super-Heavyweight, Women</option>
+<option value="2157">Bantamweight, Boys</option>
+<option value="2158">Featherweight, Boys</option>
+<option value="2159">Lightweight, Boys</option>
+<option value="2160">Middleweight, Boys</option>
+<option value="2161">Heavyweight, Boys</option>
+<option value="2162">Super-Heavyweight, Boys</option>
+<option value="2475">Bantamweight, Girls</option>
+<option value="2163">Featherweight, Girls</option>
+<option value="2164">Lightweight, Girls</option>
+<option value="2165">Middleweight, Girls</option>
+<option value="2166">Heavyweight, Girls</option>
+<option value="2167">Super-Heavyweight, Girls</option>
+<option value="633">Flyweight, Men</option>
+<option value="634">Bantamweight, Men</option>
+<option value="641">Heavyweight I, Men</option>
+<option value="642">Heavyweight II, Men</option>
+<option value="644">Unlimited, One Hand, Men</option>
+<option value="645">Unlimited, Two Hands, Men</option>
+<option value="646">All-Around Dumbbell Contest, Men</option></optgroup><optgroup label="Winter Pentathlon"><option value="750">Winter Pentathlon, Men</option></optgroup><optgroup label="Wrestling"><option value="657">Featherweight, Greco-Roman, Men</option>
+<option value="659">Welterweight, Greco-Roman, Men</option>
+<option value="660">Middleweight, Greco-Roman, Men</option>
+<option value="663">Light-Heavyweight, Greco-Roman, Men</option>
+<option value="664">Heavyweight, Greco-Roman, Men</option>
+<option value="665">Super-Heavyweight, Greco-Roman, Men</option>
+<option value="671">Featherweight, Freestyle, Men</option>
+<option value="673">Welterweight, Freestyle, Men</option>
+<option value="674">Middleweight, Freestyle, Men</option>
+<option value="675">Light-Heavyweight, Freestyle, Men</option>
+<option value="676">Heavyweight, Freestyle, Men</option>
+<option value="677">Super-Heavyweight, Freestyle, Men</option>
+<option value="678">Flyweight, Freestyle, Women</option>
+<option value="1024">Featherweight, Freestyle, Women</option>
+<option value="679">Lightweight, Freestyle, Women</option>
+<option value="680">Middleweight, Freestyle, Women</option>
+<option value="1025">Light-Heavyweight, Freestyle, Women</option>
+<option value="681">Heavyweight, Freestyle, Women</option>
+<option value="2476">≤45 kilograms, Greco-Roman, Boys</option>
+<option value="2143">≤42 kilograms, Greco Roman, Boys</option>
+<option value="2144">≤50 kilograms, Greco Roman, Boys</option>
+<option value="2145">≤58 kilograms, Greco Roman, Boys</option>
+<option value="2146">≤69 kilograms, Greco Roman, Boys</option>
+<option value="2147">≤85 kilograms, Greco Roman, Boys</option>
+<option value="2148">≤46 kilograms, Freestyle, Boys</option>
+<option value="2149">≤54 kilograms, Freestyle, Boys</option>
+<option value="2150">≤63 kilograms, Freestyle, Boys</option>
+<option value="2151">≤76 kilograms, Freestyle, Boys</option>
+<option value="2152">≤100 kilograms, Freestyle, Boys</option>
+<option value="2477">≤51 kilograms, Greco-Roman, Boys</option>
+<option value="2478">≤60 kilograms, Greco-Roman, Boys</option>
+<option value="2479">≤71 kilograms, Greco-Roman, Boys</option>
+<option value="2480">≤92 kilograms, Greco-Roman, Boys</option>
+<option value="2481">≤48 kilograms, Freestyle, Boys</option>
+<option value="2482">≤55 kilograms, Freestyle, Boys</option>
+<option value="2483">≤65 kilograms, Freestyle, Boys</option>
+<option value="2484">≤80 kilograms, Freestyle, Boys</option>
+<option value="2485">≤110 kilograms, Freestyle, Boys</option>
+<option value="2486">≤43 kilograms, Freestyle, Girls</option>
+<option value="2153">≤46 kilograms, Freestyle, Girls</option>
+<option value="2154">≤52 kilograms, Freestyle, Girls</option>
+<option value="2155">≤60 kilograms, Freestyle, Girls</option>
+<option value="2487">≤49 kilograms, Freestyle, Girls</option>
+<option value="2156">≤70 kilograms, Freestyle, Girls</option>
+<option value="2488">≤57 kilograms, Freestyle, Girls</option>
+<option value="2489">≤65 kilograms, Freestyle, Girls</option>
+<option value="2490">≤73 kilograms, Freestyle, Girls</option>
+<option value="654">Light-Flyweight, Greco-Roman, Men</option>
+<option value="655">Flyweight, Greco-Roman, Men</option>
+<option value="656">Bantamweight, Greco-Roman, Men</option>
+<option value="658">Lightweight, Greco-Roman, Men</option>
+<option value="661">Middleweight A, Greco-Roman, Men</option>
+<option value="662">Middleweight B, Greco-Roman, Men</option>
+<option value="666">Unlimited Class, Greco-Roman, Men</option>
+<option value="667">All-Around, Greco-Roman, Men</option>
+<option value="2437">Wrestling and Somersault, Men</option>
+<option value="668">Light-Flyweight, Freestyle, Men</option>
+<option value="669">Flyweight, Freestyle, Men</option>
+<option value="670">Bantamweight, Freestyle, Men</option>
+<option value="672">Lightweight, Freestyle, Men</option></optgroup></select>
+<select class='form-control' name='sort'>
+<option value='0'>Sort by medal color</option>
+<option value='1'>Sort by medal total</option>
+<option value='2'>Sort by medal points</option>
+<option value='3'>Sort by Gold only</option>
+<option value='4'>Sort by Silver only</option>
+<option value='5'>Sort by Bronze only</option>
+</select>
+</form>
+
+<script>
+  jQuery('#filter').change(
+      function() {
+          jQuery.ajax({
+                  beforeSend: function(xhr) { xhr.setRequestHeader('X-CSRF-Token', $('meta[name="csrf-token"]').attr('content'))},
+                  data: $('#filter').serialize(),
+                  success:function(request){ jQuery('#medals').html(request);},
+                  type: 'post',
+                  url:'/statistics/medal/country'
+              })
+      });
+</script>
+<div id='medals'>
+<table class='table table-striped'>
+<thead>
+<tr>
+<th colspan='2'>NOC</th>
+<th>Gold</th>
+<th>Silver</th>
+<th>Bronze</th>
+<th>Total</th>
+</tr>
+</thead>
+<tr>
+<td><a href="/countries/USA">United States</a></td>
+<td><a href="/countries/USA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/USA.png" /> USA</a></td>
+<td>1228</td>
+<td>1001</td>
+<td>876</td>
+<td>3105</td>
+</tr>
+<tr>
+<td><a href="/countries/URS">Soviet Union</a></td>
+<td><a href="/countries/URS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/URS.png" /> URS</a></td>
+<td>473</td>
+<td>376</td>
+<td>355</td>
+<td>1204</td>
+</tr>
+<tr>
+<td><a href="/countries/GER">Germany</a></td>
+<td><a href="/countries/GER"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/GER.png" /> GER</a></td>
+<td>384</td>
+<td>419</td>
+<td>407</td>
+<td>1210</td>
+</tr>
+<tr>
+<td><a href="/countries/CHN">People&#39;s Republic of China</a></td>
+<td><a href="/countries/CHN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/CHN.png" /> CHN</a></td>
+<td>383</td>
+<td>281</td>
+<td>234</td>
+<td>898</td>
+</tr>
+<tr>
+<td><a href="/countries/GBR">Great Britain</a></td>
+<td><a href="/countries/GBR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/GBR.png" /> GBR</a></td>
+<td>325</td>
+<td>353</td>
+<td>359</td>
+<td>1037</td>
+</tr>
+<tr>
+<td><a href="/countries/FRA">France</a></td>
+<td><a href="/countries/FRA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/FRA.png" /> FRA</a></td>
+<td>312</td>
+<td>335</td>
+<td>392</td>
+<td>1039</td>
+</tr>
+<tr>
+<td><a href="/countries/ITA">Italy</a></td>
+<td><a href="/countries/ITA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ITA.png" /> ITA</a></td>
+<td>299</td>
+<td>278</td>
+<td>308</td>
+<td>885</td>
+</tr>
+<tr>
+<td><a href="/countries/RUS">Russian Federation</a></td>
+<td><a href="/countries/RUS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/RUS.png" /> RUS</a></td>
+<td>292</td>
+<td>243</td>
+<td>246</td>
+<td>781</td>
+</tr>
+<tr>
+<td><a href="/countries/SWE">Sweden</a></td>
+<td><a href="/countries/SWE"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SWE.png" /> SWE</a></td>
+<td>234</td>
+<td>244</td>
+<td>262</td>
+<td>740</td>
+</tr>
+<tr>
+<td><a href="/countries/JPN">Japan</a></td>
+<td><a href="/countries/JPN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/JPN.png" /> JPN</a></td>
+<td>229</td>
+<td>220</td>
+<td>241</td>
+<td>690</td>
+</tr>
+<tr>
+<td><a href="/countries/NOR">Norway</a></td>
+<td><a href="/countries/NOR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/NOR.png" /> NOR</a></td>
+<td>222</td>
+<td>203</td>
+<td>192</td>
+<td>617</td>
+</tr>
+<tr>
+<td><a href="/countries/HUN">Hungary</a></td>
+<td><a href="/countries/HUN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/HUN.png" /> HUN</a></td>
+<td>210</td>
+<td>183</td>
+<td>208</td>
+<td>601</td>
+</tr>
+<tr>
+<td><a href="/countries/GDR">East Germany</a></td>
+<td><a href="/countries/GDR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/GDR.png" /> GDR</a></td>
+<td>192</td>
+<td>165</td>
+<td>162</td>
+<td>519</td>
+</tr>
+<tr>
+<td><a href="/countries/AUS">Australia</a></td>
+<td><a href="/countries/AUS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/AUS.png" /> AUS</a></td>
+<td>185</td>
+<td>204</td>
+<td>247</td>
+<td>636</td>
+</tr>
+<tr>
+<td><a href="/countries/KOR">Republic of Korea</a></td>
+<td><a href="/countries/KOR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KOR.png" /> KOR</a></td>
+<td>166</td>
+<td>144</td>
+<td>137</td>
+<td>447</td>
+</tr>
+<tr>
+<td><a href="/countries/NED">Netherlands</a></td>
+<td><a href="/countries/NED"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/NED.png" /> NED</a></td>
+<td>159</td>
+<td>166</td>
+<td>187</td>
+<td>512</td>
+</tr>
+<tr>
+<td><a href="/countries/CAN">Canada</a></td>
+<td><a href="/countries/CAN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/CAN.png" /> CAN</a></td>
+<td>157</td>
+<td>196</td>
+<td>251</td>
+<td>604</td>
+</tr>
+<tr>
+<td><a href="/countries/FIN">Finland</a></td>
+<td><a href="/countries/FIN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/FIN.png" /> FIN</a></td>
+<td>155</td>
+<td>157</td>
+<td>195</td>
+<td>507</td>
+</tr>
+<tr>
+<td><a href="/countries/SUI">Switzerland</a></td>
+<td><a href="/countries/SUI"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SUI.png" /> SUI</a></td>
+<td>142</td>
+<td>146</td>
+<td>153</td>
+<td>441</td>
+</tr>
+<tr>
+<td><a href="/countries/ELI">Elis</a></td>
+<td><a href="/countries/ELI"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ELI.png" /> ELI</a></td>
+<td>117</td>
+<td>0</td>
+<td>0</td>
+<td>117</td>
+</tr>
+<tr>
+<td><a href="/countries/AUT">Austria</a></td>
+<td><a href="/countries/AUT"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/AUT.png" /> AUT</a></td>
+<td>113</td>
+<td>138</td>
+<td>161</td>
+<td>412</td>
+</tr>
+<tr>
+<td><a href="/countries/CUB">Cuba</a></td>
+<td><a href="/countries/CUB"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/CUB.png" /> CUB</a></td>
+<td>99</td>
+<td>73</td>
+<td>87</td>
+<td>259</td>
+</tr>
+<tr>
+<td><a href="/countries/ROU">Romania</a></td>
+<td><a href="/countries/ROU"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ROU.png" /> ROU</a></td>
+<td>98</td>
+<td>107</td>
+<td>127</td>
+<td>332</td>
+</tr>
+<tr>
+<td><a href="/countries/POL">Poland</a></td>
+<td><a href="/countries/POL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/POL.png" /> POL</a></td>
+<td>89</td>
+<td>99</td>
+<td>158</td>
+<td>346</td>
+</tr>
+<tr>
+<td><a href="/countries/SPA">Sparta</a></td>
+<td><a href="/countries/SPA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SPA.png" /> SPA</a></td>
+<td>83</td>
+<td>0</td>
+<td>0</td>
+<td>83</td>
+</tr>
+<tr>
+<td><a href="/countries/FRG">West Germany</a></td>
+<td><a href="/countries/FRG"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/FRG.png" /> FRG</a></td>
+<td>67</td>
+<td>82</td>
+<td>94</td>
+<td>243</td>
+</tr>
+<tr>
+<td><a href="/countries/BUL">Bulgaria</a></td>
+<td><a href="/countries/BUL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/BUL.png" /> BUL</a></td>
+<td>61</td>
+<td>96</td>
+<td>89</td>
+<td>246</td>
+</tr>
+<tr>
+<td><a href="/countries/NZL">New Zealand</a></td>
+<td><a href="/countries/NZL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/NZL.png" /> NZL</a></td>
+<td>61</td>
+<td>40</td>
+<td>59</td>
+<td>160</td>
+</tr>
+<tr>
+<td><a href="/countries/UKR">Ukraine</a></td>
+<td><a href="/countries/UKR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/UKR.png" /> UKR</a></td>
+<td>60</td>
+<td>63</td>
+<td>102</td>
+<td>225</td>
+</tr>
+<tr>
+<td><a href="/countries/BEL">Belgium</a></td>
+<td><a href="/countries/BEL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/BEL.png" /> BEL</a></td>
+<td>55</td>
+<td>69</td>
+<td>78</td>
+<td>202</td>
+</tr>
+<tr>
+<td><a href="/countries/DEN">Denmark</a></td>
+<td><a href="/countries/DEN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/DEN.png" /> DEN</a></td>
+<td>54</td>
+<td>89</td>
+<td>89</td>
+<td>232</td>
+</tr>
+<tr>
+<td><a href="/countries/ESP">Spain</a></td>
+<td><a href="/countries/ESP"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ESP.png" /> ESP</a></td>
+<td>54</td>
+<td>82</td>
+<td>72</td>
+<td>208</td>
+</tr>
+<tr>
+<td><a href="/countries/EUN">Unified Team</a></td>
+<td><a href="/countries/EUN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/EUN.png" /> EUN</a></td>
+<td>54</td>
+<td>44</td>
+<td>37</td>
+<td>135</td>
+</tr>
+<tr>
+<td><a href="/countries/ATH">Athens</a></td>
+<td><a href="/countries/ATH"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ATH.png" /> ATH</a></td>
+<td>53</td>
+<td>0</td>
+<td>0</td>
+<td>53</td>
+</tr>
+<tr>
+<td><a href="/countries/MIX">Mixed team</a></td>
+<td><a href="/countries/MIX"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MIX.png" /> MIX</a></td>
+<td>52</td>
+<td>48</td>
+<td>56</td>
+<td>156</td>
+</tr>
+<tr>
+<td><a href="/countries/TCH">Czechoslovakia</a></td>
+<td><a href="/countries/TCH"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/TCH.png" /> TCH</a></td>
+<td>51</td>
+<td>58</td>
+<td>62</td>
+<td>171</td>
+</tr>
+<tr>
+<td><a href="/countries/ALX">Alexandria</a></td>
+<td><a href="/countries/ALX"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ALX.png" /> ALX</a></td>
+<td>49</td>
+<td>0</td>
+<td>0</td>
+<td>49</td>
+</tr>
+<tr>
+<td><a href="/countries/GRE">Greece</a></td>
+<td><a href="/countries/GRE"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/GRE.png" /> GRE</a></td>
+<td>47</td>
+<td>63</td>
+<td>59</td>
+<td>169</td>
+</tr>
+<tr>
+<td><a href="/countries/BRA">Brazil</a></td>
+<td><a href="/countries/BRA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/BRA.png" /> BRA</a></td>
+<td>47</td>
+<td>55</td>
+<td>80</td>
+<td>182</td>
+</tr>
+<tr>
+<td><a href="/countries/TUR">Turkey</a></td>
+<td><a href="/countries/TUR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/TUR.png" /> TUR</a></td>
+<td>45</td>
+<td>34</td>
+<td>55</td>
+<td>134</td>
+</tr>
+<tr>
+<td><a href="/countries/KEN">Kenya</a></td>
+<td><a href="/countries/KEN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KEN.png" /> KEN</a></td>
+<td>43</td>
+<td>45</td>
+<td>40</td>
+<td>128</td>
+</tr>
+<tr>
+<td><a href="/countries/RHD">Rhodes</a></td>
+<td><a href="/countries/RHD"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/RHD.png" /> RHD</a></td>
+<td>38</td>
+<td>0</td>
+<td>0</td>
+<td>38</td>
+</tr>
+<tr>
+<td><a href="/countries/CZE">Czech Republic</a></td>
+<td><a href="/countries/CZE"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/CZE.png" /> CZE</a></td>
+<td>36</td>
+<td>45</td>
+<td>53</td>
+<td>134</td>
+</tr>
+<tr>
+<td><a href="/countries/IRI">Islamic Republic of Iran</a></td>
+<td><a href="/countries/IRI"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/IRI.png" /> IRI</a></td>
+<td>36</td>
+<td>28</td>
+<td>37</td>
+<td>101</td>
+</tr>
+<tr>
+<td><a href="/countries/UNK">Unknown</a></td>
+<td><a href="/countries/UNK"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/UNK.png" /> UNK</a></td>
+<td>36</td>
+<td>0</td>
+<td>0</td>
+<td>36</td>
+</tr>
+<tr>
+<td><a href="/countries/ARG">Argentina</a></td>
+<td><a href="/countries/ARG"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ARG.png" /> ARG</a></td>
+<td>34</td>
+<td>36</td>
+<td>45</td>
+<td>115</td>
+</tr>
+<tr>
+<td><a href="/countries/RSA">South Africa</a></td>
+<td><a href="/countries/RSA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/RSA.png" /> RSA</a></td>
+<td>33</td>
+<td>39</td>
+<td>34</td>
+<td>106</td>
+</tr>
+<tr>
+<td><a href="/countries/JAM">Jamaica</a></td>
+<td><a href="/countries/JAM"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/JAM.png" /> JAM</a></td>
+<td>30</td>
+<td>38</td>
+<td>26</td>
+<td>94</td>
+</tr>
+<tr>
+<td><a href="/countries/ETH">Ethiopia</a></td>
+<td><a href="/countries/ETH"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ETH.png" /> ETH</a></td>
+<td>30</td>
+<td>20</td>
+<td>29</td>
+<td>79</td>
+</tr>
+<tr>
+<td><a href="/countries/ROC">Russian Olympic Committee</a></td>
+<td><a href="/countries/ROC"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ROC.png" /> ROC</a></td>
+<td>28</td>
+<td>46</td>
+<td>46</td>
+<td>120</td>
+</tr>
+<tr>
+<td><a href="/countries/BLR">Belarus</a></td>
+<td><a href="/countries/BLR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/BLR.png" /> BLR</a></td>
+<td>26</td>
+<td>48</td>
+<td>52</td>
+<td>126</td>
+</tr>
+<tr>
+<td><a href="/countries/YUG">Yugoslavia</a></td>
+<td><a href="/countries/YUG"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/YUG.png" /> YUG</a></td>
+<td>26</td>
+<td>32</td>
+<td>29</td>
+<td>87</td>
+</tr>
+<tr>
+<td><a href="/countries/MIL">Miletus</a></td>
+<td><a href="/countries/MIL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MIL.png" /> MIL</a></td>
+<td>26</td>
+<td>0</td>
+<td>0</td>
+<td>26</td>
+</tr>
+<tr>
+<td><a href="/countries/KAZ">Kazakhstan</a></td>
+<td><a href="/countries/KAZ"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KAZ.png" /> KAZ</a></td>
+<td>25</td>
+<td>31</td>
+<td>53</td>
+<td>109</td>
+</tr>
+<tr>
+<td><a href="/countries/EPH">Ephesus</a></td>
+<td><a href="/countries/EPH"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/EPH.png" /> EPH</a></td>
+<td>24</td>
+<td>0</td>
+<td>0</td>
+<td>24</td>
+</tr>
+<tr>
+<td><a href="/countries/KRT">Kroton</a></td>
+<td><a href="/countries/KRT"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KRT.png" /> KRT</a></td>
+<td>23</td>
+<td>0</td>
+<td>0</td>
+<td>23</td>
+</tr>
+<tr>
+<td><a href="/countries/MES">Messene</a></td>
+<td><a href="/countries/MES"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MES.png" /> MES</a></td>
+<td>23</td>
+<td>0</td>
+<td>0</td>
+<td>23</td>
+</tr>
+<tr>
+<td><a href="/countries/SLO">Slovenia</a></td>
+<td><a href="/countries/SLO"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SLO.png" /> SLO</a></td>
+<td>22</td>
+<td>27</td>
+<td>36</td>
+<td>85</td>
+</tr>
+<tr>
+<td><a href="/countries/CRO">Croatia</a></td>
+<td><a href="/countries/CRO"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/CRO.png" /> CRO</a></td>
+<td>22</td>
+<td>22</td>
+<td>19</td>
+<td>63</td>
+</tr>
+<tr>
+<td><a href="/countries/THA">Thailand</a></td>
+<td><a href="/countries/THA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/THA.png" /> THA</a></td>
+<td>21</td>
+<td>18</td>
+<td>22</td>
+<td>61</td>
+</tr>
+<tr>
+<td><a href="/countries/AGS">Argos</a></td>
+<td><a href="/countries/AGS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/AGS.png" /> AGS</a></td>
+<td>21</td>
+<td>0</td>
+<td>0</td>
+<td>21</td>
+</tr>
+<tr>
+<td><a href="/countries/SIR">Siracusa</a></td>
+<td><a href="/countries/SIR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SIR.png" /> SIR</a></td>
+<td>21</td>
+<td>0</td>
+<td>0</td>
+<td>21</td>
+</tr>
+<tr>
+<td><a href="/countries/PRK">Democratic People&#39;s Republic of Korea</a></td>
+<td><a href="/countries/PRK"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/PRK.png" /> PRK</a></td>
+<td>20</td>
+<td>20</td>
+<td>27</td>
+<td>67</td>
+</tr>
+<tr>
+<td><a href="/countries/AZE">Azerbaijan</a></td>
+<td><a href="/countries/AZE"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/AZE.png" /> AZE</a></td>
+<td>19</td>
+<td>24</td>
+<td>32</td>
+<td>75</td>
+</tr>
+<tr>
+<td><a href="/countries/SIK">Sikyon</a></td>
+<td><a href="/countries/SIK"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SIK.png" /> SIK</a></td>
+<td>19</td>
+<td>0</td>
+<td>0</td>
+<td>19</td>
+</tr>
+<tr>
+<td><a href="/countries/UZB">Uzbekistan</a></td>
+<td><a href="/countries/UZB"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/UZB.png" /> UZB</a></td>
+<td>17</td>
+<td>16</td>
+<td>33</td>
+<td>66</td>
+</tr>
+<tr>
+<td><a href="/countries/KYR">Kyrene</a></td>
+<td><a href="/countries/KYR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KYR.png" /> KYR</a></td>
+<td>17</td>
+<td>0</td>
+<td>0</td>
+<td>17</td>
+</tr>
+<tr>
+<td><a href="/countries/MNM">Magnesia on the Maiandros</a></td>
+<td><a href="/countries/MNM"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MNM.png" /> MNM</a></td>
+<td>17</td>
+<td>0</td>
+<td>0</td>
+<td>17</td>
+</tr>
+<tr>
+<td><a href="/countries/MEX">Mexico</a></td>
+<td><a href="/countries/MEX"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MEX.png" /> MEX</a></td>
+<td>16</td>
+<td>33</td>
+<td>52</td>
+<td>101</td>
+</tr>
+<tr>
+<td><a href="/countries/SVK">Slovakia</a></td>
+<td><a href="/countries/SVK"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SVK.png" /> SVK</a></td>
+<td>16</td>
+<td>25</td>
+<td>16</td>
+<td>57</td>
+</tr>
+<tr>
+<td><a href="/countries/MEG">Megara</a></td>
+<td><a href="/countries/MEG"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MEG.png" /> MEG</a></td>
+<td>16</td>
+<td>0</td>
+<td>0</td>
+<td>16</td>
+</tr>
+<tr>
+<td><a href="/countries/EGY">Egypt</a></td>
+<td><a href="/countries/EGY"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/EGY.png" /> EGY</a></td>
+<td>15</td>
+<td>15</td>
+<td>32</td>
+<td>62</td>
+</tr>
+<tr>
+<td><a href="/countries/EST">Estonia</a></td>
+<td><a href="/countries/EST"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/EST.png" /> EST</a></td>
+<td>15</td>
+<td>13</td>
+<td>20</td>
+<td>48</td>
+</tr>
+<tr>
+<td><a href="/countries/AIG">Aigion</a></td>
+<td><a href="/countries/AIG"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/AIG.png" /> AIG</a></td>
+<td>15</td>
+<td>0</td>
+<td>0</td>
+<td>15</td>
+</tr>
+<tr>
+<td><a href="/countries/KTH">Korinth</a></td>
+<td><a href="/countries/KTH"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KTH.png" /> KTH</a></td>
+<td>14</td>
+<td>0</td>
+<td>0</td>
+<td>14</td>
+</tr>
+<tr>
+<td><a href="/countries/IND">India</a></td>
+<td><a href="/countries/IND"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/IND.png" /> IND</a></td>
+<td>13</td>
+<td>25</td>
+<td>20</td>
+<td>58</td>
+</tr>
+<tr>
+<td><a href="/countries/LTU">Lithuania</a></td>
+<td><a href="/countries/LTU"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/LTU.png" /> LTU</a></td>
+<td>13</td>
+<td>10</td>
+<td>17</td>
+<td>40</td>
+</tr>
+<tr>
+<td><a href="/countries/MAK">Macedonia</a></td>
+<td><a href="/countries/MAK"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MAK.png" /> MAK</a></td>
+<td>13</td>
+<td>0</td>
+<td>0</td>
+<td>13</td>
+</tr>
+<tr>
+<td><a href="/countries/PEL">Pellene</a></td>
+<td><a href="/countries/PEL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/PEL.png" /> PEL</a></td>
+<td>13</td>
+<td>0</td>
+<td>0</td>
+<td>13</td>
+</tr>
+<tr>
+<td><a href="/countries/ROM">Roma</a></td>
+<td><a href="/countries/ROM"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ROM.png" /> ROM</a></td>
+<td>13</td>
+<td>0</td>
+<td>0</td>
+<td>13</td>
+</tr>
+<tr>
+<td><a href="/countries/COL">Colombia</a></td>
+<td><a href="/countries/COL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/COL.png" /> COL</a></td>
+<td>12</td>
+<td>20</td>
+<td>21</td>
+<td>53</td>
+</tr>
+<tr>
+<td><a href="/countries/IRL">Ireland</a></td>
+<td><a href="/countries/IRL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/IRL.png" /> IRL</a></td>
+<td>12</td>
+<td>14</td>
+<td>19</td>
+<td>45</td>
+</tr>
+<tr>
+<td><a href="/countries/THL">Thessaly</a></td>
+<td><a href="/countries/THL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/THL.png" /> THL</a></td>
+<td>12</td>
+<td>0</td>
+<td>0</td>
+<td>12</td>
+</tr>
+<tr>
+<td><a href="/countries/GEO">Georgia</a></td>
+<td><a href="/countries/GEO"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/GEO.png" /> GEO</a></td>
+<td>11</td>
+<td>18</td>
+<td>22</td>
+<td>51</td>
+</tr>
+<tr>
+<td><a href="/countries/EDR">Epidauros</a></td>
+<td><a href="/countries/EDR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/EDR.png" /> EDR</a></td>
+<td>11</td>
+<td>0</td>
+<td>0</td>
+<td>11</td>
+</tr>
+<tr>
+<td><a href="/countries/TPE">Chinese Taipei</a></td>
+<td><a href="/countries/TPE"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/TPE.png" /> TPE</a></td>
+<td>10</td>
+<td>18</td>
+<td>22</td>
+<td>50</td>
+</tr>
+<tr>
+<td><a href="/countries/HER">Heraia</a></td>
+<td><a href="/countries/HER"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/HER.png" /> HER</a></td>
+<td>10</td>
+<td>0</td>
+<td>0</td>
+<td>10</td>
+</tr>
+<tr>
+<td><a href="/countries/MAR">Morocco</a></td>
+<td><a href="/countries/MAR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MAR.png" /> MAR</a></td>
+<td>9</td>
+<td>10</td>
+<td>15</td>
+<td>34</td>
+</tr>
+<tr>
+<td><a href="/countries/SKS">Kos</a></td>
+<td><a href="/countries/SKS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SKS.png" /> SKS</a></td>
+<td>9</td>
+<td>0</td>
+<td>0</td>
+<td>9</td>
+</tr>
+<tr>
+<td><a href="/countries/LAK">Lakonia (Akrion)</a></td>
+<td><a href="/countries/LAK"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/LAK.png" /> LAK</a></td>
+<td>9</td>
+<td>0</td>
+<td>0</td>
+<td>9</td>
+</tr>
+<tr>
+<td><a href="/countries/PLD">Philadelphia</a></td>
+<td><a href="/countries/PLD"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/PLD.png" /> PLD</a></td>
+<td>9</td>
+<td>0</td>
+<td>0</td>
+<td>9</td>
+</tr>
+<tr>
+<td><a href="/countries/SMS">Samos</a></td>
+<td><a href="/countries/SMS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SMS.png" /> SMS</a></td>
+<td>9</td>
+<td>0</td>
+<td>0</td>
+<td>9</td>
+</tr>
+<tr>
+<td><a href="/countries/SMY">Smyrna</a></td>
+<td><a href="/countries/SMY"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SMY.png" /> SMY</a></td>
+<td>9</td>
+<td>0</td>
+<td>0</td>
+<td>9</td>
+</tr>
+<tr>
+<td><a href="/countries/TAR">Taranto</a></td>
+<td><a href="/countries/TAR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/TAR.png" /> TAR</a></td>
+<td>9</td>
+<td>0</td>
+<td>0</td>
+<td>9</td>
+</tr>
+<tr>
+<td><a href="/countries/THB">Thebes</a></td>
+<td><a href="/countries/THB"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/THB.png" /> THB</a></td>
+<td>9</td>
+<td>0</td>
+<td>0</td>
+<td>9</td>
+</tr>
+<tr>
+<td><a href="/countries/LAT">Latvia</a></td>
+<td><a href="/countries/LAT"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/LAT.png" /> LAT</a></td>
+<td>8</td>
+<td>18</td>
+<td>17</td>
+<td>43</td>
+</tr>
+<tr>
+<td><a href="/countries/INA">Indonesia</a></td>
+<td><a href="/countries/INA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/INA.png" /> INA</a></td>
+<td>8</td>
+<td>14</td>
+<td>18</td>
+<td>40</td>
+</tr>
+<tr>
+<td><a href="/countries/BAH">The Bahamas</a></td>
+<td><a href="/countries/BAH"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/BAH.png" /> BAH</a></td>
+<td>8</td>
+<td>3</td>
+<td>8</td>
+<td>19</td>
+</tr>
+<tr>
+<td><a href="/countries/ATO">Antiochia on the Orontes</a></td>
+<td><a href="/countries/ATO"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ATO.png" /> ATO</a></td>
+<td>8</td>
+<td>0</td>
+<td>0</td>
+<td>8</td>
+</tr>
+<tr>
+<td><a href="/countries/LEP">Lepreon</a></td>
+<td><a href="/countries/LEP"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/LEP.png" /> LEP</a></td>
+<td>8</td>
+<td>0</td>
+<td>0</td>
+<td>8</td>
+</tr>
+<tr>
+<td><a href="/countries/MAN">Manteneia</a></td>
+<td><a href="/countries/MAN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MAN.png" /> MAN</a></td>
+<td>8</td>
+<td>0</td>
+<td>0</td>
+<td>8</td>
+</tr>
+<tr>
+<td><a href="/countries/SAL">Salamis</a></td>
+<td><a href="/countries/SAL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SAL.png" /> SAL</a></td>
+<td>8</td>
+<td>0</td>
+<td>0</td>
+<td>8</td>
+</tr>
+<tr>
+<td><a href="/countries/THP">Thespiai</a></td>
+<td><a href="/countries/THP"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/THP.png" /> THP</a></td>
+<td>8</td>
+<td>0</td>
+<td>0</td>
+<td>8</td>
+</tr>
+<tr>
+<td><a href="/countries/XAN">Xanthos</a></td>
+<td><a href="/countries/XAN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/XAN.png" /> XAN</a></td>
+<td>8</td>
+<td>0</td>
+<td>0</td>
+<td>8</td>
+</tr>
+<tr>
+<td><a href="/countries/SRB">Serbia</a></td>
+<td><a href="/countries/SRB"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SRB.png" /> SRB</a></td>
+<td>7</td>
+<td>11</td>
+<td>15</td>
+<td>33</td>
+</tr>
+<tr>
+<td><a href="/countries/ISR">Israel</a></td>
+<td><a href="/countries/ISR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ISR.png" /> ISR</a></td>
+<td>7</td>
+<td>5</td>
+<td>11</td>
+<td>23</td>
+</tr>
+<tr>
+<td><a href="/countries/KHI">Khios</a></td>
+<td><a href="/countries/KHI"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KHI.png" /> KHI</a></td>
+<td>7</td>
+<td>0</td>
+<td>0</td>
+<td>7</td>
+</tr>
+<tr>
+<td><a href="/countries/KKY">Korkyra</a></td>
+<td><a href="/countries/KKY"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KKY.png" /> KKY</a></td>
+<td>7</td>
+<td>0</td>
+<td>0</td>
+<td>7</td>
+</tr>
+<tr>
+<td><a href="/countries/KYZ">Kyzikos</a></td>
+<td><a href="/countries/KYZ"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KYZ.png" /> KYZ</a></td>
+<td>7</td>
+<td>0</td>
+<td>0</td>
+<td>7</td>
+</tr>
+<tr>
+<td><a href="/countries/MAI">Mainalos</a></td>
+<td><a href="/countries/MAI"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MAI.png" /> MAI</a></td>
+<td>7</td>
+<td>0</td>
+<td>0</td>
+<td>7</td>
+</tr>
+<tr>
+<td><a href="/countries/NGR">Nigeria</a></td>
+<td><a href="/countries/NGR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/NGR.png" /> NGR</a></td>
+<td>6</td>
+<td>14</td>
+<td>15</td>
+<td>35</td>
+</tr>
+<tr>
+<td><a href="/countries/POR">Portugal</a></td>
+<td><a href="/countries/POR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/POR.png" /> POR</a></td>
+<td>6</td>
+<td>13</td>
+<td>16</td>
+<td>35</td>
+</tr>
+<tr>
+<td><a href="/countries/TUN">Tunisia</a></td>
+<td><a href="/countries/TUN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/TUN.png" /> TUN</a></td>
+<td>6</td>
+<td>5</td>
+<td>9</td>
+<td>20</td>
+</tr>
+<tr>
+<td><a href="/countries/HIM">Himera</a></td>
+<td><a href="/countries/HIM"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/HIM.png" /> HIM</a></td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="/countries/LAR">Larisa</a></td>
+<td><a href="/countries/LAR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/LAR.png" /> LAR</a></td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="/countries/SAR">Sardis</a></td>
+<td><a href="/countries/SAR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SAR.png" /> SAR</a></td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="/countries/SLT">Seleukeia on the Tigris</a></td>
+<td><a href="/countries/SLT"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SLT.png" /> SLT</a></td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="/countries/KRE">Unknown city in Crete</a></td>
+<td><a href="/countries/KRE"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KRE.png" /> KRE</a></td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="/countries/LOK">Unknown city in Lokria</a></td>
+<td><a href="/countries/LOK"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/LOK.png" /> LOK</a></td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="/countries/VEN">Venezuela</a></td>
+<td><a href="/countries/VEN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/VEN.png" /> VEN</a></td>
+<td>5</td>
+<td>15</td>
+<td>14</td>
+<td>34</td>
+</tr>
+<tr>
+<td><a href="/countries/ARM">Armenia</a></td>
+<td><a href="/countries/ARM"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ARM.png" /> ARM</a></td>
+<td>5</td>
+<td>11</td>
+<td>15</td>
+<td>31</td>
+</tr>
+<tr>
+<td><a href="/countries/ALG">Algeria</a></td>
+<td><a href="/countries/ALG"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ALG.png" /> ALG</a></td>
+<td>5</td>
+<td>9</td>
+<td>8</td>
+<td>22</td>
+</tr>
+<tr>
+<td><a href="/countries/DOM">Dominican Republic</a></td>
+<td><a href="/countries/DOM"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/DOM.png" /> DOM</a></td>
+<td>5</td>
+<td>6</td>
+<td>6</td>
+<td>17</td>
+</tr>
+<tr>
+<td><a href="/countries/VIE">Vietnam</a></td>
+<td><a href="/countries/VIE"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/VIE.png" /> VIE</a></td>
+<td>5</td>
+<td>6</td>
+<td>3</td>
+<td>14</td>
+</tr>
+<tr>
+<td><a href="/countries/UGA">Uganda</a></td>
+<td><a href="/countries/UGA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/UGA.png" /> UGA</a></td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>15</td>
+</tr>
+<tr>
+<td><a href="/countries/AKR">Akragas</a></td>
+<td><a href="/countries/AKR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/AKR.png" /> AKR</a></td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>5</td>
+</tr>
+<tr>
+<td><a href="/countries/AMB">Ambrakia</a></td>
+<td><a href="/countries/AMB"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/AMB.png" /> AMB</a></td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>5</td>
+</tr>
+<tr>
+<td><a href="/countries/BTN">Bithynia (Nikaia)</a></td>
+<td><a href="/countries/BTN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/BTN.png" /> BTN</a></td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>5</td>
+</tr>
+<tr>
+<td><a href="/countries/PHA">Pharsalos</a></td>
+<td><a href="/countries/PHA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/PHA.png" /> PHA</a></td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>5</td>
+</tr>
+<tr>
+<td><a href="/countries/PHN">Phoenicia</a></td>
+<td><a href="/countries/PHN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/PHN.png" /> PHN</a></td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>5</td>
+</tr>
+<tr>
+<td><a href="/countries/SIN">Sinope</a></td>
+<td><a href="/countries/SIN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SIN.png" /> SIN</a></td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>5</td>
+</tr>
+<tr>
+<td><a href="/countries/THR">Thourioi</a></td>
+<td><a href="/countries/THR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/THR.png" /> THR</a></td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>5</td>
+</tr>
+<tr>
+<td><a href="/countries/MGL">Mongolia</a></td>
+<td><a href="/countries/MGL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MGL.png" /> MGL</a></td>
+<td>4</td>
+<td>14</td>
+<td>18</td>
+<td>36</td>
+</tr>
+<tr>
+<td><a href="/countries/TTO">Trinidad and Tobago</a></td>
+<td><a href="/countries/TTO"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/TTO.png" /> TTO</a></td>
+<td>4</td>
+<td>6</td>
+<td>12</td>
+<td>22</td>
+</tr>
+<tr>
+<td><a href="/countries/ECU">Ecuador</a></td>
+<td><a href="/countries/ECU"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ECU.png" /> ECU</a></td>
+<td>4</td>
+<td>5</td>
+<td>2</td>
+<td>11</td>
+</tr>
+<tr>
+<td><a href="/countries/QAT">Qatar</a></td>
+<td><a href="/countries/QAT"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/QAT.png" /> QAT</a></td>
+<td>4</td>
+<td>3</td>
+<td>4</td>
+<td>11</td>
+</tr>
+<tr>
+<td><a href="/countries/KLT">Kleitor</a></td>
+<td><a href="/countries/KLT"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KLT.png" /> KLT</a></td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="/countries/LIN">Lindos</a></td>
+<td><a href="/countries/LIN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/LIN.png" /> LIN</a></td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="/countries/MTL">Mytilene</a></td>
+<td><a href="/countries/MTL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MTL.png" /> MTL</a></td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="/countries/NAX">Naxos</a></td>
+<td><a href="/countries/NAX"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/NAX.png" /> NAX</a></td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="/countries/OPS">Opous</a></td>
+<td><a href="/countries/OPS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/OPS.png" /> OPS</a></td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="/countries/PGM">Pergamon</a></td>
+<td><a href="/countries/PGM"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/PGM.png" /> PGM</a></td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="/countries/PGL">Phigaleia</a></td>
+<td><a href="/countries/PGL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/PGL.png" /> PGL</a></td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="/countries/SID">Sidon</a></td>
+<td><a href="/countries/SID"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SID.png" /> SID</a></td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="/countries/SRA">Syria (Antocheia)</a></td>
+<td><a href="/countries/SRA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SRA.png" /> SRA</a></td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="/countries/TRA">Tralles</a></td>
+<td><a href="/countries/TRA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/TRA.png" /> TRA</a></td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="/countries/CHI">Chile</a></td>
+<td><a href="/countries/CHI"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/CHI.png" /> CHI</a></td>
+<td>3</td>
+<td>7</td>
+<td>4</td>
+<td>14</td>
+</tr>
+<tr>
+<td><a href="/countries/SGP">Singapore</a></td>
+<td><a href="/countries/SGP"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SGP.png" /> SGP</a></td>
+<td>3</td>
+<td>5</td>
+<td>6</td>
+<td>14</td>
+</tr>
+<tr>
+<td><a href="/countries/LUX">Luxembourg</a></td>
+<td><a href="/countries/LUX"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/LUX.png" /> LUX</a></td>
+<td>3</td>
+<td>5</td>
+<td>0</td>
+<td>8</td>
+</tr>
+<tr>
+<td><a href="/countries/MDA">Republic of Moldova</a></td>
+<td><a href="/countries/MDA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MDA.png" /> MDA</a></td>
+<td>3</td>
+<td>4</td>
+<td>6</td>
+<td>13</td>
+</tr>
+<tr>
+<td><a href="/countries/ANZ">Australasia</a></td>
+<td><a href="/countries/ANZ"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ANZ.png" /> ANZ</a></td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+<td>12</td>
+</tr>
+<tr>
+<td><a href="/countries/PAK">Pakistan</a></td>
+<td><a href="/countries/PAK"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/PAK.png" /> PAK</a></td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+<td>12</td>
+</tr>
+<tr>
+<td><a href="/countries/ZIM">Zimbabwe</a></td>
+<td><a href="/countries/ZIM"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ZIM.png" /> ZIM</a></td>
+<td>3</td>
+<td>4</td>
+<td>1</td>
+<td>8</td>
+</tr>
+<tr>
+<td><a href="/countries/PUR">Puerto Rico</a></td>
+<td><a href="/countries/PUR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/PUR.png" /> PUR</a></td>
+<td>3</td>
+<td>3</td>
+<td>8</td>
+<td>14</td>
+</tr>
+<tr>
+<td><a href="/countries/URU">Uruguay</a></td>
+<td><a href="/countries/URU"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/URU.png" /> URU</a></td>
+<td>3</td>
+<td>2</td>
+<td>6</td>
+<td>11</td>
+</tr>
+<tr>
+<td><a href="/countries/CMR">Cameroon</a></td>
+<td><a href="/countries/CMR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/CMR.png" /> CMR</a></td>
+<td>3</td>
+<td>1</td>
+<td>2</td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="/countries/KOS">Kosovo</a></td>
+<td><a href="/countries/KOS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KOS.png" /> KOS</a></td>
+<td>3</td>
+<td>0</td>
+<td>1</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="/countries/ERY">Erythrai</a></td>
+<td><a href="/countries/ERY"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ERY.png" /> ERY</a></td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="/countries/HMP">Hermopolis</a></td>
+<td><a href="/countries/HMP"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/HMP.png" /> HMP</a></td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="/countries/KMN">Kamarina</a></td>
+<td><a href="/countries/KMN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KMN.png" /> KMN</a></td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="/countries/KER">Keramos</a></td>
+<td><a href="/countries/KER"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KER.png" /> KER</a></td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="/countries/KOL">Kolophon</a></td>
+<td><a href="/countries/KOL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KOL.png" /> KOL</a></td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="/countries/KRN">Krannon</a></td>
+<td><a href="/countries/KRN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KRN.png" /> KRN</a></td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="/countries/LDL">Laodikeia on the Lykos</a></td>
+<td><a href="/countries/LDL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/LDL.png" /> LDL</a></td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="/countries/PAT">Patrai</a></td>
+<td><a href="/countries/PAT"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/PAT.png" /> PAT</a></td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="/countries/STR">Stratonikeia</a></td>
+<td><a href="/countries/STR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/STR.png" /> STR</a></td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="/countries/TEG">Tegea</a></td>
+<td><a href="/countries/TEG"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/TEG.png" /> TEG</a></td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="/countries/THY">Thyateira</a></td>
+<td><a href="/countries/THY"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/THY.png" /> THY</a></td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="/countries/MAS">Malaysia</a></td>
+<td><a href="/countries/MAS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MAS.png" /> MAS</a></td>
+<td>2</td>
+<td>11</td>
+<td>6</td>
+<td>19</td>
+</tr>
+<tr>
+<td><a href="/countries/HKG">Hong Kong, China</a></td>
+<td><a href="/countries/HKG"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/HKG.png" /> HKG</a></td>
+<td>2</td>
+<td>9</td>
+<td>6</td>
+<td>17</td>
+</tr>
+<tr>
+<td><a href="/countries/SCG">Serbia and Montenegro</a></td>
+<td><a href="/countries/SCG"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SCG.png" /> SCG</a></td>
+<td>2</td>
+<td>4</td>
+<td>3</td>
+<td>9</td>
+</tr>
+<tr>
+<td><a href="/countries/PER">Peru</a></td>
+<td><a href="/countries/PER"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/PER.png" /> PER</a></td>
+<td>2</td>
+<td>3</td>
+<td>2</td>
+<td>7</td>
+</tr>
+<tr>
+<td><a href="/countries/BRN">Bahrain</a></td>
+<td><a href="/countries/BRN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/BRN.png" /> BRN</a></td>
+<td>2</td>
+<td>3</td>
+<td>1</td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="/countries/LIE">Liechtenstein</a></td>
+<td><a href="/countries/LIE"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/LIE.png" /> LIE</a></td>
+<td>2</td>
+<td>2</td>
+<td>7</td>
+<td>11</td>
+</tr>
+<tr>
+<td><a href="/countries/BDI">Burundi</a></td>
+<td><a href="/countries/BDI"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/BDI.png" /> BDI</a></td>
+<td>2</td>
+<td>2</td>
+<td>0</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="/countries/FIJ">Fiji</a></td>
+<td><a href="/countries/FIJ"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/FIJ.png" /> FIJ</a></td>
+<td>2</td>
+<td>0</td>
+<td>2</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="/countries/SUR">Suriname</a></td>
+<td><a href="/countries/SUR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SUR.png" /> SUR</a></td>
+<td>2</td>
+<td>0</td>
+<td>1</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="/countries/ADA">Adana</a></td>
+<td><a href="/countries/ADA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ADA.png" /> ADA</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/AGR">Aigeira</a></td>
+<td><a href="/countries/AGR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/AGR.png" /> AGR</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/AIT">Aitolia</a></td>
+<td><a href="/countries/AIT"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/AIT.png" /> AIT</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/ANS">Andros</a></td>
+<td><a href="/countries/ANS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ANS.png" /> ANS</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/ATD">Anthedon</a></td>
+<td><a href="/countries/ATD"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ATD.png" /> ATD</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/APM">Apamea-Myrleia</a></td>
+<td><a href="/countries/APM"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/APM.png" /> APM</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/APH">Aphrodisias</a></td>
+<td><a href="/countries/APH"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/APH.png" /> APH</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/DLD">Daldis</a></td>
+<td><a href="/countries/DLD"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/DLD.png" /> DLD</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/DLP">Delphi</a></td>
+<td><a href="/countries/DLP"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/DLP.png" /> DLP</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/DYM">Dymai</a></td>
+<td><a href="/countries/DYM"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/DYM.png" /> DYM</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/ELA">Elateia</a></td>
+<td><a href="/countries/ELA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ELA.png" /> ELA</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/EDM">Epidamnos</a></td>
+<td><a href="/countries/EDM"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/EDM.png" /> EDM</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/GEL">Gela</a></td>
+<td><a href="/countries/GEL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/GEL.png" /> GEL</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/HAL">Halicarnassus</a></td>
+<td><a href="/countries/HAL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/HAL.png" /> HAL</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/HYB">Hyblaia</a></td>
+<td><a href="/countries/HYB"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/HYB.png" /> HYB</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/KHA">Khalkis</a></td>
+<td><a href="/countries/KHA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KHA.png" /> KHA</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/MTH">Methydria</a></td>
+<td><a href="/countries/MTH"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MTH.png" /> MTH</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/PRH">Parrhasia</a></td>
+<td><a href="/countries/PRH"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/PRH.png" /> PRH</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/POS">Poseidonia</a></td>
+<td><a href="/countries/POS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/POS.png" /> POS</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/STY">Stymphalia</a></td>
+<td><a href="/countries/STY"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/STY.png" /> STY</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/SYB">Sybaris</a></td>
+<td><a href="/countries/SYB"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SYB.png" /> SYB</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/TNG">Tanagra</a></td>
+<td><a href="/countries/TNG"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/TNG.png" /> TNG</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/TRS">Tarsos</a></td>
+<td><a href="/countries/TRS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/TRS.png" /> TRS</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/TND">Tenedos</a></td>
+<td><a href="/countries/TND"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/TND.png" /> TND</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/THS">Thasos</a></td>
+<td><a href="/countries/THS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/THS.png" /> THS</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/TRO">Troy</a></td>
+<td><a href="/countries/TRO"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/TRO.png" /> TRO</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/TYA">Tyana</a></td>
+<td><a href="/countries/TYA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/TYA.png" /> TYA</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/ARK">Unknown city in Arkadia</a></td>
+<td><a href="/countries/ARK"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ARK.png" /> ARK</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/BOE">Unknown city in Boeotia</a></td>
+<td><a href="/countries/BOE"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/BOE.png" /> BOE</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/EGP">Unknown city in Egypt</a></td>
+<td><a href="/countries/EGP"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/EGP.png" /> EGP</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/PHI">Philippines</a></td>
+<td><a href="/countries/PHI"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/PHI.png" /> PHI</a></td>
+<td>1</td>
+<td>6</td>
+<td>8</td>
+<td>15</td>
+</tr>
+<tr>
+<td><a href="/countries/KGZ">Kyrgyzstan</a></td>
+<td><a href="/countries/KGZ"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KGZ.png" /> KGZ</a></td>
+<td>1</td>
+<td>6</td>
+<td>7</td>
+<td>14</td>
+</tr>
+<tr>
+<td><a href="/countries/KSA">Kingdom of Saudi Arabia</a></td>
+<td><a href="/countries/KSA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KSA.png" /> KSA</a></td>
+<td>1</td>
+<td>2</td>
+<td>5</td>
+<td>8</td>
+</tr>
+<tr>
+<td><a href="/countries/ISL">Iceland</a></td>
+<td><a href="/countries/ISL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ISL.png" /> ISL</a></td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="/countries/JOR">Jordan</a></td>
+<td><a href="/countries/JOR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/JOR.png" /> JOR</a></td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="/countries/TJK">Tajikistan</a></td>
+<td><a href="/countries/TJK"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/TJK.png" /> TJK</a></td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="/countries/ZAM">Zambia</a></td>
+<td><a href="/countries/ZAM"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ZAM.png" /> ZAM</a></td>
+<td>1</td>
+<td>2</td>
+<td>2</td>
+<td>5</td>
+</tr>
+<tr>
+<td><a href="/countries/GHA">Ghana</a></td>
+<td><a href="/countries/GHA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/GHA.png" /> GHA</a></td>
+<td>1</td>
+<td>1</td>
+<td>4</td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="/countries/IOA">Individual Olympic Athletes</a></td>
+<td><a href="/countries/IOA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/IOA.png" /> IOA</a></td>
+<td>1</td>
+<td>1</td>
+<td>3</td>
+<td>5</td>
+</tr>
+<tr>
+<td><a href="/countries/CRC">Costa Rica</a></td>
+<td><a href="/countries/CRC"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/CRC.png" /> CRC</a></td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="/countries/CIV">Côte d&#39;Ivoire</a></td>
+<td><a href="/countries/CIV"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/CIV.png" /> CIV</a></td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="/countries/GRN">Grenada</a></td>
+<td><a href="/countries/GRN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/GRN.png" /> GRN</a></td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="/countries/SYR">Syrian Arab Republic</a></td>
+<td><a href="/countries/SYR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SYR.png" /> SYR</a></td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="/countries/UAE">United Arab Emirates</a></td>
+<td><a href="/countries/UAE"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/UAE.png" /> UAE</a></td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="/countries/ISV">United States Virgin Islands</a></td>
+<td><a href="/countries/ISV"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ISV.png" /> ISV</a></td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/ERI">Eritrea</a></td>
+<td><a href="/countries/ERI"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ERI.png" /> ERI</a></td>
+<td>1</td>
+<td>0</td>
+<td>3</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="/countries/PAN">Panama</a></td>
+<td><a href="/countries/PAN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/PAN.png" /> PAN</a></td>
+<td>1</td>
+<td>0</td>
+<td>2</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="/countries/BER">Bermuda</a></td>
+<td><a href="/countries/BER"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/BER.png" /> BER</a></td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/MRI">Mauritius</a></td>
+<td><a href="/countries/MRI"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MRI.png" /> MRI</a></td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/MOZ">Mozambique</a></td>
+<td><a href="/countries/MOZ"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MOZ.png" /> MOZ</a></td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/AAI">Adai</a></td>
+<td><a href="/countries/AAI"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/AAI.png" /> AAI</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/ADR">Adramyttion</a></td>
+<td><a href="/countries/ADR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ADR.png" /> ADR</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/AIZ">Aizanoi</a></td>
+<td><a href="/countries/AIZ"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/AIZ.png" /> AIZ</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/AKA">Akarnan</a></td>
+<td><a href="/countries/AKA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/AKA.png" /> AKA</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/APP">Amphipolis</a></td>
+<td><a href="/countries/APP"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/APP.png" /> APP</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/AMP">Amphissa</a></td>
+<td><a href="/countries/AMP"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/AMP.png" /> AMP</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/ANM">Anemurium</a></td>
+<td><a href="/countries/ANM"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ANM.png" /> ANM</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/ATK">Antikyra</a></td>
+<td><a href="/countries/ATK"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ATK.png" /> ATK</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/ATS">Antissa</a></td>
+<td><a href="/countries/ATS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ATS.png" /> ATS</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/APL">Apollonia</a></td>
+<td><a href="/countries/APL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/APL.png" /> APL</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/AMN">Armenia</a></td>
+<td><a href="/countries/AMN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/AMN.png" /> AMN</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/APD">Aspendos</a></td>
+<td><a href="/countries/APD"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/APD.png" /> APD</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/ASO">Assos</a></td>
+<td><a href="/countries/ASO"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ASO.png" /> ASO</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/ATP">Astypalaia</a></td>
+<td><a href="/countries/ATP"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ATP.png" /> ATP</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/ATI">Atiolia</a></td>
+<td><a href="/countries/ATI"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ATI.png" /> ATI</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/ATT">Attaleia</a></td>
+<td><a href="/countries/ATT"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ATT.png" /> ATT</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/ATR">Augusta Traiana</a></td>
+<td><a href="/countries/ATR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ATR.png" /> ATR</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/BRG">Bargylia</a></td>
+<td><a href="/countries/BRG"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/BRG.png" /> BRG</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/BRK">Barke</a></td>
+<td><a href="/countries/BRK"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/BRK.png" /> BRK</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/BTP">Bithynia (Prousa)</a></td>
+<td><a href="/countries/BTP"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/BTP.png" /> BTP</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/BOL">Bolivia</a></td>
+<td><a href="/countries/BOL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/BOL.png" /> BOL</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/DEL">Delos</a></td>
+<td><a href="/countries/DEL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/DEL.png" /> DEL</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/DIP">Dipaia</a></td>
+<td><a href="/countries/DIP"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/DIP.png" /> DIP</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/DYS">Dyspontion</a></td>
+<td><a href="/countries/DYS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/DYS.png" /> DYS</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/EPE">Epeiros</a></td>
+<td><a href="/countries/EPE"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/EPE.png" /> EPE</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/GOR">Gortyn</a></td>
+<td><a href="/countries/GOR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/GOR.png" /> GOR</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/HMN">Hermione</a></td>
+<td><a href="/countries/HMN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/HMN.png" /> HMN</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/HRP">Hierapolis</a></td>
+<td><a href="/countries/HRP"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/HRP.png" /> HRP</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/HYP">Hypaipa</a></td>
+<td><a href="/countries/HYP"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/HYP.png" /> HYP</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/IAS">Iasos</a></td>
+<td><a href="/countries/IAS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/IAS.png" /> IAS</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/KMR">Kamiros</a></td>
+<td><a href="/countries/KMR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KMR.png" /> KMR</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/KPD">Kappadokia</a></td>
+<td><a href="/countries/KPD"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KPD.png" /> KPD</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/KAR">Karian</a></td>
+<td><a href="/countries/KAR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KAR.png" /> KAR</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/KRS">Karystos</a></td>
+<td><a href="/countries/KRS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KRS.png" /> KRS</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/KEL">Kelonai</a></td>
+<td><a href="/countries/KEL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KEL.png" /> KEL</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/KZM">Klazomenai</a></td>
+<td><a href="/countries/KZM"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KZM.png" /> KZM</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/KLN">Kleonai</a></td>
+<td><a href="/countries/KLN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KLN.png" /> KLN</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/KYD">Kydonia</a></td>
+<td><a href="/countries/KYD"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KYD.png" /> KYD</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/KYM">Kyme</a></td>
+<td><a href="/countries/KYM"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KYM.png" /> KYM</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/KPS">Kyparissia</a></td>
+<td><a href="/countries/KPS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KPS.png" /> KPS</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/KYP">Kypro</a></td>
+<td><a href="/countries/KYP"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KYP.png" /> KYP</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/MRN">Maroneia</a></td>
+<td><a href="/countries/MRN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MRN.png" /> MRN</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/MGP">Megalopolis</a></td>
+<td><a href="/countries/MGP"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MGP.png" /> MGP</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/MEL">Melos</a></td>
+<td><a href="/countries/MEL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MEL.png" /> MEL</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/MYL">Mylasa</a></td>
+<td><a href="/countries/MYL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MYL.png" /> MYL</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/MYR">Myra</a></td>
+<td><a href="/countries/MYR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MYR.png" /> MYR</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/NKT">Naukratis</a></td>
+<td><a href="/countries/NKT"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/NKT.png" /> NKT</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/NEA">Neapolis</a></td>
+<td><a href="/countries/NEA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/NEA.png" /> NEA</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/NYS">Nysa</a></td>
+<td><a href="/countries/NYS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/NYS.png" /> NYS</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/OIN">Oinoanda</a></td>
+<td><a href="/countries/OIN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/OIN.png" /> OIN</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/ORS">Orestheia</a></td>
+<td><a href="/countries/ORS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ORS.png" /> ORS</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/ORK">Orkhomenos</a></td>
+<td><a href="/countries/ORK"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ORK.png" /> ORK</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/OXY">Oxyrhynchos</a></td>
+<td><a href="/countries/OXY"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/OXY.png" /> OXY</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/PEP">Peparethos</a></td>
+<td><a href="/countries/PEP"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/PEP.png" /> PEP</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/PES">Pessinous</a></td>
+<td><a href="/countries/PES"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/PES.png" /> PES</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/PET">Petra</a></td>
+<td><a href="/countries/PET"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/PET.png" /> PET</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/PHP">Philippoi</a></td>
+<td><a href="/countries/PHP"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/PHP.png" /> PHP</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/PSA">Pisa</a></td>
+<td><a href="/countries/PSA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/PSA.png" /> PSA</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/SKO">Skotoussa</a></td>
+<td><a href="/countries/SKO"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SKO.png" /> SKO</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/TMN">Tauromenion</a></td>
+<td><a href="/countries/TMN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/TMN.png" /> TMN</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/TEL">Telmessos</a></td>
+<td><a href="/countries/TEL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/TEL.png" /> TEL</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/TNS">Tenos</a></td>
+<td><a href="/countries/TNS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/TNS.png" /> TNS</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/TER">Terina</a></td>
+<td><a href="/countries/TER"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/TER.png" /> TER</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/TPH">Thelphoussa</a></td>
+<td><a href="/countries/TPH"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/TPH.png" /> TPH</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/TIR">Tiryns</a></td>
+<td><a href="/countries/TIR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/TIR.png" /> TIR</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/TLO">Tlos</a></td>
+<td><a href="/countries/TLO"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/TLO.png" /> TLO</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/TRT">Tritaia</a></td>
+<td><a href="/countries/TRT"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/TRT.png" /> TRT</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/TRZ">Troizen</a></td>
+<td><a href="/countries/TRZ"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/TRZ.png" /> TRZ</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/ASI">Unknown city in Asia</a></td>
+<td><a href="/countries/ASI"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ASI.png" /> ASI</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/ZAK">Zakynthos</a></td>
+<td><a href="/countries/ZAK"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ZAK.png" /> ZAK</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/NAM">Namibia</a></td>
+<td><a href="/countries/NAM"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/NAM.png" /> NAM</a></td>
+<td>0</td>
+<td>5</td>
+<td>0</td>
+<td>5</td>
+</tr>
+<tr>
+<td><a href="/countries/BOT">Botswana</a></td>
+<td><a href="/countries/BOT"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/BOT.png" /> BOT</a></td>
+<td>0</td>
+<td>3</td>
+<td>1</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="/countries/CYP">Cyprus</a></td>
+<td><a href="/countries/CYP"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/CYP.png" /> CYP</a></td>
+<td>0</td>
+<td>3</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="/countries/LBN">Lebanon</a></td>
+<td><a href="/countries/LBN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/LBN.png" /> LBN</a></td>
+<td>0</td>
+<td>2</td>
+<td>3</td>
+<td>5</td>
+</tr>
+<tr>
+<td><a href="/countries/HAI">Haiti</a></td>
+<td><a href="/countries/HAI"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/HAI.png" /> HAI</a></td>
+<td>0</td>
+<td>2</td>
+<td>1</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="/countries/SRI">Sri Lanka</a></td>
+<td><a href="/countries/SRI"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SRI.png" /> SRI</a></td>
+<td>0</td>
+<td>2</td>
+<td>1</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="/countries/TAN">United Republic of Tanzania</a></td>
+<td><a href="/countries/TAN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/TAN.png" /> TAN</a></td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/BOH">Bohemia</a></td>
+<td><a href="/countries/BOH"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/BOH.png" /> BOH</a></td>
+<td>0</td>
+<td>1</td>
+<td>5</td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="/countries/NIG">Niger</a></td>
+<td><a href="/countries/NIG"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/NIG.png" /> NIG</a></td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="/countries/MKD">North Macedonia</a></td>
+<td><a href="/countries/MKD"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MKD.png" /> MKD</a></td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="/countries/SMR">San Marino</a></td>
+<td><a href="/countries/SMR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SMR.png" /> SMR</a></td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="/countries/BIH">Bosnia and Herzegovina</a></td>
+<td><a href="/countries/BIH"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/BIH.png" /> BIH</a></td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/GUA">Guatemala</a></td>
+<td><a href="/countries/GUA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/GUA.png" /> GUA</a></td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/AHO">Netherlands Antilles</a></td>
+<td><a href="/countries/AHO"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/AHO.png" /> AHO</a></td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/TKM">Turkmenistan</a></td>
+<td><a href="/countries/TKM"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/TKM.png" /> TKM</a></td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/UAR">United Arab Republic</a></td>
+<td><a href="/countries/UAR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/UAR.png" /> UAR</a></td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/ESA">El Salvador</a></td>
+<td><a href="/countries/ESA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ESA.png" /> ESA</a></td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/GEQ">Equatorial Guinea</a></td>
+<td><a href="/countries/GEQ"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/GEQ.png" /> GEQ</a></td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/GAB">Gabon</a></td>
+<td><a href="/countries/GAB"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/GAB.png" /> GAB</a></td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/MNE">Montenegro</a></td>
+<td><a href="/countries/MNE"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MNE.png" /> MNE</a></td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/NRU">Nauru</a></td>
+<td><a href="/countries/NRU"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/NRU.png" /> NRU</a></td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/PAR">Paraguay</a></td>
+<td><a href="/countries/PAR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/PAR.png" /> PAR</a></td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/LCA">Saint Lucia</a></td>
+<td><a href="/countries/LCA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/LCA.png" /> LCA</a></td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/SAM">Samoa</a></td>
+<td><a href="/countries/SAM"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SAM.png" /> SAM</a></td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/SEN">Senegal</a></td>
+<td><a href="/countries/SEN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SEN.png" /> SEN</a></td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/SUD">Sudan</a></td>
+<td><a href="/countries/SUD"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SUD.png" /> SUD</a></td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/TGA">Tonga</a></td>
+<td><a href="/countries/TGA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/TGA.png" /> TGA</a></td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/KUW">Kuwait</a></td>
+<td><a href="/countries/KUW"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KUW.png" /> KUW</a></td>
+<td>0</td>
+<td>0</td>
+<td>4</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="/countries/AFG">Afghanistan</a></td>
+<td><a href="/countries/AFG"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/AFG.png" /> AFG</a></td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="/countries/DJI">Djibouti</a></td>
+<td><a href="/countries/DJI"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/DJI.png" /> DJI</a></td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/IRQ">Iraq</a></td>
+<td><a href="/countries/IRQ"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/IRQ.png" /> IRQ</a></td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/MON">Monaco</a></td>
+<td><a href="/countries/MON"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MON.png" /> MON</a></td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/WIF">West Indies Federation</a></td>
+<td><a href="/countries/WIF"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/WIF.png" /> WIF</a></td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/AND">Andorra</a></td>
+<td><a href="/countries/AND"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/AND.png" /> AND</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/BAR">Barbados</a></td>
+<td><a href="/countries/BAR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/BAR.png" /> BAR</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/BUR">Burkina Faso</a></td>
+<td><a href="/countries/BUR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/BUR.png" /> BUR</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/CAM">Cambodia</a></td>
+<td><a href="/countries/CAM"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/CAM.png" /> CAM</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/GUY">Guyana</a></td>
+<td><a href="/countries/GUY"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/GUY.png" /> GUY</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/HON">Honduras</a></td>
+<td><a href="/countries/HON"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/HON.png" /> HON</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/TOG">Togo</a></td>
+<td><a href="/countries/TOG"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/TOG.png" /> TOG</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+</table>
+
+</div>
+
+</div>
+</body>
+<footer class='footer'>
+<br>
+<div class='panel panel-info'>
+<div class='panel-heading'>
+<h3 class='panel-title'>
+<span class='glyphicon glyphicon-info-sign'></span>
+Did you know?
+</h3>
+</div>
+<div class='panel-body'>
+<p>At the 1964 Olympics, the Olympic flame was lit by <a href="/athletes/1100069">Yoshinori Sakai</a>, an athlete who was born on 6 August 1945 in Hiroshima - the day the atomic bomb destroyed that city.</p>
+
+
+</div>
+</div>
+<div class='container'>
+<p>
+<a href="/users/sign_in">Login</a>
+|
+<a href="/statistics/olympedia">Statistics</a>
+|
+<a href="/static/about">About</a>
+|
+<a href="/static/faq">FAQ</a>
+|
+<a href="/feedbacks/new">Feedback</a>
+</p>
+<p>
+&copy; <a href="/static/about">OlyMADMen</a> 2006 — 2022
+</p>
+</div>
+</footer>
+
+<script src="/assets/lightbox.min-40fdcc195c5982250c8901f2c160e15342941a311faf6372c04117c0d9c44bc7.js"></script>
+<script>
+  $('.footnote').tooltip();
+</script>
+</html>

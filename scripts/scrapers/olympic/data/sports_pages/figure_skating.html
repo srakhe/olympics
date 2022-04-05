@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Olympedia – Figure Skating</title>
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="68Kq8dG0FTVP2Am57BB3lzPjslqtn2HEC664j6L7yOIIj07yIcqcNPXJd3/XTCAX92LCC4XSRfmKTYbe7PtjTQ==" />
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+<meta content='EN' http-equiv='content-language'>
+<meta content='width=device-width, initial-scale=1' name='viewport'>
+<link rel="stylesheet" media="all" href="/assets/bootstrap.min-460a43de22fd9534d595e5aea2715cb154560291c9c6401b526e31c86a5ce32d.css" />
+<link rel="stylesheet" media="all" href="/assets/bootstrap-sortable-363d232309d54b549fa85446295ef2b5d290e3f8a49f1a646247340be3705ef9.css" />
+<link rel="stylesheet" media="all" href="/assets/jquery-ui-1.11.4.min-359ba1b9eb679ad05fb4c8fda710ee4c0239354f1ba635200b6065638295d646.css" />
+<link rel="stylesheet" media="screen" href="/assets/lightbox-e29689e123fc27505d2b9d919f43ffcb6fade539cb4670f21c35aa07848105e7.css" />
+<link rel="stylesheet" media="all" href="/assets/application-dabe0afec76f540b074f0f63c688a540786e3cc47508864701ac4bfcd2198724.css" data-turbolinks-track="true" />
+<link rel="stylesheet" media="screen" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.4.3/css/ol.css" />
+<script src="/assets/application-e1a1e4d6a20243befcce18acb216d9b0e6082405323ce1f5dfbf47c401111aa1.js" data-turbolinks-track="true"></script>
+<script src="/assets/jquery-1.11.2.min-cc83565074b3fa7f2283f7f4d56b90ad171ede87008448ed5d2e91c50575bed1.js"></script>
+<script src="/assets/jquery-ui-1.11.4.min-1f37fd37d8db0404488ac8f6505560e48d1364ef1c81e384ac695e143049ab0f.js"></script>
+<script src="/assets/bootstrap.min-81d6fe3a991358b79b083d075ca476712c9f11c5c890047486176bde863c499e.js"></script>
+<script src="/assets/moment-ded3cbd5de5ae075c44be4149abb630c658e8789f17ccfb162e6bb7664e8bec9.js"></script>
+<script src="/assets/bootstrap-sortable-cd614fbc8d2030bc050ce63652169ed36d970209a94062fa218c631f2c04dc9f.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.4.3/build/ol.js"></script>
+
+</head>
+
+<body>
+<div class='navbar navbar-default navbar-fixed-top' role='navigation'>
+<div class='navbar-header'>
+<div class='button navbar-toggle' data-target='.navbar-ex1-collapse' data-toggle='collapse' type='button'>
+<span class='sr-only'>Toggle navigation</span>
+<span class='icon-bar'>
+<span class='icon-bar'>
+<span class='icon-bar'></span>
+</span>
+</span>
+</div>
+<a class='navbar-brand' href='/'>Olympedia</a>
+</div>
+<div class='collapse navbar-collapse navbar-ex1-collapse'>
+<ul class='nav navbar-nav'>
+<li class='dropdown'>
+<a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+Athletes
+<b class='caret'></b>
+</a>
+<ul class='dropdown-menu'>
+<li><a href="/athletes/advanced_search">Advanced search</a></li>
+<li><a href="/horses">Horse search</a></li>
+<li><a href="/family_relations">Related Olympians</a></li>
+<li><a href="/counts">Counts</a></li>
+<li><a href="/athletes/doubles">Doubles</a></li>
+<li><a href="/athletes/lists">Lists</a></li>
+<li class='divider'></li>
+<li><a href="/athletes">Athletes</a></li>
+</ul>
+</li>
+
+<li class='dropdown'>
+<a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+Countries
+<b class='caret'></b>
+</a>
+<ul class='dropdown-menu'>
+<li><a href="/countries/head_to_head">Head-to-head</a></li>
+<li><a href="/countries/best_results">Best results</a></li>
+<li><a href="/countries/comparison">Results comparison</a></li>
+<li class='divider'></li>
+<li><a href="/countries">Countries</a></li>
+</ul>
+</li>
+
+<li class='dropdown'>
+<a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+Games
+<b class='caret'></b>
+</a>
+<ul class='dropdown-menu'>
+<li><a href="/editions">Games</a></li>
+<li><a href="/editions/medals">Medals</a></li>
+<li><a href="/editions/results">Results</a></li>
+<li><a href="/ceremonies">Opening ceremony</a></li>
+<li><a href="/venues/menu">Venues</a></li>
+</ul>
+</li>
+
+<li class='dropdown'>
+<a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+Sports
+<b class='caret'></b>
+</a>
+<ul class='dropdown-menu'>
+<li><a href="/sports">Disciplines &amp; Sports</a></li>
+<li><a href="/event_names">Events</a></li>
+</ul>
+</li>
+
+<li class='dropdown'>
+<a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+IOC
+<b class='caret'></b>
+</a>
+<ul class='dropdown-menu'>
+<li><a href="/organizations">Organizations</a></li>
+<li><a href="/definitions">Definitions</a></li>
+<li><a href="/meetings">Meetings</a></li>
+<li><a href="/ioc/host_cities">Host city selection</a></li>
+</ul>
+</li>
+
+<li class='dropdown'>
+<a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+Statistics
+<b class='caret'></b>
+</a>
+<ul class='dropdown-menu'>
+<li></li>
+<li><a href="/statistics/medal/country">Medals by country</a></li>
+<li><a href="/statistics/medal/athlete">Medals by athlete</a></li>
+<li><a href="/statistics/medal_table">Medal tables</a></li>
+<li><a href="/statistics/participation">Participations</a></li>
+<li><a href="/statistics/age">Age records</a></li>
+<li><a href="/lists">Lists</a></li>
+<li><a href="/today">Today</a></li>
+<li></li>
+<li class='divider'></li>
+<li><a href="/statistics">Statistics</a></li>
+</ul>
+</li>
+
+
+
+
+<li><a href="/feedbacks/new">Feedback</a></li>
+<form class="navbar-form navbar-left" role="search" action="/athletes/quick_search" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="8Ok8tuAJng6fC8+iCC0wRgot2dBo5kbo4u/hgUHKtUbCQAnTpq6fVvf4mVvVGwxHsLsFywYnn+CfxD+rWkBb5Q==" />
+<div class='form-group'>
+<input type="text" name="query" id="query" class="form-control" placeholder="Athlete search" />
+</div>
+<input type="submit" name="commit" value="Go" class="btn btn-default" data-disable-with="Go" />
+</form>
+
+
+</ul>
+</div>
+</div>
+<div class='container'>
+<ol class='breadcrumb'>
+<li>
+<a href='/'>Home</a>
+</li>
+<li><a href="/sports">Disciplines &amp; Sports</a></li><li class="active">Figure Skating</li>
+</ol>
+<h1>Figure Skating</h1>
+<h2>Facts</h2>
+<table class='biodata'>
+<tr>
+<th>Discipline of</th>
+<td><a href="/sport_groups/SK">Skating</a></td>
+</tr>
+<tr>
+<th>Participants</th>
+<td><a href="/counts/sport/FSK">1758</a></td>
+</tr>
+<tr>
+<th>NOCs</th>
+<td>57</td>
+</tr>
+<tr>
+<th>Competitions held</th>
+<td>
+95
+(<a href="/venues/sports/FSK">Venues</a>)
+</td>
+</tr>
+<tr>
+<th>Distinct events</th>
+<td>11</td>
+</tr>
+<tr>
+<th>IF</th>
+<td><a href="/organizations/2">International Skating Union</a></td>
+</tr>
+</table>
+<h2>
+Description
+
+</h2>
+<div class='description'>
+<p>Figure skating began in the mid- to late-19th century almost concurrently in Europe and North America, but two Americans are responsible for major developments in its history. In 1850, Edward Bushnell of Philadelphia revolutionized skating technology when he refined the use of steel-bladed skates. This allowed the creation of fancy twists and turns on the ice. Another American, Jackson Haines, a ballet master, visited Wien (Vienna) in the 1860s and added the elements of music and dance to figure skating. Originally, free skating was subordinate to school figures, or the tracing of pretty patterns on the ice.</p>
+
+<p>International figure skating competitions were held in Europe in the 1880s and the International Skating Union (ISU) was formed in 1892, the first true international governing body of any winter sport. As of 2020, the ISU has 91 member nations, with 2 club members (Internationaler Schlittschuh-Club Davos (SUI) and Stockholms Allmänna Skridskoklubb (SWE)). However, because several nations have both a figure skating and a speed skating member, only 77 nations are represented in the ISU.</p>
+
+<p>Originally men and women competed together, with the first world championship being held in what was then and is now St. Petersburg, Russia (formerly Leningrad) in 1896. The first women’s championship was held in 1906.</p>
+
+<p>Figure skating is the oldest sport on the Olympic Winter Games program. It was contested at the London Olympics of 1908 and again in 1920 at Antwerp. Events for men, women, and pairs were contested thru 1972. In 1976, ice dancing, long a popular event, was added to the program as a fourth event, although it had been held as a demonstration event in 1968.</p>
+
+<p>Scoring has evolved during the century also, as the former predominance of compulsory figures in the scoring gave way in the early 1970s. A short program of free skating was added, primarily to equalize results among skaters who were excellent at compulsories but lesser free skaters, to those who were poor compulsory skaters but top-notch free skaters.</p>
+
+<p>This was exemplified in that era by <a href="/athletes/82309">Beatrix “Trixi” Schuba</a> (AUT), who was an excellent skater in compulsories, but was a relatively lesser free skater, and <a href="/athletes/81726">Janet Lynn</a> (USA), who was a superb free skater but was usually beaten by Schuba because of her lesser skill in the compulsories. This gave impetus to the movement to decrease the importance of compulsory figures. At the end of the 1980s the ISU ruled that compulsory figures would no longer be held at international competitions. They last were contested at the 1990 World Championships and they have not been a part of the Olympic figure skating program since 1988.</p>
+
+<p>After a controversial judging decision in the pairs at Salt Lake City in 2002, the ISU overhauled the scoring system again, replacing the time-honored system of 6.0 maximum and positions decided by majority placements with a system that awards points to successful execution of various elements with no theoretic limit on the number of points that may be scored.</p>
+
+<p>The United States and Russia lead the medal lists in figure skating. The USA has won 51 medals and 15 gold medals. Russia also has 15 gold medals, with 27 medals. However, including Russia and the former Soviet Union, they have won 51 medals and 25 golds.</p>
+
+<p>Five skaters have won three gold medals – <a href="/athletes/119121">Scott Moir</a> (CAN), <a href="/athletes/119129">Tessa Virtue</a> (CAN), <a href="/athletes/86175">Gillis Grafström</a> (SWE), <a href="/athletes/81280">Sonja Henie</a> (NOR), and <a href="/athletes/82209">Irina Rodnina</a> (URS), with Moir and Virtue leading with 5 figure skating medals.</p>
+
+</div>
+
+<h2>All-time medal table</h2>
+<h3>Olympic Games</h3>
+<table class='table table-striped'>
+<thead>
+<tr>
+<th colspan='2'>NOC</th>
+<th>Gold</th>
+<th>Silver</th>
+<th>Bronze</th>
+<th>Total</th>
+</tr>
+</thead>
+<tr>
+<td><a href="/countries/USA">United States</a></td>
+<td><a href="/countries/USA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/USA.png" /> USA</a></td>
+<td>16</td>
+<td>17</td>
+<td>21</td>
+<td>54</td>
+</tr>
+<tr>
+<td><a href="/countries/RUS">Russian Federation</a></td>
+<td><a href="/countries/RUS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/RUS.png" /> RUS</a></td>
+<td>15</td>
+<td>9</td>
+<td>3</td>
+<td>27</td>
+</tr>
+<tr>
+<td><a href="/countries/URS">Soviet Union</a></td>
+<td><a href="/countries/URS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/URS.png" /> URS</a></td>
+<td>10</td>
+<td>9</td>
+<td>5</td>
+<td>24</td>
+</tr>
+<tr>
+<td><a href="/countries/AUT">Austria</a></td>
+<td><a href="/countries/AUT"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/AUT.png" /> AUT</a></td>
+<td>7</td>
+<td>9</td>
+<td>4</td>
+<td>20</td>
+</tr>
+<tr>
+<td><a href="/countries/CAN">Canada</a></td>
+<td><a href="/countries/CAN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/CAN.png" /> CAN</a></td>
+<td>6</td>
+<td>11</td>
+<td>12</td>
+<td>29</td>
+</tr>
+<tr>
+<td><a href="/countries/GER">Germany</a></td>
+<td><a href="/countries/GER"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/GER.png" /> GER</a></td>
+<td>5</td>
+<td>4</td>
+<td>3</td>
+<td>12</td>
+</tr>
+<tr>
+<td><a href="/countries/GBR">Great Britain</a></td>
+<td><a href="/countries/GBR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/GBR.png" /> GBR</a></td>
+<td>5</td>
+<td>3</td>
+<td>7</td>
+<td>15</td>
+</tr>
+<tr>
+<td><a href="/countries/SWE">Sweden</a></td>
+<td><a href="/countries/SWE"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SWE.png" /> SWE</a></td>
+<td>5</td>
+<td>3</td>
+<td>2</td>
+<td>10</td>
+</tr>
+<tr>
+<td><a href="/countries/FRA">France</a></td>
+<td><a href="/countries/FRA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/FRA.png" /> FRA</a></td>
+<td>4</td>
+<td>3</td>
+<td>7</td>
+<td>14</td>
+</tr>
+<tr>
+<td><a href="/countries/ROC">Russian Olympic Committee</a></td>
+<td><a href="/countries/ROC"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ROC.png" /> ROC</a></td>
+<td>3</td>
+<td>5</td>
+<td>1</td>
+<td>9</td>
+</tr>
+<tr>
+<td><a href="/countries/JPN">Japan</a></td>
+<td><a href="/countries/JPN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/JPN.png" /> JPN</a></td>
+<td>3</td>
+<td>4</td>
+<td>4</td>
+<td>11</td>
+</tr>
+<tr>
+<td><a href="/countries/GDR">East Germany</a></td>
+<td><a href="/countries/GDR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/GDR.png" /> GDR</a></td>
+<td>3</td>
+<td>3</td>
+<td>4</td>
+<td>10</td>
+</tr>
+<tr>
+<td><a href="/countries/NOR">Norway</a></td>
+<td><a href="/countries/NOR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/NOR.png" /> NOR</a></td>
+<td>3</td>
+<td>2</td>
+<td>1</td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="/countries/EUN">Unified Team</a></td>
+<td><a href="/countries/EUN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/EUN.png" /> EUN</a></td>
+<td>3</td>
+<td>1</td>
+<td>1</td>
+<td>5</td>
+</tr>
+<tr>
+<td><a href="/countries/CHN">People&#39;s Republic of China</a></td>
+<td><a href="/countries/CHN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/CHN.png" /> CHN</a></td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>9</td>
+</tr>
+<tr>
+<td><a href="/countries/NED">Netherlands</a></td>
+<td><a href="/countries/NED"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/NED.png" /> NED</a></td>
+<td>1</td>
+<td>2</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="/countries/TCH">Czechoslovakia</a></td>
+<td><a href="/countries/TCH"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/TCH.png" /> TCH</a></td>
+<td>1</td>
+<td>1</td>
+<td>3</td>
+<td>5</td>
+</tr>
+<tr>
+<td><a href="/countries/FIN">Finland</a></td>
+<td><a href="/countries/FIN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/FIN.png" /> FIN</a></td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/KOR">Republic of Korea</a></td>
+<td><a href="/countries/KOR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KOR.png" /> KOR</a></td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/BEL">Belgium</a></td>
+<td><a href="/countries/BEL"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/BEL.png" /> BEL</a></td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/UKR">Ukraine</a></td>
+<td><a href="/countries/UKR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/UKR.png" /> UKR</a></td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/HUN">Hungary</a></td>
+<td><a href="/countries/HUN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/HUN.png" /> HUN</a></td>
+<td>0</td>
+<td>2</td>
+<td>4</td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="/countries/SUI">Switzerland</a></td>
+<td><a href="/countries/SUI"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SUI.png" /> SUI</a></td>
+<td>0</td>
+<td>2</td>
+<td>1</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="/countries/ITA">Italy</a></td>
+<td><a href="/countries/ITA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ITA.png" /> ITA</a></td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/FRG">West Germany</a></td>
+<td><a href="/countries/FRG"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/FRG.png" /> FRG</a></td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/KAZ">Kazakhstan</a></td>
+<td><a href="/countries/KAZ"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KAZ.png" /> KAZ</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/ESP">Spain</a></td>
+<td><a href="/countries/ESP"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ESP.png" /> ESP</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+</table>
+
+<h3>Youth Olympic Games</h3>
+<table class='table table-striped'>
+<thead>
+<tr>
+<th colspan='2'>NOC</th>
+<th>Gold</th>
+<th>Silver</th>
+<th>Bronze</th>
+<th>Total</th>
+</tr>
+</thead>
+<tr>
+<td><a href="/countries/RUS">Russian Federation</a></td>
+<td><a href="/countries/RUS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/RUS.png" /> RUS</a></td>
+<td>7</td>
+<td>7</td>
+<td>8</td>
+<td>22</td>
+</tr>
+<tr>
+<td><a href="/countries/MIX">Mixed team</a></td>
+<td><a href="/countries/MIX"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/MIX.png" /> MIX</a></td>
+<td>3</td>
+<td>3</td>
+<td>3</td>
+<td>9</td>
+</tr>
+<tr>
+<td><a href="/countries/JPN">Japan</a></td>
+<td><a href="/countries/JPN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/JPN.png" /> JPN</a></td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="/countries/CHN">People&#39;s Republic of China</a></td>
+<td><a href="/countries/CHN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/CHN.png" /> CHN</a></td>
+<td>2</td>
+<td>0</td>
+<td>1</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="/countries/KOR">Republic of Korea</a></td>
+<td><a href="/countries/KOR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KOR.png" /> KOR</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/USA">United States</a></td>
+<td><a href="/countries/USA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/USA.png" /> USA</a></td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="/countries/CZE">Czech Republic</a></td>
+<td><a href="/countries/CZE"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/CZE.png" /> CZE</a></td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/LAT">Latvia</a></td>
+<td><a href="/countries/LAT"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/LAT.png" /> LAT</a></td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/UKR">Ukraine</a></td>
+<td><a href="/countries/UKR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/UKR.png" /> UKR</a></td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/GEO">Georgia</a></td>
+<td><a href="/countries/GEO"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/GEO.png" /> GEO</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="/countries/KAZ">Kazakhstan</a></td>
+<td><a href="/countries/KAZ"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KAZ.png" /> KAZ</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+</table>
+
+<h2>Most successful competitors</h2>
+<h3>Olympic Games</h3>
+<table class='table table-striped'>
+<thead>
+<tr>
+<th>Athlete</th>
+<th>Nat</th>
+<th>Gold</th>
+<th>Silver</th>
+<th>Bronze</th>
+<th>Total</th>
+</tr>
+</thead>
+<tr class='top'>
+<td><a href="/athletes/119121">Scott Moir</a></td>
+<td><a href="/countries/CAN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/CAN.png" /> CAN</a></td>
+<td>3</td>
+<td>2</td>
+<td>0</td>
+<td>5</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/119129">Tessa Virtue</a></td>
+<td><a href="/countries/CAN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/CAN.png" /> CAN</a></td>
+<td>3</td>
+<td>2</td>
+<td>0</td>
+<td>5</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/86175">Gillis Grafström</a></td>
+<td><a href="/countries/SWE"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SWE.png" /> SWE</a></td>
+<td>3</td>
+<td>1</td>
+<td>0</td>
+<td>4</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/81280">Sonja Henie</a></td>
+<td><a href="/countries/NOR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/NOR.png" /> NOR</a></td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/82209">Irina Rodnina</a></td>
+<td><a href="/countries/RUS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/RUS.png" /> RUS</a><br/><a href="/countries/URS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/URS.png" /> URS</a></td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/101967">Yevgeny Plyushchenko</a></td>
+<td><a href="/countries/RUS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/RUS.png" /> RUS</a></td>
+<td>2</td>
+<td>2</td>
+<td>0</td>
+<td>4</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/128356">Nikita Katsalapov</a></td>
+<td><a href="/countries/RUS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/RUS.png" /> RUS</a><br/><a href="/countries/ROC"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ROC.png" /> ROC</a></td>
+<td>2</td>
+<td>1</td>
+<td>1</td>
+<td>4</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/85233">Artur Dmitriyev</a></td>
+<td><a href="/countries/RUS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/RUS.png" /> RUS</a><br/><a href="/countries/EUN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/EUN.png" /> EUN</a></td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/81421">Andrée Brunet-Joly</a></td>
+<td><a href="/countries/FRA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/FRA.png" /> FRA</a></td>
+<td>2</td>
+<td>0</td>
+<td>1</td>
+<td>3</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/84419">Pierre Brunet</a></td>
+<td><a href="/countries/FRA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/FRA.png" /> FRA</a></td>
+<td>2</td>
+<td>0</td>
+<td>1</td>
+<td>3</td>
+</tr>
+</table>
+
+<h3>Youth Olympic Games</h3>
+<table class='table table-striped'>
+<thead>
+<tr>
+<th>Athlete</th>
+<th>Nat</th>
+<th>Gold</th>
+<th>Silver</th>
+<th>Bronze</th>
+<th>Total</th>
+</tr>
+</thead>
+<tr class='top'>
+<td><a href="/athletes/139283">Kseniya Sinitsyna</a></td>
+<td><a href="/countries/RUS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/RUS.png" /> RUS</a></td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/139337">Yuma Kagiyama</a></td>
+<td><a href="/countries/JPN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/JPN.png" /> JPN</a></td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/137830">Dmitry Aliyev</a></td>
+<td><a href="/countries/RUS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/RUS.png" /> RUS</a><br/><a href="/countries/ROC"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/ROC.png" /> ROC</a></td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/139290">Alina Butaeva</a></td>
+<td><a href="/countries/GEO"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/GEO.png" /> GEO</a></td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/139314">Luka Berulava</a></td>
+<td><a href="/countries/GEO"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/GEO.png" /> GEO</a></td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/2300779">Feodosy Yefremenkov</a></td>
+<td><a href="/countries/RUS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/RUS.png" /> RUS</a></td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/2301797">Kirill Alyoshin</a></td>
+<td><a href="/countries/RUS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/RUS.png" /> RUS</a></td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/2301800">Anastasiya Skoptsova</a></td>
+<td><a href="/countries/RUS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/RUS.png" /> RUS</a></td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/127563">Yan Han</a></td>
+<td><a href="/countries/CHN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/CHN.png" /> CHN</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/136957">Li Xiangning</a></td>
+<td><a href="/countries/CHN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/CHN.png" /> CHN</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/136960">Yu Xiaoyu</a></td>
+<td><a href="/countries/CHN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/CHN.png" /> CHN</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/136963">Jin Yang</a></td>
+<td><a href="/countries/CHN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/CHN.png" /> CHN</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/139276">Dmitry Rylov</a></td>
+<td><a href="/countries/RUS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/RUS.png" /> RUS</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/139285">Shingo Nishiyama</a></td>
+<td><a href="/countries/JPN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/JPN.png" /> JPN</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/139291">Arlet Levandi</a></td>
+<td><a href="/countries/EST"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/EST.png" /> EST</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/139295">Apollinariya Panfilova</a></td>
+<td><a href="/countries/RUS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/RUS.png" /> RUS</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/139324">Irina Khavronina</a></td>
+<td><a href="/countries/RUS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/RUS.png" /> RUS</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/139329">Utana Yoshida</a></td>
+<td><a href="/countries/JPN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/JPN.png" /> JPN</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/139338">Dario Chirizano</a></td>
+<td><a href="/countries/RUS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/RUS.png" /> RUS</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/139343">Yu Yeong</a></td>
+<td><a href="/countries/KOR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/KOR.png" /> KOR</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/2300381">Edward Carstairs</a></td>
+<td><a href="/countries/GBR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/GBR.png" /> GBR</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/2300382">Millie Paterson</a></td>
+<td><a href="/countries/GBR"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/GBR.png" /> GBR</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/2300774">Sergey Mozgov</a></td>
+<td><a href="/countries/RUS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/RUS.png" /> RUS</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/2300777">Yelizaveta Tuktamysheva</a></td>
+<td><a href="/countries/RUS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/RUS.png" /> RUS</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/2300778">Anna Yanovskaya</a></td>
+<td><a href="/countries/RUS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/RUS.png" /> RUS</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/2300859">Tina Stürzinger</a></td>
+<td><a href="/countries/SUI"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/SUI.png" /> SUI</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/2301551">Sota Yamamoto</a></td>
+<td><a href="/countries/JPN"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/JPN.png" /> JPN</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/2301798">Yekaterina Borisova</a></td>
+<td><a href="/countries/RUS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/RUS.png" /> RUS</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/2301799">Anastasiya Shpilevaya</a></td>
+<td><a href="/countries/RUS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/RUS.png" /> RUS</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/2301801">Grigory Smirnov</a></td>
+<td><a href="/countries/RUS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/RUS.png" /> RUS</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/2301802">Dmitry Sopot</a></td>
+<td><a href="/countries/RUS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/RUS.png" /> RUS</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/2301803">Polina Tsurskaya</a></td>
+<td><a href="/countries/RUS"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/RUS.png" /> RUS</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/2302032">Joseph Goodpaster</a></td>
+<td><a href="/countries/USA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/USA.png" /> USA</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class='top'>
+<td><a href="/athletes/2302035">Sarah Rose</a></td>
+<td><a href="/countries/USA"><img style="padding-right: 2px; vertical-align: middle" src="/images/flags/USA.png" /> USA</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+</table>
+
+<h2>Event types</h2>
+<table class='table table-striped sortable'>
+<thead>
+<th>Name</th>
+<th>Gender</th>
+<th>Still contested?</th>
+<th>Times held?</th>
+</thead>
+<tbody>
+<tr valign='top'>
+<td><a href="/event_names/298">Singles</a></td>
+<td>Men</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+<td>26</td>
+</tr>
+<tr valign='top'>
+<td><a href="/event_names/300">Singles</a></td>
+<td>Women</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+<td>26</td>
+</tr>
+<tr valign='top'>
+<td><a href="/event_names/301">Pairs</a></td>
+<td>Mixed</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+<td>26</td>
+</tr>
+<tr valign='top'>
+<td><a href="/event_names/302">Ice Dancing</a></td>
+<td>Mixed</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+<td>14</td>
+</tr>
+<tr valign='top'>
+<td><a href="/event_names/1006">Team</a></td>
+<td>Mixed</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+<td>3</td>
+</tr>
+<tr valign='top'>
+<td><a href="/event_names/2028">Singles</a></td>
+<td>Boys</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+<td>3</td>
+</tr>
+<tr valign='top'>
+<td><a href="/event_names/2027">Singles</a></td>
+<td>Girls</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+<td>3</td>
+</tr>
+<tr valign='top'>
+<td><a href="/event_names/2031">Pairs</a></td>
+<td>Mixed Youth</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+<td>3</td>
+</tr>
+<tr valign='top'>
+<td><a href="/event_names/2029">Ice Dancing</a></td>
+<td>Mixed Youth</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+<td>3</td>
+</tr>
+<tr valign='top'>
+<td><a href="/event_names/2030">Team</a></td>
+<td>Mixed Youth</td>
+<td><span class="glyphicon glyphicon-ok"></span></td>
+<td>3</td>
+</tr>
+<tr valign='top'>
+<td><a href="/event_names/299">Special Figures</a></td>
+<td>Men</td>
+<td><span class="glyphicon glyphicon-remove"></span></td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+
+
+</div>
+</body>
+<footer class='footer'>
+<br>
+<div class='panel panel-info'>
+<div class='panel-heading'>
+<h3 class='panel-title'>
+<span class='glyphicon glyphicon-info-sign'></span>
+Did you know?
+</h3>
+</div>
+<div class='panel-body'>
+<p>Boxing had been a men-only sport at the Olympics since 1904, but the first women finally competed in the sport at the 2012 Olympics in London.</p>
+
+
+</div>
+</div>
+<div class='container'>
+<p>
+<a href="/users/sign_in">Login</a>
+|
+<a href="/statistics/olympedia">Statistics</a>
+|
+<a href="/static/about">About</a>
+|
+<a href="/static/faq">FAQ</a>
+|
+<a href="/feedbacks/new">Feedback</a>
+</p>
+<p>
+&copy; <a href="/static/about">OlyMADMen</a> 2006 — 2022
+</p>
+</div>
+</footer>
+
+<script src="/assets/lightbox.min-40fdcc195c5982250c8901f2c160e15342941a311faf6372c04117c0d9c44bc7.js"></script>
+<script>
+  $('.footnote').tooltip();
+</script>
+</html>

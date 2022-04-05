@@ -1,0 +1,49 @@
+,country,country_code,gold,silver,bronze,total
+0,Soviet Union,URS,50,27,22,99
+1,United States,USA,33,31,30,94
+2,East Germany,GDR,20,23,23,66
+3,West Germany,FRG,13,11,16,40
+4,Japan,JPN,13,8,8,29
+5,Australia,AUS,8,7,2,17
+6,Poland,POL,7,5,9,21
+7,Hungary,HUN,6,13,16,35
+8,Bulgaria,BUL,6,10,5,21
+9,Italy,ITA,5,3,10,18
+10,Sweden,SWE,4,6,6,16
+11,Great Britain,GBR,4,5,9,18
+12,Romania,ROU,3,6,7,16
+13,Cuba,CUB,3,1,4,8
+14,Finland,FIN,3,1,4,8
+15,Netherlands,NED,3,1,1,5
+16,France,FRA,2,4,7,13
+17,Czechoslovakia,TCH,2,4,2,8
+18,Kenya,KEN,2,3,4,9
+19,Yugoslavia,YUG,2,1,2,5
+20,Norway,NOR,2,1,1,4
+21,Democratic People's Republic of Korea,PRK,1,1,3,5
+22,New Zealand,NZL,1,1,1,3
+23,Uganda,UGA,1,1,0,2
+24,Denmark,DEN,1,0,0,1
+25,Switzerland,SUI,0,3,0,3
+26,Canada,CAN,0,2,3,5
+27,Islamic Republic of Iran,IRI,0,2,1,3
+28,Belgium,BEL,0,2,0,2
+29,Greece,GRE,0,2,0,2
+30,Austria,AUT,0,1,2,3
+31,Colombia,COL,0,1,2,3
+32,Argentina,ARG,0,1,0,1
+33,Lebanon,LBN,0,1,0,1
+34,Mexico,MEX,0,1,0,1
+35,Mongolia,MGL,0,1,0,1
+36,Pakistan,PAK,0,1,0,1
+37,Republic of Korea,KOR,0,1,0,1
+38,Tunisia,TUN,0,1,0,1
+39,Turkey,TUR,0,1,0,1
+40,Brazil,BRA,0,0,2,2
+41,Ethiopia,ETH,0,0,2,2
+42,Ghana,GHA,0,0,1,1
+43,India,IND,0,0,1,1
+44,Jamaica,JAM,0,0,1,1
+45,Niger,NIG,0,0,1,1
+46,Nigeria,NGR,0,0,1,1
+47,Spain,ESP,0,0,1,1
