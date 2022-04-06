@@ -1,15 +1,16 @@
 import pandas as pd
 from transformers import pipeline
-from twitter_scraper import TwitterScraper
+from scripts.sentiment_analysis.twitter_scraper import TwitterScraper
 
 
 class TwitterSentiment:
 
-    def __init__(self, data_path, start, end):
-        self.data_path = data_path
-        tw_scraper = TwitterScraper(data_path=self.data_path)
-        tw_scraper.scrape(start=start, end=end)
-        self.twitter_df = pd.read_csv(self.data_path + "/tweets_data.csv")
+    def __init__(self, num_tweets, country, start, end):
+        tw_scraper = TwitterScraper()
+        self.twitter_df = tw_scraper.scrape(num_tweets=num_tweets, country=country, start=start, end=end)
+        self.strong_opinion_df = None
+        self.other_opinion_df = None
+        self.results = None
 
     def tune_results(self):
         results_df = pd.DataFrame(self.results, columns=['label', 'score'])
@@ -31,9 +32,7 @@ class TwitterSentiment:
 
     def run(self):
         self.perform_analysis()
-        return self.get_strong_opinion_count(), self.get_other_opinion_count()
-
-
-if __name__ == "__main__":
-    tw_sent = TwitterSentiment(data_path="data", start="2021-07-15", end="2021-07-16")
-    opinion_df, neutral_df = tw_sent.run()
+        opinion_df, neutral_df = self.get_strong_opinion_count(), self.get_other_opinion_count()
+        new_row = {'People View': 'NEUTRAL', 'No Of People': neutral_df['No Of People'].sum()}
+        opinion_df = opinion_df.append(new_row, ignore_index=True)
+        return opinion_df
