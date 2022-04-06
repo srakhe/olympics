@@ -1,0 +1,338 @@
+,country,country_code,gold,silver,bronze,total
+0,United States,USA,1228,1001,876,3105
+1,Soviet Union,URS,473,376,355,1204
+2,Germany,GER,384,419,407,1210
+3,People's Republic of China,CHN,383,281,234,898
+4,Great Britain,GBR,325,353,359,1037
+5,France,FRA,312,335,392,1039
+6,Italy,ITA,299,278,308,885
+7,Russian Federation,RUS,292,243,246,781
+8,Sweden,SWE,234,244,262,740
+9,Japan,JPN,229,220,241,690
+10,Norway,NOR,222,203,192,617
+11,Hungary,HUN,210,183,208,601
+12,East Germany,GDR,192,165,162,519
+13,Australia,AUS,185,204,247,636
+14,Republic of Korea,KOR,166,144,137,447
+15,Netherlands,NED,159,166,187,512
+16,Canada,CAN,157,196,251,604
+17,Finland,FIN,155,157,195,507
+18,Switzerland,SUI,142,146,153,441
+19,Elis,ELI,117,0,0,117
+20,Austria,AUT,113,138,161,412
+21,Cuba,CUB,99,73,87,259
+22,Romania,ROU,98,107,127,332
+23,Poland,POL,89,99,158,346
+24,Sparta,SPA,83,0,0,83
+25,West Germany,FRG,67,82,94,243
+26,Bulgaria,BUL,61,96,89,246
+27,New Zealand,NZL,61,40,59,160
+28,Ukraine,UKR,60,63,102,225
+29,Belgium,BEL,55,69,78,202
+30,Denmark,DEN,54,89,89,232
+31,Spain,ESP,54,82,72,208
+32,Unified Team,EUN,54,44,37,135
+33,Athens,ATH,53,0,0,53
+34,Mixed team,MIX,52,48,56,156
+35,Czechoslovakia,TCH,51,58,62,171
+36,Alexandria,ALX,49,0,0,49
+37,Greece,GRE,47,63,59,169
+38,Brazil,BRA,47,55,80,182
+39,Turkey,TUR,45,34,55,134
+40,Kenya,KEN,43,45,40,128
+41,Rhodes,RHD,38,0,0,38
+42,Czech Republic,CZE,36,45,53,134
+43,Islamic Republic of Iran,IRI,36,28,37,101
+44,Unknown,UNK,36,0,0,36
+45,Argentina,ARG,34,36,45,115
+46,South Africa,RSA,33,39,34,106
+47,Jamaica,JAM,30,38,26,94
+48,Ethiopia,ETH,30,20,29,79
+49,Russian Olympic Committee,ROC,28,46,46,120
+50,Belarus,BLR,26,48,52,126
+51,Yugoslavia,YUG,26,32,29,87
+52,Miletus,MIL,26,0,0,26
+53,Kazakhstan,KAZ,25,31,53,109
+54,Ephesus,EPH,24,0,0,24
+55,Kroton,KRT,23,0,0,23
+56,Messene,MES,23,0,0,23
+57,Slovenia,SLO,22,27,36,85
+58,Croatia,CRO,22,22,19,63
+59,Thailand,THA,21,18,22,61
+60,Argos,AGS,21,0,0,21
+61,Siracusa,SIR,21,0,0,21
+62,Democratic People's Republic of Korea,PRK,20,20,27,67
+63,Azerbaijan,AZE,19,24,32,75
+64,Sikyon,SIK,19,0,0,19
+65,Uzbekistan,UZB,17,16,33,66
+66,Kyrene,KYR,17,0,0,17
+67,Magnesia on the Maiandros,MNM,17,0,0,17
+68,Mexico,MEX,16,33,52,101
+69,Slovakia,SVK,16,25,16,57
+70,Megara,MEG,16,0,0,16
+71,Egypt,EGY,15,15,32,62
+72,Estonia,EST,15,13,20,48
+73,Aigion,AIG,15,0,0,15
+74,Korinth,KTH,14,0,0,14
+75,India,IND,13,25,20,58
+76,Lithuania,LTU,13,10,17,40
+77,Macedonia,MAK,13,0,0,13
+78,Pellene,PEL,13,0,0,13
+79,Roma,ROM,13,0,0,13
+80,Colombia,COL,12,20,21,53
+81,Ireland,IRL,12,14,19,45
+82,Thessaly,THL,12,0,0,12
+83,Georgia,GEO,11,18,22,51
+84,Epidauros,EDR,11,0,0,11
+85,Chinese Taipei,TPE,10,18,22,50
+86,Heraia,HER,10,0,0,10
+87,Morocco,MAR,9,10,15,34
+88,Kos,SKS,9,0,0,9
+89,Lakonia (Akrion),LAK,9,0,0,9
+90,Philadelphia,PLD,9,0,0,9
+91,Samos,SMS,9,0,0,9
+92,Smyrna,SMY,9,0,0,9
+93,Taranto,TAR,9,0,0,9
+94,Thebes,THB,9,0,0,9
+95,Latvia,LAT,8,18,17,43
+96,Indonesia,INA,8,14,18,40
+97,The Bahamas,BAH,8,3,8,19
+98,Antiochia on the Orontes,ATO,8,0,0,8
+99,Lepreon,LEP,8,0,0,8
+100,Manteneia,MAN,8,0,0,8
+101,Salamis,SAL,8,0,0,8
+102,Thespiai,THP,8,0,0,8
+103,Xanthos,XAN,8,0,0,8
+104,Serbia,SRB,7,11,15,33
+105,Israel,ISR,7,5,11,23
+106,Khios,KHI,7,0,0,7
+107,Korkyra,KKY,7,0,0,7
+108,Kyzikos,KYZ,7,0,0,7
+109,Mainalos,MAI,7,0,0,7
+110,Nigeria,NGR,6,14,15,35
+111,Portugal,POR,6,13,16,35
+112,Tunisia,TUN,6,5,9,20
+113,Himera,HIM,6,0,0,6
+114,Larisa,LAR,6,0,0,6
+115,Sardis,SAR,6,0,0,6
+116,Seleukeia on the Tigris,SLT,6,0,0,6
+117,Unknown city in Crete,KRE,6,0,0,6
+118,Unknown city in Lokria,LOK,6,0,0,6
+119,Venezuela,VEN,5,15,14,34
+120,Armenia,ARM,5,11,15,31
+121,Algeria,ALG,5,9,8,22
+122,Dominican Republic,DOM,5,6,6,17
+123,Vietnam,VIE,5,6,3,14
+124,Uganda,UGA,5,5,5,15
+125,Akragas,AKR,5,0,0,5
+126,Ambrakia,AMB,5,0,0,5
+127,Bithynia (Nikaia),BTN,5,0,0,5
+128,Pharsalos,PHA,5,0,0,5
+129,Phoenicia,PHN,5,0,0,5
+130,Sinope,SIN,5,0,0,5
+131,Thourioi,THR,5,0,0,5
+132,Mongolia,MGL,4,14,18,36
+133,Trinidad and Tobago,TTO,4,6,12,22
+134,Ecuador,ECU,4,5,2,11
+135,Qatar,QAT,4,3,4,11
+136,Kleitor,KLT,4,0,0,4
+137,Lindos,LIN,4,0,0,4
+138,Mytilene,MTL,4,0,0,4
+139,Naxos,NAX,4,0,0,4
+140,Opous,OPS,4,0,0,4
+141,Pergamon,PGM,4,0,0,4
+142,Phigaleia,PGL,4,0,0,4
+143,Sidon,SID,4,0,0,4
+144,Syria (Antocheia),SRA,4,0,0,4
+145,Tralles,TRA,4,0,0,4
+146,Chile,CHI,3,7,4,14
+147,Singapore,SGP,3,5,6,14
+148,Luxembourg,LUX,3,5,0,8
+149,Republic of Moldova,MDA,3,4,6,13
+150,Australasia,ANZ,3,4,5,12
+151,Pakistan,PAK,3,4,5,12
+152,Zimbabwe,ZIM,3,4,1,8
+153,Puerto Rico,PUR,3,3,8,14
+154,Uruguay,URU,3,2,6,11
+155,Cameroon,CMR,3,1,2,6
+156,Kosovo,KOS,3,0,1,4
+157,Erythrai,ERY,3,0,0,3
+158,Hermopolis,HMP,3,0,0,3
+159,Kamarina,KMN,3,0,0,3
+160,Keramos,KER,3,0,0,3
+161,Kolophon,KOL,3,0,0,3
+162,Krannon,KRN,3,0,0,3
+163,Laodikeia on the Lykos,LDL,3,0,0,3
+164,Patrai,PAT,3,0,0,3
+165,Stratonikeia,STR,3,0,0,3
+166,Tegea,TEG,3,0,0,3
+167,Thyateira,THY,3,0,0,3
+168,Malaysia,MAS,2,11,6,19
+169,"Hong Kong, China",HKG,2,9,6,17
+170,Serbia and Montenegro,SCG,2,4,3,9
+171,Peru,PER,2,3,2,7
+172,Bahrain,BRN,2,3,1,6
+173,Liechtenstein,LIE,2,2,7,11
+174,Burundi,BDI,2,2,0,4
+175,Fiji,FIJ,2,0,2,4
+176,Suriname,SUR,2,0,1,3
+177,Adana,ADA,2,0,0,2
+178,Aigeira,AGR,2,0,0,2
+179,Aitolia,AIT,2,0,0,2
+180,Andros,ANS,2,0,0,2
+181,Anthedon,ATD,2,0,0,2
+182,Apamea-Myrleia,APM,2,0,0,2
+183,Aphrodisias,APH,2,0,0,2
+184,Daldis,DLD,2,0,0,2
+185,Delphi,DLP,2,0,0,2
+186,Dymai,DYM,2,0,0,2
+187,Elateia,ELA,2,0,0,2
+188,Epidamnos,EDM,2,0,0,2
+189,Gela,GEL,2,0,0,2
+190,Halicarnassus,HAL,2,0,0,2
+191,Hyblaia,HYB,2,0,0,2
+192,Khalkis,KHA,2,0,0,2
+193,Methydria,MTH,2,0,0,2
+194,Parrhasia,PRH,2,0,0,2
+195,Poseidonia,POS,2,0,0,2
+196,Stymphalia,STY,2,0,0,2
+197,Sybaris,SYB,2,0,0,2
+198,Tanagra,TNG,2,0,0,2
+199,Tarsos,TRS,2,0,0,2
+200,Tenedos,TND,2,0,0,2
+201,Thasos,THS,2,0,0,2
+202,Troy,TRO,2,0,0,2
+203,Tyana,TYA,2,0,0,2
+204,Unknown city in Arkadia,ARK,2,0,0,2
+205,Unknown city in Boeotia,BOE,2,0,0,2
+206,Unknown city in Egypt,EGP,2,0,0,2
+207,Philippines,PHI,1,6,8,15
+208,Kyrgyzstan,KGZ,1,6,7,14
+209,Kingdom of Saudi Arabia,KSA,1,2,5,8
+210,Iceland,ISL,1,2,3,6
+211,Jordan,JOR,1,2,3,6
+212,Tajikistan,TJK,1,2,3,6
+213,Zambia,ZAM,1,2,2,5
+214,Ghana,GHA,1,1,4,6
+215,Individual Olympic Athletes,IOA,1,1,3,5
+216,Costa Rica,CRC,1,1,2,4
+217,Côte d'Ivoire,CIV,1,1,2,4
+218,Grenada,GRN,1,1,2,4
+219,Syrian Arab Republic,SYR,1,1,2,4
+220,United Arab Emirates,UAE,1,1,1,3
+221,United States Virgin Islands,ISV,1,1,0,2
+222,Eritrea,ERI,1,0,3,4
+223,Panama,PAN,1,0,2,3
+224,Bermuda,BER,1,0,1,2
+225,Mauritius,MRI,1,0,1,2
+226,Mozambique,MOZ,1,0,1,2
+227,Adai,AAI,1,0,0,1
+228,Adramyttion,ADR,1,0,0,1
+229,Aizanoi,AIZ,1,0,0,1
+230,Akarnan,AKA,1,0,0,1
+231,Amphipolis,APP,1,0,0,1
+232,Amphissa,AMP,1,0,0,1
+233,Anemurium,ANM,1,0,0,1
+234,Antikyra,ATK,1,0,0,1
+235,Antissa,ATS,1,0,0,1
+236,Apollonia,APL,1,0,0,1
+237,Armenia,AMN,1,0,0,1
+238,Aspendos,APD,1,0,0,1
+239,Assos,ASO,1,0,0,1
+240,Astypalaia,ATP,1,0,0,1
+241,Atiolia,ATI,1,0,0,1
+242,Attaleia,ATT,1,0,0,1
+243,Augusta Traiana,ATR,1,0,0,1
+244,Bargylia,BRG,1,0,0,1
+245,Barke,BRK,1,0,0,1
+246,Bithynia (Prousa),BTP,1,0,0,1
+247,Bolivia,BOL,1,0,0,1
+248,Delos,DEL,1,0,0,1
+249,Dipaia,DIP,1,0,0,1
+250,Dyspontion,DYS,1,0,0,1
+251,Epeiros,EPE,1,0,0,1
+252,Gortyn,GOR,1,0,0,1
+253,Hermione,HMN,1,0,0,1
+254,Hierapolis,HRP,1,0,0,1
+255,Hypaipa,HYP,1,0,0,1
+256,Iasos,IAS,1,0,0,1
+257,Kamiros,KMR,1,0,0,1
+258,Kappadokia,KPD,1,0,0,1
+259,Karian,KAR,1,0,0,1
+260,Karystos,KRS,1,0,0,1
+261,Kelonai,KEL,1,0,0,1
+262,Klazomenai,KZM,1,0,0,1
+263,Kleonai,KLN,1,0,0,1
+264,Kydonia,KYD,1,0,0,1
+265,Kyme,KYM,1,0,0,1
+266,Kyparissia,KPS,1,0,0,1
+267,Kypro,KYP,1,0,0,1
+268,Maroneia,MRN,1,0,0,1
+269,Megalopolis,MGP,1,0,0,1
+270,Melos,MEL,1,0,0,1
+271,Mylasa,MYL,1,0,0,1
+272,Myra,MYR,1,0,0,1
+273,Naukratis,NKT,1,0,0,1
+274,Neapolis,NEA,1,0,0,1
+275,Nysa,NYS,1,0,0,1
+276,Oinoanda,OIN,1,0,0,1
+277,Orestheia,ORS,1,0,0,1
+278,Orkhomenos,ORK,1,0,0,1
+279,Oxyrhynchos,OXY,1,0,0,1
+280,Peparethos,PEP,1,0,0,1
+281,Pessinous,PES,1,0,0,1
+282,Petra,PET,1,0,0,1
+283,Philippoi,PHP,1,0,0,1
+284,Pisa,PSA,1,0,0,1
+285,Skotoussa,SKO,1,0,0,1
+286,Tauromenion,TMN,1,0,0,1
+287,Telmessos,TEL,1,0,0,1
+288,Tenos,TNS,1,0,0,1
+289,Terina,TER,1,0,0,1
+290,Thelphoussa,TPH,1,0,0,1
+291,Tiryns,TIR,1,0,0,1
+292,Tlos,TLO,1,0,0,1
+293,Tritaia,TRT,1,0,0,1
+294,Troizen,TRZ,1,0,0,1
+295,Unknown city in Asia,ASI,1,0,0,1
+296,Zakynthos,ZAK,1,0,0,1
+297,Namibia,NAM,0,5,0,5
+298,Botswana,BOT,0,3,1,4
+299,Cyprus,CYP,0,3,0,3
+300,Lebanon,LBN,0,2,3,5
+301,Haiti,HAI,0,2,1,3
+302,Sri Lanka,SRI,0,2,1,3
+303,United Republic of Tanzania,TAN,0,2,0,2
+304,Bohemia,BOH,0,1,5,6
+305,Niger,NIG,0,1,2,3
+306,North Macedonia,MKD,0,1,2,3
+307,San Marino,SMR,0,1,2,3
+308,Bosnia and Herzegovina,BIH,0,1,1,2
+309,Guatemala,GUA,0,1,1,2
+310,Netherlands Antilles,AHO,0,1,1,2
+311,Turkmenistan,TKM,0,1,1,2
+312,United Arab Republic,UAR,0,1,1,2
+313,El Salvador,ESA,0,1,0,1
+314,Equatorial Guinea,GEQ,0,1,0,1
+315,Gabon,GAB,0,1,0,1
+316,Montenegro,MNE,0,1,0,1
+317,Nauru,NRU,0,1,0,1
+318,Paraguay,PAR,0,1,0,1
+319,Saint Lucia,LCA,0,1,0,1
+320,Samoa,SAM,0,1,0,1
+321,Senegal,SEN,0,1,0,1
+322,Sudan,SUD,0,1,0,1
+323,Tonga,TGA,0,1,0,1
+324,Kuwait,KUW,0,0,4,4
+325,Afghanistan,AFG,0,0,3,3
+326,Djibouti,DJI,0,0,2,2
+327,Iraq,IRQ,0,0,2,2
+328,Monaco,MON,0,0,2,2
+329,West Indies Federation,WIF,0,0,2,2
+330,Andorra,AND,0,0,1,1
+331,Barbados,BAR,0,0,1,1
+332,Burkina Faso,BUR,0,0,1,1
+333,Cambodia,CAM,0,0,1,1
+334,Guyana,GUY,0,0,1,1
+335,Honduras,HON,0,0,1,1
+336,Togo,TOG,0,0,1,1

@@ -1,0 +1,63 @@
+,Unnamed: 0,edition_code,edition,year,city,country_code,timeline,Type,start_date,end_date
+0,0,1.0,I,1896,Athina,GRE,6 – 13 April,Summer,6 April,13 April
+1,1,2.0,II,1900,Paris,FRA,14 May – 28 October,Summer,14 May,28 October
+2,2,3.0,III,1904,St. Louis,USA, 1 July – 23 November,Summer,1 July,23 November
+3,3,5.0,IV,1908,London,GBR,27 April – 31 October,Summer,27 April,31 October
+4,4,6.0,V,1912,Stockholm,SWE, 5 May – 27 July,Summer,5 May,27 July
+5,5,50.0,VI,1916,Berlin,GER,—,Summer,NA,NA
+6,6,7.0,VII,1920,Antwerpen,BEL,23 April – 12 September,Summer,23 April,12 September
+7,7,8.0,VIII,1924,Paris,FRA, 4 May – 27 July,Summer,4 May,27 July
+8,8,9.0,IX,1928,Amsterdam,NED,17 May – 12 August,Summer,17 May,12 August
+9,9,10.0,X,1932,Los Angeles,USA,30 July – 14 August,Summer,30 July,14 August
+10,10,11.0,XI,1936,Berlin,GER,2 – 16 August,Summer,2 August,16 August
+11,11,51.0,XII,1940,Helsinki,FIN,—,Summer,NA,NA
+12,12,52.0,XIII,1944,London,GBR,—,Summer,NA,NA
+13,13,12.0,XIV,1948,London,GBR,26 July – 14 August,Summer,26 July,14 August
+14,14,13.0,XV,1952,Helsinki,FIN,14 July –  3 August,Summer,14 July,3 August
+15,15,14.0,XVI,1956,Melbourne,AUS,22 November –  8 December,Summer,22 November,8 December
+16,16,15.0,XVII,1960,Roma,ITA,25 August – 11 September,Summer,25 August,11 September
+17,17,16.0,XVIII,1964,Tokyo,JPN,11 – 24 October,Summer,11 October,24 October
+18,18,17.0,XIX,1968,Ciudad de México,MEX,12 – 27 October,Summer,12 October,27 October
+19,19,18.0,XX,1972,München,FRG,26 August – 11 September,Summer,26 August,11 September
+20,20,19.0,XXI,1976,Montréal,CAN,18 July –  1 August,Summer,18 July,1 August
+21,21,20.0,XXII,1980,Moskva,URS,20 July –  3 August,Summer,20 July,3 August
+22,22,21.0,XXIII,1984,Los Angeles,USA, 6 July – 12 August,Summer,6 July,12 August
+23,23,22.0,XXIV,1988,Seoul,KOR,17 September –  2 October,Summer,17 September,2 October
+24,24,23.0,XXV,1992,Barcelona,ESP,24 July –  9 August,Summer,24 July,9 August
+25,25,24.0,XXVI,1996,Atlanta,USA,20 July –  4 August,Summer,20 July,4 August
+26,26,25.0,XXVII,2000,Sydney,AUS,13 September –  1 October,Summer,13 September,1 October
+27,27,26.0,XXVIII,2004,Athina,GRE,11 – 29 August,Summer,11 August,29 August
+28,28,53.0,XXIX,2008,Beijing,CHN,6 – 24 August,Summer,6 August,24 August
+29,29,54.0,XXX,2012,London,GBR,25 July – 12 August,Summer,25 July,12 August
+30,30,59.0,XXXI,2016,Rio de Janeiro,BRA,3 – 21 August,Summer,3 August,21 August
+31,31,61.0,XXXII,2020,Tokyo,JPN,21 July –  8 August 2021,Summer,21 July,8 August 2021
+32,32,63.0,XXXIII,2024,Paris,FRA,—,Summer,NA,NA
+33,33,64.0,XXXIV,2028,Los Angeles,USA,—,Summer,NA,NA
+34,34,372.0,XXXV,2032,Brisbane,AUS,—,Summer,NA,NA
+35,0,29.0,I,1924,Chamonix,FRA,26 January –  4 February,Winter,26 January,4 February
+36,1,30.0,II,1928,Sankt Moritz,SUI,11 – 19 February,Winter,11 February,19 February
+37,2,31.0,III,1932,Lake Placid,USA,4 – 15 February,Winter,4 February,15 February
+38,3,32.0,IV,1936,Garmisch-Partenkirchen,GER,6 – 16 February,Winter,6 February,16 February
+39,4,,,1940,Garmisch-Partenkirchen,GER,—,Winter,NA,NA
+40,5,,,1944,Cortina d'Ampezzo,ITA,—,Winter,NA,NA
+41,6,33.0,V,1948,Sankt Moritz,SUI,30 January –  8 February,Winter,30 January,8 February
+42,7,34.0,VI,1952,Oslo,NOR,14 – 25 February,Winter,14 February,25 February
+43,8,35.0,VII,1956,Cortina d'Ampezzo,ITA,26 January –  5 February,Winter,26 January,5 February
+44,9,36.0,VIII,1960,Squaw Valley,USA,19 – 28 February,Winter,19 February,28 February
+45,10,37.0,IX,1964,Innsbruck,AUT,27 January –  9 February,Winter,27 January,9 February
+46,11,38.0,X,1968,Grenoble,FRA,4 – 18 February,Winter,4 February,18 February
+47,12,39.0,XI,1972,Sapporo,JPN,3 – 13 February,Winter,3 February,13 February
+48,13,40.0,XII,1976,Innsbruck,AUT,3 – 15 February,Winter,3 February,15 February
+49,14,41.0,XIII,1980,Lake Placid,USA,12 – 24 February,Winter,12 February,24 February
+50,15,42.0,XIV,1984,Sarajevo,YUG,7 – 19 February,Winter,7 February,19 February
+51,16,43.0,XV,1988,Calgary,CAN,13 – 28 February,Winter,13 February,28 February
+52,17,44.0,XVI,1992,Albertville,FRA,8 – 23 February,Winter,8 February,23 February
+53,18,45.0,XVII,1994,Lillehammer,NOR,12 – 27 February,Winter,12 February,27 February
+54,19,46.0,XVIII,1998,Nagano,JPN,7 – 22 February,Winter,7 February,22 February
+55,20,47.0,XIX,2002,Salt Lake City,USA,9 – 24 February,Winter,9 February,24 February
+56,21,49.0,XX,2006,Torino,ITA,11 – 26 February,Winter,11 February,26 February
+57,22,57.0,XXI,2010,Vancouver,CAN,12 – 28 February,Winter,12 February,28 February
+58,23,58.0,XXII,2014,Sochi,RUS,6 – 23 February,Winter,6 February,23 February
+59,24,60.0,XXIII,2018,PyeongChang,KOR,8 – 25 February,Winter,8 February,25 February
+60,25,62.0,XXIV,2022,Beijing,CHN,2 – 20 February,Winter,2 February,20 February
+61,26,72.0,XXV,2026,Milano-Cortina d'Ampezzo,ITA,—,Winter,NA,NA
