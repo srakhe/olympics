@@ -13,3 +13,4 @@
 
 ## Menu: 
 - [Scrapers](docs/scrapers.md)
+- [Analysis](docs/analysis.md)
