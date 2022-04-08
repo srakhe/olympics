@@ -57,10 +57,17 @@
             </select>
             <br>
             <input type="submit" class="btn btn-primary" name="run_analysis" value="Run Analysis">
-            <input type="submit" class="btn btn-outline-primary" name="run_analysis" value="Refresh">
-            <button type="submit" class="submitBtn btn btn-success disabled" id="submit-btn">View Results</button>
+            <input type="submit" class="btn btn-outline-primary" name="refresh" value="Refresh">
+            <button type="submit" class="submitBtn btn btn-success {{ params.view_state }}" id="submit-btn">View Results</button>
         </div>
     </form>
+    <div>
+        {% if params.last_run: %}
+            Last analysis was completed on {{ params.last_run }}
+        {% else: %}
+            There was no last run found
+        {% endif %}
+    </div>
 </div>
 </body>
 

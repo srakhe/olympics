@@ -14,3 +14,9 @@ class SentimentAnalysis:
             "city"].astype(str) + ", " + games_df["country_code"].astype(str)
         games_options = games_df["options"].to_list()
         return games_options
+
+    def run_analysis(self):
+        pass
+
+    def get_analysis(self):
+        pass
