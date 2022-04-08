@@ -22,31 +22,38 @@
             <li class="breadcrumb-item active" aria-current="page">Home</li>
         </ol>
     </nav>
-    <div id="emrStatus">EMR status: {{ params.emr_status }}</div>
     <br>
-    <form method="post">
-        <input type="submit" class="emrToggle btn btn-success" name="start_emr" value="Start EMR">
-        <input type="submit" class="emrToggle btn btn-danger" name="stop_emr" value="Stop EMR">
-        <input type="submit" class="emrToggle btn btn-outline-primary" name="refresh" value="Refresh">
-    </form>
     <br>
-    <h1>Mental Health Analysis</h1>
-    <br>
-    <form method="post">
-        <div class="form-control optionsForm">
-            <label for="select-question" class="form-control-sm form-label">Choose a question to get an analysis
-                for:</label>
-            <select class="form-select" id="select-question" name="quesValue">
-                {% for key, value in params.questions.items(): %}
-                    <option value="{{ key }}">{{ value }}</option>
-                {% endfor %}
-            </select>
-            <label for="submit-btn" class="form-control-sm form-label">Note: Will work only if EMR is in WAITING
-                state.</label>
+    <div class="jumbotron">
+        <h1 class="display-4">Olympics Project</h1>
+        <p class="lead">
+            This is an extensive application that provides in-depth analysis and predictions related to the Olympics.
+        </p>
+        <hr class="my-4">
+        <p id="main-menu">
+            The following are the key functionalities of this application:
             <br>
-            <button type="submit" class="submitBtn btn btn-primary" id="submit-btn">Submit</button>
-        </div>
-    </form>
+            <br>
+            1. Get people's views on particular olympic games that were hosted.
+            <a href="/sentiment_analysis" class="btn btn-dark" target="_blank">Get Views</a>
+            <br>
+            <br>
+            2. View the effects that hosting olympics has had on the various economic factors in that country.
+            <a href="/" class="btn btn-dark" target="_blank">View Effects</a>
+            <br>
+            <br>
+            3. View the trends that the number of medals won by each country have had when the countries have hosted the
+            olympics.
+            <a href="/" class="btn btn-dark" target="_blank">View Medal Trends</a>
+            <br>
+            <br>
+            4. Get predictions on the various economic factors if a country is selected to host the olympics in a
+            particular year.
+            <a href="/" class="btn btn-dark" target="_blank">Get Predictions</a>
+            <br>
+            <br>
+        </p>
+    </div>
 </div>
 </body>
 
