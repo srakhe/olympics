@@ -46,7 +46,10 @@ def predict_host():
         country = request.form["country_value"]
         year = request.form["year_value"]
         forecasted_dict = prdt_util.get_forecasts(country=country, year=year)
-        return render_template("predict_host_result.html")
+        forecasted_dict_copy = forecasted_dict.copy()
+        predicted_dict = prdt_util.get_predictions(forecasted_values=forecasted_dict_copy)
+        prdt_util.generate_plot(forecasted_dict, predicted_dict)
+        return redirect(url_for("predict_host"))
 
 
 if __name__ == "__main__":

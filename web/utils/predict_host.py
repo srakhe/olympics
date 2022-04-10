@@ -1,5 +1,8 @@
 import pandas as pd
 from datetime import datetime
+import pickle
+import numpy as np
+import plotly.graph_objects as go
 
 
 class PredictHost:
@@ -40,7 +43,36 @@ class PredictHost:
                 each_year = str(each_year)
                 indicator_value = country_eco_df[each_year].to_list()
                 if indicator_value:
-                    forecasted_values[indicator].append(indicator_value[0])
+                    forecasted_values[indicator].append(float(indicator_value[0]))
                 else:
-                    forecasted_values[indicator].append(None)
+                    forecasted_values[indicator].append(float(0))
         return forecasted_values
+
+    def get_predictions(self, forecasted_values):
+        predicted_values = {}
+        for indicator in self.eco_indicators:
+            model = pickle.load(open(f"{self.data_path}/models/{indicator}.pkl", "rb"))
+            forecasted_values[indicator].append("1")
+            forecasted_values[indicator] = np.array(forecasted_values[indicator]).reshape(1, -1)
+            predicted_val = float(model.predict(forecasted_values[indicator]))
+            predicted_values[indicator] = predicted_val
+        return predicted_values
+
+    def generate_plot(self, forecasted: dict, predicted: dict):
+        forecasted_copy = forecasted.copy()
+        for key, val in forecasted_copy.items():
+            forecasted_copy[key] = val[:-1]
+        forecasted_vals = list(forecasted_copy.values())
+        predicted_vals = list(predicted.values())
+        fig = go.Figure(data=[go.Table(
+            header=dict(values=["Forecasted", "Predicted"],
+                        line_color='darkslategray',
+                        fill_color='lightskyblue',
+                        align='left'),
+            cells=dict(values=[forecasted_vals,  # 1st column
+                               predicted_vals],  # 2nd column
+                       line_color='darkslategray',
+                       fill_color='lightcyan',
+                       align='left'))
+        ])
+        fig.show()

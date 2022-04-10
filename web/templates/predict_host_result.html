@@ -29,9 +29,7 @@
         <h1 class="display-4">Predicted Hosting Results</h1>
         <hr class="my-4">
     </div>
-    <div class="results">
-    </div>
+    {{ params["plotly"].offline.plot(params["figure"]) }}
 </div>
 </body>
-
 </html>
