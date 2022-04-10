@@ -1,7 +1,8 @@
 import pandas as pd
 from nrclex import NRCLex
 import nltk
-import plotly.express as px
+#import plotly.express as px
+import plotly.graph_objects as go
 
 
 class TwitterSentiment:
@@ -24,9 +25,9 @@ class TwitterSentiment:
         
         emotion_df = emotion_df[emotion_df['Emotion Classification'] != 'positive']
         emotion_df = emotion_df[emotion_df['Emotion Classification'] != 'negative']
-
-        fig = px.pie(emotion_df, values='Emotion Count', names='Emotion Classification', title='Tweets Emotion Classification')
-        fig.update_traces(textposition='inside', textinfo='percent+label')
+        
+        fig = go.Figure(go.Pie(values = emotion_df['Emotion Count'], labels = emotion_df['Emotion Classification']))#, title='Tweets Sentiments Composition')
+        #fig.update_traces(textposition='inside', textinfo='percent+label')
         return fig
     
     def run(self):
