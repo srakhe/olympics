@@ -1,6 +1,5 @@
 import pandas as pd
-import os
-from scripts.sentiment_analysis.twitter_sentiment import TwitterSentiment
+from scripts.sentiment_analysis.sentiment_wrapper import SentimentWrapper
 
 
 class SentimentAnalysis:
@@ -8,7 +7,7 @@ class SentimentAnalysis:
     def __init__(self, data_path, web_data_path):
         self.data_path = data_path
         self.web_data_path = web_data_path
-        self.tw_sentiment = None
+        self.num_tweets = 50
 
     def get_olympic_options(self):
         games_df = pd.read_csv(f"{self.data_path}/games.csv")
@@ -20,10 +19,6 @@ class SentimentAnalysis:
         return games_options
 
     def run_analysis(self, game_for):
-        self.tw_sentiment = TwitterSentiment(num_tweets=50, country=None, start=None, end=None)
-
-    def get_analysis(self):
-        pass
-
-    def get_last_run(self):
-        pass
+        snt_wrapper = SentimentWrapper(selected_olympic_info=game_for, num_tweets=self.num_tweets,
+                                       data_path=self.data_path)
+        snt_wrapper.run()

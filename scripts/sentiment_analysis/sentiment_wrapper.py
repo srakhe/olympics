@@ -5,7 +5,13 @@ from plotly.subplots import make_subplots
 
 
 class SentimentWrapper:
-    def __init__(self, selected_olympic_info):
+    def __init__(self, selected_olympic_info, num_tweets, data_path):
+        self.data_path = data_path
+        self.num_of_tweets = num_tweets
+        self.countries_df = pd.read_csv(f'{self.data_path}/countries.csv')
+        self.olympic_games_df = pd.read_csv(f'{self.data_path}/games.csv')
+        self.selected_olympic_info = selected_olympic_info
+        self.tw_sentiment = None
         self.tw_sentiment_before_oly_world_results = None
         self.tw_sentiment_after_oly_world_results = None
         self.tw_sentiment_after_oly_host_country = None
@@ -13,10 +19,6 @@ class SentimentWrapper:
         self.selected_olympics = None
         self.selected_country_name = None
         self.selected_year = None
-        self.countries_df = pd.read_csv('../../data/countries.csv')
-        self.olympic_games_df = pd.read_csv('../../data/games.csv')
-        self.selected_olympic_info = selected_olympic_info
-        self.tw_sentiment = None
 
     def extract_info(self):
         selected_country_code = self.selected_olympic_info.split(" ")[4]
@@ -41,23 +43,22 @@ class SentimentWrapper:
         one_week_before_start_date = str(one_week_before_start_date).split(' ')[0]
         end_date = str(end_date).split(' ')[0]
         one_week_after_end_date = str(one_week_after_end_date).split(' ')[0]
-        num_of_tweets = 1000000
-        self.tw_sentiment_before_oly_host_country = TwitterSentiment(num_of_tweets, self.selected_country_name,
+        self.tw_sentiment_before_oly_host_country = TwitterSentiment(self.num_of_tweets, self.selected_country_name,
                                                                      one_week_before_start_date,
                                                                      start_date)
         fig1 = self.tw_sentiment_before_oly_host_country.run()
 
-        self.tw_sentiment_after_oly_host_country = TwitterSentiment(num_of_tweets, self.selected_country_name,
+        self.tw_sentiment_after_oly_host_country = TwitterSentiment(self.num_of_tweets, self.selected_country_name,
                                                                     end_date,
                                                                     one_week_after_end_date)
         fig2 = self.tw_sentiment_after_oly_host_country.run()
 
-        self.tw_sentiment_before_oly_world_results = TwitterSentiment(num_of_tweets, None,
+        self.tw_sentiment_before_oly_world_results = TwitterSentiment(self.num_of_tweets, None,
                                                                       one_week_before_start_date,
                                                                       start_date)
         fig3 = self.tw_sentiment_before_oly_world_results.run()
 
-        self.tw_sentiment_after_oly_world_results = TwitterSentiment(num_of_tweets, None,
+        self.tw_sentiment_after_oly_world_results = TwitterSentiment(self.num_of_tweets, None,
                                                                      end_date,
                                                                      one_week_after_end_date)
         fig4 = self.tw_sentiment_after_oly_world_results.run()
@@ -75,7 +76,8 @@ class SentimentWrapper:
         fig5.append_trace(fig4, row=1, col=2)
         fig5.append_trace(fig1, row=2, col=1)
         fig5.append_trace(fig2, row=2, col=2)
-        fig5.write_html(self.selected_olympic_info + '.html')
+        # fig5.write_html(f"{self.web_data_path}/{self.selected_olympic_info}" + ".html")
+        fig5.show()
 
     def run(self):
         self.extract_info()

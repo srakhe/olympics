@@ -18,23 +18,11 @@ def sentiment_analysis():
         params = {}
         games_options = snt_util.get_olympic_options()
         params["games"] = games_options
-        last_run = snt_util.get_last_run()
-        if last_run:
-            params["last_run"] = last_run
-            params["view_state"] = ""
-        else:
-            params["last_run"] = None
-            params["view_state"] = "disabled"
         return render_template("sentiments.html", params=params)
     else:
-        if "run_analysis" in request.form:
-            game_for = request.form["game_value"]
-            snt_util.run_analysis(game_for=game_for)
-            return redirect(url_for("sentiment_analysis"))
-        elif "refresh" in request.form:
-            return redirect(url_for("sentiment_analysis"))
-        else:
-            snt_util.get_analysis()
+        game_for = request.form["game_value"]
+        snt_util.run_analysis(game_for=game_for)
+        return redirect(url_for("sentiment_analysis"))
 
 
 @app.route("/predict_host/", methods=["GET", "POST"])
