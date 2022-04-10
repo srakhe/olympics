@@ -1,0 +1,172 @@
+Host_Year,Bid_Year,Bid_City,Bid_Country
+1904,,Chicago,United States
+1908,,Rome,Italy
+1908,,London,Great Britain
+1908,,Milan,Italy
+1908,,Berlin,German Empire
+1912,,Stockholm,Sweden
+1916,,Berlin,German Empire
+1916,,Alexandria,Egypt
+1916,,Amsterdam,Netherlands
+1916,,Brussels,Belgium
+1916,,Budapest,Austria-Hungary
+1916,,Cleveland,United States
+1920,,Antwerp,Belgium
+1920,,Amsterdam,Netherlands
+1920,,Lyon,France
+1920,,Atlanta,United States
+1920,,Budapest,Hungary
+1920,,Cleveland,United States
+1920,,Havana,Cuba
+1920,,Lyon,France
+1920,,Philadelphia,United States
+1924,,Paris,France
+1924,,Amsterdam,Netherlands
+1924,,Barcelona,Spain
+1924,,Los Angeles,United States
+1924,,Prague,Czechoslovakia
+1924,,Rome,Italy
+1928,,Amsterdam,Netherlands
+1928,,Los Angeles,United States
+1932,1929,Los Angeles,United States
+1936,,Berlin,Germany
+1936,,Barcelona,Spain
+1936,,Alexandria,Egypt
+1936,,Budapest,Hungary
+1936,,Buenos Aires,Argentina
+1936,,Cologne,Germany
+1936,,Dublin,Ireland
+1936,,Frankfurt,Germany
+1936,,Helsinki,Finland
+1936,,Lausanne,Switzerland
+1936,,Montevideo,Uruguay
+1936,,Nuremberg,Germany
+1936,,Rio de Janeiro,Brazil
+1936,,Rome,Italy
+1940,1936,Tokyo,Japan
+1940,1936,Helsinki,Finland
+1944,,London,Great Britain
+1944,,Rome,Italy
+1944,,Detroit,United States
+1944,,Lausanne,Switzerland
+1944,,Athens,Greece
+1944,,Budapest,Hungary
+1944,,Helsinki,Finland
+1944,,Montreal,Canada
+1948,,London,Great Britain
+1948,,Baltimore,United States
+1948,,Lausanne,Switzerland
+1948,,Los Angeles,United States
+1948,,Minneapolis,United States
+1948,,Philadelphia,United States
+1952,1947,Helsinki,Finland
+1952,1947,Los Angeles,United States
+1952,1947,Minneapolis,United States
+1952,1947,Amsterdam,Netherlands
+1952,1947,Detroit,United States
+1952,1947,Chicago,United States
+1952,1947,Philadelphia,United States
+1952,1947,Athens,Greece
+1952,1947,Lausanne,Switzerland
+1952,1947,Stockholm,Sweden
+1956,1949,Melbourne,Australia
+1956,1949,Buenos Aires,Argentina
+1956,1949,Los Angeles,United States
+1956,1949,Detroit,United States
+1956,1949,Mexico City,Mexico
+1956,1949,Chicago,United States
+1956,1949,Minneapolis,United States
+1956,1949,Philadelphia,United States
+1956,1949,San Francisco,United States
+1956,1949,Montreal,Canada
+1960,1955,Rome,Italy
+1960,1955,Lausanne,Switzerland
+1960,1955,Detroit,United States
+1960,1955,Budapest,Hungary
+1960,1955,Brussels,Belgium
+1960,1955,Mexico City,Mexico
+1960,1955,Tokyo,Japan
+1964,1959,Tokyo,Japan
+1964,1959,Detroit,United States
+1964,1959,Vienna,Austria
+1964,1959,Brussels,Belgium
+1968,1963,Mexico City,Mexico
+1968,1963,Detroit,United States
+1968,1963,Lyon,France
+1968,1963,Buenos Aires,Argentina
+1972,1966,Munich,West Germany
+1972,1966,Madrid,Spain
+1972,1966,Montreal,Canada
+1972,1966,Detroit,United States
+1976,1970,Montreal,Canada
+1976,1970,Moscow,Soviet Union
+1976,1970,Los Angeles,United States
+1980,1974,Moscow,Soviet Union
+1980,1974,Los Angeles,United States
+1984,1978,Los Angeles,United States
+1988,1981,Seoul,South Korea
+1988,1981,Nagoya,Japan
+1992,1986,Barcelona,Spain
+1992,1986,Paris,France
+1992,1986,Brisbane,Australia
+1992,1986,Belgrade,Yugoslavia
+1992,1986,Birmingham,United Kingdom
+1992,1986,Amsterdam,Netherlands
+1996,1990,Atlanta,United States
+1996,1990,Athens,Greece
+1996,1990,Toronto,Canada
+1996,1990,Melbourne,Australia
+1996,1990,Manchester,United Kingdom
+1996,1990,Belgrade,Yugoslavia
+2000,1993,Sydney,Australia
+2000,1993,Beijing,China
+2000,1993,Manchester,United Kingdom
+2000,1993,Berlin,Germany
+2000,1993,Istanbul,Turkey
+2004,1997,Athens,Greece
+2004,1997,Rome,Italy
+2004,1997,Cape Town,South Africa
+2004,1997,Stockholm,Sweden
+2004,1997,Buenos Aires,Argentina
+2004,1997,Istanbul,Turkey
+2004,1997,Lille,France
+2004,1997,Rio de Janeiro,Brazil
+2004,1997,Saint Petersburg,Russia
+2004,1997,San Juan,Puerto Rico
+2004,1997,Seville,Spain
+2008,2001,Beijing,China
+2008,2001,Toronto,Canada
+2008,2001,Paris,France
+2008,2001,Istanbul,Turkey
+2008,2001,Osaka,Japan
+2008,2001,Bangkok,Thailand
+2008,2001,Cairo,Egypt
+2008,2001,Havana,Cuba
+2008,2001,Kuala Lumpur,Malaysia
+2008,2001,Seville,Spain
+2012,2005,London,United Kingdom
+2012,2005,Paris,France
+2012,2005,Madrid,Spain
+2012,2005,New York City,United States
+2012,2005,Moscow,Russia
+2012,2005,Havana,Cuba
+2012,2005,Istanbul,Turkey
+2012,2005,Leipzig,Germany
+2012,2005,Rio de Janeiro,Brazil
+2016,2009,Rio de Janeiro,Brazil
+2016,2009,Madrid,Spain
+2016,2009,Tokyo,Japan
+2016,2009,Chicago,United States
+2016,2009,Baku,Azerbaijan
+2016,2009,Doha,Qatar
+2016,2009,Prague,Czech Republic
+2020,2013,Tokyo,Japan
+2020,2013,Istanbul,Turkey
+2020,2013,Madrid,Spain
+2020,2013,Baku,Azerbaijan
+2020,2013,Doha,Qatar
+2024,2017,Paris,France
+2024,2017,Los Angeles,United States
+2028,2017,Los Angeles,United States
+2032,"2021
+",Brisbane,Australia
