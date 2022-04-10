@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[6]:
-
-
 import pandas as pd
 from datetime import datetime, timedelta
 from scripts.sentiment_analysis.twitter_sentiment import TwitterSentiment
@@ -86,8 +80,3 @@ class SentimentWrapper:
     def run(self):
         self.extract_info()
         self.generate_date_range_for_sentiment_analysis()
-
-
-if __name__ == "__main__":
-    sentiment_wrapper = SentimentWrapper('[Summer] 2020 in Tokyo, JPN')
-    sentiment_wrapper.run()
