@@ -16,8 +16,14 @@ class TwitterScraper:
         return self.tweets_df
 
     def scrape(self, num_tweets, country, start, end):
+        if country is None:
+            twitter_arg = 'olympics' + ' ' + 'since:' + start + 'until:' + end
+        else:
+            twitter_arg = 'olympics near:' + country + ' ' + 'since:' + start + 'until:' + end
+
         for i, tweet in enumerate(
-                sntwitter.TwitterSearchScraper(f'olympics near:{country} since:{start} until:{end}').get_items()):
+                sntwitter.TwitterSearchScraper(
+                    twitter_arg).get_items()):
             if i > num_tweets:
                 break
             self.twitter_list.append([tweet.date, tweet.id, tweet.content, tweet.user.username])

@@ -1,6 +1,7 @@
 import pandas as pd
 from transformers import pipeline
 from scripts.sentiment_analysis.twitter_scraper import TwitterScraper
+import plotly.graph_objects as go
 
 
 class TwitterSentiment:
@@ -35,4 +36,5 @@ class TwitterSentiment:
         opinion_df, neutral_df = self.get_strong_opinion_count(), self.get_other_opinion_count()
         new_row = {'People View': 'NEUTRAL', 'No Of People': neutral_df['No Of People'].sum()}
         opinion_df = opinion_df.append(new_row, ignore_index=True)
-        return opinion_df
+        fig = go.Pie(labels=opinion_df['People View'], values=opinion_df['No Of People'])
+        return fig
