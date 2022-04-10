@@ -43,6 +43,9 @@ def predict_host():
         params = {"years": prdt_util.get_years(), "countries": prdt_util.get_countries()}
         return render_template("predict_host.html", params=params)
     else:
+        country = request.form["country_value"]
+        year = request.form["year_value"]
+        forecasted_dict = prdt_util.get_forecasts(country=country, year=year)
         return render_template("predict_host_result.html")
 
 
