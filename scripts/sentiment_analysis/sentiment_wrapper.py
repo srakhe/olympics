@@ -32,11 +32,12 @@ class SentimentWrapper:
         start_date = self.selected_olympics['start_date'].tolist()[0]
         end_date = self.selected_olympics['end_date'].tolist()[0]
         start_date = start_date + ' ' + str(self.selected_year)
-        if len(end_date) <= 2:
+        if len(end_date.split(" ")) <= 2:
             end_date = end_date + ' ' + str(self.selected_year)
-
+            end_date = datetime.strptime(end_date, '%d %B %Y')
+        else:
+            end_date = datetime.strptime(end_date, '%d %B %Y')
         start_date = datetime.strptime(start_date, '%d %B %Y')
-        end_date = datetime.strptime(end_date, '%d %B %Y')
         one_week_before_start_date = start_date - timedelta(days=7)
         one_week_after_end_date = end_date + timedelta(days=7)
         start_date = str(start_date).split(' ')[0]

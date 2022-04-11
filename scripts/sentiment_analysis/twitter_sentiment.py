@@ -2,13 +2,22 @@ import pandas as pd
 from transformers import pipeline
 from scripts.sentiment_analysis.twitter_scraper import TwitterScraper
 import plotly.graph_objects as go
+import os
 
 
 class TwitterSentiment:
 
     def __init__(self, num_tweets, country, start, end):
         tw_scraper = TwitterScraper()
-        self.twitter_df = tw_scraper.scrape(num_tweets=num_tweets, country=country, start=start, end=end)
+        if country is None:
+            csv_file_name = 'Global_' + str(start) + '_' + str(end) + '.csv'
+        else:
+            csv_file_name = country + '' + str(start) + '' + str(end) + '.csv'
+        if os.path.isfile(csv_file_name):
+            self.twitter_df = pd.read_csv(csv_file_name)
+        else:
+            self.twitter_df = tw_scraper.scrape(num_tweets=num_tweets, country=country, start=start, end=end)
+            self.twitter_df.to_csv(csv_file_name)
         self.strong_opinion_df = None
         self.other_opinion_df = None
         self.results = None
