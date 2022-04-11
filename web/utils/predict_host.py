@@ -2,7 +2,7 @@ import pandas as pd
 from datetime import datetime
 import pickle
 import numpy as np
-from sklearn.preprocessing import StandardScaler
+import plotly.graph_objects as go
 
 
 class PredictHost:
@@ -40,9 +40,9 @@ class PredictHost:
             country_eco_df = pd.read_csv(f"{time_series_data}/{indicator}.csv")
             country_eco_df_copy = country_eco_df.copy()
             # log_data = pd.DataFrame(np.log(country_eco_df), columns=country_eco_df.columns)
-            scaler = StandardScaler()
-            scaler.fit(country_eco_df)
-            country_eco_df.loc[:] = scaler.transform(country_eco_df)
+            # scaler = StandardScaler()
+            # scaler.fit(country_eco_df)
+            # country_eco_df.loc[:] = scaler.transform(country_eco_df)
             country_eco_df = country_eco_df[country_eco_df["Unnamed: 0"] == str(country)]
             country_eco_df_copy = country_eco_df_copy[country_eco_df_copy["Unnamed: 0"] == str(country)]
             forecasted_values[indicator] = []
@@ -72,4 +72,20 @@ class PredictHost:
         return predicted_values
 
     def generate_plot(self, forecasted: dict, predicted: dict):
-        pass
+        df = pd.DataFrame([], columns=["indicators", "forecasted", "predicted"])
+        i = 0
+        for indicator in self.eco_indicators:
+            forecasted_val = forecasted[indicator][-1]
+            predicted_val = abs(predicted[indicator])
+            print([indicator, forecasted_val, predicted_val])
+            df.loc[i] = [indicator, forecasted_val, predicted_val]
+            i += 1
+        fig = go.Figure(data=[go.Table(
+            header=dict(values=["Indicators", "Forecasted Values", "Predicted Values (upon hosting)"],
+                        fill_color='paleturquoise',
+                        align='left'),
+            cells=dict(values=[df.indicators, df.forecasted, df.predicted],
+                       fill_color='lavender',
+                       align='left'))
+        ])
+        fig.show()
