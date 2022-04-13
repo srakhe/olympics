@@ -7,7 +7,7 @@ class SentimentAnalysis:
     def __init__(self, data_path, web_data_path):
         self.data_path = data_path
         self.web_data_path = web_data_path
-        self.num_tweets = 50
+        self.num_tweets = 100000
 
     def get_olympic_options(self):
         games_df = pd.read_csv(f"{self.data_path}/games.csv")

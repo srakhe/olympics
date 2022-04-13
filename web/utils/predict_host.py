@@ -11,9 +11,9 @@ class PredictHost:
     def __init__(self, data_path, web_data_path):
         self.data_path = data_path
         self.web_data_path = web_data_path
-        self.eco_indicators = ["Debt", "Employment", "Foreign Investments", "GDP Growth", "GDP",
+        self.eco_indicators = ["Debt", "Employment", "Foreign Investments", "GDP Growth", "GDP Per Capita",
                                "Gross National Expenditure", "Import Goods", "Inflation", "Revenue",
-                               "Stocks", "Tax Revenue", "Trade", "Unemployment", "GDP Per Capita"]
+                               "Stocks", "Tax Revenue", "Trade", "Unemployment"]
 
     def get_years(self):
         this_year = datetime.today().year
@@ -79,7 +79,7 @@ class PredictHost:
             predicted_values[indicator] = predicted_val ** 3
         return predicted_values
 
-    def generate_plot(self, forecasted: dict, predicted: dict):
+    def generate_plot(self, forecasted: dict, predicted: dict, country_for, year_for):
         df = pd.DataFrame([], columns=["indicators", "forecasted", "predicted"])
         i = 0
         for indicator in self.eco_indicators:
@@ -93,6 +93,7 @@ class PredictHost:
                         align='left'),
             cells=dict(values=[df.indicators, df.forecasted, df.predicted],
                        fill_color='lavender',
-                       align='left'))
-        ])
+                       align='left'))])
+        fig.update_layout(
+            title_text=f"This table shows predicted values for {country_for} if it is hosting olympics in the year: {year_for}")
         fig.show()

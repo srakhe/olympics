@@ -36,7 +36,7 @@ def predict_host():
         forecasted_values, forecasted_values_transformed = prdt_util.get_forecasts(country=country, year=year)
         forecasted_values_copy = forecasted_values.copy()
         predicted_values = prdt_util.get_predictions(forecasted_values_transformed=forecasted_values_transformed)
-        prdt_util.generate_plot(forecasted_values_copy, predicted_values)
+        prdt_util.generate_plot(forecasted_values_copy, predicted_values, country, year)
         return redirect(url_for("predict_host"))
 
 
