@@ -11,7 +11,7 @@ class PredictHost:
     def __init__(self, data_path, web_data_path):
         self.data_path = data_path
         self.web_data_path = web_data_path
-        self.eco_indicators = ["Debt", "Employment", "Foreign Investments", "GDP Growth",
+        self.eco_indicators = ["Debt", "Employment", "Foreign Investments", "GDP Growth", "GDP",
                                "Gross National Expenditure", "Import Goods", "Inflation", "Revenue",
                                "Stocks", "Tax Revenue", "Trade", "Unemployment", "GDP Per Capita"]
 
@@ -43,20 +43,16 @@ class PredictHost:
             country_eco_df = country_eco_df.iloc[:, 1:]
             country_eco_df = country_eco_df.reset_index(drop=True)
             country_eco_df = country_eco_df.set_index(["Unnamed: 0"])
-            # log_data = pd.DataFrame(np.log(country_eco_df), columns=country_eco_df.columns)
             country_eco_df[country_eco_df.columns] = np.cbrt(country_eco_df[country_eco_df.columns])
             country_eco_df = country_eco_df.transpose()
             scaler = StandardScaler()
             scaler.fit(country_eco_df)
             country_eco_df.loc[:] = scaler.transform(country_eco_df)
             country_eco_df = country_eco_df.transpose()
-            # country_eco_df.loc[:] = scaler.transform(country_eco_df)
-            # country_eco_df = country_eco_df[country_eco_df["Unnamed: 0"] == str(country)]
             country_eco_df_copy = country_eco_df_copy[country_eco_df_copy["Unnamed: 0"] == str(country)]
             country_eco_df = country_eco_df.sort_index()
             pos = country_eco_df.index.searchsorted(str(country))
             country_eco_df = country_eco_df.iloc[[pos]]
-            # country_eco_df = country_eco_df[country_eco_df["Unnamed: 0"] == str(country)]
             forecasted_values[indicator] = []
             forecasted_values_transformed[indicator] = []
             for each_year in years:

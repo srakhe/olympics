@@ -1,7 +1,7 @@
 import pandas as pd
 from nrclex import NRCLex
 import nltk
-#import plotly.express as px
+# import plotly.express as px
 import plotly.graph_objects as go
 
 
@@ -20,16 +20,17 @@ class TwitterSentiment:
     def plot_graph(self, data):
         emotion_df = pd.DataFrame.from_dict(
             data, orient='index').reset_index().rename(
-            columns={'index' : 'Emotion Classification' , 0: 'Emotion Count'}).sort_values(
+            columns={'index': 'Emotion Classification', 0: 'Emotion Count'}).sort_values(
             by=['Emotion Count'], ascending=False)
-        
+
         emotion_df = emotion_df[emotion_df['Emotion Classification'] != 'positive']
         emotion_df = emotion_df[emotion_df['Emotion Classification'] != 'negative']
-        
-        fig = go.Figure(go.Pie(values = emotion_df['Emotion Count'], labels = emotion_df['Emotion Classification']))#, title='Tweets Sentiments Composition')
-        #fig.update_traces(textposition='inside', textinfo='percent+label')
+
+        fig = go.Figure(go.Pie(values=emotion_df['Emotion Count'],
+                               labels=emotion_df['Emotion Classification']))  # , title='Tweets Sentiments Composition')
+        # fig.update_traces(textposition='inside', textinfo='percent+label')
         return fig
-    
+
     def run(self):
         self.perform_analysis()
         self.get_raw_emotion_score()
@@ -39,4 +40,4 @@ class TwitterSentiment:
 if __name__ == "__main__":
     tw_sent = TwitterSentiment(data_path="data", start="2021-07-15", end="2021-07-16")
     plot_1 = tw_sent.run()
-    #plot_1.show()
+    # plot_1.show()
