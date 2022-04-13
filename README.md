@@ -31,11 +31,19 @@ economical standing of the countries if they decided to host the Olympics in the
 3. This will give you a URL which you can visit to use the application.
 
 ## Overview of the repo:
-
-. ├── data/ │ └── This is the main directory for data used in our project. ├── docs/ │ └── This contains the markdown
-files used in our documentation. ├── research/ │ └── This contains various research papers used in our domain research.
-├── scripts/ │ └── This contains all the scripts for data scraping, analysis and modeling. └── web/ └── This contains
-all the files used in the UI and for backend.
+```
+. 
+├── data/ 
+│     └── This is the main directory for data used in our project. 
+├── docs/ 
+│     └── This contains the markdown files used in our documentation. 
+├── research/ 
+│     └── This contains various research papers used in our domain research.
+├── scripts/ 
+│     └── This contains all the scripts for data scraping, analysis and modeling. 
+└── web/ 
+      └── This contains all the files used in the UI and for backend.
+```
 
 ## Detailed Documentation:
 
