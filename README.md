@@ -47,10 +47,12 @@ economical standing of the countries if they decided to host the Olympics in the
 
 ## Detailed Documentation:
 
-You can find more details about the steps followed in this project. For screenshots, please refer to results in 4 and 5.
+You can find more details about the steps followed in this project.
 
 1. [Data Scraping](docs/scrapers.md)
 2. [Data Analysis](docs/analysis.md)
 3. [Predictor Modeling](docs/predictor.md)
-4. [Analysis Results]()
-5. [Predictor Results]()
+4. [Olympic Analysis Results](web/static/analysis/olympic_analysis/olympic_analysis.html)
+5. [Medal Analysis Results](web/static/analysis/medal_analysis/medal_analysis.html)
+6. [Predictor Results]()
+7. [Application Screenshots](docs/screenshots.md)

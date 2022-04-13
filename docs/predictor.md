@@ -8,6 +8,6 @@
 
 ### [Predictor Modeling](../scripts/modeling/model_builder.py):
 
-- This scripts builds prediction models for various economic indicators.
+- This script builds prediction models for various economic indicators.
 - These models are then saved as pickle files for use in the application.
 - These pickle files can be found [here](../data/models).
