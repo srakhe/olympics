@@ -2,7 +2,7 @@
 ![](https://img.shields.io/github/issues/srakhe/olympics?style=for-the-badge)
 ![](https://img.shields.io/github/issues-pr/srakhe/olympics?style=for-the-badge)
 ![](https://img.shields.io/github/last-commit/srakhe/olympics/main?style=for-the-badge)
-![](https://github.com/srakhe/olympics/actions/workflows/pylint/badge.svg)
+
 # Olympics Project
 
 ## About:
