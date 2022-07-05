@@ -104,7 +104,7 @@ transformers==4.17.0
 trio==0.20.0
 trio-websocket==0.9.2
 typing-extensions==4.1.1
-ujson==5.2.0
+ujson==5.4.0
 urllib3==1.26.9
 wbgapi==1.0.7
 Werkzeug==2.1.1
