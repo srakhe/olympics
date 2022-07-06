@@ -46,7 +46,7 @@ kiwisolver==1.4.2
 korean-lunar-calendar==0.2.1
 libclang==13.0.0
 LunarCalendar==0.0.9
-lxml==4.8.0
+lxml==4.9.1
 Markdown==3.3.6
 MarkupSafe==2.1.1
 matplotlib==3.5.1
