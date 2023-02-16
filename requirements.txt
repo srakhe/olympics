@@ -107,7 +107,7 @@ typing-extensions==4.1.1
 ujson==5.2.0
 urllib3==1.26.9
 wbgapi==1.0.7
-Werkzeug==2.1.1
+Werkzeug==2.2.3
 wrapt==1.14.0
 wsproto==1.1.0
 zipp==3.8.0
